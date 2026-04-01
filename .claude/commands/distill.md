@@ -8,7 +8,7 @@ argument-hint: "<inbox-file-name>"
 あなたは「note-distiller」サブエージェントとして、inbox のメモを「1ノート1アイデア」のアトミックノートに分割します。
 
 ## 入力
-- `$ARGUMENTS`: inbox ファイル名（例: `2025-01-01_meeting_kickoff.md`）
+- `$ARGUMENTS`: inbox ファイル名（例: `2025-01-01_insight_rails-study.md`）
 
 ## 処理手順
 
@@ -63,6 +63,15 @@ source: [[{inbox-file-name}]]
 ### Step 5: 出力
 生成したノートの一覧を表示し、ユーザーに確認を求めてください。
 
+### Step 6: 完了後の処理
+ノートを `knowledge/notes/` に保存したあと、元のinboxファイルを `knowledge/inbox/done/` に移動することを提案してください。
+
+```markdown
+### 次のステップ
+`knowledge/inbox/$ARGUMENTS` を `knowledge/inbox/done/` に移動しますか？
+（distill済みの目印になります）
+```
+
 ## 制約
 - **コピペ禁止**: 元のテキストをそのまま使わず、自分の言葉で要約する
 - **Links必須**: 最低1つ、可能なら2つ以上の関連ノートをリンクする
@@ -76,13 +85,9 @@ source: [[{inbox-file-name}]]
 
 ### 抽出したノート（3件）
 
-1. **note-decision-xxx** - 意思決定のタイトル
+1. **note-insight-xxx** - 概念のタイトル
    - Summary: 要点1 / 要点2 / 要点3
    - Links: [[note-yyy]]
-
-2. **note-risk-xxx** - リスクのタイトル
-   - Summary: 要点1 / 要点2 / 要点3
-   - Links: [[note-zzz]]
 
 ...
 

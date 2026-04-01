@@ -1,15 +1,11 @@
 ---
-description: 週次の棚卸しと要約を生成
-argument-hint: "[--project <project-name>]"
+description: 週次の学習棚卸しと振り返りを生成
+argument-hint: ""
 ---
 
 # /weekly-review コマンド
 
-週次の振り返りを行い、inbox の棚卸し、未整理ノートの分類、今週のサマリーを生成します。
-
-## 入力
-- `$ARGUMENTS`: オプションでプロジェクト名を指定（例: `--project my-project`）
-- 指定がなければ、最新のプロジェクトを対象にする
+今週の学習を振り返り、inbox の棚卸し・新規ノートの確認・Open Questionsの進捗をまとめます。
 
 ## 処理手順
 
@@ -19,111 +15,68 @@ argument-hint: "[--project <project-name>]"
 
 | 分類 | 説明 |
 |------|------|
-| **Distill候補** | アトミックノート化すべき議事録 |
-| **アーカイブ候補** | 既にDistill済み、または不要 |
-| **保留** | 判断保留（後日確認） |
+| **Distill候補** | まだアトミックノート化していないファイル |
+| **完了済み** | `inbox/done/` に移動すべきファイル |
 
 出力形式:
 ```markdown
 ## inbox 棚卸し
 
 ### Distill候補（要処理）
-- [ ] YYYY-MM-DD_meeting.md - 理由: まだノート化されていない
+- [ ] YYYY-MM-DD_insight_xxx.md
 
-### アーカイブ候補
-- [x] YYYY-MM-DD_kickoff.md - 理由: 主要ノート作成済み
-
-### 保留
-- [ ] YYYY-MM-DD_memo.md - 理由: 内容確認が必要
+### 完了済み（done/ に移動してよいもの）
+- [x] YYYY-MM-DD_insight_xxx.md
 ```
 
-### Step 2: 今週の意思決定を抽出
+### Step 2: 今週の新規ノートを集計
 
-`knowledge/notes/note-decision-*` から、今週作成・更新されたものを抽出:
+`knowledge/notes/` から今週（直近7日）作成されたノートを抽出:
 
 ```markdown
-## 今週の意思決定
+## 今週覚えた概念（X件）
 
-| 日付 | 決定事項 | ノート |
-|------|---------|--------|
-| MM/DD | {決定内容} | [[note-decision-xxx]] |
+| 日付 | 概念 | タグ | ノート |
+|------|------|------|--------|
+| MM/DD | {概念名} | #tag | [[note-...]] |
 ```
 
-### Step 3: 未決事項の確認
+### Step 3: Open Questions の確認
 
-`knowledge/notes/note-open-*` から、期限が近いものを抽出:
+`knowledge/maps/` の各MOCにある「未決事項」セクションから未解決項目を抽出:
 
 ```markdown
-## 未決事項（期限注意）
+## 未解決のOpen Questions
 
-| 項目 | 期限 | 残り日数 | 担当 |
-|------|------|---------|------|
-| {項目} | MM/DD | **X日** | {担当} |
+| 項目 | MOC |
+|------|-----|
+| {項目} | [[map-...]] |
 ```
 
-### Step 4: リスクの確認
-
-`knowledge/notes/note-risk-*` から、対応が必要なものを抽出:
-
-```markdown
-## 要注意リスク
-
-| リスク | ステータス | 次アクション |
-|--------|-----------|-------------|
-| {リスク} | 監視中 | 週次で確認継続 |
-```
-
-### Step 5: 次週のアクション
-
-`projects/{project}/README.md` の「次のアクション」を確認し、更新提案を作成:
-
-```markdown
-## 次週のアクション
-
-| アクション | 担当 | 期限 |
-|-----------|------|------|
-| {アクション} | {担当} | MM/DD |
-```
-
-### Step 6: 週次サマリーの生成
+### Step 4: 週次サマリーの生成
 
 ```markdown
 # 週次レビュー（YYYY-MM-DD）
 
 ## 今週のサマリー
-- 意思決定: X件
 - 新規ノート: X件
-- 未解決リスク: X件
-- 未決事項（期限内）: X件
+- distill済みinbox: X件
+- 未解決Open Questions: X件
 
-## 来週の優先事項
-1.
-2.
-3.
+## 今週よく出たタグ
+- #rails: X件
+- #database: X件
+
+## 来週やること
+- [ ] inbox に溜まったメモを /distill する
+- [ ] Open Questions のうち {項目} を調べる
+- [ ] /moc を更新する（対象: {テーマ}）
 ```
 
-## 出力形式
+### Step 5: 提案
 
 ```markdown
-# 週次レビュー（YYYY-MM-DD）
-
-## 1. inbox 棚卸し
-...
-
-## 2. 今週の意思決定
-...
-
-## 3. 未決事項（期限注意）
-...
-
-## 4. 要注意リスク
-...
-
-## 5. 次週のアクション
-...
-
----
-**処理候補**:
-- `/distill YYYY-MM-DD_meeting.md` を実行しますか？
-- プロジェクトREADMEを更新しますか？
+## 提案
+- `/distill YYYY-MM-DD_xxx.md` を実行しますか？
+- `/moc {テーマ} --update` を実行しますか？
 ```
