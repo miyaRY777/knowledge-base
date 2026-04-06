@@ -1,6 +1,6 @@
 ---
 id: note-insight-headers
-title: headersの要点
+title: HTTPにおけるheadersの要点
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---

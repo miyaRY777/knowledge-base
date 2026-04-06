@@ -1,6 +1,6 @@
 ---
 id: note-insight-slug
-title: slugとは何か
+title: slugの要点
 created: 2026-03-30
 source: [[2026-03-30_insight_rails-study.md]]
 ---

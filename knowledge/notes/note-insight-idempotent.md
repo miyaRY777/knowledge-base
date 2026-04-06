@@ -1,6 +1,6 @@
 ---
 id: note-insight-idempotent
-title: 冪等性（べきとう）とは何か
+title: 冪等性（べきとう）の要点
 created: 2026-03-30
 source: [[2026-03-30_insight_rails-study.md]]
 ---

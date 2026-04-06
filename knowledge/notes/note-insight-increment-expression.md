@@ -1,6 +1,6 @@
 ---
 id: note-insight-increment-expression
-title: 増減式の要点
+title: for文における増減式とは何か
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---

@@ -1,14 +1,14 @@
 ---
 id: note-insight-format-html-redirect-notice
-title: format.html { redirect_to mypage_rooms_path, notice: "部屋から退出しました" }の要点
+title: respond_toにおけるformat.htmlとは何か
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
 ## Summary（3行）
-- **通常のHTMLリクエスト時にリダイレクトとメッセージ表示を行う処理**
-- HTMLリクエストではページ遷移が必要なので `redirect_to` を使います。
-- `notice:` はフラッシュメッセージとして次の画面に渡されます。
+- **`respond_to` の中で、通常のHTMLリクエストに対する処理を書く分岐**
+- ブラウザで普通のページ遷移をする場合のレスポンスをここに書く。
+- `redirect_to` や `render` を使って、次に表示する画面やメッセージを指定する。
 
 ## Tags
 #insight
@@ -17,14 +17,15 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 - [[関連ノート]]
 
 ## Body
-**通常のHTMLリクエスト時にリダイレクトとメッセージ表示を行う処理**
+**`respond_to` の中で、通常のHTMLリクエストに対する処理を書く分岐**
 
 **解説：**
-HTMLリクエストではページ遷移が必要なので `redirect_to` を使います。
-`notice:` はフラッシュメッセージとして次の画面に渡されます。
+`format.html` は、`respond_to` ブロックの中で HTML リクエスト向けの処理を書く場所です。
+ブラウザで普通のページを開いたり、フォーム送信後に画面遷移したりするときのレスポンスをここに書きます。
+この中では `redirect_to` や `render` を使って、次に表示する画面や `notice` などのメッセージを指定します。
 
 ```ruby
 format.html { redirect_to root_path, notice: "完了しました" }
 ```
 
-このコードでは、処理後に別ページへ遷移しつつメッセージを表示するために redirect_to を使っています。
+このコードでは、HTML リクエストに対して別ページへ遷移しつつ、フラッシュメッセージを表示するよう指定しています。

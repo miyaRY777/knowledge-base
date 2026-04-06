@@ -1,6 +1,6 @@
 ---
 id: note-insight-timeout
-title: timeoutの要点
+title: リクエストのtimeoutの要点
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
