@@ -24,7 +24,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 `axios.request({ method: ... })` よりも短く書けるので、コードが読みやすくなります。
 よく使う `GET` `POST` `PUT` `DELETE` などが用意されています。
 
-具体例：
+## Example
 
 ```js
 axios.get("/users");

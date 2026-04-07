@@ -21,5 +21,19 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 
 たとえば、ユーザー作成、関連データ作成、メール送信のような複数の処理を、コントローラやサービスが適切な順序で呼び出して全体の流れを組み立てる場面で使います。
 
+## Example
+```ruby
+class SignupService
+  def call(user_params)
+    user = User.create!(user_params)
+    Profile.create!(user: user)
+    WelcomeMailer.welcome(user).deliver_later
+    user
+  end
+end
+```
+
+このコードでは、ユーザー作成、プロフィール作成、メール送信という複数の処理を順番にまとめて進めています。
+
 ## Action
 - [ ] 招待リンク再発行処理を題材に責務分担を整理する

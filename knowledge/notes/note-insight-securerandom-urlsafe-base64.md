@@ -21,5 +21,12 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 
 固定文字列ではなく毎回異なる値が生成されるため、公開 URL や一時的な識別子に使うと安全性を高めやすくなります。
 
+## Example
+```ruby
+token = SecureRandom.urlsafe_base64(16)
+```
+
+このコードでは、招待リンクなどに使える、推測されにくいランダムなトークンを生成しています。
+
 ## Action
 - [ ] token カラムに求める性質を整理する

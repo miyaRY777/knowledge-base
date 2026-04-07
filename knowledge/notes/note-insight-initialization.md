@@ -22,7 +22,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 **解説：**
 `for` 文の最初の部分に書く式です。多くの場合、`let i = 0` のようにループ用の変数を作って、開始位置を決めます。 ([MDNのウェブドキュメント](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for "for - JavaScript | MDN"))
 
-具体例：
+## Example
 
 ```js
 for (let i = 0; i < 5; i++) {

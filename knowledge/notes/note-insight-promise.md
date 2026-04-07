@@ -24,6 +24,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 HTTP通信のような非同期処理でよく使われます。
 成功時は `.then()`、失敗時は `.catch()` で処理を書くことが多いです。
 
+
+## Example
 ```js
 axios.get("/users")
   .then(response => {

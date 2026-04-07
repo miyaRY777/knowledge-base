@@ -22,5 +22,15 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 
 seed は一度だけでなく複数回実行されることもあるため、重複しにくい書き方にしておくことが重要です。たとえば `find_or_create_by!` を使うと、同じデータを二重に作りにくくできます。
 
+## Example
+```ruby
+User.find_or_create_by!(email: "admin@example.com") do |user|
+  user.password = "password"
+  user.admin = true
+end
+```
+
+このコードでは、初期ユーザーを DB に投入するときに、重複しにくい形で seed データを作っています。
+
 ## Action
 - [ ] `db/seeds.rb` を idempotent に書く代表例を別ノートにする

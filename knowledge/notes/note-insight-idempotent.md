@@ -20,6 +20,8 @@ source: [[2026-03-30_insight_rails-study.md]]
 ## Body
 冪等性は「何度繰り返しても同じ状態になる」という性質。たとえば `user.update(admin: true)` を2回実行しても結果は同じだが、`Post.create(title: "Hello")` を2回実行すると2件できてしまう。前者は冪等、後者は非冪等。HTTPメソッドでは GET/PUT/DELETE が冪等、POST は非冪等として設計されている。リトライ処理やジョブのリラン時に「もう一度実行しても安全か？」を判断する基準になる。
 
+
+## Example
 ```ruby
 # 冪等な操作
 user.update(admin: true)
@@ -27,6 +29,8 @@ user.update(admin: true)
 # 非冪等な操作
 Post.create(title: "Hello")
 ```
+
+このコードでは、同じ更新を繰り返しても結果が変わらない操作と、実行回数で結果が変わる操作を対比しています。
 
 参考:
 - https://developer.mozilla.org/en-US/docs/Glossary/Idempotent

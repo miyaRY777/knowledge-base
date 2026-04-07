@@ -23,6 +23,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 `rescue` はメソッド内でエラーを捕まえるキーワードです。
 `rescue_from`（よく「Rescue」と呼ばれる）はコントローラ全体でエラーを処理するために使います。
 
+
+## Example
 ```ruby
 def show
   @room = Room.find(params[:id])

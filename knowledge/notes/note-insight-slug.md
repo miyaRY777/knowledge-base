@@ -20,7 +20,11 @@ source: [[2026-03-30_insight_rails-study.md]]
 ## Body
 slugは `/posts/1` のようなID直打ちURLを `/posts/rails-basics` のように人間が読める形にするための文字列。SEO的にもURLに意味のある単語が入る方が有利とされる。Railsでは `friendly_id` gemを使って自動生成する方法が定番だが、gem無しでも `to_param` をオーバーライドして実装できる。slugカラムにはUNIQUE制約をつけるのが基本。
 
+
+## Example
 ```ruby
 post = Post.create!(title: "Hello World", slug: "hello-world")
 Post.find_by(slug: "hello-world")
 ```
+
+このコードでは、記事に人が読める識別子として slug を持たせて、その slug でレコードを探しています。

@@ -24,7 +24,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 フォーム送信や新規登録の処理でよく登場します。
 Axiosでは、送信したいデータを第2引数に渡せます。
 
-具体例：
+## Example
 
 ```js
 axios.post("/posts", {

@@ -24,7 +24,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 
 テストで `create(:user, :admin)` のように使うと、管理者用の値を持つデータを作りやすくなります。 ([Thoughtbot](https://thoughtbot.github.io/factory_bot/traits/summary.html?utm_source=chatgpt.com "Traits - factory_bot"))
 
-具体例：
+## Example
 
 ```ruby
 FactoryBot.define do

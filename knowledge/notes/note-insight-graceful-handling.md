@@ -23,6 +23,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 例外でアプリを止めるのではなく、メッセージ表示やリダイレクトで対応します。
 ユーザー体験を守るために重要です。
 
+
+## Example
 ```ruby
 redirect_to root_path, alert: "見つかりませんでした"
 ```

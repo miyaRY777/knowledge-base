@@ -23,6 +23,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 IDを直接指定して他人のデータにアクセスできる状態のことです。
 関連を使った取得や認可チェックで防ぎます。
 
+
+## Example
 ```ruby
 Room.find(params[:id]) # 認可なし
 ```

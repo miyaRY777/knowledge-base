@@ -22,6 +22,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 **解説：**
 `for (初期化; 条件; 増減式)` の3つ目に書く式です。1回ループが終わるたびに実行され、カウンタを `i++` や `i--` のように変化させます。 ([MDNのウェブドキュメント](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration "Loops and iteration - JavaScript | MDN"))
 
+
+## Example
 ```js
 for (let i = 0; i < 3; i++) {
   console.log(i);

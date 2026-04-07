@@ -24,7 +24,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 `application/json` を指定すると、「JSON形式で送ります」という意味になります。
 APIにJSONを送るときによく使います。
 
-具体例：
+## Example
 
 ```js
 axios.post("/posts", { title: "Hello" }, {

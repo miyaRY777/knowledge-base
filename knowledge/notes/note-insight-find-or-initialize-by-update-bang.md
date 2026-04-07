@@ -25,7 +25,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 そのあと `update!` を使うと、属性を代入して保存まで行い、失敗時は例外になります。
 新規作成か既存更新かを同じ流れで扱いたいときに便利です。 ([Ruby on Rails Guides](https://guides.rubyonrails.org/v7.0.2/active_record_querying.html "Active Record Query Interface — Ruby on Rails Guides"))
 
-具体例：
+## Example
 
 ```ruby
 tag = ParentTag.find_or_initialize_by(name: "ゲーム")

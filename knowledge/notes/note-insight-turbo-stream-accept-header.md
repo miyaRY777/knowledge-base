@@ -23,6 +23,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 リクエスト時に「Turbo Stream形式で返してほしい」とサーバーに伝えるために使います。
 これにより、`format.turbo_stream` が選ばれて部分更新が行われます。
 
+
+## Example
 ```ruby
 post room_path(room), headers: { "Accept" => "text/vnd.turbo-stream.html" }
 ```

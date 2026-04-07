@@ -23,6 +23,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 `find` でデータが存在しない場合に発生します。
 rescueしてリダイレクトなどに使います。
 
+
+## Example
 ```ruby
 Room.find(999)
 ```

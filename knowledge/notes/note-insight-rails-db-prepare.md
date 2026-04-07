@@ -23,5 +23,12 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 
 clone 直後や開発環境を整えたいときに便利ですが、内部でどの条件で `db:create`、schema 読み込み、`db:migrate` を使い分けているかは別途整理すると理解が深まります。
 
+## Example
+```bash
+bin/rails db:prepare
+```
+
+このコードでは、DB をまとめて使える状態に整えるために `db:prepare` を使っています。
+
 ## Action
 - [ ] `db:prepare` の内部動作を Rails Guides ベースで確認する

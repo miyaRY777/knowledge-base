@@ -24,7 +24,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 追加インストールなしで使えますが、レスポンスをJSONとして使うには `response.json()` を呼ぶ必要があります。
 `Axios` と比べると、少し記述が増えることがあります。
 
-具体例：
+## Example
 
 ```js
 fetch("/users")

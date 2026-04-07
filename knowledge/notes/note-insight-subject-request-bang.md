@@ -23,6 +23,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 RSpecで、繰り返し使う処理を `subject` にまとめて、`request!` という名前で呼び出せるようにします。
 テストコードをスッキリさせるために使います。
 
+
+## Example
 ```ruby
 subject(:request!) { delete room_membership_path(membership) }
 

@@ -22,7 +22,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 **解説：**
 `current_user` は、ログイン中のユーザーを表すことが多いです。そこに対して `admin?` を呼ぶと、管理者権限があるかどうかを判定できます。`current_user` という名前自体は Rails 本体の共通メソッドではなく、Devise などの認証機能でよく使われるものです。`admin?` の部分は boolean カラム由来の判定です。 ([Ruby on Rails API](https://api.rubyonrails.org/classes/ActiveRecord/AttributeMethods.html?utm_source=chatgpt.com "ActiveRecord::AttributeMethods - Rails API"))
 
-具体例：
+## Example
 
 ```ruby
 if current_user.admin?

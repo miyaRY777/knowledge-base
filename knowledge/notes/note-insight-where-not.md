@@ -23,6 +23,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 指定した条件を除外して検索したいときに使います。
 SQLの NOT に相当します。
 
+
+## Example
 ```ruby
 User.where.not(role: "admin")
 ```

@@ -23,5 +23,12 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 
 Git で新しい migration ファイルを取得したあとや、ローカルで migration を作成したあとに実行して、コードと DB 構造を一致させます。
 
+## Example
+```bash
+bin/rails db:migrate
+```
+
+このコードでは、migration に書かれた DB 構造の変更を反映するために `db:migrate` を使っています。
+
 ## Action
 - [ ] `db:migrate` と `db:rollback` の使い分けも整理する

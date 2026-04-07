@@ -22,7 +22,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 **解説：**
 `for` 文は、初期化・条件判定・増減処理を1セットで書いて、条件が `false` になるまで処理をくり返すときに使います。回数が決まっているループを書くときによく使います。 ([MDNのウェブドキュメント](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for "for - JavaScript | MDN"))
 
-具体例：
+## Example
 
 ```js
 for (let i = 1; i <= 3; i++) {

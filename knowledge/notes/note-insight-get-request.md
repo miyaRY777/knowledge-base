@@ -24,6 +24,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 一覧表示や詳細表示のデータ取得でよく使います。
 Axiosでは `axios.get()` のように書けます。
 
+
+## Example
 ```js
 axios.get("/posts/1")
   .then(response => {

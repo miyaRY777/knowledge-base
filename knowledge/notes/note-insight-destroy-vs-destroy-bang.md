@@ -23,6 +23,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 `destroy` は失敗しても false を返します。
 `destroy!` は失敗すると例外を発生させます。
 
+
+## Example
 ```ruby
 user.destroy!
 ```

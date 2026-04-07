@@ -24,6 +24,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 WebアプリでAPIとやり取りするときの基本になります。
 `GET` や `POST` など、目的ごとに種類があります。
 
+
+## Example
 ```js
 fetch("/posts/1");
 ```

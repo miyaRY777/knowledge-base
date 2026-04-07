@@ -23,6 +23,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 `where` などはすぐにデータを取得せず、クエリの条件だけを持つオブジェクトを返します。
 実際にデータが取得されるのは `each` や `to_a` のときです。
 
+
+## Example
 ```ruby
 users = User.where(active: true)
 ```

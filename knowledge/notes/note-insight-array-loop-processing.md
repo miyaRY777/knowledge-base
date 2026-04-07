@@ -22,7 +22,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 **解説：**
 配列は複数の値を順番に持てるので、ループと相性がいいです。`for` 文では `length` を使って、先頭から末尾まで1つずつ処理できます。 ([MDNのウェブドキュメント](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Loops?utm_source=chatgpt.com "Looping code - Learn web development | MDN"))
 
-具体例：
+## Example
 
 ```js
 const fruits = ["apple", "banana", "orange"];

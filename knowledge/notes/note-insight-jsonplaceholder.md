@@ -24,7 +24,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 `GET` や `POST` などを気軽に試せるので、学習やサンプルコードによく使われます。
 実際の本番データではなく、練習用のダミーデータです。
 
-具体例：
+## Example
 
 ```js
 axios.get("https://jsonplaceholder.typicode.com/posts/1")

@@ -24,7 +24,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 インスタンスに設定しておくと、`/users` のような相対パスだけで通信できます。
 絶対URLを指定した場合は、そちらが優先されます。
 
-具体例：
+## Example
 
 ```js
 const apiClient = axios.create({

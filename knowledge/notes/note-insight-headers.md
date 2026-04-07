@@ -24,7 +24,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 たとえば「JSONを送ります」「認証トークンがあります」といった情報をここに入れます。
 APIによって必要なヘッダーは変わるので、仕様確認が大切です。
 
-具体例：
+## Example
 
 ```js
 const apiClient = axios.create({

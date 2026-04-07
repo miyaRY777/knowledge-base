@@ -24,7 +24,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 時間内に応答が返らないと、エラーとして扱われます。
 通信が止まり続けるのを防ぎたいときに便利です。
 
-具体例：
+## Example
 
 ```js
 const apiClient = axios.create({

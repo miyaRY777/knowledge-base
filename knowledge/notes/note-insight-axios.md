@@ -24,6 +24,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 たとえば、一覧データを取りに行ったり、フォームの内容を送信したりするときに使います。
 外部ライブラリなので、使う前にインストールやCDN読み込みが必要です。
 
+
+## Example
 ```js
 axios.get("/users")
   .then(response => {

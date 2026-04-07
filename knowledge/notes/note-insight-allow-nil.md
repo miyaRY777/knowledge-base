@@ -21,5 +21,12 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 
 ただし、`nil` と空文字は同じではありません。`allow_nil` は `nil` を対象にした指定なので、空文字 `""` をどう扱うかは別途確認が必要です。
 
+## Example
+```ruby
+validates :expires_in, inclusion: { in: %w[1h 24h 3d 7d] }, allow_nil: true
+```
+
+このコードでは、`expires_in` が `nil` のときは通しつつ、値が入っているときだけ候補の中に含まれているか確認しています。
+
 ## Action
 - [ ] `allow_nil` と `allow_blank` の違いをコード例つきで整理する

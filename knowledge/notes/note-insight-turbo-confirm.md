@@ -21,5 +21,14 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 
 Turbo の `data` 属性に設定して、ユーザーが確認ダイアログで OK を選んだときだけ処理が続くようにします。
 
+## Example
+```erb
+<%= link_to "再発行",
+            regenerate_share_link_mypage_room_path(room),
+            data: { turbo_method: :patch, turbo_confirm: "招待リンクを再発行しますか？" } %>
+```
+
+このコードでは、招待リンクの再発行を実行する前に、確認ダイアログを表示するために `turbo_confirm` を使っています。
+
 ## Action
 - [ ] `turbo_method` と一緒に使う例を別ノートに整理する

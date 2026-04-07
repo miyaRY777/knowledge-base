@@ -23,6 +23,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 関連をたどって検索することで、自分のデータ以外にアクセスできないようにします。
 セキュリティ対策として重要です。
 
+
+## Example
 ```ruby
 current_user.posts.find(params[:id])
 ```

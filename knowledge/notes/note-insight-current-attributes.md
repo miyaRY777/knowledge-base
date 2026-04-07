@@ -20,6 +20,8 @@ source: [[2026-03-31_insight_rails-study.md]]
 ## Body
 CurrentAttributesはActiveSupportが提供するリクエストスコープのグローバル変数的な仕組み。`Current.user` のように書くだけでどこからでもログインユーザーにアクセスできる。リクエストが終わると自動でリセットされるためスレッドセーフ。ただしモデル内で `Current.user` を参照すると、モデルがリクエストコンテキストに暗黙に依存することになり、テストやバッチ処理で使いにくくなる。引数で渡す設計と使い分けが重要。
 
+
+## Example
 ```ruby
 class Current < ActiveSupport::CurrentAttributes
   attribute :user
@@ -31,3 +33,5 @@ Current.user = current_user
 # モデルやどこからでも参照可能
 Current.user
 ```
+
+このコードでは、`Current.user` に現在のユーザーを入れて、リクエスト中のどこからでも参照できるようにしています。

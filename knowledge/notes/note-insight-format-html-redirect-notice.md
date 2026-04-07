@@ -24,6 +24,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 ブラウザで普通のページを開いたり、フォーム送信後に画面遷移したりするときのレスポンスをここに書きます。
 この中では `redirect_to` や `render` を使って、次に表示する画面や `notice` などのメッセージを指定します。
 
+
+## Example
 ```ruby
 format.html { redirect_to root_path, notice: "完了しました" }
 ```

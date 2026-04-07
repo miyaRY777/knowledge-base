@@ -23,6 +23,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 `flash.now` はリダイレクトせず同じリクエスト内で表示するために使います。
 Turbo Streamでは画面遷移しないため、`flash.now` が必要です。
 
+
+## Example
 ```ruby
 format.turbo_stream { flash.now[:notice] = "削除しました" }
 ```

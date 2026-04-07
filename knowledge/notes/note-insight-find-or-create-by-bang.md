@@ -22,7 +22,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 **解説：**
 `find_or_create_by!` は、条件に合うレコードを探して、なければ新しく作ります。新規作成時にバリデーションで失敗すると例外を出すのが `!` 付きの特徴です。seedやマスターデータ投入でよく使われます。 ([Ruby on Rails Guides](https://guides.rubyonrails.org/v7.0.2/active_record_querying.html "Active Record Query Interface — Ruby on Rails Guides"))
 
-具体例：
+## Example
 
 ```ruby
 ParentTag.find_or_create_by!(name: "ゲーム")

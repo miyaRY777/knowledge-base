@@ -22,7 +22,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 **解説：**
 `boolean` は `true / false` を入れる型です。`default: false` は何も指定しなかったときの初期値を `false` にし、`null: false` は `nil`を保存できないようにします。3値状態を避けて、判定をわかりやすくしたいときによく使います。`default` はDBの既存データへの反映がDB依存になることがある点に注意が必要です。 ([Ruby on Rails Guides](https://guides.rubyonrails.org/active_record_migrations.html "Active Record Migrations — Ruby on Rails Guides"))
 
-具体例：
+## Example
 
 ```ruby
 add_column :users, :admin, :boolean, default: false, null: false

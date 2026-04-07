@@ -24,7 +24,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 `baseURL` や `headers` などを最初にまとめて設定できるので、同じ設定を書く手間を減らせます。
 API通信が増えると特に便利です。
 
-具体例：
+## Example
 
 ```js
 const apiClient = axios.create({

@@ -23,5 +23,12 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 
 このコマンドは空の DB を作るところまでが役割で、テーブル作成や seed データの投入までは行いません。そのため、必要に応じてこのあとに `db:migrate` や `db:seed` を実行します。
 
+## Example
+```bash
+bin/rails db:create
+```
+
+このコードでは、空のデータベース自体を作るために `db:create` を使っています。
+
 ## Action
 - [ ] `db:create` と `db:prepare` の違いを表で整理する

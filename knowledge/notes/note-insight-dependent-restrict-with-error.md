@@ -20,11 +20,15 @@ source: [[2026-03-30_insight_rails-study.md]]
 ## Body
 `dependent: :restrict_with_error` は、関連レコードが存在する状態で親を削除しようとした時に、削除を中止してerrorsにメッセージを追加する仕組み。似たオプションの `:restrict_with_exception` は例外を発生させるが、こちらはバリデーションエラーに近い挙動をするため、コントローラやビューでの処理が自然に書ける。「うっかり子レコードごと消してしまう」事故を防ぎつつ、ユーザーにわかりやすくフィードバックを返したい場面で使う。
 
+
+## Example
 ```ruby
 class User < ApplicationRecord
   has_many :posts, dependent: :restrict_with_error
 end
 ```
+
+このコードでは、子レコードが残っている間は親レコードを削除できないように `dependent: :restrict_with_error` を設定しています。
 
 参考:
 - https://guides.rubyonrails.org/association_basics.html

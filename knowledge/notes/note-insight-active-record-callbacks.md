@@ -20,6 +20,8 @@ source: [[2026-03-31_insight_rails-study.md]]
 ## Body
 Active Record Callbacksは、レコードのライフサイクル（作成・更新・削除・バリデーション）の各タイミングに処理を差し込める仕組み。たとえば保存前にデータを整形したり、削除後にログを残したりできる。ただしコールバックが増えると「このレコードを保存したら裏で何が起きるのか」が見えにくくなり、デバッグやテストが難しくなる。特にafter_commitで外部APIを呼ぶようなケースは副作用が大きい。シンプルなデータ整形には便利だが、複雑なビジネスロジックはServiceオブジェクトなどに切り出す方が保守しやすい。
 
+
+## Example
 ```ruby
 class User < ApplicationRecord
   before_create :set_default_name
@@ -31,3 +33,5 @@ class User < ApplicationRecord
   end
 end
 ```
+
+このコードでは、レコード作成前に `name` が空ならデフォルト値を入れるために callback を使っています。

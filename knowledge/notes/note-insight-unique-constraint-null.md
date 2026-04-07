@@ -20,8 +20,12 @@ source: [[2026-03-30_insight_rails-study.md]]
 ## Body
 SQLにおけるNULLは「未知の値」であり、NULL = NULL の結果は TRUE ではなく UNKNOWN になる。UNIQUE制約は「同じ値の重複を禁止する」仕組みだが、NULLは比較自体ができないため制約の対象外となる。PostgreSQLではこの標準SQL仕様に従っており、UNIQUE制約のついたカラムにNULLを複数回INSERTしてもエラーにならない。任意入力のカラムにUNIQUE制約をかける時は、この挙動を理解しておく必要がある。
 
+
+## Example
 ```sql
 CREATE TABLE users (email TEXT UNIQUE);
 INSERT INTO users (email) VALUES (NULL);
 INSERT INTO users (email) VALUES (NULL); -- エラーにならない
 ```
+
+このコードでは、UNIQUE 制約があっても `NULL` は重複扱いされず、複数回 INSERT できることを示しています。

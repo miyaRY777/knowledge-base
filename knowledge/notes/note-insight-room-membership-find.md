@@ -23,6 +23,8 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 単純にIDで検索するため、他人のデータも取得できてしまう可能性があります。
 認可チェックが必要です。
 
+
+## Example
 ```ruby
 RoomMembership.find(params[:id])
 ```
