@@ -1,0 +1,25 @@
+---
+id: note-insight-securerandom-urlsafe-base64
+title: SecureRandom.urlsafe_base64の要点
+created: 2026-04-07
+source: [[2026-04-07_insight_rails-ruby-terms.md]]
+---
+
+## Summary
+- `SecureRandom.urlsafe_base64(16)` は URL に使いやすいランダム文字列を作ります。
+- 推測されにくいトークンや招待 URL に向いています。
+- 毎回異なる値が生成されるため、安全性を高めやすいです。
+
+## Tags
+#ruby #security #token
+
+## Links
+- [[関連ノート]]
+
+## Body
+`SecureRandom.urlsafe_base64(16)` は、URL に使いやすく、推測されにくいランダム文字列を作るメソッドです。トークンや招待リンクのように、他人に当てられたくない値を作る場面でよく使います。
+
+固定文字列ではなく毎回異なる値が生成されるため、公開 URL や一時的な識別子に使うと安全性を高めやすくなります。
+
+## Action
+- [ ] token カラムに求める性質を整理する

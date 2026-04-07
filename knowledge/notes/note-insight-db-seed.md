@@ -2,30 +2,25 @@
 id: note-insight-db-seed
 title: db:seedの要点
 created: 2026-04-07
-source: [[2026-04-07_insight_knowledge-base.md]]
+source: [[2026-04-07_insight_rails-ruby-terms.md]]
 ---
 
-## Summary（3行）
-- `db/seeds.rb`** の初期データをDBに入れるコマンド**
-- `db:seed` は `db/seeds.rb` を読み込んで、初期データや参照データを投入するときに使います。新しい環境を作ったときや、開発環境をそろえたいときによく使います。何度も実行する可能性があるので、重複しにくい書き方にすることが大切です。 ([Ruby on Rails Guides](https://guides.rubyonrails.org/command_line.html "The Rails Command Line — Ruby on Rails Guides"))
-- bin/rails db:seed
+## Summary
+- `db:seed` は `db/seeds.rb` の初期データを DB に投入するコマンドです。
+- 管理者ユーザーやマスターデータの投入でよく使います。
+- 何度も実行される前提で、重複しにくい書き方が大切です。
 
 ## Tags
-#rails #http #database
+#rails #database #seed
 
 ## Links
-- [[関連ノート]]
+- [[note-insight-db-create]]
+- [[note-insight-rails-db-prepare]]
 
 ## Body
-`db/seeds.rb`** の初期データをDBに入れるコマンド**
+`bin/rails db:seed` は、`db/seeds.rb` に書いたデータを DB に投入するコマンドです。管理者ユーザー、都道府県、カテゴリ一覧のように、最初に入れておきたい初期データや参照データを登録するときによく使います。
 
-**解説：**
-`db:seed` は `db/seeds.rb` を読み込んで、初期データや参照データを投入するときに使います。新しい環境を作ったときや、開発環境をそろえたいときによく使います。何度も実行する可能性があるので、重複しにくい書き方にすることが大切です。 ([Ruby on Rails Guides](https://guides.rubyonrails.org/command_line.html "The Rails Command Line — Ruby on Rails Guides"))
+seed は一度だけでなく複数回実行されることもあるため、重複しにくい書き方にしておくことが重要です。たとえば `find_or_create_by!` を使うと、同じデータを二重に作りにくくできます。
 
-具体例：
-
-```bash
-bin/rails db:seed
-```
-
-このコードでは、`db/seeds.rb` に書いた初期データをデータベースへ投入するために `db:seed` を使っています。
+## Action
+- [ ] `db/seeds.rb` を idempotent に書く代表例を別ノートにする
