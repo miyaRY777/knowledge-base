@@ -65,18 +65,16 @@
 
 ---
 
-## 次回の回し方
+## 運用ルール
 
-1. Raycast のメモを `knowledge/inbox/` に入れる
-2. `distill` でノート化する
-3. 関連テーマの MOC を更新する
-4. 月次の入口としてこの MOC にテーマ追加や重要概念を追記する
+- knowledge-base 全体の運用ルールは [[knowledge-base-operations]] に集約する
 
 ---
 
 ## 関連リンク
 
 - [[2026-04-07_insight_knowledge-base.md]]
+- [[knowledge-base-operations]]
 - [[map-http-client-basics]]
 - [[map-javascript-loop-basics]]
 - [[map-rails-admin-and-seed-basics]]
