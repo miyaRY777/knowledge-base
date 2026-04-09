@@ -33,3 +33,5 @@ nil.present?    # => false
 
 ## Action
 - [ ] `if value.present?` が読みやすい場面の例を増やす
+
+<!-- review_log: 2026-04-09 -->

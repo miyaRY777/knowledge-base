@@ -38,3 +38,5 @@ value.presence  # => nil
 
 ## Action
 - [ ] 判定対象ごとの差分表を追加する
+
+<!-- review_log: 2026-04-09 -->

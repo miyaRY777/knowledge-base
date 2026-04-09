@@ -34,3 +34,6 @@ false.blank?    # => true
 
 ## Action
 - [ ] `blank?` が `false` になる代表例も追加する
+
+
+<!-- review_log: 2026-04-09 -->
