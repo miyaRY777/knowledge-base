@@ -1,0 +1,81 @@
+# コンピュータ基礎構成マップ
+
+> **このMOCで分かること**: 5大装置を中心に、CPU・記憶装置・フォン・ノイマン型アーキテクチャのつながりを俯瞰できる
+
+---
+
+## サマリー
+
+| # | 項目 | 概要 | ノート |
+|---|------|------|--------|
+| 1 | 5大装置 | コンピュータを役割で整理する基本枠組み | [[note-insight-computer-five-major-units]] |
+| 2 | 入力装置 | データや命令を取り込む入口 | [[note-insight-input-device]] |
+| 3 | 出力装置 | 処理結果を外に見せる出口 | [[note-insight-output-device]] |
+| 4 | 記憶装置 | データやプログラムを保存する装置 | [[note-insight-storage-device]] |
+| 5 | 主記憶装置 | CPU がすぐ使う一時領域 | [[note-insight-main-memory]] |
+| 6 | 補助記憶装置 | データを長期保存する場所 | [[note-insight-secondary-storage]] |
+| 7 | 制御装置 | 各装置に指示を出す司令塔 | [[note-insight-control-unit]] |
+| 8 | 演算装置 | 計算や比較を実行する装置 | [[note-insight-arithmetic-unit]] |
+| 9 | CPU | 制御装置と演算装置をまとめた中心装置 | [[note-insight-cpu]] |
+| 10 | フォン・ノイマン型アーキテクチャ | 5大装置の考え方の土台 | [[note-insight-von-neumann-architecture]] |
+
+---
+
+## 5大装置の全体像
+
+[[note-insight-computer-five-major-units]]
+
+5大装置は、コンピュータを役割ごとに分けて理解するための出発点です。個別の装置を覚える前に、まず全体の枠組みを見ると関係がつかみやすくなります。
+
+---
+
+## 入出力
+
+[[note-insight-input-device]]
+[[note-insight-output-device]]
+
+入力装置は情報を取り込み、出力装置は処理結果を外に見せます。人とコンピュータの接点を担う2つの役割です。
+
+---
+
+## 記憶
+
+[[note-insight-storage-device]]
+[[note-insight-main-memory]]
+[[note-insight-secondary-storage]]
+
+記憶装置は、作業中の一時保持と長期保存で役割が分かれます。主記憶装置と補助記憶装置の違いを分けて理解すると整理しやすくなります。
+
+---
+
+## 処理の中心
+
+[[note-insight-control-unit]]
+[[note-insight-arithmetic-unit]]
+[[note-insight-cpu]]
+
+制御装置が流れを管理し、演算装置が実際の計算や比較を担当します。CPU はその2つをまとめた中心装置です。
+
+---
+
+## 設計の土台
+
+[[note-insight-von-neumann-architecture]]
+
+フォン・ノイマン型アーキテクチャは、5大装置でコンピュータを理解するための土台になる考え方です。
+
+---
+
+## 未決事項（Open Questions）
+
+| 項目 | 期限 | 担当 | ノート |
+|------|------|------|--------|
+| 主記憶装置とキャッシュの違いをどう整理するか | - | - | [[note-insight-main-memory]] |
+| SSD と HDD の違いを別ノート化するか | - | - | [[note-insight-secondary-storage]] |
+| プログラム内蔵方式をどこまで掘るか | - | - | [[note-insight-von-neumann-architecture]] |
+
+---
+
+## 関連リンク
+
+- [[map-2026-04-learning]]
