@@ -8,10 +8,11 @@ source: [[2026-04-11_insight_action-policy-and-duration-review]]
 ## Summary
 - `authorize!` は認可 NG のときに例外で止めるため、ハードブロック向きです。
 - `allowed_to?` は真偽値で判定できるため、ソフトブロック向きです。
+- 実装上は、`authorize!` はコントローラで使われやすく、`allowed_to?` はビューや画面分岐で使われやすいです。
 - 認可結果をどう扱いたいかで使い分けます。
 
 ## Tags
-#rails #authorization #actionpolicy
+#rails #authorization #actionpolicy #要復習
 
 ## Links
 - [[2026-04-11-action-policy-shares-controller]]
@@ -19,7 +20,7 @@ source: [[2026-04-11_insight_action-policy-and-duration-review]]
 - [[note-insight-action-policy-responsibility-separation]]
 
 ## Body
-`authorize!` と `allowed_to?` の大きな違いは、認可に失敗したときの扱いです。`authorize!` は失敗時に例外を発生させるので、その場で処理を止めたいケースに向いています。一方の `allowed_to?` は `true` / `false` を返すため、画面表示を続けながら操作制御やメッセージ表示を行いたいケースに向いています。
+`authorize!` と `allowed_to?` の大きな違いは、認可に失敗したときの扱いです。`authorize!` は失敗時に例外を発生させるので、その場で処理を止めたいケースに向いています。そのため、実装ではコントローラで使われることが多いです。一方の `allowed_to?` は `true` / `false` を返すため、画面表示を続けながら操作制御やメッセージ表示を行いたいケースに向いています。こちらはビューや画面内の分岐で使われることが多いです。
 
 ## Example
 ```ruby
@@ -34,3 +35,5 @@ end
 
 ## Action
 - [ ] `authorize!` の内部でどのように例外が流れるかを調べる
+
+<!-- review_log: 2026-04-11 -->
