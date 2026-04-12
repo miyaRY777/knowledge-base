@@ -11,7 +11,7 @@ source: [[2026-04-09_insight-entry-point-css-entry-build-output-stimulus-classes
 - HTML 側に必要な class 指定がないと、使い方によってはエラーになるため注意が必要です。
 
 ## Tags
-#frontend #stimulus #javascript #css #要復習
+#frontend #stimulus #javascript #css #要復習 #要復習 #要復習
 
 ## Links
 - [[2026-04-09-tabs-controller-css-refactor]]
@@ -46,4 +46,4 @@ export default class extends Controller {
 ## Action
 - [ ] `hasHiddenClass` など関連アクセサも整理する
 
-<!-- review_log: 2026-04-09 -->
+<!-- review_log: 2026-04-09,2026-04-12,2026-04-12 -->

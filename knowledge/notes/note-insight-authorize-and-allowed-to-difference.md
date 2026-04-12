@@ -12,7 +12,7 @@ source: [[2026-04-11_insight_action-policy-and-duration-review]]
 - 認可結果をどう扱いたいかで使い分けます。
 
 ## Tags
-#rails #authorization #actionpolicy #要復習
+#rails #authorization #actionpolicy
 
 ## Links
 - [[2026-04-11-action-policy-shares-controller]]
@@ -35,5 +35,3 @@ end
 
 ## Action
 - [ ] `authorize!` の内部でどのように例外が流れるかを調べる
-
-<!-- review_log: 2026-04-11 -->

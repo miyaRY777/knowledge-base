@@ -11,7 +11,7 @@ source: [[2026-04-10_insight_computer-five-major-units]]
 - 部品ごとの役割を整理するときの土台になる考え方です。
 
 ## Tags
-#computer #architecture #basics #要復習
+#computer #architecture #basics
 
 ## Links
 - [[note-insight-input-device]]
@@ -41,5 +41,3 @@ puts five_units
 
 ## Action
 - [ ] 5大装置と実際のハードウェア部品の対応例を追加する
-
-<!-- review_log: 2026-04-11 -->

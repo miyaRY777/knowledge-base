@@ -11,7 +11,7 @@ source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 - `present?` と `||` を組み合わせるより簡潔になることがあります。
 
 ## Tags
-#rails #activesupport #fallback #要復習 #要復習
+#rails #activesupport #fallback
 
 ## Links
 - [[note-insight-rails-presence-use-case]]
@@ -31,5 +31,3 @@ label.presence || "この部屋の趣味" # => "この部屋の趣味"
 
 ## Action
 - [ ] フォーム入力以外の活用例も追加する
-
-<!-- review_log: 2026-04-09,2026-04-09 -->

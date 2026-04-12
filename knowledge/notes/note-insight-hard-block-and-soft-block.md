@@ -12,7 +12,7 @@ source: [[2026-04-11_insight_action-policy-and-duration-review]]
 - どこまで止めるべきかで使い分けます。
 
 ## Tags
-#rails #authorization #actionpolicy #要復習
+#rails #authorization #actionpolicy
 
 ## Links
 - [[2026-04-11-action-policy-shares-controller]]
@@ -34,5 +34,3 @@ end
 
 ## Action
 - [ ] ハードブロックとソフトブロックの判断基準を具体例つきで整理する
-
-<!-- review_log: 2026-04-11 -->

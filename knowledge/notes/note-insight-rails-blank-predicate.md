@@ -11,7 +11,7 @@ source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 - `nil` の可能性がある値でも使いやすく、Rails ではよく使われます。
 
 ## Tags
-#rails #activesupport #predicate #要復習
+#rails #activesupport #predicate
 
 ## Links
 - [[note-insight-rails-blank-is-safe]]
@@ -34,6 +34,3 @@ false.blank?    # => true
 
 ## Action
 - [ ] `blank?` が `false` になる代表例も追加する
-
-
-<!-- review_log: 2026-04-09 -->

@@ -11,7 +11,7 @@ source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 - `blank?`、`present?`、`presence` は Rails で空判定やフォールバックを簡潔に書くために便利です。
 
 ## Tags
-#ruby #rails #comparison #要復習
+#ruby #rails #comparison
 
 ## Links
 - [[note-insight-ruby-nil-predicate]]
@@ -38,5 +38,3 @@ value.presence  # => nil
 
 ## Action
 - [ ] 判定対象ごとの差分表を追加する
-
-<!-- review_log: 2026-04-09 -->

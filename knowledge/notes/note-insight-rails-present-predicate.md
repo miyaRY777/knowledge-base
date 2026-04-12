@@ -11,7 +11,7 @@ source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 - `blank?` を否定するより読みやすくなることがあります。
 
 ## Tags
-#rails #activesupport #predicate #要復習
+#rails #activesupport #predicate
 
 ## Links
 - [[note-insight-rails-blank-predicate]]
@@ -33,5 +33,3 @@ nil.present?    # => false
 
 ## Action
 - [ ] `if value.present?` が読みやすい場面の例を増やす
-
-<!-- review_log: 2026-04-09 -->
