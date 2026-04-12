@@ -13,6 +13,7 @@
 | 3 | 増減式 | ループごとに値を増減させる部分 | [[note-insight-increment-expression]] |
 | 4 | 無限ループ | 終了条件がなく止まらない状態 | [[note-insight-infinite-loop]] |
 | 5 | 配列とループ処理 | 配列を順番に取り出して処理する方法 | [[note-insight-array-loop-processing]] |
+| 6 | forEachとfind | 全件処理と1件検索の使い分け | [[note-insight-array-foreach-and-find]] |
 
 ---
 
@@ -41,10 +42,12 @@
 ## セクション3: 配列処理への応用
 
 [[note-insight-array-loop-processing]]
+[[note-insight-array-foreach-and-find]]
 
 **ポイント**:
 - `length` を使えば先頭から末尾まで順番に処理できる
 - 文字列メソッドとの組み合わせで実用的な変換もできる
+- `forEach` は全件更新、`find` は最初の1件取得に向く
 
 ---
 
@@ -52,7 +55,7 @@
 
 | 項目 | 期限 | 担当 | ノート |
 |------|------|------|--------|
-| `for` と `forEach` と `map` の使い分けは何か | - | - | [[note-insight-for-loop]] |
+| `for` と `forEach` と `map` の使い分けは何か | - | - | [[note-insight-array-foreach-and-find]] |
 | 逆順ループが必要になる典型例は何か | - | - | [[note-insight-array-loop-processing]] |
 
 ---
@@ -64,3 +67,4 @@
 - [[note-insight-increment-expression]]
 - [[note-insight-infinite-loop]]
 - [[note-insight-array-loop-processing]]
+- [[note-insight-array-foreach-and-find]]
