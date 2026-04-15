@@ -2,7 +2,7 @@
 id: note-insight-association-size-vs-count
 title: 関連データ件数確認で size を使う要点
 created: 2026-04-13
-source: [[2026-04-13_insight_test-db-seeds-destroy-size-slug.md]]
+source: [[2026-04-13_insight_test-db-seeds-destroy-size-slug.md]]review_streak: 0review_streak: 1
 ---
 
 ## Summary（3行）
@@ -11,7 +11,7 @@ source: [[2026-04-13_insight_test-db-seeds-destroy-size-slug.md]]
 - `destroy` 後の確認では、関連の読み込み状態とのズレを避けたいときに `size` が自然
 
 ## Tags
-#rails #activerecord #association #test
+#rails #activerecord #association #test #要復習
 
 ## Links
 - [[note-insight-active-record-relation]]

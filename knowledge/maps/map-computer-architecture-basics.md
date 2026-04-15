@@ -17,7 +17,12 @@
 | 7 | 制御装置 | 各装置に指示を出す司令塔 | [[note-insight-control-unit]] |
 | 8 | 演算装置 | 計算や比較を実行する装置 | [[note-insight-arithmetic-unit]] |
 | 9 | CPU | 制御装置と演算装置をまとめた中心装置 | [[note-insight-cpu]] |
-| 10 | フォン・ノイマン型アーキテクチャ | 5大装置の考え方の土台 | [[note-insight-von-neumann-architecture]] |
+| 10 | マザーボード | 各部品を接続する基盤 | [[note-insight-motherboard]] |
+| 11 | バス | 部品間でデータを運ぶ通り道 | [[note-insight-bus]] |
+| 12 | スロット / ソケット | 部品を取り付ける接続口 | [[note-insight-slot-and-socket]] |
+| 13 | 命令 | CPU に実行内容を伝えるデータ | [[note-insight-instruction]] |
+| 14 | フェッチ・デコード・実行 | CPU が命令を処理する基本の流れ | [[note-insight-fetch-decode-execute]] |
+| 15 | フォン・ノイマン型アーキテクチャ | 5大装置の考え方の土台 | [[note-insight-von-neumann-architecture]] |
 
 ---
 
@@ -48,6 +53,16 @@
 
 ---
 
+## 接続の土台
+
+[[note-insight-motherboard]]
+[[note-insight-bus]]
+[[note-insight-slot-and-socket]]
+
+CPU や記憶装置は単独で並んでいるだけではなく、マザーボード上で接続されて連携します。部品同士をどうつなぐかという視点で見ると、バスやスロット / ソケットの役割も理解しやすくなります。
+
+---
+
 ## 処理の中心
 
 [[note-insight-control-unit]]
@@ -55,6 +70,15 @@
 [[note-insight-cpu]]
 
 制御装置が流れを管理し、演算装置が実際の計算や比較を担当します。CPU はその2つをまとめた中心装置です。
+
+---
+
+## 実行の流れ
+
+[[note-insight-instruction]]
+[[note-insight-fetch-decode-execute]]
+
+CPU は、メモリに読み込まれた命令を順番に処理して動きます。命令という単位で何をするかが決まり、その処理はフェッチ、デコード、実行の流れを繰り返すことで進みます。全体像としては `ストレージ -> メモリ -> CPU` の流れで理解するとつながりやすいです。
 
 ---
 

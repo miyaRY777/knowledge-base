@@ -1,8 +1,8 @@
 ---
 id: note-insight-instruction
-title: 命令はCPUに何をするかを伝えるデータ
+title: CPUにおける命令とは何か
 created: 2026-04-14
-source: [[2026-04-14_insight_cpu-basic-terms]]
+source: [[2026-04-14_insight_cpu-basic-terms]]review_streak: 0
 ---
 
 ## Summary
