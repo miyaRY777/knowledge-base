@@ -21,6 +21,15 @@
 | 11 | headers | 追加情報を通信に載せる仕組み | [[note-insight-headers]] |
 | 12 | Content-Type | 送信データの形式を伝えるヘッダー | [[note-insight-content-type]] |
 | 13 | JSONPlaceholder | HTTP 通信を試せる練習用 API | [[note-insight-jsonplaceholder]] |
+| 14 | ステートレス | HTTP が前回状態を自動保持しない性質 | [[note-insight-stateless]] |
+| 15 | Cookie | ブラウザに状態を保存する仕組み | [[note-insight-cookie]] |
+| 16 | Cookieが必要な理由 | ステートレスな HTTP を補う考え方 | [[note-insight-cookie-purpose]] |
+| 17 | Set-Cookieヘッダー | サーバーが Cookie 保存を指示するレスポンスヘッダー | [[note-insight-set-cookie-header]] |
+| 18 | Cookieヘッダー | ブラウザが Cookie を送り返すリクエストヘッダー | [[note-insight-cookie-header]] |
+| 19 | expires属性 | Cookie の有効期限を決める属性 | [[note-insight-cookie-expires]] |
+| 20 | HttpOnly属性 | JavaScript から Cookie を参照できなくする属性 | [[note-insight-cookie-httponly]] |
+| 21 | Secure属性 | HTTPS のときだけ Cookie を送る属性 | [[note-insight-cookie-secure]] |
+| 22 | Rails cookies | Rails で Cookie を読み書きする仕組み | [[note-insight-rails-cookies]] |
 
 ---
 
@@ -66,6 +75,25 @@
 
 ---
 
+## セクション4: 状態保持と Cookie
+
+[[note-insight-stateless]]
+[[note-insight-cookie]]
+[[note-insight-cookie-purpose]]
+[[note-insight-set-cookie-header]]
+[[note-insight-cookie-header]]
+[[note-insight-cookie-expires]]
+[[note-insight-cookie-httponly]]
+[[note-insight-cookie-secure]]
+[[note-insight-rails-cookies]]
+
+**ポイント**:
+- HTTP はステートレスなので、そのままではログイン状態を維持できない
+- サーバーは `Set-Cookie` で保存を指示し、ブラウザは `Cookie` ヘッダーで送り返す
+- `expires` `HttpOnly` `Secure` は Cookie の保持期間や安全性を調整する属性
+
+---
+
 ## 未決事項（Open Questions）
 
 | 項目 | 期限 | 担当 | ノート |
@@ -73,6 +101,7 @@
 | Fetch API と Axios を実務でどう使い分けるか | - | - | [[note-insight-fetch-api]] |
 | 通信失敗時の標準的なエラーハンドリングの型は何か | - | - | [[note-insight-promise]] |
 | 認証付き API で headers をどう設計するか | - | - | [[note-insight-headers]] |
+| SameSite 属性をどう整理するか | - | - | [[note-insight-cookie-secure]] |
 
 ---
 
@@ -91,3 +120,12 @@
 - [[note-insight-headers]]
 - [[note-insight-content-type]]
 - [[note-insight-jsonplaceholder]]
+- [[note-insight-stateless]]
+- [[note-insight-cookie]]
+- [[note-insight-cookie-purpose]]
+- [[note-insight-set-cookie-header]]
+- [[note-insight-cookie-header]]
+- [[note-insight-cookie-expires]]
+- [[note-insight-cookie-httponly]]
+- [[note-insight-cookie-secure]]
+- [[note-insight-rails-cookies]]
