@@ -17,6 +17,7 @@ source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 - [[note-insight-set-cookie-header]]
 - [[note-insight-cookie-secure]]
 - [[note-insight-cookie]]
+- [[note-insight-cookie-samesite]]
 
 ## Body
 `HttpOnly` 属性を付けた Cookie は、ブラウザ内の JavaScript から読み取れなくなります。

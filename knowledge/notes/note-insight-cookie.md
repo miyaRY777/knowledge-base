@@ -19,6 +19,12 @@ source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 - [[note-insight-stateless]]
 - [[note-insight-set-cookie-header]]
 - [[note-insight-cookie-header]]
+- [[note-insight-session-cookie]]
+- [[note-insight-persistent-cookie]]
+- [[note-insight-first-party-cookie]]
+- [[note-insight-third-party-cookie]]
+- [[note-insight-cookie-samesite]]
+- [[note-insight-cookie-deletion]]
 
 ## Body
 Cookie は、Web サイトがユーザーの状態をブラウザ側に覚えさせるための仕組みです。
@@ -39,4 +45,4 @@ Cookie: user_id=12345
 このコードでは、サーバーが保存を指示した Cookie を、ブラウザが次回のリクエストで送り返しています。
 
 ## Action
-- [ ] セッションCookieと永続Cookieの違いも整理する
+- [ ] Cookie の属性ごとの役割を見比べて整理する

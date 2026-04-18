@@ -17,6 +17,7 @@ source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 - [[note-insight-set-cookie-header]]
 - [[note-insight-cookie-httponly]]
 - [[note-insight-cookie]]
+- [[note-insight-cookie-samesite]]
 
 ## Body
 `Secure` 属性が付いた Cookie は、HTTPS で接続しているときだけブラウザから送信されます。
@@ -31,4 +32,4 @@ Set-Cookie: user_id=12345; Secure
 このコードでは、安全な HTTPS 通信のときだけ `user_id` の Cookie を送るようにしています。
 
 ## Action
-- [ ] SameSite 属性も合わせて整理する
+- [ ] HTTPS がない環境での制約も別ノートで確認する

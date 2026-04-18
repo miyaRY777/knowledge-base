@@ -19,6 +19,10 @@ source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 - [[note-insight-cookie-httponly]]
 - [[note-insight-cookie-expires]]
 - [[note-insight-cookie-secure]]
+- [[note-insight-cookie-samesite]]
+- [[note-insight-session-cookie]]
+- [[note-insight-persistent-cookie]]
+- [[note-insight-cookie-deletion]]
 
 ## Body
 `Set-Cookie` は HTTP レスポンスで使われ、サーバーがブラウザに対して「この Cookie を保存してください」と伝えるためのヘッダーです。
