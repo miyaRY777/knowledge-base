@@ -107,6 +107,7 @@
 
 ## 関連リンク
 
+- [[map-cookie-basics]]
 - [[note-insight-http-request]]
 - [[note-insight-promise]]
 - [[note-insight-fetch-api]]
