@@ -1,0 +1,36 @@
+---
+id: note-insight-session-id
+title: セッションIDの要点
+created: 2026-04-21
+source: [[2026-04-21_insight_session-cookie-basics.md]]
+---
+
+## Summary
+- **セッションID は、どのユーザーのセッションかを見分けるための識別子です。**
+- セッション本体はサーバー側にあり、ブラウザはその参照キーとしてセッションIDを持つのが一般的です。
+- セッションID が漏れると他人になりすませる危険があるため、取り扱いには注意が必要です。
+
+## Tags
+#http #web #session #security
+
+## Links
+- [[note-insight-session]]
+- [[note-insight-session-vs-cookie]]
+- [[note-insight-cookie-header]]
+- [[note-insight-set-cookie-header]]
+
+## Body
+セッションID は、サーバー側に保存されているセッション情報を見つけるための識別子です。
+ブラウザは通常、ログイン情報やカート内容そのものを持つのではなく、その情報に対応するセッションIDだけを保持します。
+サーバーはリクエストで送られてきた ID を見て、どのユーザーの状態を使うかを判断します。
+この ID が第三者に漏れると、本来のユーザーになりすましてアクセスされるおそれがあるため、安全な管理が重要です。
+
+## Example
+```http
+Cookie: _app_session=abc123xyz
+```
+
+このコードでは、ブラウザが保存しているセッションIDをサーバーに送り、対応するセッション情報を特定できるようにしています。
+
+## Action
+- [ ] セッション固定化攻撃との関係を別ノートで整理する

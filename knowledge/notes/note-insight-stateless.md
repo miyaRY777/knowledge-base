@@ -16,6 +16,7 @@ source: [[2026-04-17_insight_cookie-http-stateless.md]]
 ## Links
 - [[note-insight-cookie]]
 - [[note-insight-cookie-purpose]]
+- [[note-insight-session]]
 - [[note-insight-http-request]]
 
 ## Body
