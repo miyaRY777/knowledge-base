@@ -35,3 +35,4 @@ Set-Cookie: session_id=abc123; SameSite=Lax; Secure
 
 ## Action
 - [ ] `Lax` `Strict` `None` の違いをリクエスト例でも見比べる
+<!-- review_log: 2026-04-18 -->

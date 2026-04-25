@@ -40,3 +40,4 @@ Fetch -> Decode -> Execute -> Fetch -> ...
 
 ## Action
 - [ ] メモリやプログラムカウンタとの関係も後で補足する
+<!-- review_log: 2026-04-14 -->
