@@ -11,7 +11,7 @@ source: [[2026-04-13_insight_test-db-seeds-destroy-size-slug.md]]review_streak: 
 - `destroy` 後の確認では、関連の読み込み状態とのズレを避けたいときに `size` が自然
 
 ## Tags
-#rails #activerecord #association #test #要復習
+#rails #activerecord #association #test #要復習 #要復習
 
 ## Links
 - [[note-insight-active-record-relation]]
@@ -27,3 +27,5 @@ user.posts.size
 ```
 
 このコードでは、削除後の関連データ件数を、関連の保持している状態も含めて確認するために `size` を使っています。
+
+<!-- review_log: 2026-04-13,2026-04-25 -->
