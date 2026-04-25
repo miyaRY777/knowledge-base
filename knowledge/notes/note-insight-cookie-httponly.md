@@ -22,7 +22,7 @@ source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 ## Body
 `HttpOnly` 属性を付けた Cookie は、ブラウザ内の JavaScript から読み取れなくなります。
 これにより、悪意あるスクリプトが Cookie を盗み出すリスクを減らせます。
-ただし、JavaScript から見えないだけで、ブラウザが HTTP リクエストでサーバーへ送る動作はそのまま行われます。
+ただし、JavaScript から見えないだけで、ブラウザが HTTP リクエストでサーバーへ送る動作はそのまま行われます。また、通信経路を HTTPS に限定する役割は持たないため、必要に応じて `Secure` と組み合わせて使うことが重要です。
 
 ## Example
 ```http

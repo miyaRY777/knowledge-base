@@ -22,7 +22,7 @@ source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 ## Body
 `Secure` 属性が付いた Cookie は、HTTPS で接続しているときだけブラウザから送信されます。
 これにより、暗号化されていない HTTP 通信で Cookie が漏れる危険を減らせます。
-Cookie の安全性を高めるときは、`Secure` と `HttpOnly` をそれぞれ別の役割として理解すると整理しやすいです。
+ただし、`Secure` を付けただけで Cookie 全体の安全性が十分になるわけではありません。通信経路を守る役割と、JavaScript からの参照を防ぐ役割は別なので、Cookie の安全性を高めるときは `Secure` と `HttpOnly` をそれぞれ別の役割として理解すると整理しやすいです。
 
 ## Example
 ```http
