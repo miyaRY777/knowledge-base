@@ -2,7 +2,7 @@
 id: note-insight-third-party-cookie
 title: サードパーティCookieの要点
 created: 2026-04-18
-source: [[2026-04-18_insight_cookie-basics-and-security.md]]
+source: [[2026-04-18_insight_cookie-basics-and-security.md]]review_streak: 0
 ---
 
 ## Summary
@@ -11,7 +11,7 @@ source: [[2026-04-18_insight_cookie-basics-and-security.md]]
 - 複数サイトをまたぐ追跡に使われやすいため、プライバシー面の制限対象になりやすいです。
 
 ## Tags
-#http #web #cookie #privacy
+#http #web #cookie #privacy #要復習
 
 ## Links
 - [[note-insight-cookie]]

@@ -11,7 +11,7 @@ source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
 - 各ボタンの見た目そのものは個別パーシャルに分かれている。
 
 ## Tags
-#insight #rails #kaminari #view
+#insight #rails #kaminari #view #要復習
 
 ## Links
 - [[2026-04-24-pagination]]
@@ -38,3 +38,5 @@ source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
 
 ## Action
 - [ ] Kaminari カスタムビューを読むときは、まず `_paginator.html.erb` と個別パーシャルの責務を分けて確認する
+
+<!-- review_log: 2026-04-25 -->

@@ -12,7 +12,7 @@ source: [[2026-04-21_insight_session-cookie-basics.md]]
 - セッション管理は、最初のアクセスで始まり、サーバー側で状態を保存して次のリクエストへつなげる流れとして理解できます。
 
 ## Tags
-#http #web #rails #session
+#http #web #rails #session #要復習 #要復習
 
 ## Links
 - [[note-insight-stateless]]
@@ -44,3 +44,5 @@ session[:cart_item_ids] ||= []
 
 ## Action
 - [ ] Rails の session が内部で Cookie とどう連携するかを確認する
+
+<!-- review_log: 2026-04-25,2026-04-25 -->

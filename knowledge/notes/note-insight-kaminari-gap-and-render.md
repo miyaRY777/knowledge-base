@@ -11,7 +11,7 @@ source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
 - Kaminari では全体テンプレートと個別パーシャルを `render` によって組み立てる理解が重要。
 
 ## Tags
-#insight #rails #kaminari #render #view
+#insight #rails #kaminari #render #view #要復習 #要復習
 
 ## Links
 - [[note-insight-kaminari-paginator-partial-role]]
@@ -32,3 +32,5 @@ source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
 
 ## Action
 - [ ] `render` を学ぶときは、コントローラのレスポンス制御とビュー部品の組み立てを分けて理解する
+
+<!-- review_log: 2026-04-25,2026-04-25 -->

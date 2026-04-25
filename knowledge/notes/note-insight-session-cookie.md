@@ -2,7 +2,7 @@
 id: note-insight-session-cookie
 title: セッションCookieの要点
 created: 2026-04-18
-source: [[2026-04-18_insight_cookie-basics-and-security.md]]
+source: [[2026-04-18_insight_cookie-basics-and-security.md]]review_streak: 0
 ---
 
 ## Summary
@@ -11,7 +11,7 @@ source: [[2026-04-18_insight_cookie-basics-and-security.md]]
 - 有効期限を明示しない Cookie は、この扱いになることがあります。
 
 ## Tags
-#http #web #cookie #session
+#http #web #cookie #session #要復習
 
 ## Links
 - [[note-insight-cookie]]
@@ -32,3 +32,5 @@ Set-Cookie: session_id=abc123; Path=/; HttpOnly
 
 ## Action
 - [ ] セッションとサーバー側セッションストアの関係も整理する
+
+<!-- review_log: 2026-04-25 -->

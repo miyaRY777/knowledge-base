@@ -2,7 +2,7 @@
 id: note-insight-persistent-cookie
 title: 永続Cookieの要点
 created: 2026-04-18
-source: [[2026-04-18_insight_cookie-basics-and-security.md]]
+source: [[2026-04-18_insight_cookie-basics-and-security.md]]review_streak: 0
 ---
 
 ## Summary
@@ -11,7 +11,7 @@ source: [[2026-04-18_insight_cookie-basics-and-security.md]]
 - 便利な一方で、長く残るぶん保存内容には注意が必要です。
 
 ## Tags
-#http #web #cookie
+#http #web #cookie #要復習
 
 ## Links
 - [[note-insight-cookie]]

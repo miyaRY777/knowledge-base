@@ -2,7 +2,7 @@
 id: note-insight-cookie-samesite
 title: SameSite属性の要点
 created: 2026-04-18
-source: [[2026-04-18_insight_cookie-basics-and-security.md]]
+source: [[2026-04-18_insight_cookie-basics-and-security.md]]review_streak: 0
 ---
 
 ## Summary
@@ -11,7 +11,7 @@ source: [[2026-04-18_insight_cookie-basics-and-security.md]]
 - `None` を使う場合は `Secure` も必要です。
 
 ## Tags
-#http #web #cookie #security #privacy
+#http #web #cookie #security #privacy #要復習
 
 ## Links
 - [[note-insight-cookie]]
