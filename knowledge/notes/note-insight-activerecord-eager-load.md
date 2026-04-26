@@ -17,7 +17,7 @@ source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
 - [[note-insight-fallback-url]]
 
 ## Body
-`eager_load` は、関連テーブルも含めて 1 回の JOIN クエリで取得したいときに使います。`includes` と似ていますが、SQL の組み立て方が違い、関連先カラムを使った条件や順序付けを扱いやすいのが特徴です。
+`eager_load` は、関連テーブルも含めて 1 回の JOIN クエリで取得したいときに使います。`LEFT OUTER JOIN` を使って親と関連先をまとめて読み込むので、関連先カラムを使った条件や順序付けを扱いやすいのが特徴です。一方で、JOIN で結果を広げるぶん、親データが重複した行として増えやすく、大きなデータでは重くなることがあります。
 
 ## Example
 ```ruby
