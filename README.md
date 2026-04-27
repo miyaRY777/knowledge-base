@@ -33,6 +33,7 @@ knowledge-base/
     ├── inbox/               # 🧲 COLLECT: Raycastメモなどの生データ
     │   └── done/            # distill済みのメモ
     ├── notes/               # 📝 DISTILL: アトミックノート（1ノート1アイデア）
+    ├── resources/           # 📚 参照用の外部情報ストック（クイズ対象外）
     ├── maps/                # 🔗 CONNECT: MOC（テーマ別索引）
     ├── projects/            # 🎯 USE: 案件・プロジェクトノート
     ├── reference/           # 運用説明・手順・ルール
@@ -44,6 +45,7 @@ knowledge-base/
 ## 役割分担
 
 - `knowledge/`: 学習内容そのものを置く
+- `knowledge/resources/`: YouTube や Qiita など、あとで参照する外部情報を置く
 - `knowledge/reference/`: knowledge-base の運用手順やルールを置く
 - `docs/`: ナレッジ本体とは別の補助資料を置く
 - `.claude/` と `.codex/`: エージェントごとの設定を分けて持つ
@@ -121,6 +123,8 @@ Raycast などで書いたメモを inbox に取り込む。
 
 ## quiz の運用
 
+- クイズ対象は `knowledge/notes/` のノートのみとする
+- `knowledge/resources/` は参照用ストックとして扱い、クイズ対象にしない
 - 当日に学んだ内容は、その日のうちにクイズで復習する
 - 翌日は前日に学んだ内容をもう一度復習する
 - `#要復習` が付いたノートは別枠で復習する
@@ -137,6 +141,7 @@ Raycast などで書いたメモを inbox に取り込む。
 - **使えば賢くなる**: `/ask` や `/quiz` の結果をノートに書き戻す
 - **完璧より回す**: 溜めすぎず、こまめに流す
 - **capture を軽く保つ**: 生メモはテンプレに沿って inbox へ保存し、整理は distill で行う
+- **resources は参照用に保つ**: 外部情報は `knowledge/resources/` に置き、理解として定着したら `notes` に昇格させる
 - **done は確認後**: notes 保存と最低限の Links 整理を確認してから `knowledge/inbox/done/` に移す
 - **MOC は distill の直後に確認**: 新しい概念群が既存テーマに入るなら、その場で更新候補を見る
 

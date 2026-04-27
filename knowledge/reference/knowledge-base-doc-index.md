@@ -7,6 +7,7 @@
 - `knowledge/inbox/`: distill 前の生メモを置く
 - `knowledge/inbox/done/`: distill 済みの元メモを移す
 - `knowledge/notes/`: 1 ノート 1 アイデアの知識ノートを置く
+- `knowledge/resources/`: 参照用の外部情報ストックを置く
 - `knowledge/maps/`: MOC と入口ノートを置く
 - `knowledge/projects/`: プロジェクト別のノートを置く
 - `knowledge/reference/`: 運用説明、手順、ルールの入口を置く
@@ -29,4 +30,5 @@
 ## 補足
 
 - 学習内容そのものは `knowledge/notes/` と `knowledge/maps/` を見る
+- 外部情報のストックは `knowledge/resources/` に置き、クイズ対象には含めない
 - ここに置くのは、knowledge-base の運用説明や手順だけに絞る
