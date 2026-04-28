@@ -3,6 +3,7 @@ id: note-insight-n-plus-one
 title: N+1は関連データ取得でSQLが増えすぎる問題
 created: 2026-04-28
 source: [[2026-04-28_insight_n-plus-one-oop-database.md]]
+review_streak: 0
 ---
 
 ## Summary
@@ -11,7 +12,7 @@ source: [[2026-04-28_insight_n-plus-one-oop-database.md]]
 - Rails では `includes`、`preload`、`eager_load` などで関連を先読みして対策する。
 
 ## Tags
-#rails #activerecord #database #query #n-plus-one
+#rails #activerecord #database #query #n-plus-one #要復習
 
 ## Links
 - [[note-insight-activerecord-includes]]
