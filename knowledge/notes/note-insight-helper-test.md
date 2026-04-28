@@ -1,12 +1,13 @@
 ---
 id: note-insight-helper-test
-title: ヘルパーテストは表示用メソッドの振る舞いを確かめる
+title: ヘルパーテストとは？
 created: 2026-04-19
 source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
 ---
 
 ## Summary
-- ヘルパーテストは Helper メソッドの戻り値や表示内容を確認するテストです。
+- ヘルパーテストは、ViewHelper などの表示用メソッドを検証するテストです。
+- Helper メソッドの戻り値や、生成される表示内容が期待どおりかを確認します。
 - ビュー全体ではなく、表示用の小さなロジックだけを切り出して検証できます。
 - Rails では `ActionView::TestCase` を使ってテストを書くことがあります。
 
@@ -17,7 +18,9 @@ source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
 - [[note-insight-activerecord-eager-load]]
 
 ## Body
-ヘルパーテストは、ビューで使う補助メソッドが期待どおりに動くかを確かめるためのテストです。テンプレート全体を描画しなくても、表示用ロジックを小さく確認できるので、文字列整形や補助的な HTML 生成の検証に向いています。
+ヘルパーテストは、ViewHelper などの表示用メソッドが期待どおりに動くかを確かめるテストです。テンプレート全体を描画しなくても、文字列整形や補助的な HTML 生成のような小さな表示ロジックを検証できます。
+
+Rails では `ActionView::TestCase` を使って、Helper メソッドの戻り値を直接確認することがあります。
 
 ## Example
 ```ruby

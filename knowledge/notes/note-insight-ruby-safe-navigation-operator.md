@@ -1,6 +1,6 @@
 ---
 id: note-insight-ruby-safe-navigation-operator
-title: `&.` は nil なら呼び出さずに nil を返す
+title: `&.`とは？
 created: 2026-04-19
 source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
 ---
@@ -18,7 +18,9 @@ source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
 - [[note-insight-rails-presence]]
 
 ## Body
-`&.` は、値が `nil` かもしれない場面で `NoMethodError` を防ぐための演算子です。安全に呼べる反面、どこで `nil` になったのかが見えにくくなることもあるので、必要な箇所だけに絞って使うのが大切です。
+`&.` は、左側の値が `nil` かもしれない場面で安全にメソッドを呼び出すための Ruby の演算子です。左側が `nil` の場合はメソッドを呼ばず、そのまま `nil` を返すため、`NoMethodError` を避けられます。
+
+ただし、多用すると本来気づくべき `nil` を見逃しやすくなるので、必要な箇所だけに絞って使うのが大切です。
 
 ## Example
 ```ruby

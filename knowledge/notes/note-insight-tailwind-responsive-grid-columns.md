@@ -1,13 +1,13 @@
 ---
 id: note-insight-tailwind-responsive-grid-columns
-title: `md:grid-cols-2 lg:grid-cols-4` は画面幅で列数を切り替える
+title: `md:grid-cols-2 lg:grid-cols-4`とは？
 created: 2026-04-19
 source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
 ---
 
 ## Summary
-- `grid-cols-2` は 2 列、`grid-cols-4` は 4 列の Grid を作ります。
-- `md:` と `lg:` を付けると、画面サイズごとに適用する列数を切り替えられます。
+- `md:grid-cols-2 lg:grid-cols-4` は、Tailwind CSS で画面幅ごとに Grid の列数を切り替える指定です。
+- `md:` 以上では 2 列、`lg:` 以上では 4 列の Grid になります。
 - レスポンシブにカード一覧や一覧レイアウトを調整したいときに便利です。
 
 ## Tags
@@ -17,7 +17,9 @@ source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
 - [[note-insight-classlist-and-hidden]]
 
 ## Body
-`md:grid-cols-2 lg:grid-cols-4` は、Tailwind CSS のレスポンシブ接頭辞を使って Grid の列数を切り替える書き方です。中サイズ以上では 2 列、大サイズ以上では 4 列になり、画面幅に合わせて自然にレイアウトを変えられます。
+`md:grid-cols-2 lg:grid-cols-4` は、Tailwind CSS のレスポンシブ接頭辞を使って Grid の列数を切り替える書き方です。`md:` 以上の画面幅では 2 列、`lg:` 以上の画面幅では 4 列になり、画面サイズに合わせてレイアウトを変えられます。
+
+カード一覧や管理画面の一覧など、横幅に応じて見やすい列数へ調整したいときに使います。
 
 ## Example
 ```erb
