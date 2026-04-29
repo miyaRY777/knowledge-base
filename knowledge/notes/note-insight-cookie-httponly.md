@@ -3,6 +3,7 @@ id: note-insight-cookie-httponly
 title: HttpOnly属性の要点
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
+review_streak: 0
 ---
 
 ## Summary
@@ -11,7 +12,7 @@ source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 - サーバーとの HTTP 通信では引き続き Cookie を送れます。
 
 ## Tags
-#http #web #cookie #security
+#http #web #cookie #security #要復習
 
 ## Links
 - [[note-insight-set-cookie-header]]

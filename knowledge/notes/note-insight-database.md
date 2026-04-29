@@ -3,6 +3,7 @@ id: note-insight-database
 title: データベースはアプリのデータを保存して取り出す場所
 created: 2026-04-28
 source: [[2026-04-28_insight_n-plus-one-oop-database.md]]
+review_streak: 0
 ---
 
 ## Summary
@@ -11,7 +12,7 @@ source: [[2026-04-28_insight_n-plus-one-oop-database.md]]
 - Rails では Active Record を通して PostgreSQL や MySQL などを操作することが多い。
 
 ## Tags
-#database #sql #rails #activerecord
+#database #sql #rails #activerecord #要復習
 
 ## Links
 - [[note-insight-db-create]]
