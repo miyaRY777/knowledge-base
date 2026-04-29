@@ -149,11 +149,46 @@ def extract_review_streak(text: str) -> int:
     return int(match.group(1)) if match else 0
 
 
-def render_quiz_question(title: str) -> str:
+def quiz_subject(title: str) -> str:
     stripped = title.strip()
-    if stripped.endswith("とは何か"):
-        return f"Q. {stripped}？"
-    return f"Q. {stripped} とは何ですか？"
+    if "は" in stripped:
+        head, _tail = stripped.split("は", 1)
+        if 1 <= len(head) <= 30:
+            return head.strip()
+    for suffix in ("の要点", "とは何か"):
+        if stripped.endswith(suffix):
+            return stripped[: -len(suffix)].strip()
+    return stripped
+
+
+def render_quiz_question(note: dict[str, object], level: int = 3) -> str:
+    subject = quiz_subject(str(note["title"]))
+    tags = [str(tag) for tag in note["tags"]]
+    context_tags = [tag for tag in tags if tag not in {"要復習"}][:3]
+    context = f"（関連: {'、'.join('#' + tag for tag in context_tags)}）" if context_tags else ""
+
+    if level == 1:
+        return "\n".join([
+            f"Q. 「{subject}」とは何ですか？短く答えてください。{context}",
+            "回答は1〜2文で大丈夫です。",
+        ])
+
+    if level == 2:
+        return "\n".join([
+            f"Q. 「{subject}」について、自分の言葉で説明してください。{context}",
+            "回答では、次の2点を含めてください。",
+            "- 何を表す概念、仕組み、または問題なのか",
+            "- どのような場面で重要になるのか",
+        ])
+
+    prompts = [
+        f"Q. 「{subject}」について、自分の言葉で説明してください。{context}",
+        "回答では、次の観点を意識してください。",
+        "- どのような概念、仕組み、または問題なのか",
+        "- どのような場面で重要になるのか",
+        "- 実務やコードではどう扱う、またはどう対策するのか",
+    ]
+    return "\n".join(prompts)
 
 
 def update_review_state(path: Path, status: str) -> tuple[list[str], int]:
@@ -198,9 +233,9 @@ def judge_quiz_answer(answer: str, note: dict[str, object]) -> tuple[str, str]:
         elif any(token and token in normalized_answer for token in re.findall(r"[a-z0-9_+-]+|[一-龠]{2,}|[ぁ-んァ-ヴー]{3,}", summary)):
             keyword_hits += 1
 
-    if ratio >= 0.55 or keyword_hits >= 2:
+    if ratio >= 0.55 or (keyword_hits >= 2 and ratio >= 0.20):
         return "correct", f"要点が十分に含まれています（類似度 {ratio:.2f}）。"
-    if ratio >= 0.28 or keyword_hits >= 1:
+    if ratio >= 0.28 or (keyword_hits >= 1 and ratio >= 0.18):
         return "partial", f"一部は合っていますが、要点がまだ足りません（類似度 {ratio:.2f}）。"
     return "incorrect", f"要点との一致が弱いです（類似度 {ratio:.2f}）。"
 
@@ -545,7 +580,7 @@ def cmd_quiz(args: argparse.Namespace) -> int:
     for index, note in enumerate(picks, start=1):
         print(f"（{index}/{len(picks)}問目）\n")
         print("## 問題\n")
-        print(f"**{render_quiz_question(str(note['title']))}**\n")
+        print(f"{render_quiz_question(note, level=args.level)}\n")
         print(f"note_id: `{note['name']}`\n")
         if args.show_answer:
             answer = " / ".join(note["summary_lines"][:2]) if note["summary_lines"] else "要約なし"
@@ -708,6 +743,7 @@ def build_parser() -> argparse.ArgumentParser:
     quiz.add_argument("--today-only", action="store_true")
     quiz.add_argument("--yesterday", action="store_true")
     quiz.add_argument("--today")
+    quiz.add_argument("--level", type=int, choices=[1, 2, 3], default=3)
     quiz.add_argument("--show-answer", action="store_true")
     quiz.set_defaults(func=cmd_quiz)
 
