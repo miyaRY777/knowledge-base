@@ -1,16 +1,20 @@
 # knowledge-base
 
-Claude Code を活用した「外部脳」ナレッジベース。
-情報を **探せる・信じられる・使える** 状態に整理する。
+学習メモを **探せる・信じられる・使える** 状態に育てるためのナレッジベース。
+運用の基本は `Collect → Distill → Connect → Use` の CODE サイクル。
 
 ---
 
 ## 入口
 
-- ナレッジ本体を見る: `knowledge/`
-- 運用ドキュメントを見る: `knowledge/reference/`
-- Codex 用の運用ルールを見る: `AGENTS.md`
-- review 補助スクリプトを見る: `scripts/review_tag_sync.rb`
+| 目的 | 場所 |
+|------|------|
+| 生メモを置く | `knowledge/inbox/` |
+| アトミックノートを見る | `knowledge/notes/` |
+| テーマ別マップを見る | `knowledge/maps/` |
+| Codex の運用ルールを見る | `AGENTS.md` |
+| knowledge-base スキルを見る | `.codex/skills/knowledge-base/SKILL.md` |
+| 既存の運用資料を見る | `knowledge/reference/` |
 
 ---
 
@@ -19,141 +23,139 @@ Claude Code を活用した「外部脳」ナレッジベース。
 ```text
 knowledge-base/
 ├── README.md
-├── AGENTS.md                # Codex 用の運用ルール
-├── .claude/                 # Claude 用設定
-│   ├── agents/
-│   └── commands/
-├── .codex/                  # Codex 用設定
-│   └── skills/
-├── docs/                    # 補助ドキュメント・superpowers 用資料
-│   └── superpowers/
-├── scripts/                 # 運用補助スクリプト
-├── test/                    # スクリプトのテスト
+├── AGENTS.md
+├── .codex/
+│   └── skills/knowledge-base/
+├── .claude/
+├── docs/
+├── scripts/
+├── test/
 └── knowledge/
-    ├── inbox/               # 🧲 COLLECT: Raycastメモなどの生データ
-    │   └── done/            # distill済みのメモ
-    ├── notes/               # 📝 DISTILL: アトミックノート（1ノート1アイデア）
-    ├── resources/           # 📚 参照用の外部情報ストック（クイズ対象外）
-    ├── maps/                # 🔗 CONNECT: MOC（テーマ別索引）
-    ├── projects/            # 🎯 USE: 案件・プロジェクトノート
-    ├── reference/           # 運用説明・手順・ルール
-    └── .obsidian/           # Obsidian 設定
+    ├── inbox/      # Collect: 生メモ
+    ├── notes/      # Distill: 1ノート1アイデア
+    ├── maps/       # Connect: MOC / テーマ別索引
+    ├── projects/   # Use: 案件・プロジェクトノート
+    ├── resources/  # 参照用ストック
+    └── reference/  # 運用説明
 ```
 
 ---
 
-## 役割分担
+## CODE サイクル
 
-- `knowledge/`: 学習内容そのものを置く
-- `knowledge/resources/`: YouTube や Qiita など、あとで参照する外部情報を置く
-- `knowledge/reference/`: knowledge-base の運用手順やルールを置く
-- `docs/`: ナレッジ本体とは別の補助資料を置く
-- `.claude/` と `.codex/`: エージェントごとの設定を分けて持つ
-- `scripts/` と `test/`: review 更新などの運用を支える
+### 1. Collect
 
----
+メモを `knowledge/inbox/` に保存する。
 
-## 使い方（CODEサイクル）
-
-### 1. Collect — 情報を集める
-Raycast などで書いたメモを inbox に取り込む。
+ファイル名:
 
 ```text
-/capture rails-study    → inbox にファイルを生成
+YYYY-MM-DD_insight_{short-title}.md
 ```
 
-または Raycast のメモを `knowledge/inbox/YYYY-MM-DD_insight_{title}.md` に直接コピペ。
+### 2. Distill
 
-### 2. Distill — 要点を抽出する
+inbox のメモを読み、1ノート1アイデアの atomic note として `knowledge/notes/` に分ける。
 
-```text
-/distill 2026-04-01_insight_rails-study.md
+ルール:
+- 既存ノートとの重複を確認する
+- 完全に同じ概念なら既存ノート更新を優先する
+- 似ているが観点が違う場合は別ノートにして Links でつなぐ
+- 保存前に案を確認する
+
+### 3. Connect
+
+関連する notes を `knowledge/maps/` の MOC にまとめる。
+
+MOC には、サマリー、セクション、Open Questions、関連リンクを含める。
+MOC も保存前に案を確認する。
+
+### 4. Use
+
+検索、質問、クイズ、週次レビューで再利用する。
+
+```bash
+python3 .codex/skills/knowledge-base/scripts/kb_tool.py search callback
+python3 .codex/skills/knowledge-base/scripts/kb_tool.py ask "Callbacksの注意点は？"
+python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz --yesterday --level 2
+python3 .codex/skills/knowledge-base/scripts/kb_tool.py weekly-review
 ```
-
-1ノート1アイデアのアトミックノートに分割して `knowledge/notes/` に保存し、元ファイルを `knowledge/inbox/done/` に移す。
-
-### 3. Connect — つなぐ
-
-```text
-/moc rails-basics
-/moc rails-basics --update
-```
-
-テーマ別の MOC を作成・更新する。
-
-### 4. Use — 使う
-
-```text
-/ask Callbacksの注意点は？
-/search before_create
-/quiz
-/quiz #要復習
-/weekly-review
-```
-
-学習済みノートを検索し、クイズや週次レビューで再利用する。
 
 ---
 
-## コマンド一覧
+## 主要 MOC
 
-| コマンド | 説明 |
-|---------|------|
-| `/capture <title>` | inbox にメモファイルを生成 |
-| `/distill <file>` | inbox メモをアトミックノートに分割 |
-| `/moc <theme>` | テーマ別 MOC（索引）を生成・更新 |
-| `/ask <question>` | ナレッジベースを検索して根拠付きで回答 |
-| `/search <keyword>` | キーワードで全文検索 |
-| `/quiz [#tag] [N問]` | クイズ形式で復習（間違え管理付き） |
-| `/weekly-review` | 週次の棚卸しと振り返り |
-| `ruby scripts/review_tag_sync.rb --note PATH --action wrong|correct|check --date YYYY-MM-DD` | `#要復習` と `review_log` の補助更新 |
-
----
-
-## 主要ファイル
-
-| パス | 用途 |
-|------|------|
-| `README.md` | 人間向けの入口 |
-| `AGENTS.md` | Codex 向けの運用ルール |
-| `knowledge/reference/knowledge-base-doc-index.md` | knowledge-base 内の運用資料の入口 |
-| `scripts/review_tag_sync.rb` | `#要復習` と `review_log` の同期補助 |
+| MOC | テーマ |
+|-----|--------|
+| `knowledge/maps/map-web-security-basics.md` | Webセキュリティ、HTTPS、TLS、2FA |
+| `knowledge/maps/map-cyber-attack-basics.md` | サイバー攻撃の種類 |
+| `knowledge/maps/map-cookie-basics.md` | Cookie の基本と属性 |
+| `knowledge/maps/map-session-basics.md` | セッション、セッションID、期限、攻撃 |
+| `knowledge/maps/map-http-client-basics.md` | HTTP通信、Fetch、Axios |
+| `knowledge/maps/map-activerecord-query-basics.md` | ActiveRecord、SQL、N+1 |
+| `knowledge/maps/map-ruby-rails-predicate-basics.md` | `nil?`、`empty?`、`blank?`、`presence` |
+| `knowledge/maps/map-rails-basics.md` | Rails 基礎 |
+| `knowledge/maps/map-stimulus-basics.md` | Stimulus 基礎 |
+| `knowledge/maps/map-computer-architecture-basics.md` | コンピュータ構成 |
 
 ---
 
-## quiz の運用
+## クイズ運用
 
-- クイズ対象は `knowledge/notes/` のノートのみとする
-- `knowledge/resources/` は参照用ストックとして扱い、クイズ対象にしない
-- 当日に学んだ内容は、その日のうちにクイズで復習する
-- 翌日は前日に学んだ内容をもう一度復習する
-- `#要復習` が付いたノートは別枠で復習する
-- `#要復習` は間違えるたびに重複して追加してよい
-- その日に追加した `#要復習` は、その日のうちには外さない
-- 翌日以降に正解したときだけ、最古の `#要復習` を 1 個外す
+クイズ対象は基本的に `knowledge/notes/` の atomic note。
+
+対象の選び方:
+- 今日学んだノート
+- 昨日学んだノート
+- `#要復習` のノート
+- タグ指定したノート
+
+出題レベル:
+
+| レベル | 形式 |
+|--------|------|
+| 1 | 1問1答。用語や要点を1〜2文で短く答える |
+| 2 | 中間形式。概念と重要になる場面を説明する |
+| 3 | 総合説明。概念、場面、実務やコードでの扱いまで説明する |
+
+例:
+
+```bash
+python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz --today-only --level 1
+python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz --yesterday --level 2
+python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz --tag 要復習 --level 3
+```
+
+採点後の扱い:
+- `惜しい`、`不正解`、`スキップ` は `#要復習` を付ける
+- `#要復習` を保存するときは対象ノートと変更内容を確認する
+- `#要復習` は2回連続で正解したら外す
 
 ---
 
 ## 運用ルール
 
-- **1 Note, 1 Idea**: 1ノートに1つのアイデア
-- **自分の言葉**: コピペ禁止、要約して記述
-- **使えば賢くなる**: `/ask` や `/quiz` の結果をノートに書き戻す
-- **完璧より回す**: 溜めすぎず、こまめに流す
-- **capture を軽く保つ**: 生メモはテンプレに沿って inbox へ保存し、整理は distill で行う
-- **resources は参照用に保つ**: 外部情報は `knowledge/resources/` に置き、理解として定着したら `notes` に昇格させる
-- **done は確認後**: notes 保存と最低限の Links 整理を確認してから `knowledge/inbox/done/` に移す
-- **MOC は distill の直後に確認**: 新しい概念群が既存テーマに入るなら、その場で更新候補を見る
+- 推測で埋めない
+- 根拠となるノートやファイルを示す
+- 書き込み系の操作は保存前に案を確認する
+- ノート本文はコピペせず、自分の言葉で要約する
+- 重複メモは許容するが、distill 時に重複ノートの統合を検討する
+- inbox は軽く保ち、整理は distill で行う
+- MOC は新しい概念群が増えたタイミングで更新候補を見る
 
 ---
 
-## タグ一覧（例）
+## タグ例
 
 | タグ | 用途 |
 |------|------|
-| `#rails` | Rails関連 |
-| `#activerecord` | ActiveRecord関連 |
-| `#database` | DB・SQL関連 |
-| `#http` | HTTP・API関連 |
-| `#cs-basics` | CS基礎知識 |
-| `#要復習` | クイズで間違えた問題（重複可・review_log と同期） |
+| `#rails` | Rails |
+| `#activerecord` | ActiveRecord |
+| `#database` | DB / SQL |
+| `#http` | HTTP / API |
+| `#web` | Web 基礎 |
+| `#security` | セキュリティ |
+| `#cookie` | Cookie |
+| `#session` | セッション |
+| `#javascript` | JavaScript |
+| `#要復習` | クイズで復習が必要なノート |
