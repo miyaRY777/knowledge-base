@@ -149,6 +149,11 @@ def extract_review_streak(text: str) -> int:
     return int(match.group(1)) if match else 0
 
 
+def extract_frontmatter_field(text: str, key: str) -> str | None:
+    match = re.search(rf"^{re.escape(key)}:\s*(.+)$", text, flags=re.MULTILINE)
+    return match.group(1).strip() if match else None
+
+
 def quiz_subject(title: str) -> str:
     stripped = title.strip()
     if "は" in stripped:
@@ -191,15 +196,20 @@ def render_quiz_question(note: dict[str, object], level: int = 3) -> str:
     return "\n".join(prompts)
 
 
-def update_review_state(path: Path, status: str) -> tuple[list[str], int]:
+def update_review_state(path: Path, status: str, today: dt.date | None = None) -> tuple[list[str], int, str | None]:
     text = read_text(path)
     tags = extract_tags(text)
     review_tag = "要復習"
     streak = extract_review_streak(text)
+    reviewed_on = today or dt.date.today()
+    last_reviewed_on = extract_frontmatter_field(text, "last_reviewed_on")
 
     if status == "correct":
         if review_tag in tags:
-            streak += 1
+            if last_reviewed_on == reviewed_on.isoformat():
+                streak = min(max(streak, 1), 1)
+            else:
+                streak += 1
             if streak >= 2:
                 tags = [tag for tag in tags if tag != review_tag]
                 streak = 0
@@ -212,9 +222,10 @@ def update_review_state(path: Path, status: str) -> tuple[list[str], int]:
 
     updated = replace_tags_section(text, tags)
     updated = replace_frontmatter_field(updated, "review_streak", str(streak))
+    updated = replace_frontmatter_field(updated, "last_reviewed_on", reviewed_on.isoformat())
     if updated != text:
         write_text(path, updated)
-    return tags, streak
+    return tags, streak, reviewed_on.isoformat()
 
 
 def judge_quiz_answer(answer: str, note: dict[str, object]) -> tuple[str, str]:
@@ -598,22 +609,27 @@ def cmd_quiz_answer(args: argparse.Namespace) -> int:
 
     note = parse_note(path)
     status, reason = judge_quiz_answer(args.answer, note)
+    today = dt.date.fromisoformat(args.today) if args.today else dt.date.today()
+    reviewed_on = None
     if status == "correct":
         if args.write:
-            tags, streak = update_review_state(path, status="correct")
+            tags, streak, reviewed_on = update_review_state(path, status="correct", today=today)
         else:
             streak = extract_review_streak(str(note["text"]))
             tags = note["tags"]
-            if "要復習" in tags:
+            last_reviewed_on = extract_frontmatter_field(str(note["text"]), "last_reviewed_on")
+            if "要復習" in tags and last_reviewed_on != today.isoformat():
                 streak += 1
                 if streak >= 2:
                     tags = [tag for tag in tags if tag != "要復習"]
                     streak = 0
+            elif "要復習" in tags:
+                streak = min(max(streak, 1), 1)
         print("## 結果\n")
         print("✅ 正解\n")
     elif status == "partial":
         if args.write:
-            tags, streak = update_review_state(path, status="partial")
+            tags, streak, reviewed_on = update_review_state(path, status="partial", today=today)
         else:
             tags = list(note["tags"]) if "要復習" in note["tags"] else list(note["tags"]) + ["要復習"]
             streak = 0
@@ -621,14 +637,14 @@ def cmd_quiz_answer(args: argparse.Namespace) -> int:
         print("🔺 惜しい\n")
     elif status == "skip":
         if args.write:
-            tags, streak = update_review_state(path, status="skip")
+            tags, streak, reviewed_on = update_review_state(path, status="skip", today=today)
         else:
             tags = list(note["tags"]) if "要復習" in note["tags"] else list(note["tags"]) + ["要復習"]
             streak = 0
         print("## 正解\n")
     else:
         if args.write:
-            tags, streak = update_review_state(path, status="incorrect")
+            tags, streak, reviewed_on = update_review_state(path, status="incorrect", today=today)
         else:
             tags = list(note["tags"]) if "要復習" in note["tags"] else list(note["tags"]) + ["要復習"]
             streak = 0
@@ -652,6 +668,8 @@ def cmd_quiz_answer(args: argparse.Namespace) -> int:
     if args.write:
         print(f"\n## タグ更新\n現在のタグ: {' '.join(f'#{tag}' for tag in tags)}")
         print(f"連続正解回数: {streak}")
+        if reviewed_on:
+            print(f"最終復習日: {reviewed_on}")
     else:
         print("\n## タグ更新")
         print("`--write` を付けると `#要復習` の付け外しを保存します。")
@@ -750,6 +768,7 @@ def build_parser() -> argparse.ArgumentParser:
     quiz_answer = sub.add_parser("quiz-answer")
     quiz_answer.add_argument("note_id")
     quiz_answer.add_argument("answer")
+    quiz_answer.add_argument("--today")
     quiz_answer.add_argument("--write", action="store_true")
     quiz_answer.set_defaults(func=cmd_quiz_answer)
 
