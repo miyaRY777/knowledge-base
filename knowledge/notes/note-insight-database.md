@@ -16,6 +16,11 @@ last_reviewed_on: 2026-04-30
 #database #sql #rails #activerecord #要復習
 
 ## Links
+- [[note-insight-dbms]]
+- [[note-insight-sql]]
+- [[note-insight-database-table]]
+- [[note-insight-database-record]]
+- [[note-insight-database-column]]
 - [[note-insight-db-create]]
 - [[note-insight-db-migrate]]
 - [[note-insight-db-seed]]
@@ -34,4 +39,4 @@ FROM users;
 このコードでは、`users` テーブルに保存されているデータを取り出すために SQL を使っています。
 
 ## Action
-- [ ] テーブル、カラム、レコードの違いを整理する
+- [x] テーブル、カラム、レコードの違いを整理する
