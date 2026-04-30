@@ -3,7 +3,8 @@ id: note-insight-cookie-httponly
 title: HttpOnly属性の要点
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
-review_streak: 0
+review_streak: 1
+last_reviewed_on: 2026-04-30
 ---
 
 ## Summary

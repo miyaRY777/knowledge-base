@@ -3,6 +3,8 @@ id: note-insight-kaminari-page-navigation-partials
 title: Kaminariの個別パーシャルはページ番号や前後移動の見た目を担当する
 created: 2026-04-24
 source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
+review_streak: 0
+last_reviewed_on: 2026-04-30
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
 - `_first_page.html.erb` と `_last_page.html.erb` は先頭・末尾へのジャンプ用に使う。
 
 ## Tags
-#insight #rails #kaminari #view #要復習 #要復習
+#insight #rails #kaminari #view #要復習
 
 ## Links
 - [[note-insight-kaminari-paginator-partial-role]]

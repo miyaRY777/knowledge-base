@@ -3,7 +3,8 @@ id: note-insight-database
 title: データベースはアプリのデータを保存して取り出す場所
 created: 2026-04-28
 source: [[2026-04-28_insight_n-plus-one-oop-database.md]]
-review_streak: 0
+review_streak: 1
+last_reviewed_on: 2026-04-30
 ---
 
 ## Summary
