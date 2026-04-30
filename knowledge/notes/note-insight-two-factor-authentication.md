@@ -3,6 +3,8 @@ id: note-insight-two-factor-authentication
 title: 二要素認証は複数の要素で本人確認を強くする仕組み
 created: 2026-04-29
 source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
+review_streak: 1
+last_reviewed_on: 2026-04-30
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 - パスワードが漏れた場合でも、それだけではログインされにくくする効果がある。
 
 ## Tags
-#security #authentication #2fa #login
+#security #authentication #2fa #login #要復習
 
 ## Links
 - [[note-insight-internet-security]]

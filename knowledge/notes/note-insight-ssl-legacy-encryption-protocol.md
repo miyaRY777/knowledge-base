@@ -3,6 +3,8 @@ id: note-insight-ssl-legacy-encryption-protocol
 title: SSLは現在は使われない古い通信暗号化プロトコル
 created: 2026-04-29
 source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
+review_streak: 1
+last_reviewed_on: 2026-04-30
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 - 「SSL化」や「SSL証明書」という言い方は残っているが、実体は TLS と整理するとわかりやすい。
 
 ## Tags
-#web #security #ssl #tls #https
+#web #security #ssl #tls #https #要復習
 
 ## Links
 - [[note-insight-https]]

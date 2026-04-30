@@ -3,6 +3,8 @@ id: note-insight-ssl-certificate-name-for-tls
 title: SSL証明書は現在のTLS通信で使う証明書を指すことが多い
 created: 2026-04-29
 source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
+review_streak: 1
+last_reviewed_on: 2026-04-30
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 - ブラウザが証明書を確認し、問題がなければ HTTPS の暗号化通信を始められる。
 
 ## Tags
-#web #security #ssl #tls #certificate #https
+#web #security #ssl #tls #certificate #https #要復習
 
 ## Links
 - [[note-insight-https]]

@@ -3,6 +3,8 @@ id: note-insight-firewall-traffic-control
 title: ファイアウォールは通信を許可またはブロックする仕組み
 created: 2026-04-29
 source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
+review_streak: 1
+last_reviewed_on: 2026-04-30
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 - 必要な通信だけを許可し、不要または危険な通信を減らすために使われる。
 
 ## Tags
-#network #security #firewall #internet-security
+#network #security #firewall #internet-security #要復習
 
 ## Links
 - [[note-insight-internet-security]]
