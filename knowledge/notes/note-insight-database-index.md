@@ -3,6 +3,8 @@ id: note-insight-database-index
 title: インデックスは検索を速くするための目印
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-01
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-30_insight_database-fundamentals.md]]
 - ただし、追加や更新のコストも増えるため、必要な場所に貼る。
 
 ## Tags
-#database #sql #performance #rails
+#database #sql #performance #rails #要復習
 
 ## Links
 - [[note-insight-database-query]]

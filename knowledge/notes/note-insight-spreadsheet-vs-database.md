@@ -3,6 +3,8 @@ id: note-insight-spreadsheet-vs-database
 title: 表計算ソフトとデータベースは管理できる規模と整合性が違う
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-01
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-30_insight_database-fundamentals.md]]
 - 重複や矛盾を減らすには、一元管理や制約が重要になる。
 
 ## Tags
-#database #data-management
+#database #data-management #要復習
 
 ## Links
 - [[note-insight-database]]

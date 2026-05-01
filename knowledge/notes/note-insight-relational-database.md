@@ -3,6 +3,8 @@ id: note-insight-relational-database
 title: リレーショナルデータベースはテーブル同士の関係でデータを管理する
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-01
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-30_insight_database-fundamentals.md]]
 - Rails の関連付けは、リレーショナルデータベースの考え方とつながる。
 
 ## Tags
-#database #sql #rails #association
+#database #sql #rails #association #要復習
 
 ## Links
 - [[note-insight-database-table]]

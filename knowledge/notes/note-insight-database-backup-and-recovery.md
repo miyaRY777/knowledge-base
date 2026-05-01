@@ -3,6 +3,8 @@ id: note-insight-database-backup-and-recovery
 title: バックアップとリカバリは障害時にデータを守り復元する仕組み
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-01
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-30_insight_database-fundamentals.md]]
 - データベース運用では、保存だけでなく復元できることも重要。
 
 ## Tags
-#database #operations #backup
+#database #operations #backup #要復習
 
 ## Links
 - [[note-insight-database]]

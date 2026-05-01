@@ -3,6 +3,8 @@ id: note-insight-database-locking
 title: ロック機構は同時更新による競合を防ぐ
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-01
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-30_insight_database-fundamentals.md]]
 - トランザクションと組み合わせて整合性を守る。
 
 ## Tags
-#database #transaction #concurrency
+#database #transaction #concurrency #要復習
 
 ## Links
 - [[note-insight-database-transaction]]

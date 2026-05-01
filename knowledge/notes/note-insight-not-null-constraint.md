@@ -3,6 +3,8 @@ id: note-insight-not-null-constraint
 title: NOT NULL制約は値が空の保存を防ぐ
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-01
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-30_insight_database-fundamentals.md]]
 - Rails の `null: false` は DB 側の必須ルールとして働く。
 
 ## Tags
-#database #sql #constraint #rails
+#database #sql #constraint #rails #要復習
 
 ## Links
 - [[note-insight-database-constraint]]

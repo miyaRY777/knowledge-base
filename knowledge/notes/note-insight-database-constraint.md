@@ -3,6 +3,8 @@ id: note-insight-database-constraint
 title: 制約は不正なデータを保存しないためのルール
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-01
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-30_insight_database-fundamentals.md]]
 - アプリ側のバリデーションだけでなく、DB 側でも守ると安全性が上がる。
 
 ## Tags
-#database #sql #constraint #rails
+#database #sql #constraint #rails #要復習
 
 ## Links
 - [[note-insight-not-null-constraint]]
