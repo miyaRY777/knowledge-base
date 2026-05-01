@@ -28,3 +28,5 @@ SELECT user_id, COUNT(*)
 FROM posts
 GROUP BY user_id;
 ```
+
+<!-- review_log: 2026-05-02 -->

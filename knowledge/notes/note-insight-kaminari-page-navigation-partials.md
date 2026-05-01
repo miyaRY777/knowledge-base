@@ -13,7 +13,7 @@ last_reviewed_on: 2026-04-30
 - `_first_page.html.erb` と `_last_page.html.erb` は先頭・末尾へのジャンプ用に使う。
 
 ## Tags
-#insight #rails #kaminari #view #要復習
+#insight #rails #kaminari #view #要復習 #要復習
 
 ## Links
 - [[note-insight-kaminari-paginator-partial-role]]

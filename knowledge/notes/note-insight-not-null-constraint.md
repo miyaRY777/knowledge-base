@@ -28,3 +28,4 @@ last_reviewed_on: 2026-05-01
 add_column :users, :name, :string, null: false
 ```
 
+<!-- review_log: 2026-05-02 -->

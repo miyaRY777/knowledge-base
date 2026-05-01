@@ -27,3 +27,5 @@ last_reviewed_on: 2026-04-30
 SELECT SUM(price)
 FROM orders;
 ```
+
+<!-- review_log: 2026-05-02 -->

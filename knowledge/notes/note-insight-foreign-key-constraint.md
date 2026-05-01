@@ -30,3 +30,4 @@ last_reviewed_on: 2026-05-01
 add_foreign_key :posts, :users
 ```
 
+<!-- review_log: 2026-05-02 -->

@@ -31,3 +31,5 @@ SELECT *
 FROM users
 WHERE email = 'sample@example.com';
 ```
+
+<!-- review_log: 2026-05-02 -->

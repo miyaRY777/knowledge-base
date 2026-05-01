@@ -35,3 +35,5 @@ Set-Cookie: user_id=12345; HttpOnly
 
 ## Action
 - [ ] XSS と Cookie 盗難の関係を別ノートで整理する
+
+<!-- review_log: 2026-05-02 -->
