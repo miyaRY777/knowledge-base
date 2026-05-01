@@ -2,16 +2,16 @@
 
 ## サマリー
 
-| # | 項目 | 概要 | ノート |
-|---|------|------|--------|
-| 1 | データベース | アプリのデータを保存・管理して取り出す場所 | [[note-insight-database]] |
-| 2 | ActiveRecord::Relation | クエリ条件を保持し、必要になるまで実行を遅らせるオブジェクト | [[note-insight-active-record-relation]] |
-| 3 | where.not | 条件に一致しないレコードを取得する検索方法 | [[note-insight-where-not]] |
-| 4 | N+1 | 関連データ取得でSQLが増えすぎる問題 | [[note-insight-n-plus-one]] |
-| 5 | includes | 状況に応じて関連の読み込み方法を切り替える | [[note-insight-activerecord-includes]] |
-| 6 | preload | 関連データを別クエリで先に読み込む | [[note-insight-activerecord-preload]] |
-| 7 | eager_load | 関連データを LEFT OUTER JOIN でまとめて読み込む | [[note-insight-activerecord-eager-load]] |
-| 8 | LEFT OUTER JOIN | 左側の行を残して右側テーブルを結び付ける | [[note-insight-left-outer-join]] |
+| #   | 項目                     | 概要                               | ノート                                      |
+| --- | ---------------------- | -------------------------------- | ---------------------------------------- |
+| 1   | データベース                 | アプリのデータを保存・管理して取り出す場所            | [[note-insight-database]]                |
+| 2   | ActiveRecord::Relation | クエリ条件を保持し、必要になるまで実行を遅らせるオブジェクト   | [[note-insight-active-record-relation]]  |
+| 3   | where.not              | 条件に一致しないレコードを取得する検索方法            | [[note-insight-where-not]]               |
+| 4   | N+1                    | 関連データ取得でSQLが増えすぎる問題              | [[note-insight-n-plus-one]]              |
+| 5   | includes               | 状況に応じて関連の読み込み方法を切り替える            | [[note-insight-activerecord-includes]]   |
+| 6   | preload                | 関連データを別クエリで先に読み込む                | [[note-insight-activerecord-preload]]    |
+| 7   | eager_load             | 関連データを LEFT OUTER JOIN でまとめて読み込む | [[note-insight-activerecord-eager-load]] |
+| 8   | LEFT OUTER JOIN        | 左側の行を残して右側テーブルを結び付ける             | [[note-insight-left-outer-join]]         |
 
 ---
 
