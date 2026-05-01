@@ -13,7 +13,7 @@ last_reviewed_on: 2026-05-01
 - データベース運用では、保存だけでなく復元できることも重要。
 
 ## Tags
-#database #operations #backup #要復習
+#database #operations #backup #要復習 #要復習
 
 ## Links
 - [[note-insight-database]]
@@ -24,3 +24,4 @@ last_reviewed_on: 2026-05-01
 
 バックアップは作るだけでは不十分で、必要なときに復元できることが大切です。本番環境では、どの時点まで戻せるか、復元にどれくらい時間がかかるかも運用上の重要な観点になります。
 
+<!-- review_log: 2026-05-02,2026-05-02 -->

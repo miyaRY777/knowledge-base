@@ -13,7 +13,7 @@ last_reviewed_on: 2026-04-30
 - `None` を使う場合は `Secure` も必要です。
 
 ## Tags
-#http #web #cookie #security #privacy #要復習
+#http #web #cookie #security #privacy #要復習 #要復習
 
 ## Links
 - [[note-insight-cookie]]
@@ -37,4 +37,5 @@ Set-Cookie: session_id=abc123; SameSite=Lax; Secure
 
 ## Action
 - [ ] `Lax` `Strict` `None` の違いをリクエスト例でも見比べる
-<!-- review_log: 2026-04-18 -->
+
+<!-- review_log: 2026-04-18,2026-05-02 -->
