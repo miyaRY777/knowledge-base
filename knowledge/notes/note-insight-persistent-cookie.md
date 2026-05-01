@@ -2,7 +2,8 @@
 id: note-insight-persistent-cookie
 title: 永続Cookieの要点
 created: 2026-04-18
-source: [[2026-04-18_insight_cookie-basics-and-security.md]]review_streak: 0
+source: [[2026-04-18_insight_cookie-basics-and-security.md]]
+review_streak: 0
 ---
 
 ## Summary
