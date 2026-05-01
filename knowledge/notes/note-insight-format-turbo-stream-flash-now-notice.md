@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #insight
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **Turbo通信時にその場でフラッシュメッセージを表示する処理**

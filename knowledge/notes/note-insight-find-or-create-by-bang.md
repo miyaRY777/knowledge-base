@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #rails #activerecord #http
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **見つけるか、なければ作るメソッド（失敗時は例外）**

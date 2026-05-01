@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #insight
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **条件に一致しないレコードを取得するメソッド**

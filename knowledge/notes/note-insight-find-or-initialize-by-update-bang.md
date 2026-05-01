@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #rails #activerecord #http
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **見つけるか、なければメモリ上で作ってから、保存まで明示的に行う書き方**

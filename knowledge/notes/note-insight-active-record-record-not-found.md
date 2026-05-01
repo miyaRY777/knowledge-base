@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #activerecord
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **レコードが見つからなかったときに発生する例外**

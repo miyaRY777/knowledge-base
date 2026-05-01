@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #testing
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **テストで呼び出す処理に名前をつける仕組み**

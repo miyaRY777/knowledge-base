@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 #ruby #language #design
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 Ruby では、先頭が大文字の名前は定数として扱われます。`EXPIRES_IN_MAP` のような名前は定数です。

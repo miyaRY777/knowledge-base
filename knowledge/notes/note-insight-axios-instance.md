@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #javascript #http
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **共通設定をまとめたAxios専用の通信オブジェクトのこと**

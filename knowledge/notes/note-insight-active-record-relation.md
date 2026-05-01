@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #activerecord
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **クエリ結果を表すオブジェクト（まだ実行されていない状態）**

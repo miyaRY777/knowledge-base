@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #javascript #http
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **HTTPメソッドを短くわかりやすく書ける便利な書き方**

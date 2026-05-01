@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 #rails #turbo #ui
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 `turbo_confirm` は、Turbo を使ったリンクやフォーム送信の前に確認ダイアログを出したいときに使う指定です。削除や再発行のように、うっかり実行すると困る操作に向いています。

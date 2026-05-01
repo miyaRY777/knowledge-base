@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #insight
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **`respond_to` の中で、通常のHTMLリクエストに対する処理を書く分岐**

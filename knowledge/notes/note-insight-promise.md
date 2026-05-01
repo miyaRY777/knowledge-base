@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #javascript #http
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **あとで結果が返ってくる処理を受け取るための仕組みのこと**

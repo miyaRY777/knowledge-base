@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #activerecord
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **例外をキャッチする仕組み（書く場所と範囲が違う）**

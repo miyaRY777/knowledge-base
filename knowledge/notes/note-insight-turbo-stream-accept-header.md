@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #http
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **Turbo Stream形式でレスポンスを受け取るためのHTTPヘッダー**

@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #javascript #http
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 毎回同じURLの前半部分を、省略して書けるようにする設定

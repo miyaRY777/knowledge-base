@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 #design #rails #service
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 オーケストレーションは、1つの処理だけでなく、複数の処理を順番や役割に沿ってまとめて動かす考え方です。Rails の特別な機能名ではなく、設計や責務分担を考えるときに使われる言葉です。

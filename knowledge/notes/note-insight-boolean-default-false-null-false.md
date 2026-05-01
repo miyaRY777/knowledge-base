@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #rails #activerecord #http #database
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **真偽値カラムに「初期値」と「未設定禁止」を付ける指定**

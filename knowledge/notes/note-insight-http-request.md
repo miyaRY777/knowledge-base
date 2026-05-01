@@ -16,7 +16,6 @@ source: [[2026-04-17_insight_cookie-http-stateless.md]]
 ## Links
 - [[note-insight-cookie]]
 - [[note-insight-stateless]]
-- [[関連ノート]]
 
 ## Body
 HTTP は、ブラウザやアプリとサーバーがデータをやり取りするための共通ルールです。

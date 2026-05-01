@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #rails #activerecord #http
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **今ログインしているユーザーが管理者かどうかを確認する書き方**

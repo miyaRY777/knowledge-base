@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 #design #domain-model #invariant
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 `invariant` は、プログラムの途中でも壊れてはいけない前提やルールを指します。Rails の機能名ではなく、設計やレビューで「この条件は常に成り立つべき」と表現するときに使う言葉です。

@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #rails #http #testing
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **FactoryBotで「管理者ユーザー用の追加設定」をまとめる書き方**

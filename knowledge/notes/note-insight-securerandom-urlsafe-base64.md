@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 #ruby #security #token
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 `SecureRandom.urlsafe_base64(16)` は、URL に使いやすく、推測されにくいランダム文字列を作るメソッドです。トークンや招待リンクのように、他人に当てられたくない値を作る場面でよく使います。

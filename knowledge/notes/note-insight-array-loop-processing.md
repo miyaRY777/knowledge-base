@@ -14,7 +14,6 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 #http
 
 ## Links
-- [[関連ノート]]
 
 ## Body
 **配列の中身を順番に取り出して処理すること**
