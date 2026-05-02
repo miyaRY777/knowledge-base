@@ -23,6 +23,7 @@
 | 13 | SameSite属性 | クロスサイト送信を制御する属性 | [[note-insight-cookie-samesite]] |
 | 14 | Cookie削除 | 不要になった Cookie を無効化する方法 | [[note-insight-cookie-deletion]] |
 | 15 | Rails cookies | Rails で Cookie を読み書きする仕組み | [[note-insight-rails-cookies]] |
+| 16 | CSRF | ログイン済み状態を悪用して意図しないリクエストを送らせる攻撃 | [[note-insight-csrf]] |
 
 ---
 
@@ -73,11 +74,13 @@
 [[note-insight-cookie-secure]]
 [[note-insight-cookie-samesite]]
 [[note-insight-cookie-deletion]]
+[[note-insight-csrf]]
 
 **ポイント**:
 - `HttpOnly` は JavaScript から読ませない
 - `Secure` は HTTPS の通信だけに限定する
 - `SameSite` はクロスサイト送信を制御し、CSRF 対策とプライバシー整理に関わる
+- CSRF は Cookie が自動送信される仕組みと関係するため、SameSite と CSRF トークンを分けて理解する
 - 不要になった Cookie は削除まで含めて状態管理を考える
 
 ---
@@ -91,6 +94,7 @@
 | サードパーティCookieのブラウザ別制限はどう違うか | - | - | [[note-insight-third-party-cookie]] |
 | セッションCookieとサーバー側セッションストアの関係はどう整理するか | - | - | [[note-insight-session-cookie]] |
 | `Path` や `Domain` が違う Cookie をどう削除するか | - | - | [[note-insight-cookie-deletion]] |
+| SameSite と CSRF トークンの役割分担をどう説明するか | - | - | [[note-insight-csrf]] |
 
 ---
 
@@ -112,3 +116,4 @@
 - [[note-insight-cookie-samesite]]
 - [[note-insight-cookie-deletion]]
 - [[note-insight-rails-cookies]]
+- [[note-insight-csrf]]

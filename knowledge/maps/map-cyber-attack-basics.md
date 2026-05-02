@@ -25,6 +25,7 @@
   - Webアプリを悪用する
     - [[note-insight-xss]]
     - [[note-insight-idor]]
+    - [[note-insight-csrf]]
   - Cookie / セッションを狙う
     - [[note-insight-cookie-httponly]]
     - [[note-insight-session-hijacking]]
@@ -41,6 +42,7 @@
 | データ改ざん | 保存中・通信中のデータ | 内容が勝手に変わる | [[note-insight-data-tampering]] |
 | XSS | 利用者のブラウザ | Cookie悪用、画面改ざん、なりすまし | [[note-insight-xss]] |
 | IDOR | 他人のデータ | 権限外アクセス | [[note-insight-idor]] |
+| CSRF | ログイン済みの権限 | 意図しない状態変更リクエスト | [[note-insight-csrf]] |
 
 ## 覚え方
 
@@ -49,10 +51,10 @@
 - **止める**: DDoS攻撃
 - **ブラウザで実行させる**: XSS
 - **権限外に見る**: IDOR
+- **意図しない操作を送らせる**: CSRF
 
 ## Open Questions
 
-- CSRFもこのマップに追加する？
 - SQLインジェクションを追加する？
 - XSSの種類、反射型・保存型・DOM Basedを分ける？
 - Cookie / Session系を別マップに分離する？

@@ -20,6 +20,9 @@
 | 10 | orchestration | 複数の処理を順序立てて連携させる考え方 | [[note-insight-orchestration]] |
 | 11 | Ruby定数 | 変更しない前提の値に名前を付ける仕組み | [[note-insight-ruby-constants]] |
 | 12 | SecureRandom.urlsafe_base64 | URL向けの推測されにくいランダム文字列を作る | [[note-insight-securerandom-urlsafe-base64]] |
+| 13 | 論理削除 | DBから消さずに削除済みとして扱う方法 | [[note-insight-soft-delete]] |
+| 14 | 論理削除フラグ | 削除済み扱いを表す目印 | [[note-insight-soft-delete-flag]] |
+| 15 | モンキーテスト | ランダムな操作で不具合を探すテスト | [[note-insight-monkey-testing]] |
 
 ---
 
@@ -30,12 +33,15 @@
 [[note-insight-dependent-restrict-with-error]]
 [[note-insight-inclusion-validation]]
 [[note-insight-allow-nil]]
+[[note-insight-soft-delete]]
+[[note-insight-soft-delete-flag]]
 
 **ポイント**:
 - Callbacksは便利だが多用すると処理の流れが見えにくくなる。複雑なロジックはServiceオブジェクトへ
 - CurrentAttributesはリクエストスコープで便利だが、モデルに暗黙の依存を作る点に注意
 - dependentオプションで関連レコードの削除制御。:restrict_with_errorはバリデーションに近い挙動
 - `inclusion` と `allow_nil` は、保存してよい値の範囲と未入力時の扱いを整理するために使う
+- 論理削除はレコードを残す設計なので、通常検索から除外する仕組みもセットで考える
 
 ---
 
@@ -68,11 +74,13 @@
 [[note-insight-orchestration]]
 [[note-insight-ruby-constants]]
 [[note-insight-securerandom-urlsafe-base64]]
+[[note-insight-monkey-testing]]
 
 **ポイント**:
 - invariant は、アプリの途中で壊れてはいけない業務ルールとして考える
 - orchestration は、複数の処理をどの順序で呼ぶかを整理する考え方
 - Ruby定数や SecureRandom は、Railsアプリの設定値やトークン生成を読む土台になる
+- モンキーテストは、想定外操作への耐性を見る品質確認として捉える
 
 ---
 
@@ -88,6 +96,7 @@
 | 冪等性を意識したAPI設計パターン | - | - | - |
 | `allow_nil` と `allow_blank` の違いをRailsバリデーションで整理する | - | - | [[note-insight-allow-nil]] |
 | token カラムに必要な一意性と推測困難性をどう保証するか | - | - | [[note-insight-securerandom-urlsafe-base64]] |
+| 論理削除と物理削除の使い分けをどう判断するか | - | - | [[note-insight-soft-delete]] |
 
 ---
 
@@ -105,5 +114,8 @@
 - [[note-insight-orchestration]]
 - [[note-insight-ruby-constants]]
 - [[note-insight-securerandom-urlsafe-base64]]
+- [[note-insight-soft-delete]]
+- [[note-insight-soft-delete-flag]]
+- [[note-insight-monkey-testing]]
 - [[2026-03-30_insight_rails-study.md]]
 - [[2026-03-31_insight_rails-study.md]]
