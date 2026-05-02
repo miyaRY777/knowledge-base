@@ -30,6 +30,7 @@
 | 20 | HttpOnly属性 | JavaScript から Cookie を参照できなくする属性 | [[note-insight-cookie-httponly]] |
 | 21 | Secure属性 | HTTPS のときだけ Cookie を送る属性 | [[note-insight-cookie-secure]] |
 | 22 | Rails cookies | Rails で Cookie を読み書きする仕組み | [[note-insight-rails-cookies]] |
+| 23 | APIエンドポイント | APIへリクエストを送る入口のURL | [[note-insight-api-endpoint]] |
 
 ---
 
@@ -39,11 +40,13 @@
 [[note-insight-promise]]
 [[note-insight-fetch-api]]
 [[note-insight-axios]]
+[[note-insight-api-endpoint]]
 
 **ポイント**:
 - 通信の基本単位は HTTP リクエスト
 - JavaScript では通信結果を Promise として受け取る
 - Fetch は標準機能、Axios は使いやすさが強み
+- APIエンドポイントは、HTTPリクエストを送る具体的な入口として見る
 
 ---
 
@@ -101,7 +104,7 @@
 | Fetch API と Axios を実務でどう使い分けるか | - | - | [[note-insight-fetch-api]] |
 | 通信失敗時の標準的なエラーハンドリングの型は何か | - | - | [[note-insight-promise]] |
 | 認証付き API で headers をどう設計するか | - | - | [[note-insight-headers]] |
-| SameSite 属性をどう整理するか | - | - | [[note-insight-cookie-secure]] |
+| SameSite 属性をどう整理するか | - | - | [[note-insight-cookie-samesite]] |
 
 ---
 
@@ -128,5 +131,6 @@
 - [[note-insight-cookie-header]]
 - [[note-insight-cookie-expires]]
 - [[note-insight-cookie-httponly]]
+- [[note-insight-api-endpoint]]
 - [[note-insight-cookie-secure]]
 - [[note-insight-rails-cookies]]

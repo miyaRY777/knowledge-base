@@ -12,6 +12,7 @@
 | 6   | preload                | 関連データを別クエリで先に読み込む                | [[note-insight-activerecord-preload]]    |
 | 7   | eager_load             | 関連データを LEFT OUTER JOIN でまとめて読み込む | [[note-insight-activerecord-eager-load]] |
 | 8   | LEFT OUTER JOIN        | 左側の行を残して右側テーブルを結び付ける             | [[note-insight-left-outer-join]]         |
+| 9   | association size/count | 関連データ件数をDB視点か読み込み状態込みで見る違い       | [[note-insight-association-size-vs-count]] |
 
 ---
 
@@ -45,12 +46,14 @@
 [[note-insight-activerecord-includes]]
 [[note-insight-activerecord-preload]]
 [[note-insight-activerecord-eager-load]]
+[[note-insight-association-size-vs-count]]
 
 **ポイント**:
 - N+1 は一覧取得後に関連データを1件ずつ追加取得してしまう問題
 - `preload` は関連ごとに別クエリで先読みする
 - `eager_load` は JOIN を使って関連先をまとめて読み込む
 - `includes` は状況に応じて読み込み方法が変わるため、生成SQLを確認する意識が必要
+- 関連の件数確認では、DBに問い合わせる `count` と読み込み状態も使う `size` の違いを意識する
 
 ---
 
@@ -62,6 +65,7 @@
 | `joins` と `left_joins` をこのマップに追加するか | - | - | [[note-insight-left-outer-join]] |
 | `ActiveRecord::Relation` が実行されるタイミングを実コードで整理する | - | - | [[note-insight-active-record-relation]] |
 | DBのテーブル、カラム、レコードの違いを別ノートで整理する | - | - | [[note-insight-database]] |
+| 関連を読み込み済みにした後の `size` / `count` の挙動を実コードで確認する | - | - | [[note-insight-association-size-vs-count]] |
 
 ---
 
@@ -78,3 +82,4 @@
 - [[note-insight-activerecord-preload]]
 - [[note-insight-activerecord-eager-load]]
 - [[note-insight-left-outer-join]]
+- [[note-insight-association-size-vs-count]]

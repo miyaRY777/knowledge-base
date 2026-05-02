@@ -7,7 +7,7 @@
 | 1 | セッション | ユーザーごとの状態を一時的に管理する仕組み | [[note-insight-session]] |
 | 2 | セッションID | どのユーザーのセッションかを見分ける識別子 | [[note-insight-session-id]] |
 | 3 | セッションCookie | 主にブラウザを閉じるまで保持される一時的な Cookie | [[note-insight-session-cookie]] |
-| 4 | セッションとCookie | 状態本体をどこに保存するかの違い | [[note-insight-session-vs-cookie]] |
+| 4 | セッションとCookie | 状態管理とブラウザ保存の関係 | [[note-insight-session-vs-cookie]] |
 | 5 | セッションタイムアウト | 無操作時にセッションを無効化する考え方 | [[note-insight-session-timeout]] |
 | 6 | セッション終了 | ログアウトなどでセッション状態を破棄すること | [[note-insight-session-termination]] |
 | 7 | セッションハイジャック | 盗んだセッションIDで本人になりすます攻撃 | [[note-insight-session-hijacking]] |
@@ -34,7 +34,8 @@
 [[note-insight-session-cookie]]
 
 **ポイント**:
-- セッション本体はサーバー側にあり、ブラウザは識別用のセッションIDを持つ構成が一般的
+- サーバー側セッションでは、ブラウザは識別用のセッションIDを持つ構成が一般的
+- Rails のデフォルト CookieStore では、セッションデータ自体を暗号化 Cookie に保存する
 - セッションID は Cookie 経由でブラウザに保存され、次回以降のリクエストで送られる
 - セッションID が漏れると、本人になりすまされる危険がある
 

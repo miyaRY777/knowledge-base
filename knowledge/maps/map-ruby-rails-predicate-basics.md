@@ -14,6 +14,8 @@
 | 8 | `presence` の活用 | 入力値や表示名の代替値を短く書ける | [[note-insight-rails-presence-use-case]] |
 | 9 | 使い分け比較 | RubyとRailsの空判定をまとめて比較する | [[note-insight-ruby-rails-presence-predicate-comparison]] |
 | 10 | `&.` | nil のときにメソッド呼び出しを避ける safe navigation operator | [[note-insight-ruby-safe-navigation-operator]] |
+| 11 | `blank?` が安全な理由 | nil や空白文字列をまとめて扱える利点 | [[note-insight-rails-blank-is-safe]] |
+| 12 | フォールバックURL | 値がなければ代替URLを返す考え方 | [[note-insight-fallback-url]] |
 
 ---
 
@@ -37,11 +39,14 @@
 [[note-insight-rails-present-predicate]]
 [[note-insight-rails-presence]]
 [[note-insight-rails-presence-use-case]]
+[[note-insight-rails-blank-is-safe]]
+[[note-insight-fallback-url]]
 
 **ポイント**:
 - `blank?` は nil、空文字、空配列、空ハッシュ、false などをまとめて空扱いできる
 - `present?` は `blank?` の反対で、値があるときの条件に向く
 - `presence` は空なら nil を返すため、フォールバック値と組み合わせやすい
+- フォールバックURLのような代替値選択では、`presence` を使うと意図を短く書ける
 
 ---
 
@@ -65,6 +70,7 @@
 | `blank?` が false を空扱いする影響をどう説明するか | - | - | [[note-insight-rails-blank-predicate]] |
 | `&.` と明示的な nil チェックの使い分けを整理する | - | - | [[note-insight-ruby-safe-navigation-operator]] |
 | `presence_in` との違いを追加するか | - | - | [[note-insight-rails-presence-use-case]] |
+| フォールバック値を `presence` で書く場面と書かない場面を整理する | - | - | [[note-insight-fallback-url]] |
 
 ---
 
@@ -81,3 +87,5 @@
 - [[note-insight-rails-presence-use-case]]
 - [[note-insight-ruby-rails-presence-predicate-comparison]]
 - [[note-insight-ruby-safe-navigation-operator]]
+- [[note-insight-rails-blank-is-safe]]
+- [[note-insight-fallback-url]]

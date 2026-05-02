@@ -33,6 +33,7 @@
 | 12 | コンピュータ構成基礎 | CPU、メモリ、ストレージ、バス、五大装置 | [[map-computer-architecture-basics]] |
 | 13 | Ruby / Rails predicate基礎 | blank?、present?、presence、nil?、empty? の使い分け | [[map-ruby-rails-predicate-basics]] |
 | 14 | Rails基礎 | 3月末からの既存知識の土台 | [[map-rails-basics]] |
+| 15 | Kaminariページネーション基礎 | ページネーションの全体テンプレートと個別パーシャル | [[map-kaminari-pagination-basics]] |
 
 ---
 
@@ -58,6 +59,9 @@
 [[note-insight-database]]
 [[note-insight-sql]]
 [[note-insight-database-transaction]]
+[[note-insight-function-method-argument-basics]]
+[[note-insight-object-oriented-programming]]
+[[note-insight-homebrew]]
 
 **ポイント**:
 - JavaScript 側では「通信の基本」と「非同期処理」の理解が土台
@@ -85,6 +89,8 @@
 | Active Record / DB | [[note-insight-n-plus-one]], [[note-insight-activerecord-includes]], [[note-insight-activerecord-preload]], [[note-insight-database]], [[note-insight-sql]] |
 | データベース基礎 | [[note-insight-dbms]], [[note-insight-database-table]], [[note-insight-database-constraint]], [[note-insight-database-transaction]], [[note-insight-database-index]] |
 | コンピュータ構成 | [[note-insight-cpu]], [[note-insight-fetch-decode-execute]], [[note-insight-main-memory]], [[note-insight-storage-device]], [[note-insight-bus]] |
+| Rails周辺・基礎用語 | [[note-insight-function-method-argument-basics]], [[note-insight-object-oriented-programming]], [[note-insight-homebrew]] |
+| Kaminari | [[note-insight-kaminari-paginator-partial-role]], [[note-insight-kaminari-page-navigation-partials]], [[note-insight-kaminari-gap-and-render]] |
 
 ---
 
@@ -101,6 +107,7 @@
 | SSL / TLS / SSL証明書の呼び方と実体を整理したい | [[map-web-security-basics]] |
 | N+1対策で `includes` / `preload` / `eager_load` をどう選ぶか整理したい | [[map-activerecord-query-basics]] |
 | DB制約とRailsバリデーションの役割分担を整理したい | [[map-database-fundamentals]] |
+| Kaminariのカスタムビューの責務分担を整理したい | [[map-kaminari-pagination-basics]] |
 | `#要復習` が付いた4月ノートを優先順位つきで復習したい | [[map-2026-04-learning]] |
 
 ---
@@ -128,4 +135,5 @@
 - [[map-database-fundamentals]]
 - [[map-computer-architecture-basics]]
 - [[map-ruby-rails-predicate-basics]]
+- [[map-kaminari-pagination-basics]]
 - [[map-rails-basics]]

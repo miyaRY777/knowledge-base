@@ -21,6 +21,9 @@
 | 11 | graceful handling | ユーザー体験を壊さずエラー対応する考え方 | [[note-insight-graceful-handling]] |
 | 12 | where.not | 除外条件で絞り込むクエリ | [[note-insight-where-not]] |
 | 13 | ActiveRecord::Relation | クエリ条件を保持するオブジェクト | [[note-insight-active-record-relation]] |
+| 14 | turbo_confirm | 危険な操作前に確認ダイアログを出す指定 | [[note-insight-turbo-confirm]] |
+| 15 | helper test | 表示用の小さなロジックを検証するテスト | [[note-insight-helper-test]] |
+| 16 | API endpoint | APIへリクエストを送る入口のURL | [[note-insight-api-endpoint]] |
 
 ---
 
@@ -29,10 +32,12 @@
 [[note-insight-turbo-stream-accept-header]]
 [[note-insight-format-turbo-stream-flash-now-notice]]
 [[note-insight-format-html-redirect-notice]]
+[[note-insight-turbo-confirm]]
 
 **ポイント**:
 - Turbo Stream では Accept header と `format.turbo_stream` の対応が大事
 - 画面遷移なしなら `flash.now`、通常 HTML なら `redirect_to` を使う
+- 削除や再発行のような操作では、`turbo_confirm` で実行前の確認を挟める
 
 ---
 
@@ -43,10 +48,12 @@
 [[note-insight-active-record-record-not-found]]
 [[note-insight-destroy-vs-destroy-bang]]
 [[note-insight-graceful-handling]]
+[[note-insight-helper-test]]
 
 **ポイント**:
 - `subject(:request!)` で request spec を読みやすくできる
 - 例外は捕まえる場所と、ユーザーに返す振る舞いを分けて考える
+- Helper の小さな表示ロジックは、必要に応じて helper test で切り出して確認できる
 
 ---
 
@@ -57,10 +64,12 @@
 [[note-insight-idor]]
 [[note-insight-where-not]]
 [[note-insight-active-record-relation]]
+[[note-insight-api-endpoint]]
 
 **ポイント**:
 - 関連をたどる取得は IDOR 対策の基本
 - `where.not` や Relation を理解すると安全な絞り込みが書きやすい
+- API endpoint は、どのURLを入口として公開するかという設計にも関わる
 
 ---
 
@@ -71,6 +80,7 @@
 | Turbo Stream の request spec をどこまでテンプレ化するか | - | - | [[note-insight-turbo-stream-accept-header]] |
 | `destroy` と `destroy!` の使い分けをコントローラ規約としてどう決めるか | - | - | [[note-insight-destroy-vs-destroy-bang]] |
 | IDOR 対策を policy 層で共通化するべきか | - | - | [[note-insight-idor]] |
+| 確認ダイアログを付ける操作の基準をどう決めるか | - | - | [[note-insight-turbo-confirm]] |
 
 ---
 
@@ -89,4 +99,7 @@
 - [[note-insight-graceful-handling]]
 - [[note-insight-where-not]]
 - [[note-insight-active-record-relation]]
+- [[note-insight-turbo-confirm]]
+- [[note-insight-helper-test]]
+- [[note-insight-api-endpoint]]
 - [[map-rails-basics]]

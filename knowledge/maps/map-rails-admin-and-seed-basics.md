@@ -16,6 +16,9 @@
 | 6 | find_or_create_by! | 見つからなければ作るメソッド | [[note-insight-find-or-create-by-bang]] |
 | 7 | find_or_initialize_by + update! | 既存更新と新規作成を同じ流れで扱う方法 | [[note-insight-find-or-initialize-by-update-bang]] |
 | 8 | bin/rails db:prepare | DB作成とマイグレーションをまとめて整えるコマンド | [[note-insight-rails-db-prepare]] |
+| 9 | db:create | データベース自体を作成するコマンド | [[note-insight-db-create]] |
+| 10 | db:migrate | migration を DB に反映するコマンド | [[note-insight-db-migrate]] |
+| 11 | ブランチとDB | Gitのブランチ変更とDB状態は別に管理される | [[note-insight-git-branch-switch-does-not-switch-db]] |
 
 ---
 
@@ -47,11 +50,16 @@
 [[note-insight-find-or-create-by-bang]]
 [[note-insight-find-or-initialize-by-update-bang]]
 [[note-insight-rails-db-prepare]]
+[[note-insight-db-create]]
+[[note-insight-db-migrate]]
+[[note-insight-git-branch-switch-does-not-switch-db]]
 
 **ポイント**:
 - seed は何度も実行される前提で重複しにくく書く
 - `find_or_create_by!` と `find_or_initialize_by + update!` は用途で使い分ける
 - `db:prepare` は環境構築の入口として便利
+- `db:create` と `db:migrate` は、DB作成と構造反映の役割を分けて理解する
+- ブランチを切り替えてもローカルDBは自動では切り替わらない
 
 ---
 
@@ -62,6 +70,7 @@
 | 管理者権限を enum や role テーブルで持つ場合の設計差分は何か | - | - | [[note-insight-current-user-admin]] |
 | seed を冪等に保つ実践パターンはどこまで共通化すべきか | - | - | [[note-insight-db-seed]] |
 | `find_or_create_by!` と `find_or_initialize_by + update!` の判断基準をどう言語化するか | - | - | [[note-insight-find-or-create-by-bang]] |
+| ブランチ切り替え後のDB確認手順をどう定型化するか | - | - | [[note-insight-git-branch-switch-does-not-switch-db]] |
 
 ---
 
@@ -75,3 +84,6 @@
 - [[note-insight-find-or-create-by-bang]]
 - [[note-insight-find-or-initialize-by-update-bang]]
 - [[note-insight-rails-db-prepare]]
+- [[note-insight-db-create]]
+- [[note-insight-db-migrate]]
+- [[note-insight-git-branch-switch-does-not-switch-db]]
