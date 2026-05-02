@@ -1,6 +1,6 @@
 ---
 id: note-insight-cookie-httponly
-title: HttpOnly属性の要点
+title: "HttpOnly属性の要点"
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 review_streak: 1
@@ -28,10 +28,10 @@ last_reviewed_on: 2026-04-30
 
 ## Example
 ```http
-Set-Cookie: user_id=12345; HttpOnly
+Set-Cookie: session_id=abc123; HttpOnly
 ```
 
-このコードでは、`user_id` の Cookie を JavaScript から参照できないようにしています。
+このコードでは、`session_id` の Cookie を JavaScript から参照できないようにしています。
 
 ## Action
 - [ ] XSS と Cookie 盗難の関係を別ノートで整理する

@@ -1,6 +1,6 @@
 ---
 id: note-insight-homebrew
-title: HomebrewはmacOSやLinuxでソフトを入れるパッケージマネージャー
+title: "HomebrewはmacOSやLinuxでソフトを入れるパッケージマネージャー"
 created: 2026-04-27
 source: [[2026-04-27_insight_internet-security-basics.md]]
 review_streak: 0

@@ -1,11 +1,11 @@
 ---
 id: note-insight-http-request
-title: HTTPの要点
+title: "HTTPの要点"
 created: 2026-04-07
 source: [[2026-04-17_insight_cookie-http-stateless.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **HTTP は、Webブラウザとサーバーが通信するためのルールです。**
 - ブラウザは HTTP を使ってページ表示やフォーム送信、API 通信を行います。
 - `GET` や `POST` などのリクエスト方法があり、Web の基本的なやり取りを支えています。

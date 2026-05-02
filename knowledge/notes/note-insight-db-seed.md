@@ -1,6 +1,6 @@
 ---
 id: note-insight-db-seed
-title: db:seedの要点
+title: "db:seedの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
 ---

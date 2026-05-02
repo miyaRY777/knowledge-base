@@ -1,11 +1,11 @@
 ---
 id: note-insight-rescue
-title: rescueの要点
+title: "rescueの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **例外をキャッチする仕組み（書く場所と範囲が違う）**
 - `rescue` はメソッド内でエラーを捕まえるキーワードです。
 - `rescue_from`（よく「Rescue」と呼ばれる）はコントローラ全体でエラーを処理するために使います。

@@ -1,6 +1,6 @@
 ---
 id: note-insight-relational-database
-title: リレーショナルデータベースはテーブル同士の関係でデータを管理する
+title: "リレーショナルデータベースはテーブル同士の関係でデータを管理する"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

@@ -1,6 +1,6 @@
 ---
 id: note-insight-secondary-storage
-title: 補助記憶装置はデータを長期保存する
+title: "補助記憶装置はデータを長期保存する"
 created: 2026-04-10
 source: [[2026-04-10_insight_computer-five-major-units]]
 ---

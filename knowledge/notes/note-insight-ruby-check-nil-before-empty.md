@@ -1,6 +1,6 @@
 ---
 id: note-insight-ruby-check-nil-before-empty
-title: `empty?`の前に`nil?`を確認する書き方
+title: "`empty?`の前に`nil?`を確認する書き方"
 created: 2026-04-08
 source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 ---

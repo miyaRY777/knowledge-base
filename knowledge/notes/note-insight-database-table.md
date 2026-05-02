@@ -1,6 +1,6 @@
 ---
 id: note-insight-database-table
-title: テーブルは同じ種類のデータを行と列で保存する場所
+title: "テーブルは同じ種類のデータを行と列で保存する場所"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

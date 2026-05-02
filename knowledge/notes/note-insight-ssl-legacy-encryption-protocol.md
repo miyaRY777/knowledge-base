@@ -1,6 +1,6 @@
 ---
 id: note-insight-ssl-legacy-encryption-protocol
-title: SSLは現在は使われない古い通信暗号化プロトコル
+title: "SSLは現在は使われない古い通信暗号化プロトコル"
 created: 2026-04-29
 source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 review_streak: 1

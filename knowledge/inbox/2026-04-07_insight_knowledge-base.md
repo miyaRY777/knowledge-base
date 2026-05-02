@@ -433,7 +433,7 @@ while (true) {
 👉 **配列の中身を順番に取り出して処理すること**
 
 **解説：**
-配列は複数の値を順番に持てるので、ループと相性がいいです。`for` 文では `length` を使って、先頭から末尾まで1つずつ処理できます。 ([MDNのウェブドキュメント](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Loops?utm_source=chatgpt.com "Looping code - Learn web development | MDN"))
+配列は複数の値を順番に持てるので、ループと相性がいいです。`for` 文では `length` を使って、先頭から末尾まで1つずつ処理できます。 ([MDNのウェブドキュメント](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Loops "Looping code - Learn web development | MDN"))
 
 具体例：
 
@@ -476,7 +476,7 @@ add_column :users, :admin, :boolean, default: false, null: false
 **解説：**
 `trait` は、FactoryBotで属性のまとまりを名前付きで再利用するための機能です。`trait :admin` は Rails の特別な機能名ではなく、FactoryBot の機能です。
 
-テストで `create(:user, :admin)` のように使うと、管理者用の値を持つデータを作りやすくなります。 ([Thoughtbot](https://thoughtbot.github.io/factory_bot/traits/summary.html?utm_source=chatgpt.com "Traits - factory_bot"))
+テストで `create(:user, :admin)` のように使うと、管理者用の値を持つデータを作りやすくなります。 ([Thoughtbot](https://thoughtbot.github.io/factory_bot/traits/summary.html "Traits - factory_bot"))
 
 具体例：
 
@@ -501,7 +501,7 @@ end
 👉 **今ログインしているユーザーが管理者かどうかを確認する書き方**
 
 **解説：**
-`current_user` は、ログイン中のユーザーを表すことが多いです。そこに対して `admin?` を呼ぶと、管理者権限があるかどうかを判定できます。`current_user` という名前自体は Rails 本体の共通メソッドではなく、Devise などの認証機能でよく使われるものです。`admin?` の部分は boolean カラム由来の判定です。 ([Ruby on Rails API](https://api.rubyonrails.org/classes/ActiveRecord/AttributeMethods.html?utm_source=chatgpt.com "ActiveRecord::AttributeMethods - Rails API"))
+`current_user` は、ログイン中のユーザーを表すことが多いです。そこに対して `admin?` を呼ぶと、管理者権限があるかどうかを判定できます。`current_user` という名前自体は Rails 本体の共通メソッドではなく、Devise などの認証機能でよく使われるものです。`admin?` の部分は boolean カラム由来の判定です。 ([Ruby on Rails API](https://api.rubyonrails.org/classes/ActiveRecord/AttributeMethods.html "ActiveRecord::AttributeMethods - Rails API"))
 
 具体例：
 
@@ -519,7 +519,7 @@ end
 **解説：**
 Rubyでは、名前の最後に `?` が付くメソッドは、状態や条件をたずねるためのメソッドとして使うのが慣習です。
 たとえば `empty?` や `nil?` は、「空ですか？」「nilですか？」を確認します。
-Rubyの公式ドキュメントでも、`?` で終わるメソッドは慣習として真偽値を返すものと説明されています。 ([Ruby言語ドキュメント](https://docs.ruby-lang.org/en/3.0/syntax/methods_rdoc.html?utm_source=chatgpt.com "methods - RDoc Documentation"))
+Rubyの公式ドキュメントでも、`?` で終わるメソッドは慣習として真偽値を返すものと説明されています。 ([Ruby言語ドキュメント](https://docs.ruby-lang.org/en/3.0/syntax/methods_rdoc.html "methods - RDoc Documentation"))
 
 具体例：
 

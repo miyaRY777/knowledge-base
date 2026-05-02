@@ -1,6 +1,6 @@
 ---
 id: note-insight-activerecord-eager-load
-title: `eager_load`とは？
+title: "`eager_load`とは？"
 created: 2026-04-19
 source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
 ---

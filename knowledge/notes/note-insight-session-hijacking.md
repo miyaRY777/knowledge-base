@@ -1,6 +1,6 @@
 ---
 id: note-insight-session-hijacking
-title: セッションハイジャックは盗んだセッションIDで本人になりすます攻撃
+title: "セッションハイジャックは盗んだセッションIDで本人になりすます攻撃"
 created: 2026-04-25
 source: [[2026-04-25_insight_cookie-session-security-basics.md]]
 ---

@@ -1,11 +1,11 @@
 ---
 id: note-insight-axios
-title: Axios（アクシオス）の要点
+title: "Axios（アクシオス）の要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **JavaScriptでサーバーにHTTPリクエストを簡単に送るためのライブラリ（道具）**
 - `Axios` は、JavaScriptからサーバーとやり取りするときに使うライブラリです。
 - たとえば、一覧データを取りに行ったり、フォームの内容を送信したりするときに使います。

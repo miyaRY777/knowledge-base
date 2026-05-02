@@ -1,6 +1,6 @@
 ---
 id: note-insight-session
-title: セッションの要点
+title: "セッションの要点"
 created: 2026-04-21
 source: [[2026-04-21_insight_session-cookie-basics.md]]
 ---

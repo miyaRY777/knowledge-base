@@ -1,6 +1,6 @@
 ---
 id: note-insight-stimulus-targets
-title: Stimulusのstatic targetsは操作したい要素に名前を付ける仕組み
+title: "Stimulusのstatic targetsは操作したい要素に名前を付ける仕組み"
 created: 2026-04-12
 source: [[2026-04-12_insight_stimulus-and-javascript-basics]]
 ---

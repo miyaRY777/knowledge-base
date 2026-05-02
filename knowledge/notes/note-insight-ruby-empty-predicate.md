@@ -1,6 +1,6 @@
 ---
 id: note-insight-ruby-empty-predicate
-title: Rubyの`empty?`は中身が空かを見る
+title: "Rubyの`empty?`は中身が空かを見る"
 created: 2026-04-08
 source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 ---

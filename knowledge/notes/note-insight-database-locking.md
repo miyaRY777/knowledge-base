@@ -1,6 +1,6 @@
 ---
 id: note-insight-database-locking
-title: ロック機構は同時更新による競合を防ぐ
+title: "ロック機構は同時更新による競合を防ぐ"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

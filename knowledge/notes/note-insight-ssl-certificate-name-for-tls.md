@@ -1,6 +1,6 @@
 ---
 id: note-insight-ssl-certificate-name-for-tls
-title: SSL証明書は現在のTLS通信で使う証明書を指すことが多い
+title: "SSL証明書は現在のTLS通信で使う証明書を指すことが多い"
 created: 2026-04-29
 source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 review_streak: 1

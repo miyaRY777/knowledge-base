@@ -1,6 +1,6 @@
 ---
 id: note-insight-database-record
-title: レコードはテーブルに保存される1件分のデータ
+title: "レコードはテーブルに保存される1件分のデータ"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

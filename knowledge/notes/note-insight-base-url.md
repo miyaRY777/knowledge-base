@@ -1,11 +1,11 @@
 ---
 id: note-insight-base-url
-title: baseURLの要点
+title: "baseURLの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - 毎回同じURLの前半部分を、省略して書けるようにする設定
 - `baseURL` は、毎回同じドメインやURLの先頭部分を書く手間を減らすための設定です。
 - インスタンスに設定しておくと、`/users` のような相対パスだけで通信できます。

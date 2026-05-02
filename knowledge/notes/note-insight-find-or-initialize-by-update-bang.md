@@ -1,17 +1,17 @@
 ---
 id: note-insight-find-or-initialize-by-update-bang
-title: find_or_initialize_by + update!の要点
+title: "find_or_initialize_by + update!の要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **見つけるか、なければメモリ上で作ってから、保存まで明示的に行う書き方**
 - `find_or_initialize_by` は、見つかればそのレコードを返し、なければ未保存の新しいオブジェクトを返します。
 - そのあと `update!` を使うと、属性を代入して保存まで行い、失敗時は例外になります。
 
 ## Tags
-#rails #activerecord #http
+#rails #activerecord #database
 
 ## Links
 

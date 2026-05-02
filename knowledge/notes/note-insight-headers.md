@@ -1,11 +1,11 @@
 ---
 id: note-insight-headers
-title: HTTPにおけるheadersの要点
+title: "HTTPにおけるheadersの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **リクエストやレスポンスに付ける追加情報**
 - `headers` は、通信時に一緒に送るメタ情報です。
 - たとえば「JSONを送ります」「認証トークンがあります」といった情報をここに入れます。

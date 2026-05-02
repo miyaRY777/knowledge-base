@@ -1,6 +1,6 @@
 ---
 id: note-insight-storage-device
-title: 記憶装置はデータやプログラムを保存する
+title: "記憶装置はデータやプログラムを保存する"
 created: 2026-04-10
 source: [[2026-04-10_insight_computer-five-major-units]]
 ---

@@ -1,6 +1,6 @@
 ---
 id: note-insight-n-plus-one
-title: N+1は関連データ取得でSQLが増えすぎる問題
+title: "N+1は関連データ取得でSQLが増えすぎる問題"
 created: 2026-04-28
 source: [[2026-04-28_insight_n-plus-one-oop-database.md]]
 review_streak: 1

@@ -1,17 +1,17 @@
 ---
 id: note-insight-array-loop-processing
-title: 配列とループ処理の要点
+title: "配列とループ処理の要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **配列の中身を順番に取り出して処理すること**
-- 配列は複数の値を順番に持てるので、ループと相性がいいです。`for` 文では `length` を使って、先頭から末尾まで1つずつ処理できます。 ([MDNのウェブドキュメント](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Loops?utm_source=chatgpt.com "Looping code - Learn web development | MDN"))
+- 配列は複数の値を順番に持てるので、ループと相性がいいです。`for` 文では `length` を使って、先頭から末尾まで1つずつ処理できます。 ([MDNのウェブドキュメント](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Loops "Looping code - Learn web development | MDN"))
 - const fruits = ["apple", "banana", "orange"];
 
 ## Tags
-#http
+#javascript #array #loop
 
 ## Links
 
@@ -19,7 +19,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 **配列の中身を順番に取り出して処理すること**
 
 **解説：**
-配列は複数の値を順番に持てるので、ループと相性がいいです。`for` 文では `length` を使って、先頭から末尾まで1つずつ処理できます。 ([MDNのウェブドキュメント](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Loops?utm_source=chatgpt.com "Looping code - Learn web development | MDN"))
+配列は複数の値を順番に持てるので、ループと相性がいいです。`for` 文では `length` を使って、先頭から末尾まで1つずつ処理できます。 ([MDNのウェブドキュメント](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Loops "Looping code - Learn web development | MDN"))
 
 ## Example
 

@@ -1,11 +1,11 @@
 ---
 id: note-insight-format-html-redirect-notice
-title: respond_toにおけるformat.htmlとは何か
+title: "respond_toにおけるformat.htmlとは何か"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **`respond_to` の中で、通常のHTMLリクエストに対する処理を書く分岐**
 - ブラウザで普通のページ遷移をする場合のレスポンスをここに書く。
 - `redirect_to` や `render` を使って、次に表示する画面やメッセージを指定する。

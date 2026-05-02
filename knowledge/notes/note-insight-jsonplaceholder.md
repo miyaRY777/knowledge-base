@@ -1,11 +1,11 @@
 ---
 id: note-insight-jsonplaceholder
-title: JSONPlaceholderの要点
+title: "JSONPlaceholderの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - 本物のAPIのようにHTTP通信を試せる練習用サービス（**モックAPIサービス**）
 - `JSONPlaceholder` は、本物のAPIのようにHTTP通信を試せる練習用サービスです。
 - `GET` や `POST` などを気軽に試せるので、学習やサンプルコードによく使われます。

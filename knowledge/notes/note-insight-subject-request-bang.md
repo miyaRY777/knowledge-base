@@ -1,11 +1,11 @@
 ---
 id: note-insight-subject-request-bang
-title: subject(:request!)の要点
+title: "subject(:request!)の要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **テストで呼び出す処理に名前をつける仕組み**
 - RSpecで、繰り返し使う処理を `subject` にまとめて、`request!` という名前で呼び出せるようにします。
 - テストコードをスッキリさせるために使います。

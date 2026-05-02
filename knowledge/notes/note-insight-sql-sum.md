@@ -1,6 +1,6 @@
 ---
 id: note-insight-sql-sum
-title: SUMは数値カラムの合計を計算する集計関数
+title: "SUMは数値カラムの合計を計算する集計関数"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

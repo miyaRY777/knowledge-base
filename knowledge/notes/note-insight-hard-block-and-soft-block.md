@@ -1,6 +1,6 @@
 ---
 id: note-insight-hard-block-and-soft-block
-title: ハードブロックとソフトブロックは止め方が違う
+title: "ハードブロックとソフトブロックは止め方が違う"
 created: 2026-04-11
 source: [[2026-04-11_insight_action-policy-and-duration-review]]
 ---

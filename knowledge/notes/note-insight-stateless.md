@@ -1,6 +1,6 @@
 ---
 id: note-insight-stateless
-title: ステートレスの要点
+title: "ステートレスの要点"
 created: 2026-04-17
 source: [[2026-04-17_insight_cookie-http-stateless.md]]
 ---

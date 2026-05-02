@@ -1,6 +1,6 @@
 ---
 id: note-insight-activerecord-includes
-title: `includes` は状況に応じて関連の読み込み方法を切り替える
+title: "`includes` は状況に応じて関連の読み込み方法を切り替える"
 created: 2026-04-26
 source: [[2026-04-26_insight_active-record-loading-and-joins.md]]
 ---

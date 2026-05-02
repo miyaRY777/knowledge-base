@@ -1,6 +1,6 @@
 ---
 id: note-insight-rails-blank-is-safe
-title: `blank?`が安全と言われる理由
+title: "`blank?`が安全と言われる理由"
 created: 2026-04-08
 source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 ---

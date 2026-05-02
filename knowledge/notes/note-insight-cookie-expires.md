@@ -1,6 +1,6 @@
 ---
 id: note-insight-cookie-expires
-title: expires属性の要点
+title: "expires属性の要点"
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 ---
@@ -24,10 +24,10 @@ source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 
 ## Example
 ```http
-Set-Cookie: user_id=12345; expires=Wed, 21 Oct 2025 07:28:00 GMT
+Set-Cookie: session_id=abc123; expires=Wed, 21 Oct 2026 07:28:00 GMT
 ```
 
-このコードでは、指定された日時まで `user_id` の Cookie を保持します。
+このコードでは、指定された日時まで `session_id` の Cookie を保持します。
 
 ## Action
 - [ ] `Max-Age` との違いも整理する

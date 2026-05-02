@@ -1,6 +1,6 @@
 ---
 id: note-insight-entry-point
-title: エントリーポイントは処理や読み込みの起点
+title: "エントリーポイントは処理や読み込みの起点"
 created: 2026-04-09
 source: [[2026-04-09_insight-entry-point-css-entry-build-output-stimulus-classes]]
 ---

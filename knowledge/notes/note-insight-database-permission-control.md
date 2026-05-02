@@ -1,6 +1,6 @@
 ---
 id: note-insight-database-permission-control
-title: 権限管理は誰がどのデータを操作できるかを制御する
+title: "権限管理は誰がどのデータを操作できるかを制御する"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

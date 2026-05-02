@@ -1,11 +1,11 @@
 ---
 id: note-insight-destroy-vs-destroy-bang
-title: destroy! と destroy の違いの要点
+title: "destroy! と destroy の違いの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **失敗時に例外を出すかどうかの違い**
 - `destroy` は失敗しても false を返します。
 - `destroy!` は失敗すると例外を発生させます。

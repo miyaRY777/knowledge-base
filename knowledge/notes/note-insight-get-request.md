@@ -1,11 +1,11 @@
 ---
 id: note-insight-get-request
-title: GETリクエストの要点
+title: "GETリクエストの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **サーバーからデータを取得するときのリクエストのこと**
 - `GETリクエスト` は、データを読むときに使う基本的なHTTPメソッドです。
 - 一覧表示や詳細表示のデータ取得でよく使います。

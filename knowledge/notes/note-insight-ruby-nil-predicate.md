@@ -1,6 +1,6 @@
 ---
 id: note-insight-ruby-nil-predicate
-title: Rubyの`nil?`は値そのものがnilかを見る
+title: "Rubyの`nil?`は値そのものがnilかを見る"
 created: 2026-04-08
 source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 ---

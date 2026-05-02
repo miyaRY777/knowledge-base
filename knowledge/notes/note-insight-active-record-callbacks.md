@@ -1,11 +1,11 @@
 ---
 id: note-insight-active-record-callbacks
-title: Active Record Callbacksの仕組みと注意点
+title: "Active Record Callbacksの仕組みと注意点"
 created: 2026-03-31
 source: [[2026-03-31_insight_rails-study.md]]
 ---
 
-## Summary（3行）
+## Summary
 - モデルの作成・更新・削除の前後に自動で処理を挟む仕組み
 - before_create, after_save などタイミング別にフックできる
 - 便利だが多用すると処理の流れが追いにくくなるリスクがある

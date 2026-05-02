@@ -1,6 +1,6 @@
 ---
 id: note-insight-firewall-traffic-control
-title: ファイアウォールは通信を許可またはブロックする仕組み
+title: "ファイアウォールは通信を許可またはブロックする仕組み"
 created: 2026-04-29
 source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 review_streak: 1

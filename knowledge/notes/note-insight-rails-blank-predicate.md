@@ -1,6 +1,6 @@
 ---
 id: note-insight-rails-blank-predicate
-title: Railsの`blank?`は空っぽをまとめて判定できる
+title: "Railsの`blank?`は空っぽをまとめて判定できる"
 created: 2026-04-08
 source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 ---

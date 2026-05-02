@@ -1,6 +1,6 @@
 ---
 id: note-insight-git-branch-switch-does-not-switch-db
-title: Gitでブランチを切り替えてもDBは自動で切り替わらない
+title: "Gitでブランチを切り替えてもDBは自動で切り替わらない"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
 ---

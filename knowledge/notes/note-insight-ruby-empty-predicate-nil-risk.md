@@ -1,6 +1,6 @@
 ---
 id: note-insight-ruby-empty-predicate-nil-risk
-title: `empty?`はnilに使うとNoMethodErrorになる
+title: "`empty?`はnilに使うとNoMethodErrorになる"
 created: 2026-04-08
 source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 ---

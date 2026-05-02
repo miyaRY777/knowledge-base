@@ -1,6 +1,6 @@
 ---
 id: note-insight-object-oriented-programming
-title: オブジェクト指向はデータと処理をまとめて扱う考え方
+title: "オブジェクト指向はデータと処理をまとめて扱う考え方"
 created: 2026-04-28
 source: [[2026-04-28_insight_n-plus-one-oop-database.md]]
 ---

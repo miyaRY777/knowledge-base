@@ -1,6 +1,6 @@
 ---
 id: note-insight-foreign-key-constraint
-title: 外部キー制約は存在する関連先だけを参照させる
+title: "外部キー制約は存在する関連先だけを参照させる"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

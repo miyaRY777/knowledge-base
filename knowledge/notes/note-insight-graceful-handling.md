@@ -1,11 +1,11 @@
 ---
 id: note-insight-graceful-handling
-title: graceful に処理するの要点
+title: "graceful に処理するの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **エラーで落とさずユーザーに優しく処理すること**
 - 例外でアプリを止めるのではなく、メッセージ表示やリダイレクトで対応します。
 - ユーザー体験を守るために重要です。

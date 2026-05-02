@@ -1,8 +1,9 @@
 ---
 id: note-insight-motherboard
-title: マザーボードは各部品をつなぐ基盤
+title: "マザーボードは各部品をつなぐ基盤"
 created: 2026-04-15
-source: [[2026-04-15_insight_memory-storage-motherboard-basics]]review_streak: 0
+source: [[2026-04-15_insight_memory-storage-motherboard-basics]]
+review_streak: 0
 ---
 
 ## Summary

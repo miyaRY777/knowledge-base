@@ -1,17 +1,17 @@
 ---
 id: note-insight-increment-expression
-title: for文における増減式とは何か
+title: "for文における増減式とは何か"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **ループごとに値を増やしたり減らしたりする部分**
 - `for (初期化; 条件; 増減式)` の3つ目に書く式です。1回ループが終わるたびに実行され、カウンタを `i++` や `i--` のように変化させます。 ([MDNのウェブドキュメント](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration "Loops and iteration - JavaScript | MDN"))
 - for (let i = 0; i < 3; i++) {
 
 ## Tags
-#javascript #http
+#javascript #loop
 
 ## Links
 

@@ -1,11 +1,11 @@
 ---
 id: note-insight-content-type
-title: Content-Typeの要点
+title: "Content-Typeの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **送るデータの種類をサーバーに伝えるヘッダー**
 - `Content-Type` は、送信するデータがどんな形式かを示すためのヘッダーです。
 - `application/json` を指定すると、「JSON形式で送ります」という意味になります。

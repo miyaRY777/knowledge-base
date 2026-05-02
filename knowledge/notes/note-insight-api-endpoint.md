@@ -1,6 +1,6 @@
 ---
 id: note-insight-api-endpoint
-title: APIエンドポイントはAPIにリクエストを送る入口のURL
+title: "APIエンドポイントはAPIにリクエストを送る入口のURL"
 created: 2026-04-26
 source: [[2026-04-26_insight_active-record-loading-and-joins.md]]
 ---

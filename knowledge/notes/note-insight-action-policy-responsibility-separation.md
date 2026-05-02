@@ -1,6 +1,6 @@
 ---
 id: note-insight-action-policy-responsibility-separation
-title: ActionPolicyは認可をコントローラから分離する
+title: "ActionPolicyは認可をコントローラから分離する"
 created: 2026-04-11
 source: [[2026-04-11_insight_action-policy-and-duration-review]]
 ---

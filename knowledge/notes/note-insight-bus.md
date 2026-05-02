@@ -1,6 +1,6 @@
 ---
 id: note-insight-bus
-title: マザーボードにおけるバスとは何か
+title: "マザーボードにおけるバスとは何か"
 created: 2026-04-15
 source: [[2026-04-15_insight_memory-storage-motherboard-basics]]
 review_streak: 1

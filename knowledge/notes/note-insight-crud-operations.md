@@ -1,6 +1,6 @@
 ---
 id: note-insight-crud-operations
-title: CRUDはデータの作成・取得・更新・削除を表す基本操作
+title: "CRUDはデータの作成・取得・更新・削除を表す基本操作"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

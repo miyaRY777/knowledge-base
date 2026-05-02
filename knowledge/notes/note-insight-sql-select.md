@@ -1,6 +1,6 @@
 ---
 id: note-insight-sql-select
-title: SELECTはデータベースから行を取得するSQL文
+title: "SELECTはデータベースから行を取得するSQL文"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

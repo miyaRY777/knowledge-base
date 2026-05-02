@@ -1,6 +1,6 @@
 ---
 id: note-insight-session-termination
-title: セッション終了の要点
+title: "セッション終了の要点"
 created: 2026-04-22
 source: [[2026-04-22_insight_session-flow-basics.md]]
 ---

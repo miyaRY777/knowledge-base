@@ -78,7 +78,7 @@ Set-Cookie: tracking_id=xyz789; Domain=analytics.example.com; Path=/
 
 **解説：**
 Cookieは便利ですが、設定が弱いと盗み見や不正利用のリスクがあります。
-また、サードパーティCookieは行動追跡に使われることがあり、プライバシー面でも注意が必要です。 ([MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Cookies?utm_source=chatgpt.com "HTTP Cookie の使用 - MDN Web Docs"))
+また、サードパーティCookieは行動追跡に使われることがあり、プライバシー面でも注意が必要です。 ([MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Cookies "HTTP Cookie の使用 - MDN Web Docs"))
 
 具体例：
 
@@ -97,7 +97,7 @@ Set-Cookie: session_id=abc123; Secure; HttpOnly; SameSite=Lax
 **解説：**
 `Secure` を付けると、そのCookieは基本的に暗号化されたHTTPS通信でのみ送信されます。
 これにより、HTTP通信でCookieが盗み見られるリスクを減らせます。
-ただし、`Secure` だけでCookieの中身そのものが完全に守られるわけではありません。 ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Cookies?utm_source=chatgpt.com "Secure cookie configuration - MDN Web Docs - Mozilla"))
+ただし、`Secure` だけでCookieの中身そのものが完全に守られるわけではありません。 ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Cookies "Secure cookie configuration - MDN Web Docs - Mozilla"))
 
 具体例：
 
@@ -116,7 +116,7 @@ Set-Cookie: session_id=abc123; Secure
 **解説：**
 `HttpOnly` を付けると、`document.cookie` などのJavaScriptからそのCookieへアクセスできなくなります。
 そのため、XSSによってCookieを盗まれるリスクを下げる目的で使われます。
-ログイン用のCookieには特に重要です。 ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Cookies?utm_source=chatgpt.com "Secure cookie configuration - MDN Web Docs - Mozilla"))
+ログイン用のCookieには特に重要です。 ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Cookies "Secure cookie configuration - MDN Web Docs - Mozilla"))
 
 具体例：
 
@@ -135,7 +135,7 @@ Set-Cookie: session_id=abc123; HttpOnly
 **解説：**
 `SameSite` は、クロスサイトのリクエストでCookieを送信するかを決める属性です。
 `Lax` や `Strict` を使うと、CSRFのリスクを減らしやすくなります。
-なお、`SameSite=None` を使う場合は `Secure` も必要です。 ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Cookies?utm_source=chatgpt.com "Secure cookie configuration - MDN Web Docs - Mozilla"))
+なお、`SameSite=None` を使う場合は `Secure` も必要です。 ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Cookies "Secure cookie configuration - MDN Web Docs - Mozilla"))
 
 具体例：
 
@@ -154,7 +154,7 @@ Set-Cookie: session_id=abc123; SameSite=Lax
 **解説：**
 `Lax` は、多くの場面で使いやすい標準的な設定です。
 別サイトからのすべての送信を完全に止めるわけではありませんが、多くのCSRF対策に役立ちます。
-設定しない場合、ブラウザによっては `Lax` が既定になることがあります。 ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Cookies?utm_source=chatgpt.com "Secure cookie configuration - MDN Web Docs - Mozilla"))
+設定しない場合、ブラウザによっては `Lax` が既定になることがあります。 ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Cookies "Secure cookie configuration - MDN Web Docs - Mozilla"))
 
 具体例：
 
@@ -173,7 +173,7 @@ Set-Cookie: session_id=abc123; SameSite=Lax; Secure
 **解説：**
 `Strict` は、クロスサイトでのCookie送信をより厳しく制限します。
 そのぶん安全性は高めやすいですが、外部サイトから遷移してきたときの動作に影響する場合があります。
-使いやすさとのバランスを見て選ぶことが大切です。 ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Cookies?utm_source=chatgpt.com "Secure cookie configuration - MDN Web Docs - Mozilla"))
+使いやすさとのバランスを見て選ぶことが大切です。 ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Cookies "Secure cookie configuration - MDN Web Docs - Mozilla"))
 
 具体例：
 
@@ -192,7 +192,7 @@ Set-Cookie: session_id=abc123; SameSite=Strict; Secure
 **解説：**
 `SameSite=None` は、他サイトに埋め込まれたサービスなどでCookie送信が必要な場合に使います。
 ただし、この設定を使う場合は `Secure` 属性も必要です。
-必要性がないのに使うと、追跡や攻撃の面で不利になることがあります。 ([MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Cookies?utm_source=chatgpt.com "HTTP Cookie の使用 - MDN Web Docs"))
+必要性がないのに使うと、追跡や攻撃の面で不利になることがあります。 ([MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Cookies "HTTP Cookie の使用 - MDN Web Docs"))
 
 具体例：
 
@@ -211,7 +211,7 @@ Set-Cookie: widget_session=abc123; SameSite=None; Secure
 **解説：**
 Cookieはブラウザ設定から削除できることがあります。
 また、サーバー側から有効期限を過去にした `Set-Cookie` を返して削除することもあります。
-ログアウト時などによく使われます。 ([MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Cookies?utm_source=chatgpt.com "HTTP Cookie の使用 - MDN Web Docs"))
+ログアウト時などによく使われます。 ([MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Cookies "HTTP Cookie の使用 - MDN Web Docs"))
 
 具体例：
 

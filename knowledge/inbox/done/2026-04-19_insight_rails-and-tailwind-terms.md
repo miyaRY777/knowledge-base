@@ -5,7 +5,7 @@
 
 **解説：**
 `grid-cols-2` は 2 列、`grid-cols-4` は 4 列の Grid を作るクラスです。
-`md:` と `lg:` はレスポンシブ指定で、中サイズ以上では 2 列、大サイズ以上では 4 列に切り替わります。 ([Tailwind CSS](https://tailwindcss.com/docs/grid-template-columns?utm_source=chatgpt.com "grid-template-columns - Flexbox & Grid"))
+`md:` と `lg:` はレスポンシブ指定で、中サイズ以上では 2 列、大サイズ以上では 4 列に切り替わります。 ([Tailwind CSS](https://tailwindcss.com/docs/grid-template-columns "grid-template-columns - Flexbox & Grid"))
 
 具体例：
 
@@ -29,7 +29,7 @@
 **解説：**
 `フォールバックURL` は Rails の特別な機能名ではありません。
 一般に「優先して使う URL がない・使えない場合に、代わりに返す URL」という意味で使われることがあります。
-どの URL を本命にして、どれを代わりにするかは、アプリ側の実装で意味が決まります。Rails では通常の URL 生成に `url_for` やルーティングヘルパーを使います。 ([Ruby on Rails Guides](https://guides.rubyonrails.org/active_record_querying.html?utm_source=chatgpt.com "Active Record Query Interface"))
+どの URL を本命にして、どれを代わりにするかは、アプリ側の実装で意味が決まります。Rails では通常の URL 生成に `url_for` やルーティングヘルパーを使います。 ([Ruby on Rails Guides](https://guides.rubyonrails.org/active_record_querying.html "Active Record Query Interface"))
 
 具体例：
 
@@ -50,7 +50,7 @@ end
 **解説：**
 `eager_load` は、関連先も含めて 1 回の JOIN クエリで読み込みたいときに使います。
 関連先の条件や並び替えを扱いたい場面で使われることがあります。
-`includes` と似ていますが、SQL の組み立て方が違います。 ([Ruby on Rails Guides](https://guides.rubyonrails.org/active_record_querying.html?utm_source=chatgpt.com "Active Record Query Interface"))
+`includes` と似ていますが、SQL の組み立て方が違います。 ([Ruby on Rails Guides](https://guides.rubyonrails.org/active_record_querying.html "Active Record Query Interface"))
 
 具体例：
 
@@ -73,7 +73,7 @@ end
 **解説：**
 ヘルパーテストは、ビューで使う Helper メソッドが正しく動くかを確かめるテストです。
 Rails では `ActionView::TestCase` を使って、文字列や HTML の出力を確認できます。
-ビュー全体ではなく、表示用の小さなロジックだけを切り出して確かめたいときに便利です。 ([Ruby on Rails Guides](https://guides.rubyonrails.org/testing.html?utm_source=chatgpt.com "Testing Rails Applications"))
+ビュー全体ではなく、表示用の小さなロジックだけを切り出して確かめたいときに便利です。 ([Ruby on Rails Guides](https://guides.rubyonrails.org/testing.html "Testing Rails Applications"))
 
 具体例：
 
@@ -99,7 +99,7 @@ end
 
 **解説：**
 `&.` は Ruby の safe navigation operator で、左側の値が `nil` ならメソッドを呼ばずに `nil` を返します。
-`NoMethodError` を防ぎたいときに便利ですが、何でも `&.` でつなぐと、本来気づくべき `nil` を見逃すことがあるので注意が必要です。 ([Rubyドキュメント](https://docs.ruby-lang.org/ja/latest/doc/news%3D2f2_3_0.html?utm_source=chatgpt.com "NEWS for Ruby 2.3.0 (Ruby 4.0 リファレンスマニュアル)"))
+`NoMethodError` を防ぎたいときに便利ですが、何でも `&.` でつなぐと、本来気づくべき `nil` を見逃すことがあるので注意が必要です。 ([Rubyドキュメント](https://docs.ruby-lang.org/ja/latest/doc/news%3D2f2_3_0.html "NEWS for Ruby 2.3.0 (Ruby 4.0 リファレンスマニュアル)"))
 
 具体例：
 

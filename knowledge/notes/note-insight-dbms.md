@@ -1,6 +1,6 @@
 ---
 id: note-insight-dbms
-title: DBMSはデータベースを管理・操作するソフトウェア
+title: "DBMSはデータベースを管理・操作するソフトウェア"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

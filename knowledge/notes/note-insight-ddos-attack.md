@@ -1,6 +1,6 @@
 ---
 id: note-insight-ddos-attack
-title: DDoS攻撃は大量通信でサービスを使えなくする攻撃
+title: "DDoS攻撃は大量通信でサービスを使えなくする攻撃"
 created: 2026-04-27
 source: [[2026-04-27_insight_internet-security-basics.md]]
 ---

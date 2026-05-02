@@ -1,11 +1,11 @@
 ---
 id: note-insight-scoped-room-membership-find
-title: current_user.profile.room_memberships.find(params[:id])の要点
+title: "current_user.profile.room_memberships.find(params[:id])の要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **ログインユーザーに紐づくデータだけを安全に取得する方法**
 - 関連をたどって検索することで、自分のデータ以外にアクセスできないようにします。
 - セキュリティ対策として重要です。

@@ -1,6 +1,6 @@
 ---
 id: note-insight-rails-present-predicate
-title: Railsの`present?`は中身があるかを見る
+title: "Railsの`present?`は中身があるかを見る"
 created: 2026-04-08
 source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 ---

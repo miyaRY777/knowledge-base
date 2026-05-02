@@ -1,11 +1,11 @@
 ---
 id: note-insight-turbo-stream-accept-header
-title: headers: { "Accept" => "text/vnd.turbo-stream.html" }の要点
+title: "headers: { \"Accept\" => \"text/vnd.turbo-stream.html\" }の要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **Turbo Stream形式でレスポンスを受け取るためのHTTPヘッダー**
 - リクエスト時に「Turbo Stream形式で返してほしい」とサーバーに伝えるために使います。
 - これにより、`format.turbo_stream` が選ばれて部分更新が行われます。

@@ -1,6 +1,6 @@
 ---
 id: note-insight-stimulus-connect-callback
-title: Stimulusのconnect()はコントローラ接続時に自動実行される
+title: "Stimulusのconnect()はコントローラ接続時に自動実行される"
 created: 2026-04-12
 source: [[2026-04-12_insight_stimulus-and-javascript-basics]]
 ---

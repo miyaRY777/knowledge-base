@@ -1,6 +1,6 @@
 ---
 id: note-insight-cookie-secure
-title: Secure属性の要点
+title: "Secure属性の要点"
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 ---
@@ -26,10 +26,10 @@ source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 
 ## Example
 ```http
-Set-Cookie: user_id=12345; Secure
+Set-Cookie: session_id=abc123; Secure
 ```
 
-このコードでは、安全な HTTPS 通信のときだけ `user_id` の Cookie を送るようにしています。
+このコードでは、安全な HTTPS 通信のときだけ `session_id` の Cookie を送るようにしています。
 
 ## Action
 - [ ] HTTPS がない環境での制約も別ノートで確認する

@@ -1,6 +1,6 @@
 ---
 id: note-insight-sql-where
-title: WHEREは条件に合う行だけを絞り込むSQL句
+title: "WHEREは条件に合う行だけを絞り込むSQL句"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

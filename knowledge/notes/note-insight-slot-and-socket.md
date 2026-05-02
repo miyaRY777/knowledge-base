@@ -1,8 +1,9 @@
 ---
 id: note-insight-slot-and-socket
-title: マザーボードにおけるスロット / ソケットとは何か
+title: "マザーボードにおけるスロット / ソケットとは何か"
 created: 2026-04-15
-source: [[2026-04-15_insight_memory-storage-motherboard-basics]]review_streak: 0
+source: [[2026-04-15_insight_memory-storage-motherboard-basics]]
+review_streak: 0
 ---
 
 ## Summary

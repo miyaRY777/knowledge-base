@@ -1,6 +1,6 @@
 ---
 id: note-insight-database-transaction
-title: トランザクションは複数のデータ操作をひとまとまりで扱う仕組み
+title: "トランザクションは複数のデータ操作をひとまとまりで扱う仕組み"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

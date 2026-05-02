@@ -1,6 +1,6 @@
 ---
 id: note-insight-classlist-and-hidden
-title: classListとhiddenは表示切り替えの基本になる
+title: "classListとhiddenは表示切り替えの基本になる"
 created: 2026-04-12
 source: [[2026-04-12_insight_stimulus-and-javascript-basics]]
 ---

@@ -1,6 +1,6 @@
 ---
 id: note-insight-set-cookie-header
-title: Set-Cookieヘッダーの要点
+title: "Set-Cookieヘッダーの要点"
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 ---
@@ -31,10 +31,10 @@ source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 
 ## Example
 ```http
-Set-Cookie: user_id=12345; path=/; HttpOnly
+Set-Cookie: session_id=abc123; path=/; HttpOnly
 ```
 
-このコードでは、サーバーが `user_id` をブラウザに保存し、JavaScript からは参照できないようにしています。
+このコードでは、サーバーが `session_id` をブラウザに保存し、JavaScript からは参照できないようにしています。
 
 ## Action
 - [ ] path 属性と domain 属性の違いも整理する

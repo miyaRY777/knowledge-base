@@ -1,6 +1,6 @@
 ---
 id: note-insight-sql
-title: SQLはデータベースを操作するための言語
+title: "SQLはデータベースを操作するための言語"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

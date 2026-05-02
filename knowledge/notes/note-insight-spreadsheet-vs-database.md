@@ -1,6 +1,6 @@
 ---
 id: note-insight-spreadsheet-vs-database
-title: 表計算ソフトとデータベースは管理できる規模と整合性が違う
+title: "表計算ソフトとデータベースは管理できる規模と整合性が違う"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

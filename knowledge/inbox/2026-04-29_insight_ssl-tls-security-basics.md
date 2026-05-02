@@ -5,7 +5,7 @@
 **解説：**
 `SSL` は、Webサイトとブラウザの間の通信を暗号化し、盗み見や改ざんを防ぐために使われていたセキュリティプロトコルです。
 現在は `SSL` そのものではなく、後継の `TLS` が使われています。
-ただし、慣習として「SSL証明書」「SSL化」のように呼ばれることがあります。 ([cloudflare.com](https://www.cloudflare.com/learning/ssl/what-is-ssl/?utm_source=chatgpt.com "What is SSL (Secure Sockets Layer)?"))
+ただし、慣習として「SSL証明書」「SSL化」のように呼ばれることがあります。 ([cloudflare.com](https://www.cloudflare.com/learning/ssl/what-is-ssl/ "What is SSL (Secure Sockets Layer)?"))
 
 **具体例：**
 - `http://example.com` では、通信内容が暗号化されていない
@@ -22,7 +22,7 @@
 
 **解説：**
 `TLS` は、ブラウザとWebサーバーの通信を暗号化し、通信内容の盗み見や改ざんを防ぐためのプロトコルです。
-MDNでは、現在のバージョンは `TLS 1.3` で、`TLS 1.2` も一部のWebサイトで使われている一方、`TLS 1.0` と `TLS 1.1`は使うべきではないと説明されています。 ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Transport_Layer_Security?utm_source=chatgpt.com "Transport Layer Security (TLS) - MDN Web Docs"))
+MDNでは、現在のバージョンは `TLS 1.3` で、`TLS 1.2` も一部のWebサイトで使われている一方、`TLS 1.0` と `TLS 1.1`は使うべきではないと説明されています。 ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Transport_Layer_Security "Transport Layer Security (TLS) - MDN Web Docs"))
 
 **具体例：**
 - ユーザーがログインフォームにメールアドレスとパスワードを入力する
@@ -39,7 +39,7 @@ MDNでは、現在のバージョンは `TLS 1.3` で、`TLS 1.2` も一部のWe
 
 **解説：**
 `ファイアウォール` は、ネットワークに入ってくる通信や出ていく通信を確認し、条件に応じて許可・ブロックする仕組みです。
-Microsoftの説明では、IPアドレス、ポート番号、アプリケーションなどの条件にもとづいて通信を制御できるとされています。 ([Microsoft Learn](https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/?utm_source=chatgpt.com "Windows Firewall Overview"))
+Microsoftの説明では、IPアドレス、ポート番号、アプリケーションなどの条件にもとづいて通信を制御できるとされています。 ([Microsoft Learn](https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/ "Windows Firewall Overview"))
 
 **具体例：**
 - Webサーバーでは、Webアクセス用の `80番` や `443番` ポートは許可する
@@ -56,7 +56,7 @@ Microsoftの説明では、IPアドレス、ポート番号、アプリケーシ
 
 **解説：**
 `二要素認証` は、パスワードだけでなく、スマホアプリの確認コードや生体認証など、別の要素も使ってログインする仕組みです。
-NISTでは、認証要素として「知っているもの」「持っているもの」「本人自身の特徴」が説明されています。 ([NISTコンピュータセキュリティリソースセンター](https://csrc.nist.gov/glossary/term/2fa?utm_source=chatgpt.com "2FA - Glossary | CSRC"))
+NISTでは、認証要素として「知っているもの」「持っているもの」「本人自身の特徴」が説明されています。 ([NISTコンピュータセキュリティリソースセンター](https://csrc.nist.gov/glossary/term/2fa "2FA - Glossary | CSRC"))
 
 **具体例：**
 - 1つ目の要素：パスワードを入力する

@@ -1,6 +1,6 @@
 ---
 id: note-insight-cookie-deletion
-title: Cookie削除の要点
+title: "Cookie削除の要点"
 created: 2026-04-18
 source: [[2026-04-18_insight_cookie-basics-and-security.md]]
 ---

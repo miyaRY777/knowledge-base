@@ -1,6 +1,6 @@
 ---
 id: note-insight-data-tampering
-title: データの改ざんは保存中や通信中の内容が勝手に書き換えられること
+title: "データの改ざんは保存中や通信中の内容が勝手に書き換えられること"
 created: 2026-04-27
 source: [[2026-04-27_insight_internet-security-basics.md]]
 ---

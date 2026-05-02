@@ -1,6 +1,6 @@
 ---
 id: note-insight-kaminari-paginator-partial-role
-title: Kaminariの_paginator.html.erbはページネーション全体の構造を決める
+title: "Kaminariの_paginator.html.erbはページネーション全体の構造を決める"
 created: 2026-04-24
 source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
 ---

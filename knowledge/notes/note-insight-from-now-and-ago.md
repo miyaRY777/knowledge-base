@@ -1,6 +1,6 @@
 ---
 id: note-insight-from-now-and-ago
-title: `.from_now` と `.ago` は現在時刻から Time を作る
+title: "`.from_now` と `.ago` は現在時刻から Time を作る"
 created: 2026-04-11
 source: [[2026-04-11_insight_action-policy-and-duration-review]]
 ---

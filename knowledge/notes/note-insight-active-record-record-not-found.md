@@ -1,11 +1,11 @@
 ---
 id: note-insight-active-record-record-not-found
-title: ActiveRecord::RecordNotFoundの要点
+title: "ActiveRecord::RecordNotFoundの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **レコードが見つからなかったときに発生する例外**
 - `find` でデータが存在しない場合に発生します。
 - rescueしてリダイレクトなどに使います。

@@ -1,6 +1,6 @@
 ---
 id: note-insight-kaminari-page-navigation-partials
-title: Kaminariの個別パーシャルはページ番号や前後移動の見た目を担当する
+title: "Kaminariの個別パーシャルはページ番号や前後移動の見た目を担当する"
 created: 2026-04-24
 source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
 review_streak: 0

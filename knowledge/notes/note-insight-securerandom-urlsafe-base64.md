@@ -1,6 +1,6 @@
 ---
 id: note-insight-securerandom-urlsafe-base64
-title: SecureRandom.urlsafe_base64の要点
+title: "SecureRandom.urlsafe_base64の要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
 ---

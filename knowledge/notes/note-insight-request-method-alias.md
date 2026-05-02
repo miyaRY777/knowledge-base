@@ -1,11 +1,11 @@
 ---
 id: note-insight-request-method-alias
-title: リクエストメソッドエイリアスの要点
+title: "リクエストメソッドエイリアスの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **HTTPメソッドを短くわかりやすく書ける便利な書き方**
 - `axios.get()` や `axios.post()` のような書き方は、`Axios` が用意しているエイリアスです。
 - `axios.request({ method: ... })` よりも短く書けるので、コードが読みやすくなります。

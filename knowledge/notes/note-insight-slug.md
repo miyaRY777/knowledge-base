@@ -1,11 +1,11 @@
 ---
 id: note-insight-slug
-title: slugの要点
+title: "slugの要点"
 created: 2026-03-30
 source: [[2026-03-30_insight_rails-study.md]]
 ---
 
-## Summary（3行）
+## Summary
 - URLに使うための「人が読める識別子」で、数値IDの代わりに使う
 - 記事タイトルなどから生成し、URLをわかりやすく・SEOにも有利にする
 - Rails固有の機能ではなく、アプリケーション側で設計・実装する汎用的な概念

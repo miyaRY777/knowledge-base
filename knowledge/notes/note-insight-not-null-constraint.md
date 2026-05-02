@@ -1,6 +1,6 @@
 ---
 id: note-insight-not-null-constraint
-title: NOT NULL制約は値が空の保存を防ぐ
+title: "NOT NULL制約は値が空の保存を防ぐ"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

@@ -1,6 +1,6 @@
 ---
 id: note-insight-output-device
-title: 出力装置は処理結果を外に見せる
+title: "出力装置は処理結果を外に見せる"
 created: 2026-04-10
 source: [[2026-04-10_insight_computer-five-major-units]]
 ---

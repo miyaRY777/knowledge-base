@@ -1,6 +1,6 @@
 ---
 id: note-insight-database-constraint
-title: 制約は不正なデータを保存しないためのルール
+title: "制約は不正なデータを保存しないためのルール"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

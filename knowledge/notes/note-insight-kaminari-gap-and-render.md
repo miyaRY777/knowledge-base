@@ -1,6 +1,6 @@
 ---
 id: note-insight-kaminari-gap-and-render
-title: Kaminariではgap表示とrenderでページネーション部品を組み立てる
+title: "Kaminariではgap表示とrenderでページネーション部品を組み立てる"
 created: 2026-04-24
 source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
 ---

@@ -1,11 +1,11 @@
 ---
 id: note-insight-post-request
-title: POSTリクエストの要点
+title: "POSTリクエストの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
 
-## Summary（3行）
+## Summary
 - **サーバーに新しいデータを送るときのリクエストのこと**
 - `POSTリクエスト` は、新規作成したいデータをサーバーに送るときによく使います。
 - フォーム送信や新規登録の処理でよく登場します。

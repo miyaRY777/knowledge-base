@@ -1,6 +1,6 @@
 ---
 id: note-insight-tailwind-responsive-grid-columns
-title: `md:grid-cols-2 lg:grid-cols-4`とは？
+title: "`md:grid-cols-2 lg:grid-cols-4`とは？"
 created: 2026-04-19
 source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
 ---

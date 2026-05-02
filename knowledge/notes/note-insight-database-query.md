@@ -1,6 +1,6 @@
 ---
 id: note-insight-database-query
-title: クエリはデータベースへの命令文
+title: "クエリはデータベースへの命令文"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0

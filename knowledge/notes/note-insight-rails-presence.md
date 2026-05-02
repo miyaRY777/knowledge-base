@@ -1,6 +1,6 @@
 ---
 id: note-insight-rails-presence
-title: Railsの`presence`は空ならnilにできる
+title: "Railsの`presence`は空ならnilにできる"
 created: 2026-04-08
 source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 ---

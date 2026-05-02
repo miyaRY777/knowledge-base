@@ -1,6 +1,6 @@
 ---
 id: note-insight-tls-current-encryption-protocol
-title: TLSは現在のHTTPS通信を保護する暗号化プロトコル
+title: "TLSは現在のHTTPS通信を保護する暗号化プロトコル"
 created: 2026-04-29
 source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 review_streak: 1

@@ -1,6 +1,6 @@
 ---
 id: note-insight-ruby-safe-navigation-operator
-title: `&.`とは？
+title: "`&.`とは？"
 created: 2026-04-19
 source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
 ---

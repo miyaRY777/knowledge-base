@@ -5,7 +5,7 @@
 **解説：**
 情報セキュリティは、情報やシステムを不正なアクセス、改ざん、破壊などから守り、**機密性・完全性・可用性**を保つことが目的です。
 インターネットのセキュリティは、その中でも特に、ネットワーク越しの通信やWebサービスを安全に使うために重要です。
-([NIST コンピュータセキュリティリソースセンター](https://csrc.nist.gov/glossary/term/information_security?utm_source=chatgpt.com "information security - Glossary | CSRC"))
+([NIST コンピュータセキュリティリソースセンター](https://csrc.nist.gov/glossary/term/information_security "information security - Glossary | CSRC"))
 
 具体例：
 
@@ -25,7 +25,7 @@ https://example.com にアクセスするとき、
 **解説：**
 個人情報の盗難は、フィッシングやマルウェア、不正アクセスなどによって、本人の許可なく情報を盗まれることです。
 盗まれた情報は、なりすましログインや金銭被害につながることがあります。
-([情報処理推進機構](https://www.ipa.go.jp/security/anshin/attention/2025/mgdayori20250828.html?utm_source=chatgpt.com "インターネットサービスへの不正ログインによる被害が増加中"))
+([情報処理推進機構](https://www.ipa.go.jp/security/anshin/attention/2025/mgdayori20250828.html "インターネットサービスへの不正ログインによる被害が増加中"))
 
 具体例：
 
@@ -45,7 +45,7 @@ https://example.com にアクセスするとき、
 **解説：**
 サイバー攻撃は、情報を盗む、サービスを止める、データを壊すなどを目的に行われる攻撃の総称です。
 不正アクセス、マルウェア感染、DDoS攻撃などが代表例です。
-([NICCS](https://niccs.cisa.gov/resources/glossary?utm_source=chatgpt.com "Glossary | NICCS - CISA"))
+([NICCS](https://niccs.cisa.gov/resources/glossary "Glossary | NICCS - CISA"))
 
 具体例：
 
@@ -65,7 +65,7 @@ https://example.com にアクセスするとき、
 **解説：**
 データの改ざんは、本来の内容が、作成後・送信中・保存中に**許可なく変更されること**です。
 情報セキュリティでは、こうした不正な変更を防いで、データの正しさを守ることが重要です。
-([NIST コンピュータセキュリティリソースセンター](https://csrc.nist.gov/glossary/term/data_integrity?utm_source=chatgpt.com "data integrity - Glossary | CSRC"))
+([NIST コンピュータセキュリティリソースセンター](https://csrc.nist.gov/glossary/term/data_integrity "data integrity - Glossary | CSRC"))
 
 具体例：
 
@@ -84,7 +84,7 @@ https://example.com にアクセスするとき、
 **解説：**
 フィッシングは、信頼できる企業やサービスを装って、ユーザーにリンクや添付ファイルを開かせ、個人情報や認証情報を盗む手口です。
 メールだけでなく、SMSや偽サイトを使うこともあります。
-([CISA](https://www.cisa.gov/secure-our-world/recognize-and-report-phishing?utm_source=chatgpt.com "Recognize and Report Phishing"))
+([CISA](https://www.cisa.gov/secure-our-world/recognize-and-report-phishing "Recognize and Report Phishing"))
 
 具体例：
 
@@ -104,7 +104,7 @@ IDとパスワードを入力させる
 **解説：**
 マルウェアは、`malicious` と `software` を組み合わせた言葉で、ウイルス、ワーム、ランサムウェア、スパイウェアなどを含みます。
 端末に侵入して、情報を盗む、ファイルを壊す、使えなくするなどの被害を起こします。
-([情報処理推進機構](https://www.ipa.go.jp/security/10threats/eid2eo0000005231-att/yougoyashikumi_2025.pdf?utm_source=chatgpt.com "情報セキュリティ 10 大脅威 知っておきたい用語や仕組み"))
+([情報処理推進機構](https://www.ipa.go.jp/security/10threats/eid2eo0000005231-att/yougoyashikumi_2025.pdf "情報セキュリティ 10 大脅威 知っておきたい用語や仕組み"))
 
 具体例：
 
@@ -124,7 +124,7 @@ IDとパスワードを入力させる
 **解説：**
 DDoS攻撃は、複数の機器から一斉に大量の通信を送り、サーバーやネットワークに負荷をかけて停止や遅延を起こす攻撃です。
 1台ではなく、**多数の端末から分散して行われる**のが特徴です。
-([CISA](https://www.cisa.gov/sites/default/files/publications/understanding-and-responding-to-ddos-attacks_508c.pdf?utm_source=chatgpt.com "understanding-and-responding-to-ddos-attacks_508c.pdf"))
+([CISA](https://www.cisa.gov/sites/default/files/publications/understanding-and-responding-to-ddos-attacks_508c.pdf "understanding-and-responding-to-ddos-attacks_508c.pdf"))
 
 具体例：
 
@@ -144,7 +144,7 @@ Webサイトを表示しにくくする
 **解説：**
 中間者攻撃は、利用者とサーバーの間に第三者が入り込み、通信内容を盗聴したり、内容を改ざんしたりする攻撃です。
 特に、暗号化や相手確認が不十分な通信では注意が必要です。
-([CISA](https://www.cisa.gov/news-events/alerts/2015/04/30/securing-end-end-communications?utm_source=chatgpt.com "Securing End-to-End Communications"))
+([CISA](https://www.cisa.gov/news-events/alerts/2015/04/30/securing-end-end-communications "Securing End-to-End Communications"))
 
 具体例：
 
@@ -163,7 +163,7 @@ Webサイトを表示しにくくする
 **解説：**
 XSSは、Webアプリが入力値を適切に検証・エスケープせずに表示したときに、悪意あるスクリプトが実行される脆弱性です。
 その結果、Cookieや入力情報の窃取、画面の書き換え、なりすまし操作などにつながることがあります。
-([OWASP](https://owasp.org/www-community/attacks/xss/?utm_source=chatgpt.com "Cross Site Scripting (XSS)"))
+([OWASP](https://owasp.org/www-community/attacks/xss/ "Cross Site Scripting (XSS)"))
 
 具体例：
 

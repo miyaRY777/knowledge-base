@@ -1,6 +1,6 @@
 ---
 id: note-insight-stimulus-classes-property-api
-title: StimulusのClassesプロパティAPIはHTMLからclass名を受け取れる
+title: "StimulusのClassesプロパティAPIはHTMLからclass名を受け取れる"
 created: 2026-04-09
 source: [[2026-04-09_insight-entry-point-css-entry-build-output-stimulus-classes]]
 ---

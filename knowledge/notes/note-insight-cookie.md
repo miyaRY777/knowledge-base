@@ -1,6 +1,6 @@
 ---
 id: note-insight-cookie
-title: Cookieの要点
+title: "Cookieの要点"
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 ---
@@ -39,10 +39,10 @@ HTTP の通信はそれぞれ独立しているため、何もしないと「誰
 ## Example
 ```http
 # ① サーバー -> ブラウザ
-Set-Cookie: user_id=12345; path=/; HttpOnly
+Set-Cookie: session_id=abc123; path=/; HttpOnly
 
 # ② 次回リクエストでブラウザ -> サーバー
-Cookie: user_id=12345
+Cookie: session_id=abc123
 ```
 
 このコードでは、サーバーが保存を指示した Cookie を、ブラウザが次回のリクエストで送り返しています。

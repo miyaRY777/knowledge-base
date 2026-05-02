@@ -1,6 +1,6 @@
 ---
 id: note-insight-von-neumann-architecture
-title: フォン・ノイマン型アーキテクチャは5大装置の土台
+title: "フォン・ノイマン型アーキテクチャは5大装置の土台"
 created: 2026-04-10
 source: [[2026-04-10_insight_computer-five-major-units]]
 ---

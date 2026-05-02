@@ -1,6 +1,6 @@
 ---
 id: note-insight-function-method-argument-basics
-title: 関数とメソッドと引数と呼び出しの基本
+title: "関数とメソッドと引数と呼び出しの基本"
 created: 2026-04-12
 source: [[2026-04-12_insight_stimulus-and-javascript-basics]]
 ---
