@@ -11,7 +11,7 @@ source: [[2026-05-02_insight_samesite-csrf-soft-delete.md]]
 - 復元や履歴保持に向きますが、検索条件や一意性制約の設計に注意が必要です。
 
 ## Tags
-#rails #database #soft-delete #activerecord
+#rails #database #soft-delete #activerecord #要復習
 
 ## Links
 - [[note-insight-soft-delete-flag]]
@@ -35,3 +35,5 @@ user.update(deleted_at: Time.current)
 
 ## Action
 - [ ] `discard` gem を使った場合の基本メソッドを確認する
+
+<!-- review_log: 2026-05-03 -->

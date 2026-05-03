@@ -11,7 +11,7 @@ source: [[2026-05-02_insight_samesite-csrf-soft-delete.md]]
 - Rails では CSRF トークンを検証して、正規のフォームやリクエストかを確認します。
 
 ## Tags
-#web #security #csrf #rails #cookie
+#web #security #csrf #rails #cookie #要復習
 
 ## Links
 - [[note-insight-cookie-samesite]]
@@ -37,3 +37,5 @@ CSRF は、ユーザーがログインしている状態を利用し、別サイ
 
 ## Action
 - [ ] Rails の `protect_from_forgery` と `authenticity_token` の流れを確認する
+
+<!-- review_log: 2026-05-03 -->

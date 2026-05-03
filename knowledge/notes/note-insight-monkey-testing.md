@@ -11,7 +11,7 @@ source: [[2026-05-02_insight_samesite-csrf-soft-delete.md]]
 - 公式用語としては、ランダム入力を使うランダムテストの考え方と近いです。
 
 ## Tags
-#testing #quality #software-test
+#testing #quality #software-test #要復習
 
 ## Links
 - [[note-insight-helper-test]]
@@ -33,3 +33,5 @@ source: [[2026-05-02_insight_samesite-csrf-soft-delete.md]]
 
 ## Action
 - [ ] 仕様確認テスト、探索的テスト、ランダムテストとの違いを整理する
+
+<!-- review_log: 2026-05-03 -->

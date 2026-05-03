@@ -11,7 +11,7 @@ source: [[2026-05-02_insight_samesite-csrf-soft-delete.md]]
 - 一覧や検索で削除済みデータを除外し忘れると、消したはずのデータが見えてしまいます。
 
 ## Tags
-#rails #database #soft-delete #activerecord
+#rails #database #soft-delete #activerecord #要復習
 
 ## Links
 - [[note-insight-soft-delete]]
@@ -34,3 +34,5 @@ end
 
 ## Action
 - [ ] boolean フラグ方式と `deleted_at` 方式の違いを整理する
+
+<!-- review_log: 2026-05-03 -->
