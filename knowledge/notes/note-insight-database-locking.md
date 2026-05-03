@@ -13,7 +13,7 @@ last_reviewed_on: 2026-05-01
 - トランザクションと組み合わせて整合性を守る。
 
 ## Tags
-#database #transaction #concurrency #要復習
+#database #transaction #concurrency #要復習 #要復習
 
 ## Links
 - [[note-insight-database-transaction]]
@@ -24,4 +24,4 @@ last_reviewed_on: 2026-05-01
 
 データベースのロックは、トランザクションと組み合わせて使われることが多く、同時実行される処理でもデータの整合性を保つために重要です。
 
-<!-- review_log: 2026-05-02 -->
+<!-- review_log: 2026-05-02,2026-05-04 -->

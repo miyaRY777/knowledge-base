@@ -13,7 +13,7 @@ last_reviewed_on: 2026-05-01
 - 認証で相手を確認し、権限で許可範囲を制御する。
 
 ## Tags
-#database #security #authorization #要復習
+#database #security #authorization #要復習 #要復習
 
 ## Links
 - [[note-insight-authorize-and-allowed-to-difference]]
@@ -25,4 +25,4 @@ last_reviewed_on: 2026-05-01
 
 認証は「誰か」を確認すること、権限管理は「何をしてよいか」を決めることです。読み取り専用ユーザーや管理者権限のように役割を分けることで、誤操作や不正操作のリスクを下げられます。
 
-<!-- review_log: 2026-05-02 -->
+<!-- review_log: 2026-05-02,2026-05-04 -->
