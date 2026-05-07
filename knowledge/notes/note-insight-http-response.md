@@ -17,6 +17,7 @@ source: [[2026-05-06_insight_http-message-methods]]
 - [[note-insight-http-request]]
 - [[note-insight-headers]]
 - [[note-insight-content-type]]
+- [[note-insight-http-status-code]]
 
 ## Body
 HTTPレスポンスは、クライアントから届いた HTTP リクエストに対して、サーバーが返す返事のメッセージです。ブラウザがページを要求すると、サーバーは成功・失敗などの結果と、必要に応じて HTML や JSON などの本文を返します。
@@ -36,4 +37,4 @@ Content-Type: text/html; charset=UTF-8
 この例では、リクエストが成功し、HTML の本文が返されています。
 
 ## Action
-- [ ] 代表的なステータスコードを別ノートで整理する
+- [x] 代表的なステータスコードを別ノートで整理する
