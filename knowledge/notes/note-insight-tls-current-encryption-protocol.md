@@ -20,16 +20,20 @@ last_reviewed_on: 2026-04-30
 - [[note-insight-ssl-legacy-encryption-protocol]]
 - [[note-insight-cookie-secure]]
 - [[note-insight-man-in-the-middle-attack]]
+- [[2026-05-08_insight_ssl-tls-basics]]
 
 ## Body
 TLS は、HTTPS通信の中核になる暗号化プロトコルです。ブラウザとWebサーバーの間でやり取りされる内容を暗号化し、途中で盗み見されたり改ざんされたりするリスクを下げます。
 
 ログインフォームで入力したメールアドレスやパスワードのような重要な情報は、平文のまま送ると危険です。HTTPS では TLS によって通信経路が保護されるため、第三者が内容を読み取りにくくなります。
 
+実務では `SSL/TLS` のようにまとめて呼ばれることがありますが、現在のWeb通信で中心になるのは TLS です。`http://` の通信は暗号化されず、`https://` の通信は TLS によって保護される、と考えると関係を整理しやすいです。
+
 ## Example
 - ユーザーがログインフォームに認証情報を入力する
 - ブラウザが `https://` のWebサイトへ送信する
 - TLS によって通信内容が暗号化される
+- `http://example.com` は暗号化されず、`https://example.com` は TLS で保護される
 
 ## Action
 - [ ] TLS が HTTPS のどの部分を担当しているか整理する
