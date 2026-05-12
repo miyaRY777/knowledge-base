@@ -16,6 +16,9 @@ source: [[2026-05-09_insight_dns-domain-ip-address]]
 ## Links
 - [[note-insight-ip-address]]
 - [[note-insight-dns]]
+- [[note-insight-top-level-domain]]
+- [[note-insight-second-level-domain]]
+- [[note-insight-subdomain]]
 
 ## Body
 ドメインは、Webサイトへアクセスするときに使う、人間が覚えやすい住所のような名前です。`google.com` や `github.com` のように、数字の羅列ではなく意味を持つ文字列として扱えるため、人間にとって読み書きしやすくなります。
@@ -28,4 +31,4 @@ source: [[2026-05-09_insight_dns-domain-ip-address]]
 - `example.com`
 
 ## Action
-- [ ] サブドメインやトップレベルドメインも整理する
+- [x] サブドメインやトップレベルドメインも整理する
