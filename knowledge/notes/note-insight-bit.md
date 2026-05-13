@@ -3,6 +3,8 @@ id: note-insight-bit
 title: ビットは0か1で表す最小のデータ単位
 created: 2026-05-10
 source: [[2026-05-10_insight_bit-and-byte]]
+review_streak: 0
+last_reviewed_on: 2026-05-13
 ---
 
 ## Summary

@@ -3,6 +3,8 @@ id: note-insight-ipv4
 title: IPv4は32ビットを4つのオクテットで表すIPアドレス形式
 created: 2026-05-11
 source: [[2026-05-11_insight_ip-address-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-13
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-11_insight_ip-address-basics]]
 - `192.168.1.1` のような表記では、各区切りが1オクテットです。
 
 ## Tags
-#network #internet #ip-address #ipv4
+#network #internet #ip-address #ipv4 #要復習
 
 ## Links
 - [[note-insight-ip-address]]

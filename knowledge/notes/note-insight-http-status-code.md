@@ -3,6 +3,8 @@ id: note-insight-http-status-code
 title: "HTTPステータスコードはレスポンスの結果を表す番号"
 created: 2026-05-07
 source: [[2026-05-07_insight_http-status-codes]]
+review_streak: 0
+last_reviewed_on: 2026-05-13
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-07_insight_http-status-codes]]
 - ブラウザやアプリはステータスコードを見て、成功表示、リダイレクト、エラー表示などを判断できます。
 
 ## Tags
-#http #web #status-code
+#http #web #status-code #要復習
 
 ## Links
 - [[note-insight-http-response]]

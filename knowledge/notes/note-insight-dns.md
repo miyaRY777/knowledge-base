@@ -3,6 +3,8 @@ id: note-insight-dns
 title: "DNSはドメイン名をIPアドレスに変換する仕組み"
 created: 2026-05-09
 source: [[2026-05-09_insight_dns-domain-ip-address]]
+review_streak: 0
+last_reviewed_on: 2026-05-13
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-09_insight_dns-domain-ip-address]]
 - 人間が入力した名前で、コンピューターが通信先を見つけられるようにします。
 
 ## Tags
-#network #internet #dns #domain
+#network #internet #dns #domain #要復習
 
 ## Links
 - [[note-insight-domain-name]]

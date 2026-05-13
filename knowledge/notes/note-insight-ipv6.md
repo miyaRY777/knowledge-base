@@ -3,6 +3,8 @@ id: note-insight-ipv6
 title: IPv6は128ビットで表すIPアドレス形式
 created: 2026-05-11
 source: [[2026-05-11_insight_ip-address-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-13
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-11_insight_ip-address-basics]]
 - `2001:db8::1` のように、コロン区切りの16進数で表します。
 
 ## Tags
-#network #internet #ip-address #ipv6
+#network #internet #ip-address #ipv6 #要復習
 
 ## Links
 - [[note-insight-ip-address]]
