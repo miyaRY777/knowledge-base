@@ -18,6 +18,7 @@ last_reviewed_on: 2026-05-01
 ## Links
 - [[note-insight-database-constraint]]
 - [[note-insight-relational-database]]
+- [[note-insight-foreign-key]]
 - [[note-insight-dependent-restrict-with-error]]
 
 ## Body

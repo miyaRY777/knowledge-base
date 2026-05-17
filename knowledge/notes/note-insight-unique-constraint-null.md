@@ -16,6 +16,7 @@ source: [[2026-03-30_insight_rails-study.md]]
 
 ## Links
 - [[note-insight-idempotent]]
+- [[note-insight-null-value]]
 - [[note-insight-slug]]
 
 ## Body

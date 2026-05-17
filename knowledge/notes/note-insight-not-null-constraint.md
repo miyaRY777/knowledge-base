@@ -18,6 +18,7 @@ last_reviewed_on: 2026-05-01
 ## Links
 - [[note-insight-database-constraint]]
 - [[note-insight-database-column]]
+- [[note-insight-null-value]]
 - [[note-insight-boolean-default-false-null-false]]
 
 ## Body
