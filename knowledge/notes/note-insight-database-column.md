@@ -19,6 +19,7 @@ last_reviewed_on: 2026-04-30
 - [[note-insight-database-table]]
 - [[note-insight-database-record]]
 - [[note-insight-database-constraint]]
+- [[note-insight-entity-attribute]]
 
 ## Body
 カラムは、テーブルの中で「どんな項目を保存するか」を表す列です。ユーザーの名前、メールアドレス、作成日時のように、1つのレコードが持つ属性を定義します。
