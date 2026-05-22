@@ -140,7 +140,7 @@ def replace_frontmatter_field(text: str, key: str, value: str) -> str:
     if re.search(pattern, frontmatter):
         frontmatter = re.sub(pattern, replacement, frontmatter, count=1)
     else:
-        frontmatter = frontmatter[:-5] + f"{replacement}\n---\n"
+        frontmatter = frontmatter[:end] + f"\n{replacement}\n---\n"
     return frontmatter + body
 
 

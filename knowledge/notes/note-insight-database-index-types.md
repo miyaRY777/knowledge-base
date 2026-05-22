@@ -3,6 +3,8 @@ id: note-insight-database-index-types
 title: データベースインデックスは検索目的に合わせて種類を選ぶ
 created: 2026-05-21
 source: [[2026-05-21_insight_database-index-types.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-21_insight_database-index-types.md]]
 - DBMS やストレージエンジンによって使える種類や挙動が異なるため、実際の仕様確認が必要です。
 
 ## Tags
-#database #sql #index #performance #database-design
+#database #sql #index #performance #database-design #要復習
 
 ## Links
 - [[note-insight-database-index]]

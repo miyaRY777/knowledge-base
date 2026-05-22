@@ -3,6 +3,8 @@ id: note-insight-durability
 title: Durabilityは成功したトランザクションの結果を保存し続ける性質
 created: 2026-05-20
 source: [[2026-05-20_insight_acid-properties.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-20_insight_acid-properties.md]]
 - 保存成功後のデータを信頼できる状態にするための性質です。
 
 ## Tags
-#database #sql #transaction #acid #durability
+#database #sql #transaction #acid #durability #要復習
 
 ## Links
 - [[note-insight-acid-properties]]

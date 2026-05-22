@@ -3,6 +3,8 @@ id: note-insight-atomicity
 title: Atomicityはトランザクションを全部成功か全部失敗として扱う性質
 created: 2026-05-20
 source: [[2026-05-20_insight_acid-properties.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-20_insight_acid-properties.md]]
 - Rails の `transaction` は、複数の更新をまとめて成功または失敗にしたい場面で使います。
 
 ## Tags
-#database #sql #transaction #acid #atomicity #rails
+#database #sql #transaction #acid #atomicity #rails #要復習
 
 ## Links
 - [[note-insight-acid-properties]]

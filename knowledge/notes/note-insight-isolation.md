@@ -3,6 +3,8 @@ id: note-insight-isolation
 title: Isolationは同時実行されるトランザクションの影響を制御する性質
 created: 2026-05-20
 source: [[2026-05-20_insight_acid-properties.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-20_insight_acid-properties.md]]
 - 在庫数や残高のように同時更新されやすいデータで重要になります。
 
 ## Tags
-#database #sql #transaction #acid #isolation #concurrency
+#database #sql #transaction #acid #isolation #concurrency #要復習
 
 ## Links
 - [[note-insight-acid-properties]]

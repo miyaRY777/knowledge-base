@@ -3,6 +3,8 @@ id: note-insight-entity-relationship
 title: リレーションはエンティティ同士の関係
 created: 2026-05-18
 source: [[2026-05-18_insight_er-diagram-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-18_insight_er-diagram-basics]]
 - Rails では `has_many` や `belongs_to` で表現することが多いです。
 
 ## Tags
-#database #database-design #entity #relationship #rails
+#database #database-design #entity #relationship #rails #要復習
 
 ## Links
 - [[note-insight-er-diagram]]

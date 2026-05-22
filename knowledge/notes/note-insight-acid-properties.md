@@ -3,6 +3,8 @@ id: note-insight-acid-properties
 title: ACID特性はトランザクションを安全に扱うための4つの性質
 created: 2026-05-20
 source: [[2026-05-20_insight_acid-properties.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-20_insight_acid-properties.md]]
 - Rails の `transaction` やデータベース制約、ロックなどを理解するときの土台になります。
 
 ## Tags
-#database #sql #transaction #acid #rails
+#database #sql #transaction #acid #rails #要復習
 
 ## Links
 - [[note-insight-database-transaction]]

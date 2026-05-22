@@ -3,6 +3,8 @@ id: note-insight-second-normal-form
 title: 第二正規形は複合主キーの一部だけで決まる情報を分離する形
 created: 2026-05-19
 source: [[2026-05-19_insight_database-normalization.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-19_insight_database-normalization.md]]
 - 同じ情報の繰り返しを減らし、更新漏れを起こしにくくします。
 
 ## Tags
-#database #sql #normalization #2nf #database-design #primary-key
+#database #sql #normalization #2nf #database-design #primary-key #要復習
 
 ## Links
 - [[note-insight-database-normalization]]

@@ -3,6 +3,8 @@ id: note-insight-b-tree-index
 title: B-treeインデックスは範囲検索や並び替えにも使いやすい標準的なインデックス
 created: 2026-05-21
 source: [[2026-05-21_insight_database-index-types.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-21_insight_database-index-types.md]]
 - 多くの DB でよく使われますが、細かな挙動は DBMS によって異なります。
 
 ## Tags
-#database #sql #index #btree #performance
+#database #sql #index #btree #performance #要復習
 
 ## Links
 - [[note-insight-database-index-types]]

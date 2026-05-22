@@ -3,6 +3,8 @@ id: note-insight-full-text-index
 title: 全文検索インデックスは文章中の単語やキーワード検索に向いたインデックス
 created: 2026-05-21
 source: [[2026-05-21_insight_database-index-types.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-21_insight_database-index-types.md]]
 - PostgreSQL では GIN や GiST、MySQL では FULLTEXT など、DBMS ごとに仕組みが異なります。
 
 ## Tags
-#database #sql #index #full-text-search #performance
+#database #sql #index #full-text-search #performance #要復習
 
 ## Links
 - [[note-insight-database-index-types]]

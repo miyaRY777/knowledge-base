@@ -3,6 +3,8 @@ id: note-insight-third-normal-form
 title: 第三正規形は主キー以外のカラム同士の依存を分離する形
 created: 2026-05-19
 source: [[2026-05-19_insight_database-normalization.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-19_insight_database-normalization.md]]
 - マスターデータを切り出すことで、名前変更などの更新を一か所に集めやすくなります。
 
 ## Tags
-#database #sql #normalization #3nf #database-design
+#database #sql #normalization #3nf #database-design #要復習
 
 ## Links
 - [[note-insight-database-normalization]]

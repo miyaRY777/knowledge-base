@@ -3,6 +3,8 @@ id: note-insight-database-normalization
 title: データベース正規化は重複と不整合を減らすためにテーブルを整理する考え方
 created: 2026-05-19
 source: [[2026-05-19_insight_database-normalization.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-19_insight_database-normalization.md]]
 - 分割しすぎると結合が増えるため、読み書きのしやすさとのバランスも必要です。
 
 ## Tags
-#database #sql #normalization #database-design
+#database #sql #normalization #database-design #要復習
 
 ## Links
 - [[note-insight-relational-database]]

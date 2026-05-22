@@ -3,6 +3,8 @@ id: note-insight-hash-index
 title: ハッシュインデックスは完全一致検索に向いたインデックス
 created: 2026-05-21
 source: [[2026-05-21_insight_database-index-types.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-21_insight_database-index-types.md]]
 - 値の順序を扱いにくいため、範囲検索や並び替えには向きません。
 
 ## Tags
-#database #sql #index #hash-index #performance
+#database #sql #index #hash-index #performance #要復習
 
 ## Links
 - [[note-insight-database-index-types]]

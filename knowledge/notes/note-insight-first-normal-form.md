@@ -3,6 +3,8 @@ id: note-insight-first-normal-form
 title: 第一正規形は1つのカラムに1つの値だけを持たせる形
 created: 2026-05-19
 source: [[2026-05-19_insight_database-normalization.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-19_insight_database-normalization.md]]
 - 複数値を扱う場合は、行や関連テーブルに分けて表現します。
 
 ## Tags
-#database #sql #normalization #1nf #database-design
+#database #sql #normalization #1nf #database-design #要復習
 
 ## Links
 - [[note-insight-database-normalization]]

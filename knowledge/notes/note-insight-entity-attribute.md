@@ -3,6 +3,8 @@ id: note-insight-entity-attribute
 title: 属性はエンティティが持つデータ項目
 created: 2026-05-18
 source: [[2026-05-18_insight_er-diagram-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-18_insight_er-diagram-basics]]
 - Rails では、実装段階でテーブルのカラムになることが多いです。
 
 ## Tags
-#database #database-design #entity #attribute
+#database #database-design #entity #attribute #要復習
 
 ## Links
 - [[note-insight-er-diagram]]

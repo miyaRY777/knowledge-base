@@ -3,6 +3,8 @@ id: note-insight-entity
 title: エンティティはデータベースで管理したい対象や概念
 created: 2026-05-18
 source: [[2026-05-18_insight_er-diagram-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-18_insight_er-diagram-basics]]
 - ER図では、まずどのエンティティが必要かを洗い出します。
 
 ## Tags
-#database #database-design #entity
+#database #database-design #entity #要復習
 
 ## Links
 - [[note-insight-er-diagram]]

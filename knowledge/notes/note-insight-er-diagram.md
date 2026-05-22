@@ -3,6 +3,8 @@ id: note-insight-er-diagram
 title: ER図はデータベースの全体像を関係で表す図
 created: 2026-05-18
 source: [[2026-05-18_insight_er-diagram-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-18_insight_er-diagram-basics]]
 - エンティティ、属性、リレーションを使って設計の見通しをよくします。
 
 ## Tags
-#database #database-design #er-diagram
+#database #database-design #er-diagram #要復習
 
 ## Links
 - [[note-insight-entity]]

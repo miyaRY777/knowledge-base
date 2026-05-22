@@ -3,6 +3,8 @@ id: note-insight-consistency
 title: Consistencyはトランザクション後もデータベースのルールを守る性質
 created: 2026-05-20
 source: [[2026-05-20_insight_acid-properties.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-22
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-20_insight_acid-properties.md]]
 - アプリ側の処理だけでなく、データベース側の制約も一貫性を守る支えになります。
 
 ## Tags
-#database #sql #transaction #acid #consistency #data-integrity
+#database #sql #transaction #acid #consistency #data-integrity #要復習
 
 ## Links
 - [[note-insight-acid-properties]]
