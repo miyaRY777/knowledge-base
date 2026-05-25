@@ -3,6 +3,8 @@ id: note-insight-domain-name
 title: "ドメインは人間が覚えやすいWebサイトの住所"
 created: 2026-05-09
 source: [[2026-05-09_insight_dns-domain-ip-address]]
+review_streak: 0
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-09_insight_dns-domain-ip-address]]
 - 数字のIPアドレスを毎回覚えなくてよいように、ドメイン名が使われます。
 
 ## Tags
-#network #internet #domain #web
+#network #internet #domain #web #要復習
 
 ## Links
 - [[note-insight-ip-address]]

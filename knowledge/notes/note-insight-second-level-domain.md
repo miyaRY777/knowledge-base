@@ -3,6 +3,8 @@ id: note-insight-second-level-domain
 title: セカンドレベルドメインはTLDの左側にある階層
 created: 2026-05-12
 source: [[2026-05-12_insight_domain-name-hierarchy]]
+review_streak: 0
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-12_insight_domain-name-hierarchy]]
 - `example.co.jp` のように、見た目の名前と階層の呼び方がずれる場合があります。
 
 ## Tags
-#network #internet #domain #dns
+#network #internet #domain #dns #要復習
 
 ## Links
 - [[note-insight-domain-name]]

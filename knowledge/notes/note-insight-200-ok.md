@@ -3,6 +3,8 @@ id: note-insight-200-ok
 title: "200 OKはリクエスト成功を表すHTTPステータスコード"
 created: 2026-05-07
 source: [[2026-05-07_insight_http-status-codes]]
+review_streak: 0
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary

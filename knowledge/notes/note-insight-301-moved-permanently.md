@@ -3,6 +3,8 @@ id: note-insight-301-moved-permanently
 title: "301 Moved Permanentlyは恒久的なURL移動を表す"
 created: 2026-05-07
 source: [[2026-05-07_insight_http-status-codes]]
+review_streak: 0
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-07_insight_http-status-codes]]
 - 古いURLを今後も新しいURLへ案内したい場面で使われます。
 
 ## Tags
-#http #web #status-code #redirect
+#http #web #status-code #redirect #要復習
 
 ## Links
 - [[note-insight-http-status-code]]

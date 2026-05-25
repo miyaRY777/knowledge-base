@@ -3,6 +3,8 @@ id: note-insight-patch-request
 title: "PATCHは既存リソースの一部を更新するHTTPメソッド"
 created: 2026-05-06
 source: [[2026-05-06_insight_http-message-methods]]
+review_streak: 0
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary

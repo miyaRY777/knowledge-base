@@ -4,7 +4,7 @@ title: "一意性制約は同じ値の重複保存を防ぐ"
 created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0
-last_reviewed_on: 2026-05-01
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary
@@ -13,7 +13,7 @@ last_reviewed_on: 2026-05-01
 - `NULL` の扱いには注意が必要。
 
 ## Tags
-#database #sql #constraint #rails #要復習
+#database #sql #constraint #rails
 
 ## Links
 - [[note-insight-database-constraint]]

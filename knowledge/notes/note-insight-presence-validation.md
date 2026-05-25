@@ -3,6 +3,8 @@ id: note-insight-presence-validation
 title: "presenceバリデーションは値が空でないことを確認する"
 created: 2026-05-04
 source: [[2026-05-04_insight_rails-model-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary

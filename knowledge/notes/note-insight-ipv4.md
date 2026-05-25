@@ -3,8 +3,8 @@ id: note-insight-ipv4
 title: IPv4は32ビットを4つのオクテットで表すIPアドレス形式
 created: 2026-05-11
 source: [[2026-05-11_insight_ip-address-basics]]
-review_streak: 0
-last_reviewed_on: 2026-05-13
+review_streak: 1
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary

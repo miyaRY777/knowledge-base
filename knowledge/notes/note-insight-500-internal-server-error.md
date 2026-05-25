@@ -3,6 +3,8 @@ id: note-insight-500-internal-server-error
 title: "500 Internal Server Errorはサーバー内部の予期しない失敗を表す"
 created: 2026-05-07
 source: [[2026-05-07_insight_http-status-codes]]
+review_streak: 0
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-07_insight_http-status-codes]]
 - クライアントの入力だけではなく、サーバー側の処理失敗として調査します。
 
 ## Tags
-#http #web #status-code #error #rails
+#http #web #status-code #error #rails #要復習
 
 ## Links
 - [[note-insight-http-status-code]]

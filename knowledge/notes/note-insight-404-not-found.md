@@ -3,6 +3,8 @@ id: note-insight-404-not-found
 title: "404 Not Foundはリクエストされたリソースが見つからないことを表す"
 created: 2026-05-07
 source: [[2026-05-07_insight_http-status-codes]]
+review_streak: 0
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-07_insight_http-status-codes]]
 - 存在しないIDの詳細ページへアクセスした場合にも関係します。
 
 ## Tags
-#http #web #status-code #error
+#http #web #status-code #error #要復習
 
 ## Links
 - [[note-insight-http-status-code]]

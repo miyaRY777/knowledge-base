@@ -3,6 +3,8 @@ id: note-insight-top-level-domain
 title: トップレベルドメインはドメイン名の一番右側の階層
 created: 2026-05-12
 source: [[2026-05-12_insight_domain-name-hierarchy]]
+review_streak: 0
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-12_insight_domain-name-hierarchy]]
 - ドメイン名は、右側ほど上位の階層として扱われます。
 
 ## Tags
-#network #internet #domain #dns
+#network #internet #domain #dns #要復習
 
 ## Links
 - [[note-insight-domain-name]]

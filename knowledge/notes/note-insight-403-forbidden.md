@@ -3,6 +3,8 @@ id: note-insight-403-forbidden
 title: "403 Forbiddenは理解されたリクエストのアクセス拒否を表す"
 created: 2026-05-07
 source: [[2026-05-07_insight_http-status-codes]]
+review_streak: 0
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-07_insight_http-status-codes]]
 - 認証済みかどうかより、操作や閲覧の権限があるかが焦点になります。
 
 ## Tags
-#http #web #status-code #authorization #security
+#http #web #status-code #authorization #security #要復習
 
 ## Links
 - [[note-insight-http-status-code]]

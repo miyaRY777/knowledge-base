@@ -3,6 +3,8 @@ id: note-insight-head-request
 title: "HEADは本文なしでヘッダーだけを取得するHTTPメソッド"
 created: 2026-05-06
 source: [[2026-05-06_insight_http-message-methods]]
+review_streak: 0
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-06_insight_http-message-methods]]
 - 本文が不要な確認処理で通信量を抑えたいときに役立ちます。
 
 ## Tags
-#http #web #network
+#http #web #network #要復習
 
 ## Links
 - [[note-insight-get-request]]

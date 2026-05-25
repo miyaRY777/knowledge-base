@@ -3,6 +3,8 @@ id: note-insight-502-bad-gateway
 title: "502 Bad Gatewayは中継サーバーが上流から有効な応答を受け取れない状態"
 created: 2026-05-07
 source: [[2026-05-07_insight_http-status-codes]]
+review_streak: 0
+last_reviewed_on: 2026-05-25
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-07_insight_http-status-codes]]
 - Rails アプリ本体だけでなく、Nginx やデプロイ先の構成も確認対象になります。
 
 ## Tags
-#http #web #status-code #server #operations
+#http #web #status-code #server #operations #要復習
 
 ## Links
 - [[note-insight-http-status-code]]
