@@ -3,6 +3,8 @@ id: note-insight-ruby-empty-predicate
 title: "Rubyの`empty?`は中身が空かを見る"
 created: 2026-04-08
 source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-26
 ---
 
 ## Summary

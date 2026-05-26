@@ -3,6 +3,8 @@ id: note-insight-rails-presence
 title: "Railsの`presence`は空ならnilにできる"
 created: 2026-04-08
 source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-26
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 - `present?` と `||` を組み合わせるより簡潔になることがあります。
 
 ## Tags
-#rails #activesupport #fallback
+#rails #activesupport #fallback #要復習
 
 ## Links
 - [[note-insight-rails-presence-use-case]]
