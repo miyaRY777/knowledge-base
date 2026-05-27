@@ -3,6 +3,8 @@ id: note-insight-resend-email-service
 title: "ResendはWebアプリからメールを送る外部メールサービス"
 created: 2026-05-04
 source: [[2026-05-04_insight_rails-model-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-27
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-04_insight_rails-model-basics]]
 - アプリ側はメールを作り、実際の配信は外部サービスに任せる形になります。
 
 ## Tags
-#email #web-service #rails #operations
+#email #web-service #rails #operations #要復習
 
 ## Links
 - [[note-insight-on-premise]]

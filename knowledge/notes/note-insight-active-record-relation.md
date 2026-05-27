@@ -3,6 +3,8 @@ id: note-insight-active-record-relation
 title: "ActiveRecord::Relationの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-27
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 - 実際にデータが取得されるのは `each` や `to_a` のときです。
 
 ## Tags
-#activerecord
+#activerecord #要復習
 
 ## Links
 

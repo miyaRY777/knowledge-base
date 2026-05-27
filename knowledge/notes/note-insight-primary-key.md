@@ -4,7 +4,7 @@ title: 主キーはテーブル内の1件を一意に識別するキー
 created: 2026-05-17
 source: [[2026-05-17_insight_database-null-and-keys]]
 review_streak: 0
-last_reviewed_on: 2026-05-22
+last_reviewed_on: 2026-05-27
 ---
 
 ## Summary
@@ -13,7 +13,7 @@ last_reviewed_on: 2026-05-22
 - Rails では、多くの場合 `id` カラムが主キーとして使われます。
 
 ## Tags
-#database #sql #key #primary-key #rails
+#database #sql #key #primary-key #rails #要復習
 
 ## Links
 - [[note-insight-database-key]]

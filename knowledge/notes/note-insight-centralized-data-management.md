@@ -3,6 +3,8 @@ id: note-insight-centralized-data-management
 title: 中央集権型管理はデータを一か所に集めて管理する考え方
 created: 2026-05-16
 source: [[2026-05-16_insight_dbms-data-sharing]]
+review_streak: 0
+last_reviewed_on: 2026-05-27
 ---
 
 ## Summary

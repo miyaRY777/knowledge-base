@@ -3,6 +3,8 @@ id: note-insight-on-premise
 title: "オンプレは自分たちで用意したサーバー環境で運用する方式"
 created: 2026-05-04
 source: [[2026-05-04_insight_rails-model-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-27
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-04_insight_rails-model-basics]]
 - OS 更新、セキュリティ対応、障害対応などの運用責任が大きくなります。
 
 ## Tags
-#infrastructure #operations #server
+#infrastructure #operations #server #要復習
 
 ## Links
 - [[note-insight-resend-email-service]]

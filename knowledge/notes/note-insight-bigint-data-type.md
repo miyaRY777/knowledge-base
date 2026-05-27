@@ -3,6 +3,8 @@ id: note-insight-bigint-data-type
 title: "bigintはintegerより大きな整数を保存できるデータ型"
 created: 2026-05-04
 source: [[2026-05-04_insight_rails-model-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-27
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-04_insight_rails-model-basics]]
 - ID のように件数が増え続ける値では、大きな範囲を扱える型が向いています。
 
 ## Tags
-#rails #database #migration #data-type
+#rails #database #migration #data-type #要復習
 
 ## Links
 - [[note-insight-integer-data-type]]

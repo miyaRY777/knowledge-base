@@ -3,6 +3,8 @@ id: note-insight-integer-data-type
 title: "integerは整数を保存するためのデータ型"
 created: 2026-05-04
 source: [[2026-05-04_insight_rails-model-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-27
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-04_insight_rails-model-basics]]
 - Rails のマイグレーションでは、カラム追加時に整数型として指定できます。
 
 ## Tags
-#rails #database #migration #data-type
+#rails #database #migration #data-type #要復習
 
 ## Links
 - [[note-insight-database-column]]

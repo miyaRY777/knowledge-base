@@ -3,6 +3,8 @@ id: note-insight-where-not
 title: "where.notの要点"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+review_streak: 0
+last_reviewed_on: 2026-05-27
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 - SQLの NOT に相当します。
 
 ## Tags
-#insight
+#insight #要復習
 
 ## Links
 

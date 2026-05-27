@@ -3,6 +3,8 @@ id: note-insight-active-record-scope
 title: "Active Recordのscopeは検索条件に名前を付けて再利用する仕組み"
 created: 2026-05-04
 source: [[2026-05-04_insight_rails-model-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-27
 ---
 
 ## Summary
