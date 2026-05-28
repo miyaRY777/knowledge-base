@@ -3,6 +3,8 @@ id: note-insight-dns-settings
 title: DNS設定はドメイン名を接続先サービスへ向ける設定
 created: 2026-05-14
 source: [[2026-05-14_insight_domain-dns-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-28
 ---
 
 ## Summary

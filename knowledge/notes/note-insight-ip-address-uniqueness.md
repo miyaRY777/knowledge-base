@@ -3,6 +3,8 @@ id: note-insight-ip-address-uniqueness
 title: IPアドレスの一意性は通信相手を特定するために必要
 created: 2026-05-11
 source: [[2026-05-11_insight_ip-address-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-28
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-05-11_insight_ip-address-basics]]
 - 同じネットワーク内でIPアドレスが重複すると、通信先を正しく判断できなくなることがあります。
 
 ## Tags
-#network #ip-address #basics
+#network #ip-address #basics #要復習
 
 ## Links
 - [[note-insight-ip-address]]

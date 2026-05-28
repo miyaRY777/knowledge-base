@@ -3,6 +3,8 @@ id: note-insight-ip-address
 title: "IPアドレスはネットワーク上の通信相手を指定する番号"
 created: 2026-05-09
 source: [[2026-05-09_insight_dns-domain-ip-address]]
+review_streak: 0
+last_reviewed_on: 2026-05-28
 ---
 
 ## Summary

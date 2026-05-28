@@ -3,6 +3,8 @@ id: note-insight-domain-registration
 title: ドメイン登録はドメイン名を一定期間使えるようにする手続き
 created: 2026-05-14
 source: [[2026-05-14_insight_domain-dns-basics]]
+review_streak: 0
+last_reviewed_on: 2026-05-28
 ---
 
 ## Summary
