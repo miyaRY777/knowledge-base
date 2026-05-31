@@ -11,18 +11,23 @@
 | 1 | Active Record Callbacks | モデルの処理前後に自動で処理を挟む仕組み | [[note-insight-active-record-callbacks]] |
 | 2 | CurrentAttributes | リクエスト単位で共有値をグローバル管理する仕組み | [[note-insight-current-attributes]] |
 | 3 | dependent: :restrict_with_error | 関連レコードがある親の削除を安全にブロック | [[note-insight-dependent-restrict-with-error]] |
-| 4 | 冪等性 | 同じ操作を何回やっても結果が変わらない性質 | [[note-insight-idempotent]] |
-| 5 | UNIQUE制約とNULL | PostgreSQLではデフォルトでNULLは重複扱いされない | [[note-insight-unique-constraint-null]] |
-| 6 | slug | URLに使う人が読める識別子 | [[note-insight-slug]] |
-| 7 | inclusion validation | 許可した候補に含まれる値だけを通す検証 | [[note-insight-inclusion-validation]] |
-| 8 | allow_nil | nil のときにバリデーションをスキップする指定 | [[note-insight-allow-nil]] |
-| 9 | invariant | 常に守られているべき設計上の条件 | [[note-insight-invariant]] |
-| 10 | orchestration | 複数の処理を順序立てて連携させる考え方 | [[note-insight-orchestration]] |
-| 11 | Ruby定数 | 変更しない前提の値に名前を付ける仕組み | [[note-insight-ruby-constants]] |
-| 12 | SecureRandom.urlsafe_base64 | URL向けの推測されにくいランダム文字列を作る | [[note-insight-securerandom-urlsafe-base64]] |
-| 13 | 論理削除 | DBから消さずに削除済みとして扱う方法 | [[note-insight-soft-delete]] |
-| 14 | 論理削除フラグ | 削除済み扱いを表す目印 | [[note-insight-soft-delete-flag]] |
-| 15 | モンキーテスト | ランダムな操作で不具合を探すテスト | [[note-insight-monkey-testing]] |
+| 4 | scope | よく使う検索条件をモデルに名前付きで定義する | [[note-insight-active-record-scope]] |
+| 5 | ActiveRecord::Relation 遅延評価 | クエリは実際に必要になるまで発行されない | [[note-insight-active-record-relation-lazy-execution-flow]] |
+| 6 | presence validation | 値が存在することを検証する | [[note-insight-presence-validation]] |
+| 7 | uniqueness validation | 値が一意であることを検証する | [[note-insight-uniqueness-validation]] |
+| 8 | inclusion validation | 許可した候補に含まれる値だけを通す検証 | [[note-insight-inclusion-validation]] |
+| 9 | allow_nil | nil のときにバリデーションをスキップする指定 | [[note-insight-allow-nil]] |
+| 10 | 冪等性 | 同じ操作を何回やっても結果が変わらない性質 | [[note-insight-idempotent]] |
+| 11 | UNIQUE制約とNULL | PostgreSQLではデフォルトでNULLは重複扱いされない | [[note-insight-unique-constraint-null]] |
+| 12 | slug | URLに使う人が読める識別子 | [[note-insight-slug]] |
+| 13 | invariant | 常に守られているべき設計上の条件 | [[note-insight-invariant]] |
+| 14 | orchestration | 複数の処理を順序立てて連携させる考え方 | [[note-insight-orchestration]] |
+| 15 | Ruby定数 | 変更しない前提の値に名前を付ける仕組み | [[note-insight-ruby-constants]] |
+| 16 | SecureRandom.urlsafe_base64 | URL向けの推測されにくいランダム文字列を作る | [[note-insight-securerandom-urlsafe-base64]] |
+| 17 | Resendメールサービス | メール送信を担うSaaSサービス | [[note-insight-resend-email-service]] |
+| 18 | 論理削除 | DBから消さずに削除済みとして扱う方法 | [[note-insight-soft-delete]] |
+| 19 | 論理削除フラグ | 削除済み扱いを表す目印 | [[note-insight-soft-delete-flag]] |
+| 20 | モンキーテスト | ランダムな操作で不具合を探すテスト | [[note-insight-monkey-testing]] |
 
 ---
 
@@ -31,6 +36,10 @@
 [[note-insight-active-record-callbacks]]
 [[note-insight-current-attributes]]
 [[note-insight-dependent-restrict-with-error]]
+[[note-insight-active-record-scope]]
+[[note-insight-active-record-relation-lazy-execution-flow]]
+[[note-insight-presence-validation]]
+[[note-insight-uniqueness-validation]]
 [[note-insight-inclusion-validation]]
 [[note-insight-allow-nil]]
 [[note-insight-soft-delete]]
@@ -40,6 +49,9 @@
 - Callbacksは便利だが多用すると処理の流れが見えにくくなる。複雑なロジックはServiceオブジェクトへ
 - CurrentAttributesはリクエストスコープで便利だが、モデルに暗黙の依存を作る点に注意
 - dependentオプションで関連レコードの削除制御。:restrict_with_errorはバリデーションに近い挙動
+- scopeはよく使う検索条件をモデルに名前付きで定義する。ActiveRecord::Relationを返すので連鎖できる
+- ActiveRecord::Relationは遅延評価。`.to_a` や `.each` など実際にデータが必要になるときにSQLが発行される
+- `presence` は nil と空文字を同時に弾く。`uniqueness` はDB制約と組み合わせて確実性を高める
 - `inclusion` と `allow_nil` は、保存してよい値の範囲と未入力時の扱いを整理するために使う
 - 論理削除はレコードを残す設計なので、通常検索から除外する仕組みもセットで考える
 
@@ -105,6 +117,10 @@
 - [[note-insight-active-record-callbacks]]
 - [[note-insight-current-attributes]]
 - [[note-insight-dependent-restrict-with-error]]
+- [[note-insight-active-record-scope]]
+- [[note-insight-active-record-relation-lazy-execution-flow]]
+- [[note-insight-presence-validation]]
+- [[note-insight-uniqueness-validation]]
 - [[note-insight-idempotent]]
 - [[note-insight-unique-constraint-null]]
 - [[note-insight-slug]]
@@ -114,6 +130,7 @@
 - [[note-insight-orchestration]]
 - [[note-insight-ruby-constants]]
 - [[note-insight-securerandom-urlsafe-base64]]
+- [[note-insight-resend-email-service]]
 - [[note-insight-soft-delete]]
 - [[note-insight-soft-delete-flag]]
 - [[note-insight-monkey-testing]]
