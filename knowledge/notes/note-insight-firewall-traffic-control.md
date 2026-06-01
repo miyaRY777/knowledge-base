@@ -5,6 +5,7 @@ created: 2026-04-29
 source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-13
+quiz_streak: 1
 ---
 
 ## Summary

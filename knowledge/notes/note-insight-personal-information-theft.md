@@ -3,6 +3,7 @@ id: note-insight-personal-information-theft
 title: "個人情報の盗難は認証情報やカード情報が不正取得されること"
 created: 2026-04-27
 source: [[2026-04-27_insight_internet-security-basics.md]]
+quiz_streak: 1
 ---
 
 ## Summary

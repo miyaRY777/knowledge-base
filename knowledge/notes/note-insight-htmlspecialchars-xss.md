@@ -3,6 +3,7 @@ id: note-insight-htmlspecialchars-xss
 title: "htmlspecialcharsでユーザー入力をエスケープしてXSSを防ぐ"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
+quiz_streak: 2
 ---
 
 ## Summary

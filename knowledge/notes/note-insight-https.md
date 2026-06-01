@@ -3,6 +3,7 @@ id: note-insight-https
 title: "HTTPSはHTTP通信を暗号化して保護する仕組み"
 created: 2026-04-25
 source: [[2026-04-25_insight_cookie-session-security-basics.md]]
+quiz_streak: 1
 ---
 
 ## Summary

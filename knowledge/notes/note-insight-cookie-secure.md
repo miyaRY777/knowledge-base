@@ -3,6 +3,7 @@ id: note-insight-cookie-secure
 title: "Secure属性の要点"
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
+quiz_streak: 1
 ---
 
 ## Summary

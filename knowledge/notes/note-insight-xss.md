@@ -3,6 +3,7 @@ id: note-insight-xss
 title: "XSSは悪意あるスクリプトを他ユーザーのブラウザで実行させる攻撃"
 created: 2026-04-25
 source: [[2026-04-25_insight_cookie-session-security-basics.md]]
+quiz_streak: 1
 ---
 
 ## Summary
