@@ -2,17 +2,26 @@
 
 ## サマリー
 
-| # | 項目 | 概要 | ノート |
-|---|------|------|--------|
-| 1 | インターネットセキュリティ | 通信や情報を不正利用から守る全体像 | [[note-insight-internet-security]] |
-| 2 | HTTPS | HTTP通信を TLS で暗号化して保護する仕組み | [[note-insight-https]] |
-| 3 | TLS | 現在の HTTPS 通信を保護する暗号化プロトコル | [[note-insight-tls-current-encryption-protocol]] |
-| 4 | SSL | 現在は使われない古い通信暗号化プロトコル | [[note-insight-ssl-legacy-encryption-protocol]] |
-| 5 | SSL証明書 | 名前は SSL でも現在は TLS 通信で使う証明書を指すことが多い | [[note-insight-ssl-certificate-name-for-tls]] |
-| 6 | ファイアウォール | 通信を許可またはブロックする仕組み | [[note-insight-firewall-traffic-control]] |
-| 7 | 二要素認証 | 異なる2つの要素で本人確認を強くする仕組み | [[note-insight-two-factor-authentication]] |
-| 8 | 中間者攻撃 | 通信の間に入り盗聴や改ざんを行う攻撃 | [[note-insight-man-in-the-middle-attack]] |
-| 9 | Cookie Secure属性 | HTTPS のときだけ Cookie を送る属性 | [[note-insight-cookie-secure]] |
+| #   | 項目              | 概要                                 | ノート                                              |
+| --- | --------------- | ---------------------------------- | ------------------------------------------------ |
+| 1   | インターネットセキュリティ   | 通信や情報を不正利用から守る考え方                  | [[note-insight-internet-security]]               |
+| 2   | HTTPS           | HTTP通信を TLS で暗号化して保護する仕組み          | [[note-insight-https]]                           |
+| 3   | TLS             | 現在の HTTPS 通信を保護する暗号化プロトコル          | [[note-insight-tls-current-encryption-protocol]] |
+| 4   | SSL             | 現在は使われない古い通信暗号化プロトコル               | [[note-insight-ssl-legacy-encryption-protocol]]  |
+| 5   | SSL証明書          | 名前は SSL でも現在は TLS 通信で使う証明書を指すことが多い | [[note-insight-ssl-certificate-name-for-tls]]    |
+| 6   | ファイアウォール        | 通信を許可またはブロックする仕組み                  | [[note-insight-firewall-traffic-control]]        |
+| 7   | 二要素認証           | 異なる2つの要素で本人確認を強くする仕組み              | [[note-insight-two-factor-authentication]]       |
+| 8   | 中間者攻撃           | 通信の間に入り盗聴や改ざんを行う攻撃                 | [[note-insight-man-in-the-middle-attack]]        |
+| 9   | Cookie Secure属性 | HTTPS のときだけ Cookie を送る属性           | [[note-insight-cookie-secure]]                   |
+| 10  | データの改ざん         | 保存中・通信中のデータが許可なく書き換えられること          | [[note-insight-data-tampering]]                  |
+| 11  | フィッシング           | 本物に見せかけて認証情報をだまし取る手口                | [[note-insight-phishing]]                        |
+| 12  | 個人情報の盗難         | 認証情報やカード情報が不正取得されること                | [[note-insight-personal-information-theft]]      |
+| 13  | セッション            | ユーザーごとの状態をリクエスト間で一時的に管理する仕組み       | [[note-insight-session]]                         |
+| 14  | セッションハイジャック     | 盗んだセッションIDで本人になりすます攻撃               | [[note-insight-session-hijacking]]               |
+| 15  | HttpOnly属性       | JavaScriptからCookieを参照できなくする属性       | [[note-insight-cookie-httponly]]                 |
+| 16  | SameSite属性       | クロスサイトのリクエストでCookieを送るかを制御する属性     | [[note-insight-cookie-samesite]]                 |
+| 17  | XSS              | 悪意あるスクリプトを他ユーザーのブラウザで実行させる攻撃       | [[note-insight-xss]]                             |
+| 18  | htmlspecialchars() | PHPでHTMLの特殊文字をエンティティに変換してXSSを防ぐ関数 | [[note-insight-htmlspecialchars-xss]]            |
 
 ---
 
