@@ -3,6 +3,7 @@ id: note-insight-binary-literal-0b
 title: "0b表記はJavaScriptで2進数リテラルを書く方法"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
+quiz_streak: 1
 ---
 
 ## Summary

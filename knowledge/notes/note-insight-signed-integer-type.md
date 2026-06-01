@@ -3,6 +3,7 @@ id: note-insight-signed-integer-type
 title: "int型（符号付き整数型）は正と負の整数を扱えるデータ型"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
+quiz_streak: 1
 ---
 
 ## Summary

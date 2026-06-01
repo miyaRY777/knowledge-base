@@ -3,6 +3,7 @@ id: note-insight-phishing
 title: "フィッシングは本物に見せかけて認証情報をだまし取る手口"
 created: 2026-04-27
 source: [[2026-04-27_insight_internet-security-basics.md]]
+quiz_streak: 1
 ---
 
 ## Summary

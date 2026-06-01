@@ -3,6 +3,7 @@ id: note-insight-meta-charset-utf8
 title: "<meta charset=\"UTF-8\">はブラウザにHTML文書をUTF-8として読んでもらうための宣言"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
+quiz_streak: 1
 ---
 
 ## Summary

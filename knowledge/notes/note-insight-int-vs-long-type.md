@@ -3,6 +3,7 @@ id: note-insight-int-vs-long-type
 title: "int型とlong型は扱える整数の大きさが異なる"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
+quiz_streak: 1
 ---
 
 ## Summary

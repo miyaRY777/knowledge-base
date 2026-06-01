@@ -3,6 +3,7 @@ id: note-insight-unicode
 title: "Unicodeは世界中の文字を統一的に扱うための文字コード規格"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
+quiz_streak: 1
 ---
 
 ## Summary

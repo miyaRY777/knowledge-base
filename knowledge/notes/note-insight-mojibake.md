@@ -3,6 +3,7 @@ id: note-insight-mojibake
 title: "文字化けは保存時と読み取り時の文字コードがずれて文字が正しく表示されない現象"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
+quiz_streak: 1
 ---
 
 ## Summary

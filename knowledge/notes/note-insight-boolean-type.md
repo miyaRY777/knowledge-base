@@ -3,6 +3,7 @@ id: note-insight-boolean-type
 title: "ブーリアン型は真（true）か偽（false）を表すデータ型"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
+quiz_streak: 1
 ---
 
 ## Summary

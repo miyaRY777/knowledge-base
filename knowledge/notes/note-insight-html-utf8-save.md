@@ -3,6 +3,7 @@ id: note-insight-html-utf8-save
 title: "HTMLファイルをUTF-8で保存するとは文字をUTF-8のバイト列として記録すること"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
+quiz_streak: 1
 ---
 
 ## Summary

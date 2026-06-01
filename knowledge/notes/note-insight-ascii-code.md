@@ -3,6 +3,7 @@ id: note-insight-ascii-code
 title: "ASCIIコードは英数字や記号を数値へ対応付ける文字コード"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
+quiz_streak: 1
 ---
 
 ## Summary

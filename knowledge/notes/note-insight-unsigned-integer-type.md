@@ -3,6 +3,7 @@ id: note-insight-unsigned-integer-type
 title: "符号なし整数型は0以上の整数だけを扱うデータ型"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
+quiz_streak: 1
 ---
 
 ## Summary

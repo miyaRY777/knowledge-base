@@ -3,6 +3,7 @@ id: note-insight-binary-data
 title: "バイナリは0と1だけで表現されたデータ"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
+quiz_streak: 1
 ---
 
 ## Summary
