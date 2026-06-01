@@ -59,5 +59,6 @@ description: Use when working inside the local knowledge-base repository to answ
 - `python3 .codex/skills/knowledge-base/scripts/kb_tool.py distill 2026-03-31_insight_rails-study.md`
 - `python3 .codex/skills/knowledge-base/scripts/kb_tool.py moc rails --write`
 - `python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz --tag rails --count 3 --show-answer`
+- `python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz-answer note-insight-active-record-callbacks "C" --correct-choice C --write`
 - `python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz-answer note-insight-active-record-callbacks "保存前後に自動で処理を挟む仕組み" --write`
 - `python3 .codex/skills/knowledge-base/scripts/kb_tool.py weekly-review`

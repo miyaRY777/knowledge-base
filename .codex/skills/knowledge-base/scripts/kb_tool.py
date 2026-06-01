@@ -85,6 +85,9 @@ def parse_note(path: Path) -> dict[str, object]:
         "summary_lines": extract_summary_lines(text),
         "tags": extract_tags(text),
         "text": text,
+        "quiz_phase": extract_quiz_phase(text),
+        "quiz_streak": extract_quiz_streak(text),
+        "quiz_fail_streak": extract_quiz_fail_streak(text),
     }
 
 
@@ -149,6 +152,21 @@ def extract_review_streak(text: str) -> int:
     return int(match.group(1)) if match else 0
 
 
+def extract_quiz_phase(text: str) -> int:
+    match = re.search(r"^quiz_phase:\s*(\d+)$", text, flags=re.MULTILINE)
+    return int(match.group(1)) if match else 1
+
+
+def extract_quiz_streak(text: str) -> int:
+    match = re.search(r"^quiz_streak:\s*(\d+)$", text, flags=re.MULTILINE)
+    return int(match.group(1)) if match else 0
+
+
+def extract_quiz_fail_streak(text: str) -> int:
+    match = re.search(r"^quiz_fail_streak:\s*(\d+)$", text, flags=re.MULTILINE)
+    return int(match.group(1)) if match else 0
+
+
 def extract_frontmatter_field(text: str, key: str) -> str | None:
     match = re.search(rf"^{re.escape(key)}:\s*(.+)$", text, flags=re.MULTILINE)
     return match.group(1).strip() if match else None
@@ -196,6 +214,30 @@ def render_quiz_question(note: dict[str, object], level: int = 3) -> str:
     return "\n".join(prompts)
 
 
+def render_multiple_choice(
+    note: dict[str, object],
+    all_notes: list[dict[str, object]],
+    rng: random.Random,
+) -> tuple[str, str]:
+    subject = quiz_subject(str(note["title"]))
+    correct_summary = note["summary_lines"][0] if note["summary_lines"] else str(note["title"])
+
+    others = [n for n in all_notes if n["name"] != note["name"] and n["summary_lines"]]
+    distractors = [n["summary_lines"][0] for n in rng.sample(others, k=min(3, len(others)))]
+    while len(distractors) < 3:
+        distractors.append(f"（該当なし）")
+
+    choices = [correct_summary] + distractors[:3]
+    rng.shuffle(choices)
+    correct_letter = chr(ord("A") + choices.index(correct_summary))
+
+    lines = [f"Q. 「{subject}」の説明として正しいものはどれですか？"]
+    for i, choice in enumerate(choices):
+        lines.append(f"{chr(ord('A') + i)}. {choice}")
+    lines.append(f"\ncorrect_choice: {correct_letter}")
+    return "\n".join(lines), correct_letter
+
+
 def update_review_state(path: Path, status: str, today: dt.date | None = None) -> tuple[list[str], int, str | None]:
     text = read_text(path)
     tags = extract_tags(text)
@@ -226,6 +268,39 @@ def update_review_state(path: Path, status: str, today: dt.date | None = None) -
     if updated != text:
         write_text(path, updated)
     return tags, streak, reviewed_on.isoformat()
+
+
+def update_quiz_state(path: Path, phase: int, status: str) -> dict[str, int]:
+    text = read_text(path)
+    quiz_streak = extract_quiz_streak(text)
+    quiz_fail_streak = extract_quiz_fail_streak(text)
+    demoted = False
+
+    if phase == 1:
+        if status == "correct":
+            quiz_streak += 1
+        else:
+            quiz_streak = 0
+        text = replace_frontmatter_field(text, "quiz_streak", str(quiz_streak))
+    else:
+        if status == "correct":
+            quiz_fail_streak = 0
+        else:
+            quiz_fail_streak += 1
+            if quiz_fail_streak >= 2:
+                demoted = True
+                text = replace_frontmatter_field(text, "quiz_phase", "1")
+                text = replace_frontmatter_field(text, "quiz_streak", "0")
+                quiz_fail_streak = 0
+        text = replace_frontmatter_field(text, "quiz_fail_streak", str(quiz_fail_streak))
+
+    write_text(path, text)
+    return {
+        "quiz_streak": quiz_streak,
+        "quiz_fail_streak": quiz_fail_streak,
+        "demoted": int(demoted),
+        "promoted": int(phase == 1 and quiz_streak >= 2),
+    }
 
 
 def judge_quiz_answer(answer: str, note: dict[str, object]) -> tuple[str, str]:
@@ -570,28 +645,43 @@ def cmd_moc(args: argparse.Namespace) -> int:
 
 
 def cmd_quiz(args: argparse.Namespace) -> int:
-    notes = [parse_note(path) for path in sorted(NOTES.glob("*.md"))]
+    all_notes = [parse_note(path) for path in sorted(NOTES.glob("*.md"))]
     today = dt.date.fromisoformat(args.today) if args.today else dt.date.today()
+    notes = list(all_notes)
     if args.tag:
         notes = [note for note in notes if args.tag.lstrip("#") in note["tags"]]
     if args.today_only:
-        notes = [
-            note for note in notes if extract_created_date(str(note["text"])) == today
-        ]
+        notes = [note for note in notes if extract_created_date(str(note["text"])) == today]
     if args.yesterday:
         target_day = today - dt.timedelta(days=1)
-        notes = [
-            note for note in notes if extract_created_date(str(note["text"])) == target_day
-        ]
+        notes = [note for note in notes if extract_created_date(str(note["text"])) == target_day]
     if not notes:
         print("出題対象のノートが見つかりませんでした。")
         return 1
-    random.seed(args.seed)
-    picks = random.sample(notes, k=min(args.count, len(notes)))
+    rng = random.Random(args.seed)
+    picks = rng.sample(notes, k=min(args.count, len(notes)))
     for index, note in enumerate(picks, start=1):
-        print(f"（{index}/{len(picks)}問目）\n")
+        phase = int(note["quiz_phase"])
+        quiz_streak = int(note["quiz_streak"])
+
+        # 昇格チェック: Phase 1 で streak=2 なら Phase 2 に昇格
+        if phase == 1 and quiz_streak >= 2 and args.write:
+            path = Path(note["path"])
+            text = read_text(path)
+            text = replace_frontmatter_field(text, "quiz_phase", "2")
+            text = replace_frontmatter_field(text, "quiz_streak", "0")
+            write_text(path, text)
+            phase = 2
+            print(f"🎉 [{note['title']}] 説明フェーズに昇格しました！\n")
+
+        phase_label = "4択" if phase == 1 else "説明"
+        print(f"（{index}/{len(picks)}問目）【{phase_label}】\n")
         print("## 問題\n")
-        print(f"{render_quiz_question(note, level=args.level)}\n")
+        if phase == 1:
+            question, _ = render_multiple_choice(note, all_notes, rng)
+            print(f"{question}\n")
+        else:
+            print(f"{render_quiz_question(note, level=3)}\n")
         print(f"note_id: `{note['name']}`\n")
         if args.show_answer:
             answer = " / ".join(note["summary_lines"][:2]) if note["summary_lines"] else "要約なし"
@@ -608,71 +698,71 @@ def cmd_quiz_answer(args: argparse.Namespace) -> int:
         return 1
 
     note = parse_note(path)
-    status, reason = judge_quiz_answer(args.answer, note)
+    phase = int(note["quiz_phase"])
     today = dt.date.fromisoformat(args.today) if args.today else dt.date.today()
-    reviewed_on = None
-    if status == "correct":
-        if args.write:
-            tags, streak, reviewed_on = update_review_state(path, status="correct", today=today)
-        else:
-            streak = extract_review_streak(str(note["text"]))
-            tags = note["tags"]
-            last_reviewed_on = extract_frontmatter_field(str(note["text"]), "last_reviewed_on")
-            if "要復習" in tags and last_reviewed_on != today.isoformat():
-                streak += 1
-                if streak >= 2:
-                    tags = [tag for tag in tags if tag != "要復習"]
-                    streak = 0
-            elif "要復習" in tags:
-                streak = min(max(streak, 1), 1)
-        print("## 結果\n")
-        print("✅ 正解\n")
-    elif status == "partial":
-        if args.write:
-            tags, streak, reviewed_on = update_review_state(path, status="partial", today=today)
-        else:
-            tags = list(note["tags"]) if "要復習" in note["tags"] else list(note["tags"]) + ["要復習"]
-            streak = 0
-        print("## 結果\n")
-        print("🔺 惜しい\n")
-    elif status == "skip":
-        if args.write:
-            tags, streak, reviewed_on = update_review_state(path, status="skip", today=today)
-        else:
-            tags = list(note["tags"]) if "要復習" in note["tags"] else list(note["tags"]) + ["要復習"]
-            streak = 0
-        print("## 正解\n")
-    else:
-        if args.write:
-            tags, streak, reviewed_on = update_review_state(path, status="incorrect", today=today)
-        else:
-            tags = list(note["tags"]) if "要復習" in note["tags"] else list(note["tags"]) + ["要復習"]
-            streak = 0
-        print("## 結果\n")
-        print("❌ 不正解\n")
+    skip_inputs = {"わからない", "わかりません", "skip", "スキップ"}
 
-    answer = " / ".join(note["summary_lines"][:2]) if note["summary_lines"] else str(note["title"])
+    # 採点
+    if args.answer.strip().lower() in skip_inputs:
+        status = "skip"
+        reason = "スキップしました。"
+    elif phase == 1:
+        # Phase 1: A〜D の選択肢を比較
+        correct = (args.correct_choice or "").strip().upper()
+        given = args.answer.strip().upper()
+        if correct and given == correct:
+            status = "correct"
+            reason = "正解です。"
+        else:
+            status = "incorrect"
+            reason = f"不正解です。正解は {correct} でした。" if correct else "不正解です。"
+    else:
+        # Phase 2: 類似度判定
+        status, reason = judge_quiz_answer(args.answer, note)
+        if status == "partial":
+            status = "incorrect"
+
+    # 結果表示
+    label_map = {"correct": "✅ 正解", "incorrect": "❌ 不正解", "skip": "⏭️ スキップ"}
+    if status != "skip":
+        print(f"## 結果\n\n{label_map[status]}\n")
+        print(f"{reason}\n")
+
+    answer_text = " / ".join(note["summary_lines"][:2]) if note["summary_lines"] else str(note["title"])
+    print("## 正解\n")
+    print(answer_text)
+    body = str(note["text"]).split("## Body", 1)
+    if len(body) > 1:
+        print("\n## 解説\n")
+        print(body[1].strip())
     if status == "skip":
-        print(answer)
-        print("\n## 解説")
-        print(str(note["text"]).split("## Body", 1)[-1].strip())
         print(f"\n## 復習ポイント\nこのノートをもう一度読んでおきましょう → [[{note['name']}]]")
     else:
-        print(reason)
-        print("\n## 正解")
-        print(answer)
-        print("\n## 解説")
-        print(str(note["text"]).split("## Body", 1)[-1].strip())
         print(f"\n## 参照ノート\n[[{note['name']}]]")
 
+    # 状態更新
     if args.write:
-        print(f"\n## タグ更新\n現在のタグ: {' '.join(f'#{tag}' for tag in tags)}")
-        print(f"連続正解回数: {streak}")
-        if reviewed_on:
-            print(f"最終復習日: {reviewed_on}")
+        quiz_result = update_quiz_state(path, phase, status)
+
+        # Phase 2 のみ #要復習 を操作する
+        tags = note["tags"]
+        if phase == 2:
+            review_status = "correct" if status == "correct" else "incorrect"
+            tags, _, reviewed_on = update_review_state(path, status=review_status, today=today)
+
+        print(f"\n## 状態更新")
+        print(f"フェーズ: {'4択' if phase == 1 else '説明'}")
+        print(f"quiz_streak: {quiz_result['quiz_streak']}")
+        if phase == 2:
+            print(f"quiz_fail_streak: {quiz_result['quiz_fail_streak']}")
+            print(f"タグ: {' '.join(f'#{tag}' for tag in tags)}")
+        if quiz_result.get("demoted"):
+            print("📉 2回連続不正解 → 4択フェーズに降格しました")
+        if quiz_result.get("promoted"):
+            print("🎉 2回連続正解！次回から説明フェーズに昇格します")
     else:
-        print("\n## タグ更新")
-        print("`--write` を付けると `#要復習` の付け外しを保存します。")
+        print("\n## 状態更新")
+        print("`--write` を付けると quiz_phase・quiz_streak・#要復習 を保存します。")
     return 0
 
 
@@ -769,6 +859,7 @@ def build_parser() -> argparse.ArgumentParser:
     quiz_answer.add_argument("note_id")
     quiz_answer.add_argument("answer")
     quiz_answer.add_argument("--today")
+    quiz_answer.add_argument("--correct-choice", help="4択の正解選択肢（A/B/C/D）")
     quiz_answer.add_argument("--write", action="store_true")
     quiz_answer.set_defaults(func=cmd_quiz_answer)
 
