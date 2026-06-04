@@ -3,6 +3,7 @@ id: note-insight-binary-fixed-point
 title: 2進数の固定小数点は整数部と小数部のビット位置を固定する
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
+quiz_streak: 1
 ---
 
 ## Summary

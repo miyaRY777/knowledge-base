@@ -3,6 +3,7 @@ id: note-insight-html-attribute
 title: HTMLの属性は要素に追加設定を与える属性名="値"の形
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
+quiz_streak: 1
 ---
 
 ## Summary

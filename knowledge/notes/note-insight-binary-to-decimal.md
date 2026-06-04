@@ -3,6 +3,7 @@ id: note-insight-binary-to-decimal
 title: 2進数から10進数への変換は各桁の2の累乗を足す
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
+quiz_streak: 1
 ---
 
 ## Summary
