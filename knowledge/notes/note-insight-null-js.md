@@ -3,6 +3,7 @@ id: note-insight-null-js
 title: JavaScriptのnullは値が存在しないことを表すプリミティブ値
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
+quiz_streak: 1
 ---
 
 ## Summary

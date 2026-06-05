@@ -3,6 +3,7 @@ id: note-insight-empty-string
 title: 空の文字列は中身がゼロ文字の文字列
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
+quiz_streak: 1
 ---
 
 ## Summary

@@ -3,6 +3,7 @@ id: note-insight-ftp
 title: FTPはネットワーク経由でファイルを転送するプロトコル
 created: 2026-06-01
 source: [[2026-05-05_insight_network-protocol-basics]]
+quiz_streak: 1
 ---
 
 ## Summary

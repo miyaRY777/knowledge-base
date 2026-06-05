@@ -3,6 +3,7 @@ id: note-insight-string-type
 title: 文字列型は複数の文字をまとめて扱うデータ型
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
+quiz_streak: 1
 ---
 
 ## Summary

@@ -3,6 +3,7 @@ id: note-insight-empty-string-vs-null
 title: 空文字は文字列が存在する状態、nullは値が存在しない状態
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
+quiz_streak: 1
 ---
 
 ## Summary

@@ -3,6 +3,7 @@ id: note-insight-internet
 title: インターネットは世界中の機器をつなぐ巨大ネットワーク
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
+quiz_streak: 1
 ---
 
 ## Summary
