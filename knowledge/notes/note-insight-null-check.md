@@ -9,6 +9,7 @@ source: [[2026-06-05_insight_null-and-related-values]]
 - nullチェックは、値が null かどうかを確認してから処理を行う手法です。
 - null のままプロパティやメソッドを呼ぶとエラーになるため必要です。
 - `=== null` で厳密比較するのが基本で、`??` や Optional Chaining と組み合わせることも多いです。
+- `typeof null` は `"object"` を返すため、`typeof` での判定はできない点に注意。
 
 ## Tags
 #javascript #programming
