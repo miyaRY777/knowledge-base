@@ -16,9 +16,13 @@ source: [[2026-06-08_insight_void-null-return-values]]
 ## Links
 - [[note-insight-void]]
 - [[note-insight-null-vs-void]]
+- [[note-insight-output-data]]
+- [[note-insight-input-process-output]]
 
 ## Body
 戻り値は「関数に仕事をさせた結果、何を受け取るか」を決めるものです。足し算の結果や検索で見つかったデータなど、呼び出し元でその値を使いたい場合に戻り値として返します。Java では戻り値の型をメソッド宣言に書き、`return` で値を返します。処理するだけで結果を渡す必要がない場合は型を `void` にし、`return` も省略できます。
+
+入力・処理・出力の観点から見ると、戻り値は「出力データを作成するプログラム」の仕組みです。処理の結果を呼び出し元に渡すことで、次の処理につなげられます。
 
 ## Example
 ```java

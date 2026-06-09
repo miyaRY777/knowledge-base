@@ -17,9 +17,13 @@ source: [[2026-06-08_insight_void-null-return-values]]
 - [[note-insight-return-value]]
 - [[note-insight-null-vs-void]]
 - [[note-insight-side-effect-function]]
+- [[note-insight-output-data]]
+- [[note-insight-input-process-output]]
 
 ## Body
 `void` は、関数やメソッドが「処理は行うが、結果として値を返さない」ことを宣言するためのキーワードです。Java では戻り値の型として `void` を書くことで、呼び出し元に値を渡さないことを明示します。TypeScript でも同様に、関数の返り値の型注釈に使われます。値を返さない関数は、画面表示・ログ出力・ファイル保存など、処理そのものが目的である場合に使います。
+
+入力・処理・出力の観点から見ると、`void` の関数は「出力データを作成しないプログラム」です。処理を実行すること自体が目的であり、呼び出し元に結果を渡す必要がない場合に使います。
 
 ## Example
 ```java
