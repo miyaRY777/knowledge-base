@@ -3,6 +3,7 @@ id: note-insight-input-data
 title: 入力データはプログラムが処理するために受け取るデータ
 created: 2026-06-09
 source: [[2026-06-09_insight_program-input-process-output]]
+quiz_streak: 1
 ---
 
 ## Summary

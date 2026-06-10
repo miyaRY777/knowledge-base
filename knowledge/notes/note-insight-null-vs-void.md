@@ -3,6 +3,7 @@ id: note-insight-null-vs-void
 title: nullは「値がない」、voidは「戻り値がない」
 created: 2026-06-08
 source: [[2026-06-08_insight_void-null-return-values]]
+quiz_streak: 1
 ---
 
 ## Summary
