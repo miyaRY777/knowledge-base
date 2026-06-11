@@ -3,6 +3,7 @@ id: note-insight-void
 title: voidは「返す値がない」を表す型・キーワード
 created: 2026-06-08
 source: [[2026-06-08_insight_void-null-return-values]]
+quiz_streak: 1
 ---
 
 ## Summary
