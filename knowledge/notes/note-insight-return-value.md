@@ -3,6 +3,7 @@ id: note-insight-return-value
 title: 戻り値は関数の処理結果として呼び出し元に返される値
 created: 2026-06-08
 source: [[2026-06-08_insight_void-null-return-values]]
+quiz_streak: 1
 ---
 
 ## Summary

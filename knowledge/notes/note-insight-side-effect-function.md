@@ -3,6 +3,7 @@ id: note-insight-side-effect-function
 title: 関数の副作用は戻り値以外で外部の状態を変える処理
 created: 2026-06-08
 source: [[2026-06-08_insight_void-null-return-values]]
+quiz_streak: 1
 ---
 
 ## Summary

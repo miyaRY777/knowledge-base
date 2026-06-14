@@ -3,6 +3,7 @@ id: note-insight-programming-data
 title: データはプログラムが処理や保存に使う情報
 created: 2026-05-30
 source: [[2026-05-30_insight_programming-data-and-functions]]
+quiz_streak: 1
 ---
 
 ## Summary

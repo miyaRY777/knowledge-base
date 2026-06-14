@@ -3,6 +3,7 @@ id: note-insight-output-data
 title: 出力データはプログラムが処理した結果として返すデータ
 created: 2026-06-09
 source: [[2026-06-09_insight_program-input-process-output]]
+quiz_streak: 1
 ---
 
 ## Summary

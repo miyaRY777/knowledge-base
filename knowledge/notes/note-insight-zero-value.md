@@ -3,6 +3,7 @@ id: note-insight-zero-value
 title: 0は数値としてのゼロを表す値であり「値がない」ではない
 created: 2026-06-07
 source: [[2026-06-07_insight_null-and-related-values]]
+quiz_streak: 1
 ---
 
 ## Summary

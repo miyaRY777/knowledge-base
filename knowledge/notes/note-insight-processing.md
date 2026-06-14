@@ -3,6 +3,7 @@ id: note-insight-processing
 title: 処理は入力データを使って計算・判定・保存などを行うこと
 created: 2026-06-09
 source: [[2026-06-09_insight_program-input-process-output]]
+quiz_streak: 1
 ---
 
 ## Summary
