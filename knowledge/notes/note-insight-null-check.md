@@ -3,6 +3,7 @@ id: note-insight-null-check
 title: nullチェックはnullかどうかを確認してから処理する
 created: 2026-06-05
 source: [[2026-06-05_insight_null-and-related-values]]
+quiz_streak: 1
 ---
 
 ## Summary
