@@ -3,6 +3,7 @@ id: note-insight-nullish-coalescing
 title: ??演算子はnull/undefinedのときだけ代替値を返す
 created: 2026-06-05
 source: [[2026-06-05_insight_null-and-related-values]]
+quiz_streak: 1
 ---
 
 ## Summary
