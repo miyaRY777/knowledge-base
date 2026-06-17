@@ -22,6 +22,7 @@
 | 16  | SameSite属性       | クロスサイトのリクエストでCookieを送るかを制御する属性     | [[note-insight-cookie-samesite]]                 |
 | 17  | XSS              | 悪意あるスクリプトを他ユーザーのブラウザで実行させる攻撃       | [[note-insight-xss]]                             |
 | 18  | htmlspecialchars() | PHPでHTMLの特殊文字をエンティティに変換してXSSを防ぐ関数 | [[note-insight-htmlspecialchars-xss]]            |
+| 19  | クロスサイト | 別オリジンをまたぐ処理のこと | [[note-insight-cross-site]] |
 
 ---
 
@@ -84,11 +85,13 @@
 
 [[note-insight-xss]]
 [[note-insight-htmlspecialchars-xss]]
+[[note-insight-cross-site]]
 
 **ポイント**:
 - XSS はユーザー入力をそのまま HTML に出力するときに悪意あるスクリプトが実行される攻撃
 - `htmlspecialchars()` は `<` や `>` などをエンティティに変換してタグとして解釈させない
 - 出力時のエスケープが XSS 対策の基本。ユーザー入力を信頼しないことが原則
+- クロスサイトは別オリジン（ドメイン・ポート・プロトコルが異なる）をまたぐ処理を指す（CSRF・XSS・SameSite属性と関連）
 
 ---
 
