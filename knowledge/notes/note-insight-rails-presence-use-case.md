@@ -18,7 +18,9 @@ source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 - [[note-insight-rails-present-predicate]]
 
 ## Body
-`presence` は「値があれば使い、空なら別の値を使う」という場面で便利です。`if value.present?` のような分岐を書かなくても、`||` と組み合わせて自然にデフォルト値へ流せます。
+`presence` は値が `blank?` なら `nil` を返し、そうでなければ値そのものを返します。
+`params[:nickname].presence || "no-name"` のように `||` と組み合わせると、`if present?` の分岐を書かずにデフォルト値へのフォールバックが1行で書けます。
+`presence_in(list)` を使うと「許可リストに含まれる値だけ使い、それ以外はnil」という絞り込みも同じ感覚で書けます。
 
 ## Example
 ```ruby

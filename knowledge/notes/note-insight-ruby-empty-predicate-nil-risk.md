@@ -20,7 +20,9 @@ last_reviewed_on: 2026-05-26
 - [[note-insight-rails-blank-is-safe]]
 
 ## Body
-`empty?` は便利ですが、`nil` に対しては定義されていないためエラーになります。値が未設定かもしれない入力や検索結果に対して `empty?` を直接呼ぶと、意図しない例外の原因になります。
+`empty?` は String・Array・Hash など各クラスで定義されたメソッドで、`nil` には定義されていないため `NoMethodError` が発生します。
+対策は3つあります：①事前に `nil` チェックをする、②`&.empty?`（safe navigation operator）を使う、③Rails であれば `blank?` を使う（`nil` にも安全）。
+外部からの入力や検索結果など「`nil` が返ってくる可能性がある変数」に `empty?` を直接使うのは危険なパターンとして覚えておくと良いです。
 
 ## Example
 ```ruby

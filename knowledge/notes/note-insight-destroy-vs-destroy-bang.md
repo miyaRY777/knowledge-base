@@ -1,6 +1,6 @@
 ---
 id: note-insight-destroy-vs-destroy-bang
-title: "destroy! と destroy の違いの要点"
+title: "destroy!はバリデーション失敗時に例外を出しdestroyはfalseを返す違いがある"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
@@ -16,11 +16,9 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 ## Links
 
 ## Body
-**失敗時に例外を出すかどうかの違い**
-
-**解説：**
-`destroy` は失敗しても false を返します。
-`destroy!` は失敗すると例外を発生させます。
+`destroy` と `destroy!` の違いは、削除に失敗したときの挙動です。
+`destroy` はコールバックで失敗しても `false` を返してアプリを止めませんが、`destroy!` は `ActiveRecord::RecordNotDestroyed` 例外を発生させます。
+ユーザー操作で呼ぶ場合はエラーを画面に返したいので `destroy` を使い、スクリプトやシードなど失敗してはいけない処理では `destroy!` を使うのが一般的です。
 
 
 ## Example

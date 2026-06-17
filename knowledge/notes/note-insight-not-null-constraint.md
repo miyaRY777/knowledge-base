@@ -22,7 +22,9 @@ last_reviewed_on: 2026-05-01
 - [[note-insight-boolean-default-false-null-false]]
 
 ## Body
-`NOT NULL` 制約は、カラムに空の値を入れられないようにする制約です。アプリ上で必須入力にしていても、DB 側でも `NULL` を禁止しておくと、データの抜け漏れを防ぎやすくなります。
+`NOT NULL` 制約はDBレベルで `NULL` の保存を禁止する制約で、アプリ側のバリデーションとは独立して機能します。
+アプリ側で `validates :name, presence: true` があっても、DB直接操作やマイグレーションのバグで `NULL` が入り込む可能性があるため、重要カラムにはDB制約も合わせて設けるのが二重防御の基本です。
+`null: false` のカラムに `NULL` を挿入しようとすると `ActiveRecord::NotNullViolation` 例外が発生します。
 
 ## Example
 ```ruby
