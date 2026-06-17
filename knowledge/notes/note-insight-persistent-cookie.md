@@ -1,6 +1,6 @@
 ---
 id: note-insight-persistent-cookie
-title: "永続Cookieの要点"
+title: "永続Cookieはブラウザを閉じても有効期限まで保持されるCookie"
 created: 2026-04-18
 source: [[2026-04-18_insight_cookie-basics-and-security.md]]
 review_streak: 0

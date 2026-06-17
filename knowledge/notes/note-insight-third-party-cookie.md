@@ -1,6 +1,6 @@
 ---
 id: note-insight-third-party-cookie
-title: "サードパーティCookieの要点"
+title: "サードパーティCookieは閲覧中のサイトとは別ドメインのサービスが設定するCookie"
 created: 2026-04-18
 source: [[2026-04-18_insight_cookie-basics-and-security.md]]
 review_streak: 1

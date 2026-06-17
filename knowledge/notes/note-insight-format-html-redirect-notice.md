@@ -1,6 +1,6 @@
 ---
 id: note-insight-format-html-redirect-notice
-title: "respond_toにおけるformat.htmlとは何か"
+title: "respond_toのformat.htmlは通常のHTMLリクエストに対する処理を書く分岐"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---

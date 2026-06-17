@@ -1,6 +1,6 @@
 ---
 id: note-insight-fetch-decode-execute
-title: "CPUが命令を処理する基本の流れとは何か"
+title: "CPUはフェッチ・デコード・実行の順に命令を処理する"
 created: 2026-04-14
 source: [[2026-04-14_insight_cpu-basic-terms]]
 review_streak: 0

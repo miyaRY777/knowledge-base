@@ -1,6 +1,6 @@
 ---
 id: note-insight-db-migrate
-title: "db:migrateの要点"
+title: "db:migrateは未反映のマイグレーションをデータベースに適用するRailsコマンド"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
 ---

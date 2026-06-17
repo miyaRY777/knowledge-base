@@ -1,6 +1,6 @@
 ---
 id: note-insight-bus
-title: "マザーボードにおけるバスとは何か"
+title: "バスはCPU・メモリ・ストレージ間でデータをやり取りする経路"
 created: 2026-04-15
 source: [[2026-04-15_insight_memory-storage-motherboard-basics]]
 review_streak: 1

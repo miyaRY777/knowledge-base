@@ -1,6 +1,6 @@
 ---
 id: note-insight-session-id
-title: "セッションIDの要点"
+title: "セッションIDはサーバー側でどのユーザーのセッションかを見分けるための識別子"
 created: 2026-04-21
 source: [[2026-04-21_insight_session-cookie-basics.md]]
 ---

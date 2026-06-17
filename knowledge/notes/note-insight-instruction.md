@@ -1,6 +1,6 @@
 ---
 id: note-insight-instruction
-title: "CPUにおける命令とは何か"
+title: "命令はCPUに実行内容を伝えるためのデータ"
 created: 2026-04-14
 source: [[2026-04-14_insight_cpu-basic-terms]]
 review_streak: 0

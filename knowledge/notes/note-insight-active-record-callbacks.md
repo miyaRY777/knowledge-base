@@ -1,6 +1,6 @@
 ---
 id: note-insight-active-record-callbacks
-title: "Active Record Callbacksの仕組みと注意点"
+title: "Active Recordコールバックはモデルの作成・更新・削除の前後に処理を挟む仕組み"
 created: 2026-03-31
 source: [[2026-03-31_insight_rails-study.md]]
 ---

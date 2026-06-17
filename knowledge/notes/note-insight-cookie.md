@@ -1,6 +1,6 @@
 ---
 id: note-insight-cookie
-title: "Cookieの要点"
+title: "CookieはブラウザにユーザーごとのデータをHTTPリクエスト間で引き継ぐために保存する仕組み"
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 ---

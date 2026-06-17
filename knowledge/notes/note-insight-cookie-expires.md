@@ -1,6 +1,6 @@
 ---
 id: note-insight-cookie-expires
-title: "expires属性の要点"
+title: "expires属性はCookieの有効期限を指定する属性"
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 ---

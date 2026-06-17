@@ -1,6 +1,6 @@
 ---
 id: note-insight-orchestration
-title: "オーケストレーションの要点"
+title: "オーケストレーションは複数の処理を全体として連携・管理する考え方"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
 ---

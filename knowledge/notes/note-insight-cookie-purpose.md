@@ -1,6 +1,6 @@
 ---
 id: note-insight-cookie-purpose
-title: "Cookieが必要な理由"
+title: "CookieはステートレスなHTTPでユーザーの状態を引き継ぐために使われる"
 created: 2026-04-17
 source: [[2026-04-17_insight_cookie-http-stateless.md]]
 ---

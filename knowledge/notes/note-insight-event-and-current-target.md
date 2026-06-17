@@ -1,6 +1,6 @@
 ---
 id: note-insight-event-and-current-target
-title: "eventとevent.currentTargetの要点"
+title: "event.currentTargetはイベントリスナーが設定された要素を指すプロパティ"
 created: 2026-04-12
 source: [[2026-04-12_insight_stimulus-and-javascript-basics]]
 ---

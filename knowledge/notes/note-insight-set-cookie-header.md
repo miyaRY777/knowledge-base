@@ -1,6 +1,6 @@
 ---
 id: note-insight-set-cookie-header
-title: "Set-Cookieヘッダーの要点"
+title: "Set-CookieはサーバーがブラウザにCookieを保存させるHTTPレスポンスヘッダー"
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 ---

@@ -1,6 +1,6 @@
 ---
 id: note-insight-query-method
-title: "クエリメソッドの要点"
+title: "クエリメソッドはRubyでtrue/falseを返す疑問形のメソッド"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---

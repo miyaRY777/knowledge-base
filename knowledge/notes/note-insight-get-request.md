@@ -1,6 +1,6 @@
 ---
 id: note-insight-get-request
-title: "GETリクエストの要点"
+title: "GETリクエストはサーバーからデータを取得するHTTPメソッド"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 review_streak: 0

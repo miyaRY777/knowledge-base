@@ -1,6 +1,6 @@
 ---
 id: note-insight-cookie-header
-title: "Cookieヘッダーの要点"
+title: "Cookieヘッダーはブラウザがサーバーへ保存済みCookieを送るリクエストヘッダー"
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 ---

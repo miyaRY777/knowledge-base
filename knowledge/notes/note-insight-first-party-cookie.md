@@ -1,6 +1,6 @@
 ---
 id: note-insight-first-party-cookie
-title: "ファーストパーティCookieの要点"
+title: "ファーストパーティCookieは閲覧中のサイト自身が設定するCookie"
 created: 2026-04-18
 source: [[2026-04-18_insight_cookie-basics-and-security.md]]
 ---

@@ -1,6 +1,6 @@
 ---
 id: note-insight-http-request
-title: "HTTPの要点"
+title: "HTTPはWebブラウザとサーバーが通信するためのルール"
 created: 2026-04-07
 source: [[2026-04-17_insight_cookie-http-stateless.md]]
 ---

@@ -1,6 +1,6 @@
 ---
 id: note-insight-session
-title: "セッションの要点"
+title: "セッションはユーザーごとの状態をリクエスト間で一時的に管理する仕組み"
 created: 2026-04-21
 source: [[2026-04-21_insight_session-cookie-basics.md]]
 quiz_streak: 1

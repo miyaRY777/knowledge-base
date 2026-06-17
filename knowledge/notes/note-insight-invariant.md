@@ -1,6 +1,6 @@
 ---
 id: note-insight-invariant
-title: "invariantの要点"
+title: "不変条件はシステムの処理の前後で常に守られているべき条件"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
 ---

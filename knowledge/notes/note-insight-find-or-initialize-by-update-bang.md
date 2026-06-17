@@ -1,6 +1,6 @@
 ---
 id: note-insight-find-or-initialize-by-update-bang
-title: "find_or_initialize_by + update!の要点"
+title: "find_or_initialize_byとupdate!を組み合わせると見つからない場合もメモリ上で作成してから保存できる"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---

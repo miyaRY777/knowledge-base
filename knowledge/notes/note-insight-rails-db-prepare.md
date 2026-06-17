@@ -1,6 +1,6 @@
 ---
 id: note-insight-rails-db-prepare
-title: "db:prepareの要点"
+title: "db:prepareはDB作成・schema読み込み・migration実行をまとめて整えるRailsコマンド"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
 ---
