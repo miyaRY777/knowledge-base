@@ -17,7 +17,9 @@ source: [[2026-06-13_insight_js-arithmetic-operators-and-expressions]]
 - [[note-insight-division-by-zero]]
 
 ## Body
-`-1 / 0` の結果は `-Infinity` です。`-Infinity` は数直線上の負の無限大を表し、あらゆる有限の数より小さい値です。
+`-Infinity` は負の数を `0` で割った場合や `Math.log(0)` など特定の演算で返される `number` 型の特別な値です。
+通常の数値との比較では常に最小値として振る舞い、`-Infinity < -999999` は `true` になります。
+値が有限かどうかを確認するには `isFinite()` を使います（`-Infinity` に対しては `false` を返す）。
 
 ## Example
 ```js

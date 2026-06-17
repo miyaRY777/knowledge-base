@@ -18,7 +18,8 @@ source: [[2026-06-13_insight_js-arithmetic-operators-and-expressions]]
 - [[note-insight-operand-type]]
 
 ## Body
-算術演算子はオペランドが数値の場合に計算を行います。JavaScriptでは `+` が文字列に使われると連結演算子として機能するため、オペランドの型の確認が重要です。
+算術演算子は数値同士の四則演算に使いますが、JavaScriptでは `+` だけは特別で、オペランドに文字列が含まれると数値加算ではなく文字列連結になります。
+`%`（剰余）は割り算の余りを返し、偶奇判定（`n % 2 === 0`）や周期的な処理でよく使われます。
 
 ## Example
 ```js

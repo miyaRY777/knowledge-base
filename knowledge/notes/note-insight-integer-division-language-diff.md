@@ -18,7 +18,9 @@ source: [[2026-06-14_insight_type-conversion-and-integer-division]]
 - [[note-insight-operand-type-result-diff]]
 
 ## Body
-`2 / 5` の結果はJavaScriptでは `0.4`、Javaでは `0` になります。使用する言語とオペランドの型によって除算の挙動が異なるため、言語を跨いで学ぶときに混乱しやすい落とし穴です。
+同じ `2 / 5` でも、Javaでは `int` 型同士の除算として `0`、JavaScriptでは `0.4` になります。
+この違いは、Javaが整数型を持つのに対しJavaScriptは数値を全て `number` 型で統一しているためです。
+複数言語を学ぶ際にこの挙動の違いが混乱のもとになりやすく、言語ごとに動作確認する習慣が重要です。
 
 ## Example
 - Java: `2 / 5` → `0`（整数除算）

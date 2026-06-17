@@ -1,6 +1,6 @@
 ---
 id: note-insight-fetch-api
-title: "Fetch APIの要点"
+title: "Fetch APIはブラウザ標準で使えるHTTPリクエストの仕組み"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
@@ -16,12 +16,9 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 ## Links
 
 ## Body
-**ブラウザ標準で使えるHTTP通信の仕組みのこと**
-
-**解説：**
-`Fetch API` は、ブラウザに最初から用意されているHTTPリクエスト用の機能です。
-追加インストールなしで使えますが、レスポンスをJSONとして使うには `response.json()` を呼ぶ必要があります。
-`Axios` と比べると、少し記述が増えることがあります。
+Fetch API はブラウザ組み込みのHTTP通信機能で、外部ライブラリなしでサーバーとやり取りできます。
+Axios と大きく違うのは「4xx/5xx でも例外を投げない」点で、`response.ok` を自分でチェックしないと失敗を見逃すバグが起きやすいです。
+また JSON として使うには `await response.json()` という2段階の処理が必要で、Axios の `response.data` より記述量が増えます。
 
 ## Example
 

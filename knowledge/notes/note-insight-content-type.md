@@ -1,6 +1,6 @@
 ---
 id: note-insight-content-type
-title: "Content-Typeの要点"
+title: "Content-Typeは送信するデータの形式をサーバーに伝えるHTTPヘッダー"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
@@ -16,12 +16,9 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 ## Links
 
 ## Body
-**送るデータの種類をサーバーに伝えるヘッダー**
-
-**解説：**
-`Content-Type` は、送信するデータがどんな形式かを示すためのヘッダーです。
-`application/json` を指定すると、「JSON形式で送ります」という意味になります。
-APIにJSONを送るときによく使います。
+`Content-Type` ヘッダーはリクエストボディの形式をサーバーに伝えるもので、サーバーはこれを見てどう解析するかを決めます。
+Axios はオブジェクトをボディに渡すと自動的に JSON にシリアライズして `Content-Type: application/json` をセットするため、明示的に指定しなくてよい場合がほとんどです。
+フォームデータを送る場合は `application/x-www-form-urlencoded` や `multipart/form-data` に変わり、この場合は明示的に指定するか `FormData` を使う必要があります。
 
 ## Example
 

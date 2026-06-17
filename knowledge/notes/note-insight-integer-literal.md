@@ -18,7 +18,9 @@ source: [[2026-06-11_insight_js-data-types-and-literals]]
 - [[note-insight-floating-point-literal]]
 
 ## Body
-`10` や `2048` のように小数点なしで書いた数値が整数リテラルです。JavaScriptには独立した整数型がなく、`number` 型として扱われます。
+整数リテラルはコードに直接書いた整数値です。JavaScriptには専用の整数型がなく `number` 型として扱われますが、`2^53 - 1` を超える整数は精度が保証されません。
+大きな整数を扱う場合は `BigInt`（`9007199254740993n` のように末尾に `n`）を使います。
+また `0xff`（16進数）や `0b1010`（2進数）のリテラル表記も整数リテラルの一種です。
 
 ## Example
 ```js

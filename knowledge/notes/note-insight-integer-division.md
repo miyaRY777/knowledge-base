@@ -17,7 +17,9 @@ source: [[2026-06-13_insight_js-arithmetic-operators-and-expressions]]
 - [[note-insight-division-operator]]
 
 ## Body
-Javaでは `int` 型同士の `/` 演算が整数除算になり、小数部分は切り捨てられます（ゼロ方向への丸め）。JavaScriptには整数除算演算子はなく、`Math.trunc()` などで代用します。
+Javaの整数除算はゼロ方向への丸めで切り捨てられます。`-7 / 2` は `-3.5` → `-3`（floor の `-4` とは異なる）。
+JavaScriptに整数除算演算子はなく、`Math.trunc()` がゼロ方向丸め、`Math.floor()` が負の無限大方向丸めと使い分けが必要です。
+整数除算を意図せず行ってしまうバグはJavaで頻出なので、除算前にオペランドの型を確認する習慣が重要です。
 
 ## Example
 ```java

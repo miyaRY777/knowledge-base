@@ -18,7 +18,9 @@ source: [[2026-06-14_insight_type-conversion-and-integer-division]]
 - [[note-insight-division-operator]]
 
 ## Body
-JavaScriptの除算は常に `number` 型の結果を返し、小数部分も保持されます。整数除算が必要な場合は `Math.trunc()` や `Math.floor()` を使います。
+JavaScriptには整数型がないため、`/` 演算は常に浮動小数点数の結果を返します。`2 / 5` は `0.4`、`10 / 2` は `5`（整数に見えますが `number` 型）です。
+`0 / 0` は `NaN`、正の数を `0` で割ると `Infinity`、負の数を `0` で割ると `-Infinity` になります。
+整数除算が必要な場合は `Math.trunc()`（ゼロ方向）か `Math.floor()`（負の無限大方向）を目的に合わせて使います。
 
 ## Example
 ```js

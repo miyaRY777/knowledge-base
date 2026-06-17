@@ -1,6 +1,6 @@
 ---
 id: note-insight-initialization
-title: "for文における初期化の要点"
+title: "初期化はforループを始める前にカウンタ変数に最初の値を設定すること"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 ---
@@ -16,10 +16,9 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 ## Links
 
 ## Body
-**ループを始める前に最初の値を用意すること**
-
-**解説：**
-`for` 文の最初の部分に書く式です。多くの場合、`let i = 0` のようにループ用の変数を作って、開始位置を決めます。 ([MDNのウェブドキュメント](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for "for - JavaScript | MDN"))
+`for` 文の初期化部分はループ前に1回だけ実行され、カウンタ変数を定義します。
+`let` を使うことでループ内スコープに閉じ込め、外から誤って参照・変更されることを防げます。
+複数変数を初期化したい場合は `for (let i = 0, j = 10; i < 5; i++, j--)` のようにカンマで区切れます。
 
 ## Example
 
