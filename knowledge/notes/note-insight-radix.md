@@ -3,6 +3,9 @@ id: note-insight-radix
 title: 基数は何進数かを示す土台の数
 created: 2026-06-03
 source: [[2026-06-03_insight_floating-point-and-scientific-notation]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

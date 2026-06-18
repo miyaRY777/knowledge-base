@@ -3,6 +3,9 @@ id: note-insight-scientific-notation
 title: 指数表記は大きな数を仮数×基数^指数で短く表す書き方
 created: 2026-06-03
 source: [[2026-06-03_insight_floating-point-and-scientific-notation]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

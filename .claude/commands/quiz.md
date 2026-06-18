@@ -111,6 +111,7 @@ D. {選択肢}
 - **不正解（❌）**:
   - `quiz_streak` を 0 にリセット（メモしておく。保存は最後にまとめて行う）
   - `#要復習` は付けない（Phase 1は学習中のため）
+  - 出題ノートを VS Code で開く: `code /Users/miyary777/workspace/miyaRY777/knowledge-base/knowledge/notes/{note-id}.md`
 
 ```markdown
 結果：{✅ 正解 / ❌ 不正解}
@@ -141,6 +142,7 @@ D. {選択肢}
   - `quiz_fail_streak` を +1 する（メモしておく。保存は最後にまとめて行う）
   - `quiz_fail_streak` が 2 になったら Phase 1 に降格（`quiz_phase: 1`、両ストリークをリセット）
   - `#要復習` タグを追加対象としてメモする
+  - 出題ノートを VS Code で開く: `code /Users/miyary777/workspace/miyaRY777/knowledge-base/knowledge/notes/{note-id}.md`
 
 ```markdown
 結果：{✅ 正解 / ❌ 不正解 / 🔺 惜しい}
@@ -164,6 +166,10 @@ D. {選択肢}
 
 - **Phase 1**: `quiz_streak` を 0 にリセット（メモしておく。保存は最後にまとめて行う）。`#要復習` は付けない
 - **Phase 2**: `#要復習` タグを追加対象としてメモする（保存は最後にまとめて行う）
+- **共通**: 出題ノートを VS Code で開く。ノート ID（例: `note-insight-idempotent`）から以下のパスで実行する:
+  ```bash
+  code /Users/miyary777/workspace/miyaRY777/knowledge-base/knowledge/notes/{note-id}.md
+  ```
 
 ```markdown
 正解：

@@ -3,6 +3,9 @@ id: note-insight-e-notation
 title: E表記は指数表記をプログラムで書きやすくした記法
 created: 2026-06-03
 source: [[2026-06-03_insight_floating-point-and-scientific-notation]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

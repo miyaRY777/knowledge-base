@@ -3,6 +3,9 @@ id: note-insight-significant-figures
 title: 有効数字は数値の中で信頼できる桁数
 created: 2026-06-03
 source: [[2026-06-03_insight_floating-point-and-scientific-notation]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary
