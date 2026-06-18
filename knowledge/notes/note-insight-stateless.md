@@ -3,6 +3,7 @@ id: note-insight-stateless
 title: "ステートレスは前のリクエストの状態を自動では覚えないHTTPの性質"
 created: 2026-04-17
 source: [[2026-04-17_insight_cookie-http-stateless.md]]
+quiz_streak: 1
 ---
 
 ## Summary

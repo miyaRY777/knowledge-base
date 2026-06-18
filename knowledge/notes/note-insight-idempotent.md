@@ -3,6 +3,7 @@ id: note-insight-idempotent
 title: "冪等性は同じ操作を何度繰り返しても最終的な結果が変わらない性質"
 created: 2026-03-30
 source: [[2026-03-30_insight_rails-study.md]]
+quiz_streak: 0
 ---
 
 ## Summary

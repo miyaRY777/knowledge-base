@@ -3,6 +3,8 @@ id: note-insight-for-loop
 title: "for文は回数が決まった繰り返し処理の基本構文"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+review_streak: 0
+last_reviewed_on: 2026-06-18
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-07_insight_knowledge-base.md]]
 - for (let i = 1; i <= 3; i++) {
 
 ## Tags
-#javascript #loop
+#javascript #loop #要復習
 
 ## Links
 

@@ -3,6 +3,8 @@ id: note-insight-tailwind-responsive-grid-columns
 title: "`md:grid-cols-2 lg:grid-cols-4`とは？"
 created: 2026-04-19
 source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
+review_streak: 0
+last_reviewed_on: 2026-06-18
 ---
 
 ## Summary
@@ -11,13 +13,24 @@ source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
 - レスポンシブにカード一覧や一覧レイアウトを調整したいときに便利です。
 
 ## Tags
-#frontend #tailwindcss #responsive #grid
+#frontend #tailwindcss #responsive #grid #要復習
 
 ## Links
 - [[note-insight-classlist-and-hidden]]
 
 ## Body
-`md:grid-cols-2 lg:grid-cols-4` は、Tailwind CSS のレスポンシブ接頭辞を使って Grid の列数を切り替える書き方です。`md:` 以上の画面幅では 2 列、`lg:` 以上の画面幅では 4 列になり、画面サイズに合わせてレイアウトを変えられます。
+`md:grid-cols-2 lg:grid-cols-4` は、Tailwind CSS のレスポンシブ接頭辞を使って Grid の列数を切り替える書き方です。接頭辞なしのクラスがすべての幅に適用され、より大きなブレークポイントで上書きされます（モバイルファースト）。
+
+| 接頭辞 | 最小幅 | イメージ |
+|--------|--------|----------|
+| （なし）| 0px〜 | スマートフォン（縦） |
+| `sm:` | 640px〜 | スマートフォン（横） |
+| `md:` | 768px〜 | タブレット |
+| `lg:` | 1024px〜 | ノートPC |
+| `xl:` | 1280px〜 | デスクトップ |
+| `2xl:` | 1536px〜 | 大型モニター |
+
+`gap` はグリッド要素間のすき間を指定するプロパティです。`gap-4` は 1rem（16px）。縦横個別に指定する場合は `gap-y-4` / `gap-x-4` を使います。
 
 カード一覧や管理画面の一覧など、横幅に応じて見やすい列数へ調整したいときに使います。
 

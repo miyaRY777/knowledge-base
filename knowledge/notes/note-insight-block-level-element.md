@@ -3,7 +3,7 @@ id: note-insight-block-level-element
 title: ブロックレベル要素は横幅いっぱいを使い前後で改行される
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
-quiz_streak: 0
+quiz_streak: 1
 ---
 
 ## Summary

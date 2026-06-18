@@ -3,6 +3,7 @@ id: note-insight-division-type-cast
 title: 除算時の型変換で整数除算を避けて小数結果を得る
 created: 2026-06-14
 source: [[2026-06-14_insight_type-conversion-and-integer-division]]
+quiz_streak: 0
 ---
 
 ## Summary
@@ -18,7 +19,11 @@ source: [[2026-06-14_insight_type-conversion-and-integer-division]]
 - [[note-insight-integer-division-truncation]]
 
 ## Body
-整数変数同士の除算では自動的に整数除算になります。`(double)` キャストで一方を `double` へ変換することで小数結果が得られます。キャストは `/` より優先度が高いため `(double) total / count` で意図通りに動作します。
+Javaでは整数 ÷ 整数 の計算は「整数除算」として扱われ、小数点以下が切り捨てられます。たとえば `2 / 5` は `0` になります。
+
+小数の結果を得るには、どちらか一方を浮動小数点型に変換（キャスト）します。`(double) total` と書くと `total` だけが `double` に変換され、その後の `/` は浮動小数点除算として計算されます。
+
+キャストの優先度は `/` より高いため、`(double) total / count` は `(double)(total / count)` ではなく `((double) total) / count` として動作します。
 
 ## Example
 ```java

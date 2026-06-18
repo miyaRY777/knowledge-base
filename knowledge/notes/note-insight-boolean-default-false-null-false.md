@@ -3,6 +3,7 @@ id: note-insight-boolean-default-false-null-false
 title: "boolean, default: false, null: falseは真偽値カラムに初期値と空禁止を同時に設定する書き方"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_streak: 1
 ---
 
 ## Summary

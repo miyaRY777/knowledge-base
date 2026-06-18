@@ -3,6 +3,7 @@ id: note-insight-infinite-loop
 title: "無限ループは終了条件がなく処理がずっと続いてしまう状態"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_streak: 1
 ---
 
 ## Summary

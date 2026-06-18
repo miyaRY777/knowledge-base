@@ -3,6 +3,7 @@ id: note-insight-float-comparison
 title: 浮動小数点数の比較は誤差を考慮して差が十分小さいか確認する
 created: 2026-06-12
 source: [[2026-06-12_insight_js-number-types-and-floating-point]]
+quiz_streak: 0
 ---
 
 ## Summary

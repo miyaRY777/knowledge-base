@@ -3,6 +3,8 @@ id: note-insight-post-request
 title: "POSTリクエストはサーバーに新しいデータを送るHTTPメソッド"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+review_streak: 1
+last_reviewed_on: 2026-06-18
 ---
 
 ## Summary

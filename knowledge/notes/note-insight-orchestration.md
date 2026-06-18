@@ -3,6 +3,8 @@ id: note-insight-orchestration
 title: "オーケストレーションは複数の処理を全体として連携・管理する考え方"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
+review_streak: 0
+last_reviewed_on: 2026-06-18
 ---
 
 ## Summary
@@ -11,7 +13,7 @@ source: [[2026-04-07_insight_rails-ruby-terms.md]]
 - コントローラやサービスが全体の順序を組み立てる場面でよく出てきます。
 
 ## Tags
-#design #rails #service
+#design #rails #service #要復習
 
 ## Links
 
