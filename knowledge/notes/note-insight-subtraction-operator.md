@@ -3,6 +3,9 @@ id: note-insight-subtraction-operator
 title: 減算演算子（-）は左側の値から右側の値を引く演算子
 created: 2026-06-13
 source: [[2026-06-13_insight_js-arithmetic-operators-and-expressions]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

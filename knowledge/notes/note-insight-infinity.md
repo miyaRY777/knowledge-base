@@ -3,6 +3,9 @@ id: note-insight-infinity
 title: InfinityはJavaScriptで無限大を表すnumber型の特別な値
 created: 2026-06-13
 source: [[2026-06-13_insight_js-arithmetic-operators-and-expressions]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

@@ -3,6 +3,9 @@ id: note-insight-calculation-result-type
 title: 計算結果のデータ型はオペランドの型と演算子と言語の規則で決まる
 created: 2026-06-14
 source: [[2026-06-14_insight_type-conversion-and-integer-division]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

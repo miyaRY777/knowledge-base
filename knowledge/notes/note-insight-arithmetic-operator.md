@@ -3,6 +3,9 @@ id: note-insight-arithmetic-operator
 title: 算術演算子は数値の計算を行う演算子
 created: 2026-06-13
 source: [[2026-06-13_insight_js-arithmetic-operators-and-expressions]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

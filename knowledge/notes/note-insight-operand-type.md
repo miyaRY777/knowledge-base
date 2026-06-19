@@ -3,6 +3,9 @@ id: note-insight-operand-type
 title: オペランドのデータ型によって演算子の動作や結果が変わる
 created: 2026-06-13
 source: [[2026-06-13_insight_js-arithmetic-operators-and-expressions]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

@@ -3,6 +3,9 @@ id: note-insight-integer-division-result
 title: 整数同士の割り算は言語によって小数部分の扱いが異なる
 created: 2026-06-13
 source: [[2026-06-13_insight_js-arithmetic-operators-and-expressions]]
+quiz_phase: 1
+quiz_streak: 0
+quiz_fail_streak: 0
 ---
 
 ## Summary

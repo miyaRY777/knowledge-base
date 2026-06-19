@@ -3,6 +3,9 @@ id: note-insight-js-number-type-unified
 title: JavaScriptでは整数と小数をどちらもnumber型として扱う
 created: 2026-06-14
 source: [[2026-06-14_insight_type-conversion-and-integer-division]]
+quiz_phase: 1
+quiz_streak: 0
+quiz_fail_streak: 0
 ---
 
 ## Summary

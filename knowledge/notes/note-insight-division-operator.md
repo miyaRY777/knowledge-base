@@ -3,6 +3,9 @@ id: note-insight-division-operator
 title: 除算演算子（/）は左側の値を右側の値で割る演算子
 created: 2026-06-13
 source: [[2026-06-13_insight_js-arithmetic-operators-and-expressions]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

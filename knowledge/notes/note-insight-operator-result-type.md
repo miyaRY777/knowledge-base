@@ -3,6 +3,9 @@ id: note-insight-operator-result-type
 title: 演算結果のデータ型はオペランドの型と演算子と言語によって決まる
 created: 2026-06-13
 source: [[2026-06-13_insight_js-arithmetic-operators-and-expressions]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

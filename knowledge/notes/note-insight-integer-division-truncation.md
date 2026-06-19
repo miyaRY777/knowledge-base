@@ -3,6 +3,9 @@ id: note-insight-integer-division-truncation
 title: 整数除算では小数部分が切り捨てられて整数の結果になる
 created: 2026-06-14
 source: [[2026-06-14_insight_type-conversion-and-integer-division]]
+quiz_phase: 1
+quiz_streak: 0
+quiz_fail_streak: 0
 ---
 
 ## Summary

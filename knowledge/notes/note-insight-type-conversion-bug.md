@@ -3,6 +3,9 @@ id: note-insight-type-conversion-bug
 title: 型変換によるバグは想定外の型変換で発生するプログラムの不具合
 created: 2026-06-14
 source: [[2026-06-14_insight_type-conversion-and-integer-division]]
+quiz_phase: 1
+quiz_streak: 0
+quiz_fail_streak: 0
 ---
 
 ## Summary

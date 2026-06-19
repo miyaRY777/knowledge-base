@@ -3,6 +3,9 @@ id: note-insight-four-arithmetic-operations
 title: 四則演算は足し算・引き算・掛け算・割り算の4つの計算
 created: 2026-06-13
 source: [[2026-06-13_insight_js-arithmetic-operators-and-expressions]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary
