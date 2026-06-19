@@ -4,6 +4,7 @@ title: "永続Cookieはブラウザを閉じても有効期限まで保持され
 created: 2026-04-18
 source: [[2026-04-18_insight_cookie-basics-and-security.md]]
 review_streak: 0
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -12,7 +13,7 @@ review_streak: 0
 - 便利な一方で、長く残るぶん保存内容には注意が必要です。
 
 ## Tags
-#http #web #cookie #要復習
+#http #web #cookie
 
 ## Links
 - [[note-insight-cookie]]

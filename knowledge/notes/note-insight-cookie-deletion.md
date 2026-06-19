@@ -3,6 +3,7 @@ id: note-insight-cookie-deletion
 title: "CookieはSet-Cookieで有効期限を切ることでブラウザから削除できる"
 created: 2026-04-18
 source: [[2026-04-18_insight_cookie-basics-and-security.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

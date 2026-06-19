@@ -3,6 +3,7 @@ id: note-insight-database-key
 title: キーはレコード識別やテーブル関連づけに使う目印
 created: 2026-05-17
 source: [[2026-05-17_insight_database-null-and-keys]]
+quiz_fail_log: []
 ---
 
 ## Summary

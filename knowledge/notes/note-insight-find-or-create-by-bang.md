@@ -3,6 +3,7 @@ id: note-insight-find-or-create-by-bang
 title: "find_or_create_by!は条件に一致するレコードを探しなければ作成する失敗時は例外を出すメソッド"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

@@ -3,6 +3,7 @@ id: note-insight-activerecord-preload
 title: "`preload` は関連データを別クエリで先に読む"
 created: 2026-04-26
 source: [[2026-04-26_insight_active-record-loading-and-joins.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

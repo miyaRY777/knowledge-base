@@ -3,6 +3,7 @@ id: note-insight-request-method-alias
 title: "リクエストメソッドエイリアスはaxios.getなどHTTPメソッドを短く書ける便利な記法"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

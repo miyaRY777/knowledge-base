@@ -5,6 +5,7 @@ created: 2026-05-04
 source: [[2026-05-04_insight_rails-model-basics]]
 review_streak: 0
 last_reviewed_on: 2026-05-27
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-27
 - Rails のマイグレーションでは、カラム追加時に整数型として指定できます。
 
 ## Tags
-#rails #database #migration #data-type #要復習
+#rails #database #migration #data-type
 
 ## Links
 - [[note-insight-database-column]]

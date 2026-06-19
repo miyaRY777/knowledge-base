@@ -5,6 +5,7 @@ created: 2026-04-18
 source: [[2026-04-18_insight_cookie-basics-and-security.md]]
 review_streak: 1
 last_reviewed_on: 2026-04-30
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-04-30
 - 複数サイトをまたぐ追跡に使われやすいため、プライバシー面の制限対象になりやすいです。
 
 ## Tags
-#http #web #cookie #privacy #要復習
+#http #web #cookie #privacy
 
 ## Links
 - [[note-insight-cookie]]

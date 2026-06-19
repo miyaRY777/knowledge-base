@@ -5,6 +5,7 @@ created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-01
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-01
 - テーブル同士の関係を DB 側で守るために使う。
 
 ## Tags
-#database #sql #constraint #rails #要復習
+#database #sql #constraint #rails
 
 ## Links
 - [[note-insight-database-constraint]]

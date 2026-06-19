@@ -3,6 +3,7 @@ id: note-insight-database-lock-types
 title: データベースロックは読み書きの制御方法で種類が分かれる
 created: 2026-05-23
 source: [[2026-05-23_insight_database-lock-types.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

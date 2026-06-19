@@ -3,6 +3,7 @@ id: note-insight-tld-dns-server
 title: TLDのDNSサーバーは次に聞くべき権威DNSサーバーを案内する
 created: 2026-05-15
 source: [[2026-05-15_insight_dns-resolution-flow]]
+quiz_fail_log: []
 ---
 
 ## Summary

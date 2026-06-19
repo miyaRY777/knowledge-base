@@ -5,6 +5,7 @@ created: 2026-05-07
 source: [[2026-05-07_insight_http-status-codes]]
 review_streak: 0
 last_reviewed_on: 2026-05-13
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-13
 - ブラウザやアプリはステータスコードを見て、成功表示、リダイレクト、エラー表示などを判断できます。
 
 ## Tags
-#http #web #status-code #要復習
+#http #web #status-code
 
 ## Links
 - [[note-insight-http-response]]

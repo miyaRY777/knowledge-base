@@ -5,6 +5,7 @@ created: 2026-04-28
 source: [[2026-04-28_insight_n-plus-one-oop-database.md]]
 review_streak: 1
 last_reviewed_on: 2026-04-30
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-04-30
 - Rails では Active Record を通して PostgreSQL や MySQL などを操作することが多い。
 
 ## Tags
-#database #sql #rails #activerecord #要復習
+#database #sql #rails #activerecord
 
 ## Links
 - [[note-insight-dbms]]

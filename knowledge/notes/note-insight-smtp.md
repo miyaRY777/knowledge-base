@@ -3,6 +3,7 @@ id: note-insight-smtp
 title: SMTPはメールを送信・配送するためのプロトコル
 created: 2026-05-05
 source: [[2026-05-05_insight_network-protocol-basics]]
+quiz_fail_log: []
 ---
 
 ## Summary

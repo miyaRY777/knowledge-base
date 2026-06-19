@@ -5,6 +5,7 @@ created: 2026-05-12
 source: [[2026-05-12_insight_domain-name-hierarchy]]
 review_streak: 0
 last_reviewed_on: 2026-05-25
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-25
 - `example.co.jp` のように、見た目の名前と階層の呼び方がずれる場合があります。
 
 ## Tags
-#network #internet #domain #dns #要復習
+#network #internet #domain #dns
 
 ## Links
 - [[note-insight-domain-name]]

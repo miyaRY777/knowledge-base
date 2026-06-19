@@ -5,6 +5,7 @@ created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0
 last_reviewed_on: 2026-04-30
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-04-30
 - 制約、トランザクション、権限管理などは整合性や一貫性を守るために使われる。
 
 ## Tags
-#database #data-integrity #要復習
+#database #data-integrity
 
 ## Links
 - [[note-insight-database-constraint]]

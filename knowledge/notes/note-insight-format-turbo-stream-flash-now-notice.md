@@ -3,6 +3,7 @@ id: note-insight-format-turbo-stream-flash-now-notice
 title: "format.turbo_streamブロックでflash.nowを使うとTurbo通信時にその場でメッセージを表示できる"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

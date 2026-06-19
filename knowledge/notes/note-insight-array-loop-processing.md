@@ -3,6 +3,7 @@ id: note-insight-array-loop-processing
 title: "配列のループ処理はlengthを使って要素を先頭から末尾まで順番に取り出す方法"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

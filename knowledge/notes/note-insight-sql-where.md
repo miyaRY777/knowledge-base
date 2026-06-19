@@ -5,6 +5,7 @@ created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0
 last_reviewed_on: 2026-04-30
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-04-30
 - Rails の `where` メソッドの裏側でも SQL の `WHERE` が使われる。
 
 ## Tags
-#database #sql #rails #activerecord #要復習
+#database #sql #rails #activerecord
 
 ## Links
 - [[note-insight-sql-select]]

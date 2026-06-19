@@ -4,6 +4,7 @@ title: "トランジスタは電気のON・OFFを制御する電子部品"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

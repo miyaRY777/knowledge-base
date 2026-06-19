@@ -4,6 +4,7 @@ title: nullableは値がnullになる可能性があることを示す
 created: 2026-06-05
 source: [[2026-06-05_insight_null-and-related-values]]
 quiz_streak: 0
+quiz_fail_log: []
 ---
 
 ## Summary

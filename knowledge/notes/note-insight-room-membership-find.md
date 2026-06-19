@@ -3,6 +3,7 @@ id: note-insight-room-membership-find
 title: "RoomMembership.findはIDだけで検索するため他人のデータも取得できる危険がある"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

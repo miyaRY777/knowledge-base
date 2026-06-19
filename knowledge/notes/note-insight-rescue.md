@@ -3,6 +3,7 @@ id: note-insight-rescue
 title: "rescueは発生した例外をキャッチして処理を継続させる仕組み"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

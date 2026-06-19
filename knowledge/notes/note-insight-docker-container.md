@@ -3,6 +3,7 @@ id: note-insight-docker-container
 title: DockerコンテナはDockerイメージから作られて実際に動く実行環境
 created: 2026-05-29
 source: [[2026-05-29_insight_docker-basics]]
+quiz_fail_log: []
 ---
 
 ## Summary

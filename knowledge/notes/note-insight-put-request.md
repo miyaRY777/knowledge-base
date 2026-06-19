@@ -5,6 +5,7 @@ created: 2026-05-06
 source: [[2026-05-06_insight_http-message-methods]]
 review_streak: 0
 last_reviewed_on: 2026-05-25
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-25
 - Rails の更新処理では、部分更新の `PATCH` と使い分けて理解すると整理しやすいです。
 
 ## Tags
-#http #rails #web #要復習
+#http #rails #web
 
 ## Links
 - [[note-insight-http-request]]

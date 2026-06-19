@@ -3,6 +3,7 @@ id: note-insight-monkey-testing
 title: "モンキーテストはランダムな操作で不具合を探すテスト"
 created: 2026-05-02
 source: [[2026-05-02_insight_samesite-csrf-soft-delete.md]]
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -11,7 +12,7 @@ source: [[2026-05-02_insight_samesite-csrf-soft-delete.md]]
 - 公式用語としては、ランダム入力を使うランダムテストの考え方と近いです。
 
 ## Tags
-#testing #quality #software-test #要復習
+#testing #quality #software-test
 
 ## Links
 - [[note-insight-helper-test]]

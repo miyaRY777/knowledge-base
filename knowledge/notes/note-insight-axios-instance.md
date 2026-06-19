@@ -3,6 +3,7 @@ id: note-insight-axios-instance
 title: "AxiosインスタンスはbaseURLやheadersなど共通設定をまとめたカスタムAxiosオブジェクト"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

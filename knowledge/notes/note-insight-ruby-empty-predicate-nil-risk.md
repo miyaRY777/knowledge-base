@@ -6,6 +6,7 @@ source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 review_streak: 1
 last_reviewed_on: 2026-05-26
 quiz_streak: 0
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -14,7 +15,7 @@ quiz_streak: 0
 - Rails では `blank?` を使うと安全に空判定しやすくなります。
 
 ## Tags
-#ruby #rails #error-handling #要復習
+#ruby #rails #error-handling
 
 ## Links
 - [[note-insight-ruby-check-nil-before-empty]]

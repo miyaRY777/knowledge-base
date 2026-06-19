@@ -5,6 +5,7 @@ created: 2026-05-19
 source: [[2026-05-19_insight_database-normalization.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-22
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-22
 - マスターデータを切り出すことで、名前変更などの更新を一か所に集めやすくなります。
 
 ## Tags
-#database #sql #normalization #3nf #database-design #要復習
+#database #sql #normalization #3nf #database-design
 
 ## Links
 - [[note-insight-database-normalization]]

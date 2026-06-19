@@ -3,6 +3,7 @@ id: note-insight-active-record-relation-lazy-execution-flow
 title: ActiveRecord::RelationはSQL実行前の検索条件を表す
 created: 2026-05-27
 source: [[復習中の補足]]
+quiz_fail_log: []
 ---
 
 ## Summary

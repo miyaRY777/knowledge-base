@@ -6,6 +6,7 @@ source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-13
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -14,7 +15,7 @@ quiz_streak: 1
 - 必要な通信だけを許可し、不要または危険な通信を減らすために使われる。
 
 ## Tags
-#network #security #firewall #internet-security #要復習
+#network #security #firewall #internet-security
 
 ## Links
 - [[note-insight-internet-security]]

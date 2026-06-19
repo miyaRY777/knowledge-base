@@ -5,6 +5,7 @@ created: 2026-05-18
 source: [[2026-05-18_insight_er-diagram-basics]]
 review_streak: 0
 last_reviewed_on: 2026-05-22
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-22
 - エンティティ、属性、リレーションを使って設計の見通しをよくします。
 
 ## Tags
-#database #database-design #er-diagram #要復習
+#database #database-design #er-diagram
 
 ## Links
 - [[note-insight-entity]]

@@ -4,6 +4,7 @@ title: "int型とlong型は扱える整数の大きさが異なる"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
 quiz_streak: 2
+quiz_fail_log: []
 last_reviewed_on: 2026-06-18
 ---
 

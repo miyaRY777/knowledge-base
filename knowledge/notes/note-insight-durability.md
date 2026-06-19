@@ -5,6 +5,7 @@ created: 2026-05-20
 source: [[2026-05-20_insight_acid-properties.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-22
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-22
 - 保存成功後のデータを信頼できる状態にするための性質です。
 
 ## Tags
-#database #sql #transaction #acid #durability #要復習
+#database #sql #transaction #acid #durability
 
 ## Links
 - [[note-insight-acid-properties]]

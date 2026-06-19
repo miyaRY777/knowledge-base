@@ -3,6 +3,7 @@ id: note-insight-network-identification
 title: ネットワーク識別は通信先が同じネットワークか判断する考え方
 created: 2026-05-11
 source: [[2026-05-11_insight_ip-address-basics]]
+quiz_fail_log: []
 ---
 
 ## Summary

@@ -5,6 +5,7 @@ created: 2026-05-20
 source: [[2026-05-20_insight_acid-properties.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-22
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-22
 - Rails の `transaction` は、複数の更新をまとめて成功または失敗にしたい場面で使います。
 
 ## Tags
-#database #sql #transaction #acid #atomicity #rails #要復習
+#database #sql #transaction #acid #atomicity #rails
 
 ## Links
 - [[note-insight-acid-properties]]

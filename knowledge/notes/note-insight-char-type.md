@@ -4,6 +4,7 @@ title: "char型は1文字を文字コードとして保存するデータ型"
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

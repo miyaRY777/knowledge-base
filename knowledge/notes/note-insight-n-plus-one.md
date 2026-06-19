@@ -5,6 +5,7 @@ created: 2026-04-28
 source: [[2026-04-28_insight_n-plus-one-oop-database.md]]
 review_streak: 1
 last_reviewed_on: 2026-04-30
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-04-30
 - Rails では `includes`、`preload`、`eager_load` などで関連を先読みして対策する。
 
 ## Tags
-#rails #activerecord #database #query #n-plus-one #要復習
+#rails #activerecord #database #query #n-plus-one
 
 ## Links
 - [[note-insight-activerecord-includes]]

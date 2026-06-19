@@ -4,6 +4,7 @@ title: "スロットとソケットはマザーボードにCPUやメモリを取
 created: 2026-04-15
 source: [[2026-04-15_insight_memory-storage-motherboard-basics]]
 review_streak: 0
+quiz_fail_log: []
 ---
 
 ## Summary

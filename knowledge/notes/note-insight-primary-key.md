@@ -5,6 +5,7 @@ created: 2026-05-17
 source: [[2026-05-17_insight_database-null-and-keys]]
 review_streak: 0
 last_reviewed_on: 2026-06-18
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-06-18
 - Rails では、多くの場合 `id` カラムが主キーとして使われます。
 
 ## Tags
-#database #sql #key #primary-key #rails #要復習
+#database #sql #key #primary-key #rails
 
 ## Links
 - [[note-insight-database-key]]

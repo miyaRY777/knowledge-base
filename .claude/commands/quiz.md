@@ -1,6 +1,6 @@
 ---
 description: ノートからランダムに問題を出題してクイズ形式で復習する
-argument-hint: "[#tag] [N問]"
+argument-hint: "[#tag] [N問] [fail>=N] [fail-in:YYYY-MM]"
 ---
 
 # /quiz コマンド
@@ -10,8 +10,11 @@ argument-hint: "[#tag] [N問]"
 フェーズ制を採用しています。最初は4択クイズで慣れ、2回連続正解で説明フェーズへ自動昇格します。
 
 ## 入力
-- `$ARGUMENTS`: タグ・テーマ・問題数・日付フィルターの組み合わせ
+- `$ARGUMENTS`: タグ・テーマ・問題数・絞り込み条件の組み合わせ
   - 例: `#rails`, `#database`, `5問`, `#rails 3問`, `10問連続`, `yesterday`, `today`
+  - 例: `fail>=1`（1回以上間違えた問題）, `fail=1`（ちょうど1回）, `fail>=2`（2回以上）
+  - 例: `fail-in:2026-06`（6月に間違えた問題）, `fail-in:2026-06 fail=1`（6月に1回だけ間違えた問題）
+  - 例: `fail-in:2026-06>=3`（6月に3回以上間違えた問題）, `fail-in:2026-06=2`（6月にちょうど2回間違えた問題）
 - 省略した場合は全ノートから1問出題
 
 ## 処理手順
@@ -25,16 +28,26 @@ argument-hint: "[#tag] [N問]"
 | タグ | `#rails` | 対象ノートを絞り込む |
 | 問題数 | `5問`, `10問連続` | 連続出題する問題数（省略時は1問） |
 | 日付 | `yesterday`, `today` | 作成日でノートを絞り込む（問題数は全件） |
+| 間違い回数 | `fail=1`, `fail>=2` | `quiz_fail_log` の件数で絞り込む |
+| 間違い月 | `fail-in:2026-06` | `quiz_fail_log` に該当月の日付がある問題を絞り込む |
+| 間違い月+回数 | `fail-in:2026-06>=3`, `fail-in:2026-06=2` | 該当月の件数で絞り込む（`>=N` は N 回以上、`=N` はちょうど N 回） |
 
 - `yesterday` → `created` が昨日のノートを**全件**出題
 - `today` → `created` が今日のノートを**全件**出題
+- `fail=1` + `fail-in:2026-06` → 6月に間違えた日付がちょうど1件のノートを絞り込む
 
 ### Step 2: 出題対象ノートを収集する
 
 - `yesterday` 指定 → `knowledge/notes/` から `created` が昨日のノートを抽出
 - `today` 指定 → `knowledge/notes/` から `created` が今日のノートを抽出
 - タグ指定あり → `knowledge/notes/` から該当タグを含むノートを抽出
-- タグ指定なし（上記以外）→ `knowledge/notes/` の全ノートを対象にする
+- `fail=N` 指定 → `quiz_fail_log` の要素数が N のノートを抽出
+- `fail>=N` 指定 → `quiz_fail_log` の要素数が N 以上のノートを抽出
+- `fail-in:YYYY-MM` 指定 → `quiz_fail_log` に `YYYY-MM-` で始まる日付を含むノートを抽出
+- `fail-in:YYYY-MM=N` 指定 → 該当月の件数がちょうど N のノートを抽出
+- `fail-in:YYYY-MM>=N` 指定 → 該当月の件数が N 以上のノートを抽出
+- 複数条件はAND で絞り込む
+- タグ指定なし・日付指定なし・fail指定なし → `knowledge/notes/` の全ノートを対象にする
 
 ### Step 3: 連続出題の管理
 
@@ -54,6 +67,7 @@ argument-hint: "[#tag] [N問]"
 | `quiz_phase` | 1 | 1=4択フェーズ, 2=説明フェーズ |
 | `quiz_streak` | 0 | 連続正解数（Phase 1の昇格用） |
 | `quiz_fail_streak` | 0 | 連続不正解数（Phase 2の降格用） |
+| `quiz_fail_log` | [] | 間違えた日付の累計リスト（リセットなし） |
 
 フェーズに応じて出題形式を切り替えてください:
 - `quiz_phase: 1`（または未設定）→ **4択形式**で出題
@@ -107,10 +121,9 @@ D. {選択肢}
 - **正解（✅）**:
   - `quiz_streak` を +1 する（メモしておく。保存は最後にまとめて行う）
   - `quiz_streak` が 2 になったら「次回セッションから説明フェーズへ昇格」と伝える（このセッションは4択を継続）
-  - `#要復習` には影響しない
 - **不正解（❌）**:
   - `quiz_streak` を 0 にリセット（メモしておく。保存は最後にまとめて行う）
-  - `#要復習` は付けない（Phase 1は学習中のため）
+  - `quiz_fail_log` に今日の日付を追記（メモしておく。保存は最後にまとめて行う）
   - 出題ノートを VS Code で開く: `code /Users/miyary777/workspace/miyaRY777/knowledge-base/knowledge/notes/{note-id}.md`
 
 ```markdown
@@ -137,11 +150,10 @@ D. {選択肢}
 
 - **正解（✅）**:
   - `quiz_fail_streak` を 0 にリセット（メモしておく。保存は最後にまとめて行う）
-  - ノートに `#要復習` タグがあれば削除対象としてメモする
 - **不正解（❌）・惜しい（🔺）**:
   - `quiz_fail_streak` を +1 する（メモしておく。保存は最後にまとめて行う）
+  - `quiz_fail_log` に今日の日付を追記（メモしておく。保存は最後にまとめて行う）
   - `quiz_fail_streak` が 2 になったら Phase 1 に降格（`quiz_phase: 1`、両ストリークをリセット）
-  - `#要復習` タグを追加対象としてメモする
   - 出題ノートを VS Code で開く: `code /Users/miyary777/workspace/miyaRY777/knowledge-base/knowledge/notes/{note-id}.md`
 
 ```markdown
@@ -164,12 +176,16 @@ D. {選択肢}
 
 ### Step 6c: 「わからない」「スキップ」と言った場合
 
-- **Phase 1**: `quiz_streak` を 0 にリセット（メモしておく。保存は最後にまとめて行う）。`#要復習` は付けない
-- **Phase 2**: `#要復習` タグを追加対象としてメモする（保存は最後にまとめて行う）
-- **共通**: 出題ノートを VS Code で開く。ノート ID（例: `note-insight-idempotent`）から以下のパスで実行する:
-  ```bash
-  code /Users/miyary777/workspace/miyaRY777/knowledge-base/knowledge/notes/{note-id}.md
-  ```
+- **Phase 1・Phase 2 共通**:
+  - `quiz_streak` を 0 にリセット（メモしておく。保存は最後にまとめて行う）
+  - `quiz_fail_log` に今日の日付を追記（メモしておく。保存は最後にまとめて行う）
+  - 出題ノートを VS Code で開く:
+    ```bash
+    code /Users/miyary777/workspace/miyaRY777/knowledge-base/knowledge/notes/{note-id}.md
+    ```
+- **Phase 2 のみ**:
+  - `quiz_fail_streak` を +1 する（メモしておく。保存は最後にまとめて行う）
+  - `quiz_fail_streak` が 2 になったら Phase 1 に降格
 
 ```markdown
 正解：
@@ -180,7 +196,6 @@ D. {選択肢}
 
 復習ポイント：
 このノートをもう一度読んでおきましょう → [[note-...]]
-{Phase 2の場合: （`#要復習` タグを追加しました）}
 
 ---
 {残り問数がある場合は自動で次の問題へ / 最終問の場合は結果サマリーを表示}
@@ -202,17 +217,12 @@ D. {選択肢}
 ## 昇格・降格
 {フェーズが変わったノートがあれば一覧表示}
 
-## 復習候補
-{Phase 2で不正解・スキップしたノートの一覧}
-- [[note-...]] - {タイトル}
-
 ---
 以下のフロントマターを更新してよいですか？
 
 {変更があるノートのみ列挙}
 - [[note-...]]：quiz_streak {旧値} → {新値}
-- [[note-...]]：#要復習 を追加
-- [[note-...]]：#要復習 を削除
+- [[note-...]]：quiz_fail_log に {今日の日付} を追記
 
 保存しますか？（はい / いいえ）
 ```
@@ -222,10 +232,10 @@ D. {選択肢}
 
 ## フェーズ管理ルール早見表
 
-| フェーズ | 正解時 | 不正解時 | 昇格・降格条件 |
-|---------|-------|---------|--------------|
-| Phase 1（4択） | quiz_streak +1 | quiz_streak リセット | streak=2 → 次回Phase 2へ |
-| Phase 2（説明） | #要復習 削除、fail_streak リセット | #要復習 追加、fail_streak +1 | fail_streak=2 → 即座にPhase 1へ |
+| フェーズ | 正解時 | 不正解・スキップ時 | 昇格・降格条件 |
+|---------|-------|-----------------|--------------|
+| Phase 1（4択） | quiz_streak +1 | quiz_streak リセット、quiz_fail_log に日付追記 | streak=2 → 次回Phase 2へ |
+| Phase 2（説明） | fail_streak リセット | fail_streak +1、quiz_fail_log に日付追記 | fail_streak=2 → 即座にPhase 1へ |
 
 ## 制約
 - **1問ずつ出題**: 複数問でも1問ずつ順番に出す

@@ -4,6 +4,7 @@ title: 入力・処理・出力はプログラムの基本的な流れ
 created: 2026-06-09
 source: [[2026-06-09_insight_program-input-process-output]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

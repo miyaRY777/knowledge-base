@@ -6,6 +6,7 @@ source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 review_streak: 1
 last_reviewed_on: 2026-04-30
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -14,7 +15,7 @@ quiz_streak: 1
 - 「SSL化」や「SSL証明書」という言い方は残っているが、実体は TLS と整理するとわかりやすい。
 
 ## Tags
-#web #security #ssl #tls #https #要復習
+#web #security #ssl #tls #https
 
 ## Links
 - [[note-insight-https]]

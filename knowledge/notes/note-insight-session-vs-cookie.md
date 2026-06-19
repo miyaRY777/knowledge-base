@@ -3,6 +3,7 @@ id: note-insight-session-vs-cookie
 title: "セッションとCookieの違い"
 created: 2026-04-21
 source: [[2026-04-21_insight_session-cookie-basics.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

@@ -6,6 +6,7 @@ source: [[2026-04-18_insight_cookie-basics-and-security.md]]
 review_streak: 0
 last_reviewed_on: 2026-04-30
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -14,7 +15,7 @@ quiz_streak: 1
 - `None` を使う場合は `Secure` も必要です。
 
 ## Tags
-#http #web #cookie #security #privacy #要復習 #要復習
+#http #web #cookie #security #privacy
 
 ## Links
 - [[note-insight-cookie]]

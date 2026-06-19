@@ -5,6 +5,7 @@ created: 2026-04-19
 source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
 review_streak: 0
 last_reviewed_on: 2026-06-18
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-06-18
 - レスポンシブにカード一覧や一覧レイアウトを調整したいときに便利です。
 
 ## Tags
-#frontend #tailwindcss #responsive #grid #要復習
+#frontend #tailwindcss #responsive #grid
 
 ## Links
 - [[note-insight-classlist-and-hidden]]

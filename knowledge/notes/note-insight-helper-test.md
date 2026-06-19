@@ -3,6 +3,7 @@ id: note-insight-helper-test
 title: "ヘルパーテストとは？"
 created: 2026-04-19
 source: [[2026-04-19_insight_rails-and-tailwind-terms.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

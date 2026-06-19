@@ -4,6 +4,7 @@ title: 固定小数点型は小数点位置を固定して数値を表す方式
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

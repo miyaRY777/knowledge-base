@@ -3,6 +3,7 @@ id: note-insight-current-user-admin
 title: "current_user.admin?はログイン中のユーザーが管理者かどうかを確認する書き方"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

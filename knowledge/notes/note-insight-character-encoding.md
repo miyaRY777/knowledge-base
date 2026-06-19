@@ -4,6 +4,7 @@ title: "文字エンコーディングは文字を2進数へ変換するルー�
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

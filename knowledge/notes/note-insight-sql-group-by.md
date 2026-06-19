@@ -5,6 +5,7 @@ created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0
 last_reviewed_on: 2026-04-30
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-04-30
 - ユーザーごとの投稿数や月ごとの売上などを出すときに使える。
 
 ## Tags
-#database #sql #aggregation #要復習
+#database #sql #aggregation
 
 ## Links
 - [[note-insight-sql]]

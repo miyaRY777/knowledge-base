@@ -3,6 +3,7 @@ id: note-insight-graceful-handling
 title: "グレースフルな処理はエラーで落とさずユーザーに分かりやすく対処すること"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

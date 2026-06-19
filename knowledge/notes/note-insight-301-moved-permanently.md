@@ -5,6 +5,7 @@ created: 2026-05-07
 source: [[2026-05-07_insight_http-status-codes]]
 review_streak: 0
 last_reviewed_on: 2026-05-25
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-25
 - 古いURLを今後も新しいURLへ案内したい場面で使われます。
 
 ## Tags
-#http #web #status-code #redirect #要復習
+#http #web #status-code #redirect
 
 ## Links
 - [[note-insight-http-status-code]]

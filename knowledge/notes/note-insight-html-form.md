@@ -4,6 +4,7 @@ title: form要素はユーザー入力をサーバーに送信するHTML要素
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

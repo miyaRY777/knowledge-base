@@ -3,6 +3,7 @@ id: note-insight-cookie-purpose
 title: "CookieはステートレスなHTTPでユーザーの状態を引き継ぐために使われる"
 created: 2026-04-17
 source: [[2026-04-17_insight_cookie-http-stateless.md]]
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -11,7 +12,7 @@ source: [[2026-04-17_insight_cookie-http-stateless.md]]
 - 便利な一方で、個人情報や安全性への配慮が必要です。
 
 ## Tags
-#http #web #rails #要復習
+#http #web #rails
 
 ## Links
 - [[note-insight-cookie]]

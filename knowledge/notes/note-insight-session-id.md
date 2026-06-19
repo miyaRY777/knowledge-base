@@ -5,6 +5,7 @@ created: 2026-04-21
 source: [[2026-04-21_insight_session-cookie-basics.md]]
 review_streak: 1
 last_reviewed_on: 2026-06-18
+quiz_fail_log: []
 ---
 
 ## Summary

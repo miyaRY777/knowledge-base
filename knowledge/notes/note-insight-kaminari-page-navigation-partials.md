@@ -5,6 +5,7 @@ created: 2026-04-24
 source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
 review_streak: 0
 last_reviewed_on: 2026-04-30
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-04-30
 - `_first_page.html.erb` と `_last_page.html.erb` は先頭・末尾へのジャンプ用に使う。
 
 ## Tags
-#insight #rails #kaminari #view #要復習 #要復習
+#insight #rails #kaminari #view
 
 ## Links
 - [[note-insight-kaminari-paginator-partial-role]]

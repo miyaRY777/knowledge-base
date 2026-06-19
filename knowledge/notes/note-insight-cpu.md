@@ -3,6 +3,7 @@ id: note-insight-cpu
 title: "CPUは制御装置と演算装置をまとめた中心装置"
 created: 2026-04-10
 source: [[2026-04-10_insight_computer-five-major-units]]
+quiz_fail_log: []
 ---
 
 ## Summary

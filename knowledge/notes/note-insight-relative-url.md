@@ -3,6 +3,7 @@ id: note-insight-relative-url
 title: 相対URLは現在の場所を基準に指定するURL
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
+quiz_fail_log: []
 ---
 
 ## Summary

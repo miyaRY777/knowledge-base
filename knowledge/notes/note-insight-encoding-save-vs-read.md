@@ -4,6 +4,7 @@ title: "保存時の文字コードと読み取り時の文字コードを揃え
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

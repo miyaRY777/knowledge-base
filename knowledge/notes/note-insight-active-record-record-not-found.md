@@ -3,6 +3,7 @@ id: note-insight-active-record-record-not-found
 title: "ActiveRecord::RecordNotFoundはfindでレコードが見つからないときに発生する例外"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

@@ -3,6 +3,7 @@ id: note-insight-first-party-cookie
 title: "ファーストパーティCookieは閲覧中のサイト自身が設定するCookie"
 created: 2026-04-18
 source: [[2026-04-18_insight_cookie-basics-and-security.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

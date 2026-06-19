@@ -5,6 +5,7 @@ created: 2026-05-19
 source: [[2026-05-19_insight_database-normalization.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-22
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-22
 - 複数値を扱う場合は、行や関連テーブルに分けて表現します。
 
 ## Tags
-#database #sql #normalization #1nf #database-design #要復習
+#database #sql #normalization #1nf #database-design
 
 ## Links
 - [[note-insight-database-normalization]]

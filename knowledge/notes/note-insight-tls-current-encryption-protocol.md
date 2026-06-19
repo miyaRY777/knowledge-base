@@ -6,6 +6,7 @@ source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 review_streak: 1
 last_reviewed_on: 2026-04-30
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -14,7 +15,7 @@ quiz_streak: 1
 - 現在は TLS 1.3 や TLS 1.2 が使われ、古い TLS 1.0 や TLS 1.1 は避けるべきものとして扱われる。
 
 ## Tags
-#web #security #tls #https #encryption #要復習
+#web #security #tls #https #encryption
 
 ## Links
 - [[note-insight-https]]

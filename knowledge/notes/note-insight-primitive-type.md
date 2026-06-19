@@ -6,6 +6,7 @@ source: [[2026-06-11_insight_js-data-types-and-literals]]
 quiz_phase: 1
 quiz_streak: 1
 quiz_fail_streak: 0
+quiz_fail_log: []
 ---
 
 ## Summary

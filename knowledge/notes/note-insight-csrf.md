@@ -3,6 +3,7 @@ id: note-insight-csrf
 title: "CSRFはログイン済み状態を悪用して意図しないリクエストを送らせる攻撃"
 created: 2026-05-02
 source: [[2026-05-02_insight_samesite-csrf-soft-delete.md]]
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -11,7 +12,7 @@ source: [[2026-05-02_insight_samesite-csrf-soft-delete.md]]
 - Rails では CSRF トークンを検証して、正規のフォームやリクエストかを確認します。
 
 ## Tags
-#web #security #csrf #rails #cookie #要復習
+#web #security #csrf #rails #cookie
 
 ## Links
 - [[note-insight-cookie-samesite]]

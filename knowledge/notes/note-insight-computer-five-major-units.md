@@ -3,6 +3,7 @@ id: note-insight-computer-five-major-units
 title: "コンピュータの5大装置は基本の5役割"
 created: 2026-04-10
 source: [[2026-04-10_insight_computer-five-major-units]]
+quiz_fail_log: []
 ---
 
 ## Summary

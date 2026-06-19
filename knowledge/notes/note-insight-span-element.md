@@ -4,6 +4,7 @@ title: spanは文章の一部を囲む汎用インライン要素
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
 quiz_streak: 2
+quiz_fail_log: []
 ---
 
 ## Summary

@@ -3,6 +3,7 @@ id: note-insight-fetch-api
 title: "Fetch APIはブラウザ標準で使えるHTTPリクエストの仕組み"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

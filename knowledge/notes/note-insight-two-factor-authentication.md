@@ -6,6 +6,7 @@ source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 review_streak: 1
 last_reviewed_on: 2026-04-30
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -14,7 +15,7 @@ quiz_streak: 1
 - パスワードが漏れた場合でも、それだけではログインされにくくする効果がある。
 
 ## Tags
-#security #authentication #2fa #login #要復習
+#security #authentication #2fa #login
 
 ## Links
 - [[note-insight-internet-security]]

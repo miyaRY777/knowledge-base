@@ -3,6 +3,7 @@ id: note-insight-turbo-stream-accept-header
 title: "Acceptヘッダーにtext/vnd.turbo-stream.htmlを指定してTurbo Streamレスポンスを受け取る"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

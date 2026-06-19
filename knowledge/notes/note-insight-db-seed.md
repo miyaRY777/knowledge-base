@@ -3,6 +3,7 @@ id: note-insight-db-seed
 title: "db:seedはdb/seeds.rbの初期データをデータベースに投入するRailsコマンド"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

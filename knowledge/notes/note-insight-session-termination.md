@@ -3,6 +3,7 @@ id: note-insight-session-termination
 title: "セッション終了はセッション情報を削除してログイン状態などを破棄すること"
 created: 2026-04-22
 source: [[2026-04-22_insight_session-flow-basics.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

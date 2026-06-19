@@ -5,6 +5,7 @@ created: 2026-04-15
 source: [[2026-04-15_insight_memory-storage-motherboard-basics]]
 review_streak: 1
 last_reviewed_on: 2026-04-30
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-04-30
 - マザーボード上の接続の理解に役立ちます。
 
 ## Tags
-#computer #hardware #bus #要復習
+#computer #hardware #bus
 
 ## Links
 - [[note-insight-motherboard]]

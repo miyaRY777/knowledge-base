@@ -3,6 +3,7 @@ id: note-insight-ruby-constants
 title: "Rubyの定数は先頭大文字の名前で変更しない前提の値を表す"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

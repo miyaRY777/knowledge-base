@@ -3,6 +3,7 @@ id: note-insight-tcp-ip
 title: TCP/IPはインターネット通信の土台となるプロトコル群
 created: 2026-05-05
 source: [[2026-05-05_insight_network-protocol-basics]]
+quiz_fail_log: []
 ---
 
 ## Summary

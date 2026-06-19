@@ -3,6 +3,7 @@ id: note-insight-cname-record
 title: CNAMEレコードはドメイン名を別のドメイン名の別名にするDNSレコード
 created: 2026-05-14
 source: [[2026-05-14_insight_domain-dns-basics]]
+quiz_fail_log: []
 ---
 
 ## Summary

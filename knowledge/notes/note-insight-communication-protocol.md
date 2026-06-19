@@ -3,6 +3,7 @@ id: note-insight-communication-protocol
 title: 通信プロトコルはコンピューター同士が通信するときの約束ごと
 created: 2026-05-05
 source: [[2026-05-05_insight_network-protocol-basics]]
+quiz_fail_log: []
 ---
 
 ## Summary

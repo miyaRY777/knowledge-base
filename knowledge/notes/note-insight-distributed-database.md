@@ -3,6 +3,7 @@ id: note-insight-distributed-database
 title: 分散データベースは複数サーバーに分けてデータを管理する方式
 created: 2026-05-24
 source: [[2026-05-24_insight_database-server-and-distributed-database.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

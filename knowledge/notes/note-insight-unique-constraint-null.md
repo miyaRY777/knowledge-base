@@ -3,6 +3,7 @@ id: note-insight-unique-constraint-null
 title: "UNIQUE制約でNULLが重複扱いされない理由"
 created: 2026-03-30
 source: [[2026-03-30_insight_rails-study.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

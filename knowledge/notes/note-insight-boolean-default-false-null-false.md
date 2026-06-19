@@ -4,6 +4,7 @@ title: "boolean, default: false, null: falseは真偽値カラムに初期値と
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

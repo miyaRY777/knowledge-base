@@ -5,6 +5,7 @@ created: 2026-04-18
 source: [[2026-04-18_insight_cookie-basics-and-security.md]]
 review_streak: 0
 last_reviewed_on: 2026-04-30
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-04-30
 - 有効期限を明示しない Cookie は、この扱いになることがあります。
 
 ## Tags
-#http #web #cookie #session #要復習
+#http #web #cookie #session
 
 ## Links
 - [[note-insight-cookie]]

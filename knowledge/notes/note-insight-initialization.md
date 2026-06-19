@@ -3,6 +3,7 @@ id: note-insight-initialization
 title: "初期化はforループを始める前にカウンタ変数に最初の値を設定すること"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

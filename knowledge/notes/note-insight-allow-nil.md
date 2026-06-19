@@ -3,6 +3,7 @@ id: note-insight-allow-nil
 title: "allow_nilはnilのときにバリデーションをスキップする指定"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

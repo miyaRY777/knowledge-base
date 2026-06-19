@@ -5,6 +5,7 @@ created: 2026-05-11
 source: [[2026-05-11_insight_ip-address-basics]]
 review_streak: 0
 last_reviewed_on: 2026-05-28
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-28
 - 同じネットワーク内でIPアドレスが重複すると、通信先を正しく判断できなくなることがあります。
 
 ## Tags
-#network #ip-address #basics #要復習
+#network #ip-address #basics
 
 ## Links
 - [[note-insight-ip-address]]

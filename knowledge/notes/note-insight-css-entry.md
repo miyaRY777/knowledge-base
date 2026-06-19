@@ -3,6 +3,7 @@ id: note-insight-css-entry
 title: "CSSエントリはスタイル読み込みの入口になる"
 created: 2026-04-09
 source: [[2026-04-09_insight-entry-point-css-entry-build-output-stimulus-classes]]
+quiz_fail_log: []
 ---
 
 ## Summary

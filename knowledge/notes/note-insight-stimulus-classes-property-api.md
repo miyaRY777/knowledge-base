@@ -3,6 +3,7 @@ id: note-insight-stimulus-classes-property-api
 title: "StimulusのClassesプロパティAPIはHTMLからclass名を受け取れる"
 created: 2026-04-09
 source: [[2026-04-09_insight-entry-point-css-entry-build-output-stimulus-classes]]
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -11,7 +12,7 @@ source: [[2026-04-09_insight-entry-point-css-entry-build-output-stimulus-classes
 - HTML 側に必要な class 指定がないと、使い方によってはエラーになるため注意が必要です。
 
 ## Tags
-#frontend #stimulus #javascript #css #要復習 #要復習 #要復習
+#frontend #stimulus #javascript #css
 
 ## Links
 - [[2026-04-09-tabs-controller-css-refactor]]

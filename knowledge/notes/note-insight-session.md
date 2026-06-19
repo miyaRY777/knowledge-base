@@ -4,6 +4,7 @@ title: "セッションはユーザーごとの状態をリクエスト間で一
 created: 2026-04-21
 source: [[2026-04-21_insight_session-cookie-basics.md]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -14,7 +15,7 @@ quiz_streak: 1
 - セッション管理は、最初のアクセスで始まり、サーバー側で状態を保存して次のリクエストへつなげる流れとして理解できます。
 
 ## Tags
-#http #web #rails #session #要復習 #要復習
+#http #web #rails #session
 
 ## Links
 - [[note-insight-stateless]]

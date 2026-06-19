@@ -4,6 +4,7 @@ title: 副作用はサーバー側の状態を変える処理のこと
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
 quiz_streak: 2
+quiz_fail_log: []
 ---
 
 ## Summary

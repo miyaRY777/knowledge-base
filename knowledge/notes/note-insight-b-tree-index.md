@@ -5,6 +5,7 @@ created: 2026-05-21
 source: [[2026-05-21_insight_database-index-types.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-22
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-22
 - 多くの DB でよく使われますが、細かな挙動は DBMS によって異なります。
 
 ## Tags
-#database #sql #index #btree #performance #要復習
+#database #sql #index #btree #performance
 
 ## Links
 - [[note-insight-database-index-types]]

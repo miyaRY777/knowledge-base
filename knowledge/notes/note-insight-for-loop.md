@@ -5,6 +5,7 @@ created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 review_streak: 0
 last_reviewed_on: 2026-06-18
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-06-18
 - for (let i = 1; i <= 3; i++) {
 
 ## Tags
-#javascript #loop #要復習
+#javascript #loop
 
 ## Links
 

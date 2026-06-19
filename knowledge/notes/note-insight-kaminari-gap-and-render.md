@@ -3,6 +3,7 @@ id: note-insight-kaminari-gap-and-render
 title: "Kaminariではgap表示とrenderでページネーション部品を組み立てる"
 created: 2026-04-24
 source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -11,7 +12,7 @@ source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
 - Kaminari では全体テンプレートと個別パーシャルを `render` によって組み立てる理解が重要。
 
 ## Tags
-#insight #rails #kaminari #render #view #要復習 #要復習
+#insight #rails #kaminari #render #view
 
 ## Links
 - [[note-insight-kaminari-paginator-partial-role]]

@@ -4,6 +4,7 @@ title: "XSSは悪意あるスクリプトを他ユーザーのブラウザで実
 created: 2026-04-25
 source: [[2026-04-25_insight_cookie-session-security-basics.md]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

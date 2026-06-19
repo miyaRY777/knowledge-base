@@ -4,6 +4,7 @@ title: "冪等性は同じ操作を何度繰り返しても最終的な結果が
 created: 2026-03-30
 source: [[2026-03-30_insight_rails-study.md]]
 quiz_streak: 0
+quiz_fail_log: []
 ---
 
 ## Summary

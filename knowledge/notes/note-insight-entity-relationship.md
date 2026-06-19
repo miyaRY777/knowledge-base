@@ -5,6 +5,7 @@ created: 2026-05-18
 source: [[2026-05-18_insight_er-diagram-basics]]
 review_streak: 0
 last_reviewed_on: 2026-05-22
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-22
 - Rails では `has_many` や `belongs_to` で表現することが多いです。
 
 ## Tags
-#database #database-design #entity #relationship #rails #要復習
+#database #database-design #entity #relationship #rails
 
 ## Links
 - [[note-insight-er-diagram]]

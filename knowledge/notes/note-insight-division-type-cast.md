@@ -4,6 +4,7 @@ title: 除算時の型変換で整数除算を避けて小数結果を得る
 created: 2026-06-14
 source: [[2026-06-14_insight_type-conversion-and-integer-division]]
 quiz_streak: 0
+quiz_fail_log: []
 ---
 
 ## Summary

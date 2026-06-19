@@ -3,6 +3,7 @@ id: note-insight-arithmetic-unit
 title: "演算装置は計算や比較を実行する"
 created: 2026-04-10
 source: [[2026-04-10_insight_computer-five-major-units]]
+quiz_fail_log: []
 ---
 
 ## Summary

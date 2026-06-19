@@ -3,6 +3,7 @@ id: note-insight-soft-delete
 title: "論理削除はDBから消さずに削除済みとして扱う方法"
 created: 2026-05-02
 source: [[2026-05-02_insight_samesite-csrf-soft-delete.md]]
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -11,7 +12,7 @@ source: [[2026-05-02_insight_samesite-csrf-soft-delete.md]]
 - 復元や履歴保持に向きますが、検索条件や一意性制約の設計に注意が必要です。
 
 ## Tags
-#rails #database #soft-delete #activerecord #要復習
+#rails #database #soft-delete #activerecord
 
 ## Links
 - [[note-insight-soft-delete-flag]]

@@ -3,6 +3,7 @@ id: note-insight-scoped-room-membership-find
 title: "current_userの関連をたどって検索することで自分のデータだけを安全に取得できる"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

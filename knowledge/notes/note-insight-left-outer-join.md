@@ -3,6 +3,7 @@ id: note-insight-left-outer-join
 title: "`LEFT OUTER JOIN` は左側の行を残して右側を結び付ける"
 created: 2026-04-26
 source: [[2026-04-26_insight_active-record-loading-and-joins.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

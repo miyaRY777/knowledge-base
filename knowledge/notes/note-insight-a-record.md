@@ -3,6 +3,7 @@ id: note-insight-a-record
 title: Aレコードはドメイン名をIPv4アドレスへ向けるDNSレコード
 created: 2026-05-14
 source: [[2026-05-14_insight_domain-dns-basics]]
+quiz_fail_log: []
 ---
 
 ## Summary

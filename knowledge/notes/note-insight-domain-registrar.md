@@ -5,6 +5,7 @@ created: 2026-05-14
 source: [[2026-05-14_insight_domain-dns-basics]]
 review_streak: 0
 last_reviewed_on: 2026-05-28
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-28
 - ドメイン登録、更新、DNS設定の管理画面などを提供します。
 
 ## Tags
-#network #internet #domain #dns #要復習
+#network #internet #domain #dns
 
 ## Links
 - [[note-insight-domain-name]]

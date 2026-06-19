@@ -5,6 +5,7 @@ created: 2026-05-19
 source: [[2026-05-19_insight_database-normalization.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-22
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-22
 - 分割しすぎると結合が増えるため、読み書きのしやすさとのバランスも必要です。
 
 ## Tags
-#database #sql #normalization #database-design #要復習
+#database #sql #normalization #database-design
 
 ## Links
 - [[note-insight-relational-database]]

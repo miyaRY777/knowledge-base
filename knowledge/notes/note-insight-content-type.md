@@ -3,6 +3,7 @@ id: note-insight-content-type
 title: "Content-Typeは送信するデータの形式をサーバーに伝えるHTTPヘッダー"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

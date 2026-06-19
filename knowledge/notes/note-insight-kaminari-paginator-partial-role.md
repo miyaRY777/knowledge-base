@@ -3,6 +3,7 @@ id: note-insight-kaminari-paginator-partial-role
 title: "Kaminariの_paginator.html.erbはページネーション全体の構造を決める"
 created: 2026-04-24
 source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -11,7 +12,7 @@ source: [[2026-04-24_insight_kaminari-pagination-partials.md]]
 - 各ボタンの見た目そのものは個別パーシャルに分かれている。
 
 ## Tags
-#insight #rails #kaminari #view #要復習
+#insight #rails #kaminari #view
 
 ## Links
 - [[2026-04-24-pagination]]

@@ -5,6 +5,7 @@ created: 2026-05-07
 source: [[2026-05-07_insight_http-status-codes]]
 review_streak: 0
 last_reviewed_on: 2026-05-25
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-25
 - Rails アプリ本体だけでなく、Nginx やデプロイ先の構成も確認対象になります。
 
 ## Tags
-#http #web #status-code #server #operations #要復習
+#http #web #status-code #server #operations
 
 ## Links
 - [[note-insight-http-status-code]]

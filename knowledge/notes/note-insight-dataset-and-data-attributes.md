@@ -3,6 +3,7 @@ id: note-insight-dataset-and-data-attributes
 title: "datasetはdata属性をJavaScriptから読む仕組み"
 created: 2026-04-12
 source: [[2026-04-12_insight_stimulus-and-javascript-basics]]
+quiz_fail_log: []
 ---
 
 ## Summary

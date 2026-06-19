@@ -3,6 +3,7 @@ id: note-insight-dependent-restrict-with-error
 title: "dependent: :restrict_with_errorは子レコードが残っている親を削除するとエラーを返すオプション"
 created: 2026-03-30
 source: [[2026-03-30_insight_rails-study.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

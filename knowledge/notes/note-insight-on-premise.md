@@ -5,6 +5,7 @@ created: 2026-05-04
 source: [[2026-05-04_insight_rails-model-basics]]
 review_streak: 0
 last_reviewed_on: 2026-05-27
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-27
 - OS 更新、セキュリティ対応、障害対応などの運用責任が大きくなります。
 
 ## Tags
-#infrastructure #operations #server #要復習
+#infrastructure #operations #server
 
 ## Links
 - [[note-insight-resend-email-service]]

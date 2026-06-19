@@ -3,6 +3,7 @@ id: note-insight-soft-delete-flag
 title: "論理削除フラグは削除済み扱いを表す目印"
 created: 2026-05-02
 source: [[2026-05-02_insight_samesite-csrf-soft-delete.md]]
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -11,7 +12,7 @@ source: [[2026-05-02_insight_samesite-csrf-soft-delete.md]]
 - 一覧や検索で削除済みデータを除外し忘れると、消したはずのデータが見えてしまいます。
 
 ## Tags
-#rails #database #soft-delete #activerecord #要復習
+#rails #database #soft-delete #activerecord
 
 ## Links
 - [[note-insight-soft-delete]]

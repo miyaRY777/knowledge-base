@@ -3,6 +3,7 @@ id: note-insight-db-migrate
 title: "db:migrateは未反映のマイグレーションをデータベースに適用するRailsコマンド"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

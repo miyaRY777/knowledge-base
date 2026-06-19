@@ -3,6 +3,7 @@ id: note-insight-securerandom-urlsafe-base64
 title: "SecureRandom.urlsafe_base64はURLで使えるランダム文字列を生成するメソッド"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

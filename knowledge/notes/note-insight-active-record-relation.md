@@ -5,6 +5,7 @@ created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-27
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-27
 - 実際にデータが取得されるのは `each` や `to_a` のときです。
 
 ## Tags
-#activerecord #要復習
+#activerecord
 
 ## Links
 

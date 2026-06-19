@@ -6,6 +6,7 @@ source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 review_streak: 1
 last_reviewed_on: 2026-04-30
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -14,7 +15,7 @@ quiz_streak: 1
 - サーバーとの HTTP 通信では引き続き Cookie を送れます。
 
 ## Tags
-#http #web #cookie #security #要復習
+#http #web #cookie #security
 
 ## Links
 - [[note-insight-set-cookie-header]]

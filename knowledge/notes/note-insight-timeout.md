@@ -3,6 +3,7 @@ id: note-insight-timeout
 title: "timeoutはHTTPリクエストが完了するまでの最大待ち時間をミリ秒で指定する設定"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

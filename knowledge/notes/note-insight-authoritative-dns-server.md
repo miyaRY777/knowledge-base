@@ -3,6 +3,7 @@ id: note-insight-authoritative-dns-server
 title: 権威DNSサーバーはそのドメインの正式なDNS情報を持つ
 created: 2026-05-15
 source: [[2026-05-15_insight_dns-resolution-flow]]
+quiz_fail_log: []
 ---
 
 ## Summary

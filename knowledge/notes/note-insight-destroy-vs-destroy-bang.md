@@ -3,6 +3,7 @@ id: note-insight-destroy-vs-destroy-bang
 title: "destroy!はバリデーション失敗時に例外を出しdestroyはfalseを返す違いがある"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

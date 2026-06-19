@@ -3,6 +3,7 @@ id: note-insight-jsonplaceholder
 title: "JSONPlaceholderはHTTP通信を練習できるモックAPIサービス"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

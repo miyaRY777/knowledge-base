@@ -3,6 +3,7 @@ id: note-insight-dns-resolution
 title: 名前解決はドメイン名から対応するIPアドレスを取得すること
 created: 2026-05-15
 source: [[2026-05-15_insight_dns-resolution-flow]]
+quiz_fail_log: []
 ---
 
 ## Summary

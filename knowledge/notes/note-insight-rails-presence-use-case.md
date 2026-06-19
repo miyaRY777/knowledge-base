@@ -5,6 +5,7 @@ created: 2026-04-08
 source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
 review_streak: 1
 last_reviewed_on: 2026-06-18
+quiz_fail_log: []
 ---
 
 ## Summary

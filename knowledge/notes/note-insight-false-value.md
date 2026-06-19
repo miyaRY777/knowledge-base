@@ -4,6 +4,7 @@ title: falseは「いいえ」と答えた状態でありnullとは別物
 created: 2026-06-07
 source: [[2026-06-07_insight_null-and-related-values]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

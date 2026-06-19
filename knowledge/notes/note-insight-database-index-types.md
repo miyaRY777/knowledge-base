@@ -5,6 +5,7 @@ created: 2026-05-21
 source: [[2026-05-21_insight_database-index-types.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-22
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-22
 - DBMS やストレージエンジンによって使える種類や挙動が異なるため、実際の仕様確認が必要です。
 
 ## Tags
-#database #sql #index #performance #database-design #要復習
+#database #sql #index #performance #database-design
 
 ## Links
 - [[note-insight-database-index]]

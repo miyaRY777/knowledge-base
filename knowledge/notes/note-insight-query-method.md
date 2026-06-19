@@ -3,6 +3,7 @@ id: note-insight-query-method
 title: "クエリメソッドはRubyでtrue/falseを返す疑問形のメソッド"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

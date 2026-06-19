@@ -4,6 +4,7 @@ title: "htmlspecialcharsでユーザー入力をエスケープしてXSSを防�
 created: 2026-05-31
 source: [[2026-05-31_insight_cs-basics-data-types-encoding.md]]
 quiz_streak: 2
+quiz_fail_log: []
 ---
 
 ## Summary

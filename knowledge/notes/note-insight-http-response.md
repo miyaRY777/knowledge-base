@@ -3,6 +3,7 @@ id: note-insight-http-response
 title: "HTTPレスポンスはサーバーからクライアントへ返す返事"
 created: 2026-05-06
 source: [[2026-05-06_insight_http-message-methods]]
+quiz_fail_log: []
 ---
 
 ## Summary

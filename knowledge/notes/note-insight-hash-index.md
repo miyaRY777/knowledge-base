@@ -5,6 +5,7 @@ created: 2026-05-21
 source: [[2026-05-21_insight_database-index-types.md]]
 review_streak: 0
 last_reviewed_on: 2026-06-18
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-06-18
 - 値の順序を扱いにくいため、範囲検索や並び替えには向きません。
 
 ## Tags
-#database #sql #index #hash-index #performance #要復習
+#database #sql #index #hash-index #performance
 
 ## Links
 - [[note-insight-database-index-types]]

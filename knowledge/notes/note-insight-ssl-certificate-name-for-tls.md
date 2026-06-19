@@ -6,6 +6,7 @@ source: [[2026-04-29_insight_ssl-tls-security-basics.md]]
 review_streak: 1
 last_reviewed_on: 2026-04-30
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -14,7 +15,7 @@ quiz_streak: 1
 - ブラウザが証明書を確認し、問題がなければ HTTPS の暗号化通信を始められる。
 
 ## Tags
-#web #security #ssl #tls #certificate #https #要復習
+#web #security #ssl #tls #certificate #https
 
 ## Links
 - [[note-insight-https]]

@@ -3,6 +3,7 @@ id: note-insight-exclusive-lock
 title: 排他ロックは対象データを自分だけが変更できる状態にする
 created: 2026-05-23
 source: [[2026-05-23_insight_database-lock-types.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

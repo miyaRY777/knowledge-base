@@ -5,6 +5,7 @@ created: 2026-05-11
 source: [[2026-05-11_insight_ip-address-basics]]
 review_streak: 1
 last_reviewed_on: 2026-05-25
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-25
 - `192.168.1.1` のような表記では、各区切りが1オクテットです。
 
 ## Tags
-#network #internet #ip-address #ipv4 #要復習
+#network #internet #ip-address #ipv4
 
 ## Links
 - [[note-insight-ip-address]]

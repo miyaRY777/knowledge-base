@@ -3,6 +3,7 @@ id: note-insight-activesupport-duration
 title: "`ActiveSupport::Duration` は時間量を表すオブジェクト"
 created: 2026-04-11
 source: [[2026-04-11_insight_action-policy-and-duration-review]]
+quiz_fail_log: []
 ---
 
 ## Summary

@@ -4,6 +4,7 @@ title: "中間者攻撃は通信の間に入り盗聴や改ざんを行う攻撃
 created: 2026-04-27
 source: [[2026-04-27_insight_internet-security-basics.md]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

@@ -6,6 +6,7 @@ source: [[2026-06-04_insight_floating-point-type-basics]]
 quiz_phase: 1
 quiz_streak: 1
 quiz_fail_streak: 0
+quiz_fail_log: []
 ---
 
 ## Summary

@@ -3,6 +3,7 @@ id: note-insight-shared-lock
 title: 共有ロックは複数の読み取りを許可しつつ更新を制限する
 created: 2026-05-23
 source: [[2026-05-23_insight_database-lock-types.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

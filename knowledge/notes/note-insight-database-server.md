@@ -3,6 +3,7 @@ id: note-insight-database-server
 title: データベースサーバーはアプリのデータを保存して取り出せるようにするサーバー
 created: 2026-05-24
 source: [[2026-05-24_insight_database-server-and-distributed-database.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

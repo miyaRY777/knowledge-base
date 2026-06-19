@@ -5,6 +5,7 @@ created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-01
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-01
 - データベース運用では、保存だけでなく復元できることも重要。
 
 ## Tags
-#database #operations #backup #要復習 #要復習
+#database #operations #backup
 
 ## Links
 - [[note-insight-database]]

@@ -5,6 +5,7 @@ created: 2026-04-27
 source: [[2026-04-27_insight_internet-security-basics.md]]
 review_streak: 0
 last_reviewed_on: 2026-04-30
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-04-30
 - 開発環境のセットアップでよく使われる。
 
 ## Tags
-#tool #homebrew #environment #要復習
+#tool #homebrew #environment
 
 ## Links
 

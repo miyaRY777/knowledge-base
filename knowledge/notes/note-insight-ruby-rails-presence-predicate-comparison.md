@@ -3,6 +3,7 @@ id: note-insight-ruby-rails-presence-predicate-comparison
 title: "`nil?` `empty?` `blank?` `present?` `presence` の使い分け"
 created: 2026-04-08
 source: [[2026-04-08_insight-ruby-nil-empty-blank-present-presence.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

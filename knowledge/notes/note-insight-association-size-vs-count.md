@@ -5,6 +5,7 @@ created: 2026-04-13
 source: [[2026-04-13_insight_test-db-seeds-destroy-size-slug.md]]
 review_streak: 1
 last_reviewed_on: 2026-04-30
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-04-30
 - `destroy` 後の確認では、DBへ毎回問い合わせる `count` より、関連が読み込み済みならその状態を使える `size` の方が自然なことがある
 
 ## Tags
-#rails #activerecord #association #test #要復習 #要復習 #要復習
+#rails #activerecord #association #test
 
 ## Links
 - [[note-insight-active-record-relation]]

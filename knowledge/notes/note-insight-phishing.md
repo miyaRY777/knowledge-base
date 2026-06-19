@@ -4,6 +4,7 @@ title: "フィッシングは本物に見せかけて認証情報をだまし取
 created: 2026-04-27
 source: [[2026-04-27_insight_internet-security-basics.md]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

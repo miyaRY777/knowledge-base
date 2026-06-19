@@ -4,6 +4,7 @@ title: "Secure属性はHTTPS通信のときだけCookieを送る属性"
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

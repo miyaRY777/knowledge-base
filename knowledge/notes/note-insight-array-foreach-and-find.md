@@ -3,6 +3,7 @@ id: note-insight-array-foreach-and-find
 title: "forEachは全件処理、findは最初の1件検索に向く"
 created: 2026-04-12
 source: [[2026-04-12_insight_stimulus-and-javascript-basics]]
+quiz_fail_log: []
 ---
 
 ## Summary

@@ -5,6 +5,7 @@ created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-01
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-01
 - 認証で相手を確認し、権限で許可範囲を制御する。
 
 ## Tags
-#database #security #authorization #要復習 #要復習
+#database #security #authorization
 
 ## Links
 - [[note-insight-authorize-and-allowed-to-difference]]

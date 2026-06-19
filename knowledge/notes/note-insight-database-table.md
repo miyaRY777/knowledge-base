@@ -5,6 +5,7 @@ created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0
 last_reviewed_on: 2026-04-30
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-04-30
 - テーブルはレコードとカラムで構成される。
 
 ## Tags
-#database #sql #rails #要復習
+#database #sql #rails
 
 ## Links
 - [[note-insight-database]]

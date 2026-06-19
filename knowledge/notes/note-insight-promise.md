@@ -3,6 +3,7 @@ id: note-insight-promise
 title: "Promiseは非同期処理の結果をあとから受け取るための仕組み"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

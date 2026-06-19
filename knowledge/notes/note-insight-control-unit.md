@@ -3,6 +3,7 @@ id: note-insight-control-unit
 title: "制御装置は各装置に指示を出す司令塔"
 created: 2026-04-10
 source: [[2026-04-10_insight_computer-five-major-units]]
+quiz_fail_log: []
 ---
 
 ## Summary

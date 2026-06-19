@@ -4,6 +4,7 @@ title: "データの改ざんは保存中や通信中の内容が勝手に書き
 created: 2026-04-27
 source: [[2026-04-27_insight_internet-security-basics.md]]
 quiz_streak: 0
+quiz_fail_log: []
 ---
 
 ## Summary

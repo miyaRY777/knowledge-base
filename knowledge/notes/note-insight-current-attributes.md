@@ -3,6 +3,7 @@ id: note-insight-current-attributes
 title: "CurrentAttributesでリクエスト単位の共有値を管理する"
 created: 2026-03-31
 source: [[2026-03-31_insight_rails-study.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

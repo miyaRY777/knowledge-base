@@ -3,6 +3,7 @@ id: note-insight-base-url
 title: "baseURLはAxiosインスタンスでURLの共通部分をまとめる設定"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

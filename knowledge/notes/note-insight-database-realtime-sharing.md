@@ -3,6 +3,7 @@ id: note-insight-database-realtime-sharing
 title: DBのリアルタイム更新と共有は変更をすぐ全員が参照できる仕組み
 created: 2026-05-16
 source: [[2026-05-16_insight_dbms-data-sharing]]
+quiz_fail_log: []
 ---
 
 ## Summary

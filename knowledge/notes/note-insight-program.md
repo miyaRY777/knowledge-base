@@ -4,6 +4,7 @@ title: プログラムはコンピュータへの命令の集まり
 created: 2026-06-09
 source: [[2026-06-09_insight_program-input-process-output]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

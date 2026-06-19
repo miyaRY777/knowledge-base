@@ -3,6 +3,7 @@ id: note-insight-docker-engine
 title: Dockerエンジンはコンテナを作成・実行・管理する中核部分
 created: 2026-05-29
 source: [[2026-05-29_insight_docker-basics]]
+quiz_fail_log: []
 ---
 
 ## Summary

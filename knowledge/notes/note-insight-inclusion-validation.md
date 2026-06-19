@@ -3,6 +3,7 @@ id: note-insight-inclusion-validation
 title: "inclusionバリデーションは値が許可した候補に含まれるかを確認するバリデーション"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

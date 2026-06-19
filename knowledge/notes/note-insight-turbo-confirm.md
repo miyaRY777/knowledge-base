@@ -3,6 +3,7 @@ id: note-insight-turbo-confirm
 title: "turbo_confirmはTurbo操作の前にブラウザの確認ダイアログを出す指定"
 created: 2026-04-07
 source: [[2026-04-07_insight_rails-ruby-terms.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

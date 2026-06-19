@@ -6,6 +6,7 @@ source: [[2026-05-11_insight_ip-address-basics]]
 review_streak: 1
 last_reviewed_on: 2026-05-25
 quiz_streak: 0
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -14,7 +15,7 @@ quiz_streak: 0
 - `2001:db8::1` のように、コロン区切りの16進数で表します。
 
 ## Tags
-#network #internet #ip-address #ipv6 #要復習
+#network #internet #ip-address #ipv6
 
 ## Links
 - [[note-insight-ip-address]]

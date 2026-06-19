@@ -5,6 +5,7 @@ created: 2026-05-06
 source: [[2026-05-06_insight_http-message-methods]]
 review_streak: 0
 last_reviewed_on: 2026-05-25
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-25
 - 本文が不要な確認処理で通信量を抑えたいときに役立ちます。
 
 ## Tags
-#http #web #network #要復習
+#http #web #network
 
 ## Links
 - [[note-insight-get-request]]

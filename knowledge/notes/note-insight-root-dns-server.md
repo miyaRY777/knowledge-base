@@ -3,6 +3,7 @@ id: note-insight-root-dns-server
 title: ルートDNSサーバーはDNS問い合わせの最初の手がかりを返す
 created: 2026-05-15
 source: [[2026-05-15_insight_dns-resolution-flow]]
+quiz_fail_log: []
 ---
 
 ## Summary

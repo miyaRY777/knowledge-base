@@ -3,6 +3,7 @@ id: note-insight-trait-admin
 title: "trait :adminはFactoryBotで管理者ユーザー用の追加設定をまとめる書き方"
 created: 2026-04-07
 source: [[2026-04-07_insight_knowledge-base.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

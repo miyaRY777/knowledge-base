@@ -4,6 +4,7 @@ title: "ステートレスは前のリクエストの状態を自動では覚え
 created: 2026-04-17
 source: [[2026-04-17_insight_cookie-http-stateless.md]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

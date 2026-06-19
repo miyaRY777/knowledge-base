@@ -5,6 +5,7 @@ created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0
 last_reviewed_on: 2026-04-30
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-04-30
 - どちらもトランザクションを安全に終えるための重要な命令。
 
 ## Tags
-#database #sql #transaction #要復習
+#database #sql #transaction
 
 ## Links
 - [[note-insight-database-transaction]]

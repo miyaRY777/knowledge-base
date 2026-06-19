@@ -3,6 +3,7 @@ id: note-insight-rails-cookies
 title: "Railsのcookiesはコントローラでブラウザのデータを読み書きする仕組み"
 created: 2026-04-17
 source: [[2026-04-17_insight_rails-cookies-headers-and-attributes.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

@@ -3,6 +3,7 @@ id: note-insight-slug
 title: "slugはURLに使うための人が読める一意な識別子"
 created: 2026-03-30
 source: [[2026-03-30_insight_rails-study.md]]
+quiz_fail_log: []
 ---
 
 ## Summary

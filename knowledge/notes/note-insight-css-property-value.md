@@ -4,6 +4,7 @@ title: CSSのプロパティ:値は見た目の設定を書く基本構文
 created: 2026-06-01
 source: [[2026-06-01_insight_html-css-js-and-data-types-basics]]
 quiz_streak: 1
+quiz_fail_log: []
 ---
 
 ## Summary

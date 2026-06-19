@@ -3,6 +3,7 @@ id: note-insight-authorize-and-allowed-to-difference
 title: "`authorize!` と `allowed_to?` は認可の止め方が違う"
 created: 2026-04-11
 source: [[2026-04-11_insight_action-policy-and-duration-review]]
+quiz_fail_log: []
 ---
 
 ## Summary

@@ -5,6 +5,7 @@ created: 2026-04-30
 source: [[2026-04-30_insight_database-fundamentals.md]]
 review_streak: 0
 last_reviewed_on: 2026-05-01
+quiz_fail_log: []
 ---
 
 ## Summary
@@ -13,7 +14,7 @@ last_reviewed_on: 2026-05-01
 - トランザクションと組み合わせて整合性を守る。
 
 ## Tags
-#database #transaction #concurrency #要復習 #要復習
+#database #transaction #concurrency
 
 ## Links
 - [[note-insight-database-transaction]]
