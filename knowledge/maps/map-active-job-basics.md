@@ -60,4 +60,5 @@
 - [[note-insight-active-job-serialize]]
 - [[note-insight-active-job-deserialize]]
 - [[note-insight-active-job-global-id]]
+- [[map-rails-active-job-email-flow]] — 非同期メール送信の全フロー（シーケンス図）
 - [[map-rails-basics]]
