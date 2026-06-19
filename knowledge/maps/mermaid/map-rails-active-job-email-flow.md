@@ -60,16 +60,16 @@ sequenceDiagram
 
 ## フロー概要
 
-| 番号 | 一言でいうと | 関連ノート |
-|------|-------------|-----------|
-| ①〜② | ブラウザから来たリクエストを、Rails がコントローラへ振り分ける | - |
-| ③〜④ | コントローラが `User` を作り、DB の `users` テーブルに保存する | - |
-| ⑤〜⑥ | `perform_later` で Active Job にジョブ登録を依頼する | [[note-insight-active-job-perform-later]] [[note-insight-active-job-enqueue]] |
-| ⑦〜⑧ | Active Job が引数を Global ID に変換し、キューに保存する | [[note-insight-active-job-serialize]] [[note-insight-active-job-global-id]] |
-| ⑨ | メール送信を待たずに、ブラウザへレスポンスを返す | [[note-insight-active-job-perform-later]] |
-| ⑩〜⑪ | Worker がキューからジョブを取り出す | - |
+| 番号  | 一言でいうと                                                      | 関連ノート                                                                         |
+| --- | ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| ①〜② | ブラウザから来たリクエストを、Rails がコントローラへ振り分ける                          | -                                                                             |
+| ③〜④ | コントローラが `User` を作り、DB の `users` テーブルに保存する                   | -                                                                             |
+| ⑤〜⑥ | `perform_later` で Active Job にジョブ登録を依頼する                    | [[note-insight-active-job-perform-later]] [[note-insight-active-job-enqueue]] |
+| ⑦〜⑧ | Active Job が引数を Global ID に変換し、キューに保存する                     | [[note-insight-active-job-serialize]] [[note-insight-active-job-global-id]]   |
+| ⑨   | メール送信を待たずに、ブラウザへレスポンスを返す                                    | [[note-insight-active-job-perform-later]]                                     |
+| ⑩〜⑪ | Worker がキューからジョブを取り出す                                       | -                                                                             |
 | ⑫〜⑬ | Active Job が Global ID から `User` を復元し、`perform(user)` を実行する | [[note-insight-active-job-deserialize]] [[note-insight-active-job-global-id]] |
-| ⑭〜⑮ | ジョブ内で Mailer を呼び、外部メールサービスへメール送信する | - |
+| ⑭〜⑮ | ジョブ内で Mailer を呼び、外部メールサービスへメール送信する                          | -                                                                             |
 
 ---
 
@@ -277,6 +277,23 @@ bundle exec sidekiq
 
 - Web サーバーとは別プロセスで Worker が動く
 - どのコマンドで起動するかはアダプタ（Sidekiq / Solid Queue 等）によって異なる
+
+**Worker が取り出す「ジョブ」とは**
+
+Global ID だけではなく、以下の情報をまとめたパッケージ全体のこと。
+
+```ruby
+{
+  job_class: "NotifyUserJob",      # どのジョブクラスを実行するか
+  queue_name: "default",           # どのキューか
+  arguments: [
+    { "_aj_globalid" => "gid://app/User/1" }  # perform に渡す引数（Global ID はここ）
+  ]
+}
+```
+
+- Global ID は「`@user` を復元するための手がかり」として arguments の中に含まれている
+- Worker はジョブ全体を取り出し、その中の Global ID を使って `User.find(id)` し直す
 
 **Worker Process・Queue Adapter・Active Job の関係**
 
