@@ -3,6 +3,9 @@ id: note-insight-float-division
 title: 浮動小数点数を含む除算では小数部分を含む結果が得られる
 created: 2026-06-14
 source: [[2026-06-14_insight_type-conversion-and-integer-division]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

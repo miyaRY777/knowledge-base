@@ -3,6 +3,9 @@ id: note-insight-operand-type-result-diff
 title: オペランドのデータ型によって演算結果が変わる
 created: 2026-06-14
 source: [[2026-06-14_insight_type-conversion-and-integer-division]]
+quiz_phase: 1
+quiz_streak: 0
+quiz_fail_streak: 0
 ---
 
 ## Summary

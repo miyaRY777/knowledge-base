@@ -3,6 +3,9 @@ id: note-insight-cast
 title: キャストは値を指定したデータ型として扱う明示的な型変換
 created: 2026-06-14
 source: [[2026-06-14_insight_type-conversion-and-integer-division]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

@@ -3,6 +3,9 @@ id: note-insight-type-conversion
 title: 型変換はデータを別のデータ型として扱えるように変換すること
 created: 2026-06-14
 source: [[2026-06-14_insight_type-conversion-and-integer-division]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

@@ -3,6 +3,9 @@ id: note-insight-implicit-type-conversion
 title: 暗黙的な型変換は言語が自動的に型を変換すること
 created: 2026-06-14
 source: [[2026-06-14_insight_type-conversion-and-integer-division]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

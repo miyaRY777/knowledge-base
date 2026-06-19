@@ -3,6 +3,9 @@ id: note-insight-active-job-deserialize
 title: Active Jobは実行時にシリアライズされた引数を元のオブジェクトに復元する
 created: 2026-06-16
 source: [[2026-06-16_insight_active-job-enqueue-and-serialization]]
+quiz_phase: 1
+quiz_streak: 0
+quiz_fail_streak: 0
 ---
 
 ## Summary

@@ -3,6 +3,9 @@ id: note-insight-type-promotion
 title: 型の昇格は狭い範囲の型をより広い範囲の型へ変換すること
 created: 2026-06-14
 source: [[2026-06-14_insight_type-conversion-and-integer-division]]
+quiz_phase: 1
+quiz_streak: 0
+quiz_fail_streak: 0
 ---
 
 ## Summary

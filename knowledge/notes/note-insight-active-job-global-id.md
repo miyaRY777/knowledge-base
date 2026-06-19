@@ -3,6 +3,9 @@ id: note-insight-active-job-global-id
 title: Global IDはActive Recordオブジェクトをジョブ引数として渡すための仕組み
 created: 2026-06-16
 source: [[2026-06-16_insight_active-job-enqueue-and-serialization]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

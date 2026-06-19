@@ -3,6 +3,9 @@ id: note-insight-mixed-type-expression
 title: 混合型演算は異なるデータ型の値を含む演算
 created: 2026-06-14
 source: [[2026-06-14_insight_type-conversion-and-integer-division]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary
