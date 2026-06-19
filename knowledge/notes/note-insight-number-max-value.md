@@ -3,6 +3,9 @@ id: note-insight-number-max-value
 title: Number.MAX_VALUEはJavaScriptのnumber型で表現できる最大の有限値
 created: 2026-06-12
 source: [[2026-06-12_insight_js-number-types-and-floating-point]]
+quiz_phase: 1
+quiz_streak: 0
+quiz_fail_streak: 0
 ---
 
 ## Summary

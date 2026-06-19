@@ -3,6 +3,9 @@ id: note-insight-repeating-binary-fraction
 title: 循環小数は同じ数字の並びが無限に繰り返される小数
 created: 2026-06-12
 source: [[2026-06-12_insight_js-number-types-and-floating-point]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

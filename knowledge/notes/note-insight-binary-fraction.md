@@ -3,6 +3,9 @@ id: note-insight-binary-fraction
 title: 2進小数は小数部分を2のマイナス乗で表した数
 created: 2026-06-12
 source: [[2026-06-12_insight_js-number-types-and-floating-point]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

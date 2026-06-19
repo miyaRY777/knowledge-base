@@ -3,6 +3,9 @@ id: note-insight-multiplication-operator
 title: 乗算演算子（*）は2つの値を掛ける演算子
 created: 2026-06-13
 source: [[2026-06-13_insight_js-arithmetic-operators-and-expressions]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary

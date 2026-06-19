@@ -3,6 +3,9 @@ id: note-insight-binary-exact-decimal
 title: 分母が2のべき乗になる小数だけが2進数で正確に表せる
 created: 2026-06-12
 source: [[2026-06-12_insight_js-number-types-and-floating-point]]
+quiz_phase: 1
+quiz_streak: 0
+quiz_fail_streak: 0
 ---
 
 ## Summary

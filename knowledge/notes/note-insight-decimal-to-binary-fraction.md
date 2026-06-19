@@ -3,6 +3,9 @@ id: note-insight-decimal-to-binary-fraction
 title: 10進小数を2進小数に変換するには小数部に2を掛けて整数部を取り出す
 created: 2026-06-12
 source: [[2026-06-12_insight_js-number-types-and-floating-point]]
+quiz_phase: 1
+quiz_streak: 0
+quiz_fail_streak: 0
 ---
 
 ## Summary

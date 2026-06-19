@@ -3,6 +3,9 @@ id: note-insight-literal
 title: リテラルはソースコードに直接書かれた値
 created: 2026-06-11
 source: [[2026-06-11_insight_js-data-types-and-literals]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary
