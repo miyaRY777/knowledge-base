@@ -3,6 +3,9 @@ id: note-insight-ieee754
 title: IEEE 754は浮動小数点数の表現と計算を定めた標準規格
 created: 2026-06-04
 source: [[2026-06-04_insight_floating-point-type-basics]]
+quiz_phase: 1
+quiz_streak: 1
+quiz_fail_streak: 0
 ---
 
 ## Summary
