@@ -50,7 +50,7 @@ argument-hint: "<note-path or note-id>"
 
 ### Step 1: 対象ファイルを読む
 
-`source:`、`Links`、`Tags`、`review_log`、本文、Example、Action を確認してください。
+`source:`、`Links`、`Tags`、`quiz_fail_log`、本文、Example、Action を確認してください。
 
 ### Step 2: ローカル根拠を追う
 
@@ -98,7 +98,7 @@ argument-hint: "<note-path or note-id>"
 - `title` が本文内容と合っているか
 - `created` と `source` が妥当か
 - `Tags` が内容に合っているか
-- `#要復習` の数と `review_log` の件数が一致しているか
+- `quiz_fail_log` に正しく日付が記録されているか
 
 ### リンク
 

@@ -24,12 +24,8 @@
 knowledge-base/
 ├── README.md
 ├── AGENTS.md
-├── .codex/
-│   └── skills/knowledge-base/
 ├── .claude/
 ├── docs/
-├── scripts/
-├── test/
 └── knowledge/
     ├── inbox/      # Collect: 生メモ
     ├── notes/      # Distill: 1ノート1アイデア
@@ -87,7 +83,7 @@ python3 .codex/skills/knowledge-base/scripts/kb_tool.py weekly-review
 
 | MOC | テーマ |
 |-----|--------|
-| `knowledge/maps/map-web-security-basics.md` | Webセキュリティ、HTTPS、TLS、2FA |
+| `knowledge/maps/map-security-basics.md` | Webセキュリティ、HTTPS、TLS、2FA、XSS、CSRF |
 | `knowledge/maps/map-cyber-attack-basics.md` | サイバー攻撃の種類 |
 | `knowledge/maps/map-cookie-basics.md` | Cookie の基本と属性 |
 | `knowledge/maps/map-session-basics.md` | セッション、セッションID、期限、攻撃 |
@@ -95,7 +91,9 @@ python3 .codex/skills/knowledge-base/scripts/kb_tool.py weekly-review
 | `knowledge/maps/map-activerecord-query-basics.md` | ActiveRecord、SQL、N+1 |
 | `knowledge/maps/map-ruby-rails-predicate-basics.md` | `nil?`、`empty?`、`blank?`、`presence` |
 | `knowledge/maps/map-rails-basics.md` | Rails 基礎 |
-| `knowledge/maps/map-stimulus-basics.md` | Stimulus 基礎 |
+| `knowledge/maps/map-javascript-basics.md` | JavaScript 基礎 |
+| `knowledge/maps/map-java-basics.md` | Java 型・演算・制御フロー |
+| `knowledge/maps/map-database-fundamentals.md` | DB・SQL 基礎 |
 | `knowledge/maps/map-computer-architecture-basics.md` | コンピュータ構成 |
 
 ---
@@ -105,32 +103,22 @@ python3 .codex/skills/knowledge-base/scripts/kb_tool.py weekly-review
 クイズ対象は基本的に `knowledge/notes/` の atomic note。
 
 対象の選び方:
-- 今日学んだノート
-- 昨日学んだノート
-- `#要復習` のノート
-- タグ指定したノート
+- 今日学んだノート → `/quiz today`
+- 昨日学んだノート → `/quiz yesterday`
+- タグ指定 → `/quiz #rails`
+- 間違い回数で絞り込む → `/quiz fail>=2`
+- 特定月の間違い → `/quiz fail-in:2026-06`
 
-出題レベル:
+フェーズ制:
 
-| レベル | 形式 |
-|--------|------|
-| 1 | 1問1答。用語や要点を1〜2文で短く答える |
-| 2 | 中間形式。概念と重要になる場面を説明する |
-| 3 | 総合説明。概念、場面、実務やコードでの扱いまで説明する |
-
-例:
-
-```bash
-python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz --today-only --level 1
-python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz --yesterday --level 2
-python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz --tag 要復習 --level 3
-```
+| フェーズ | 形式 | 昇格・降格 |
+|---------|------|----------|
+| Phase 1 | 4択 | 2連続正解 → Phase 2 へ昇格 |
+| Phase 2 | 説明 | 2連続不正解 → Phase 1 へ降格 |
 
 採点後の扱い:
-- `惜しい`、`不正解`、`スキップ` は `#要復習` を付ける
-- `#要復習` を保存するときは対象ノートと変更内容を確認する
-- `#要復習` は日をまたいだ2回連続正解で外す
-- 同じ日に何度正解しても `review_streak` は最大1までとする
+- 不正解・スキップ時は `quiz_fail_log` に日付を追記する
+- `quiz_fail_log` はリセットしない（累計記録）
 
 ---
 
@@ -159,4 +147,3 @@ python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz --tag 要復習 --l
 | `#cookie` | Cookie |
 | `#session` | セッション |
 | `#javascript` | JavaScript |
-| `#要復習` | クイズで復習が必要なノート |
