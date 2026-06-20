@@ -28,6 +28,34 @@
 - `perform_now` はその場で実行する（同期）
 - enqueue は「予約」、perform は「実行」と覚える
 
+```mermaid
+flowchart LR
+    subgraph Register["【登録時：リクエスト中】"]
+        A["Controller<br>例: UsersController#create"]
+        B["Active Job<br>何をするかを決める"]
+        C["Queue Adapter<br>保存先へ橋渡し"]
+        D["Queue<br>Redis / DB など<br>ジョブを保存"]
+    end
+
+    subgraph Execute["【実行時：別プロセス】"]
+        E["Worker<br>キューを監視"]
+        F["Queue<br>保存済みジョブ"]
+        G["Active Job<br>デシリアライズ・実行管理"]
+        H["Jobクラス<br>perform(user)"]
+        I["実際の処理<br>メール送信 / 画像処理 / API連携"]
+    end
+
+    A -->|"perform_later(user)"| B
+    B -->|"引数をシリアライズ<br>例: user → Global ID"| C
+    C -->|"設定された保存先へ渡す"| D
+
+    E -->|"監視する"| F
+    F -->|"ジョブを取り出す"| E
+    E -->|"Active Jobに実行を依頼"| G
+    G -->|"デシリアライズ<br>例: Global ID → User.find(id)"| H
+    H -->|"perform(user)を実行"| I
+```
+
 ---
 
 ## セクション2: 引数の保存と復元
