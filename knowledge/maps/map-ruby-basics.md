@@ -58,6 +58,20 @@
 
 ---
 
+## 数値の丸め
+
+[[note-insight-ruby-round]]
+[[note-insight-ruby-ceil]]
+[[note-insight-ruby-floor]]
+
+**ポイント**:
+- `round` → 四捨五入。引数で小数点以下の桁数を指定
+- `ceil` → 切り上げ。自分自身以上の最小の数を返す
+- `floor` → 切り捨て。自分自身以下の最大の数を返す
+- 引数なしの場合は全て整数に丸められる
+
+---
+
 ## 未決事項（Open Questions）
 
 | 項目 | 期限 | 担当 | ノート |
