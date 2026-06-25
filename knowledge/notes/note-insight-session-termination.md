@@ -38,5 +38,13 @@ session.delete(:user_id)
 
 このコードでは、ログイン状態を表す `user_id` だけをセッションから削除して、ログアウト状態にしています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `reset_session` と `session.delete` の使い分けを整理する

@@ -32,3 +32,10 @@ quiz_fail_log: []
 System.out.println(2 / 5);   // 0
 System.out.println(2.0 / 5); // 0.4
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

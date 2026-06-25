@@ -34,3 +34,10 @@ end
 参考:
 - https://guides.rubyonrails.org/association_basics.html
 - https://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

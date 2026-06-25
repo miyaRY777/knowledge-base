@@ -33,3 +33,10 @@ JavaScriptでは整数も小数もすべて IEEE 754 倍精度浮動小数点数
 console.log(3.14);
 console.log(typeof 3.14); // number
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

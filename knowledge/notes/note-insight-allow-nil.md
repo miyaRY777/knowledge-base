@@ -29,5 +29,13 @@ validates :expires_in, inclusion: { in: %w[1h 24h 3d 7d] }, allow_nil: true
 
 このコードでは、`expires_in` が `nil` のときは通しつつ、値が入っているときだけ候補の中に含まれているか確認しています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `allow_nil` と `allow_blank` の違いをコード例つきで整理する

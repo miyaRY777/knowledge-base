@@ -31,5 +31,13 @@ bin/rails db:migrate
 
 このコードでは、migration に書かれた DB 構造の変更を反映するために `db:migrate` を使っています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `db:migrate` と `db:rollback` の使い分けも整理する

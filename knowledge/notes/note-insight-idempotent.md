@@ -36,3 +36,10 @@ Post.create(title: "Hello")
 
 参考:
 - https://developer.mozilla.org/en-US/docs/Glossary/Idempotent
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

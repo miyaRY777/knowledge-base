@@ -34,4 +34,12 @@ User.all.each { |u| process(u) }
 User.find_each(batch_size: 1000) { |u| process(u) }
 ```
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action

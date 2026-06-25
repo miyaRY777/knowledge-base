@@ -29,3 +29,10 @@ int count = 5;
 double result = 2.0 * count; // countがdoubleへ昇格
 System.out.println(result); // 10.0
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

@@ -30,3 +30,10 @@ const input = "10";
 const number = Number(input);
 console.log(number + 5); // 15
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

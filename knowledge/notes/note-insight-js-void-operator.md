@@ -45,3 +45,10 @@ console.log(result); // undefined
 // void 0 で確実に undefined を得る（古い手法）
 console.log(void 0); // undefined
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

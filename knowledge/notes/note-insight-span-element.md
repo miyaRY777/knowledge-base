@@ -26,3 +26,10 @@ quiz_fail_log: []
 ```html
 <p>今日は <span class="important">重要</span> な日です。</p>
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

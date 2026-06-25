@@ -29,3 +29,10 @@ const value = 0b1010;
 console.log(value);        // 10
 console.log(0b1010 === 10); // true
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

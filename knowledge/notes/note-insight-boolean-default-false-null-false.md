@@ -29,3 +29,10 @@ add_column :users, :admin, :boolean, default: false, null: false
 ```
 
 このコードでは、`admin` を true / false で管理しつつ、未設定の `nil` を防ぐために `default: false, null: false` を使っています。
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

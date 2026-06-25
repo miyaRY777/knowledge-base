@@ -29,3 +29,10 @@ quiz_fail_log: []
 ReportJob.perform_later(current_user.id)
 # キューに登録して即座にリターン。実行はバックエンドに委ねる
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

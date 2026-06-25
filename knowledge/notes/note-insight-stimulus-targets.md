@@ -39,5 +39,13 @@ export default class extends Controller {
 
 このコードでは、`panel` という名前で要素を扱えるようにしつつ、存在するときだけ安全に書き換えています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `values` や `classes` と target の役割分担も整理する

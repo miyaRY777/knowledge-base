@@ -30,3 +30,10 @@ const expected = 0.3;
 console.log(result === expected);                          // false
 console.log(Math.abs(result - expected) < Number.EPSILON); // true
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

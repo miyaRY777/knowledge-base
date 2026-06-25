@@ -31,5 +31,13 @@ quiz_fail_log: []
 - `Post`: `title`, `body`, `user_id`
 - `Comment`: `body`, `user_id`, `post_id`
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] 属性とカラム型の対応を整理する

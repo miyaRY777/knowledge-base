@@ -29,3 +29,10 @@ echo '<div>' . htmlspecialchars($userComment, ENT_QUOTES, 'UTF-8') . '</div>';
 // 出力: <div>&lt;script&gt;alert(&#039;Hacked!&#039;);&lt;/script&gt;</div>
 // ブラウザ表示: <script>alert('Hacked!');</script>（文字列として表示）
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

@@ -44,6 +44,14 @@ export default class extends Controller {
 
 このコードでは、HTML 側で渡した `hidden` という class 名を JavaScript 側で安全に使うために StimulusのClassesプロパティAPI を使っています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `hasHiddenClass` など関連アクセサも整理する
 

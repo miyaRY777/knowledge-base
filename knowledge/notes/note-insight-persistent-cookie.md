@@ -33,6 +33,14 @@ Set-Cookie: user_locale=ja; Expires=Wed, 21 Oct 2026 07:28:00 GMT; Path=/
 
 このコードでは、言語設定を次回アクセス時にも使えるように、期限付きで Cookie を保持しています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `Expires` と `Max-Age` の使い分けも確認する
 <!-- review_log: 2026-04-18 -->

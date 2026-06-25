@@ -35,3 +35,10 @@ int a = 12, b = 5;
 System.out.println(a / b);     // 2（切り捨て）
 System.out.println(12.0 / 5.0); // 2.4
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

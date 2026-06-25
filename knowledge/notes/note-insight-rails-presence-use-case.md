@@ -32,5 +32,13 @@ nickname = params[:nickname].presence || "no-name"
 
 このコードでは、入力されたニックネームが空なら `"no-name"` を使うために `presence` を使っています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `presence_in` との違いも後で確認する

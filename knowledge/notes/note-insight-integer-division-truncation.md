@@ -29,3 +29,10 @@ quiz_fail_log: []
 int result = 7 / 2;
 System.out.println(result); // 3（3.5の小数部分が切り捨て）
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

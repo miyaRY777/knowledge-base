@@ -30,3 +30,10 @@ public static void main(String[] args) {
     System.out.println(result); // 8
 }
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

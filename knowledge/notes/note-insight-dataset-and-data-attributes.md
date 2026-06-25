@@ -30,5 +30,13 @@ const name = clickedTag.dataset.name
 
 このコードでは、クリックされた要素の `data-active` と `data-name` を読み取り、選択中かどうかと対応する名前を判定しています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `dataset` の文字列変換でハマる例を追加する

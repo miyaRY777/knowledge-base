@@ -34,3 +34,10 @@ System.out.println(result); // 2
 // JavaScriptで整数除算に相当する処理
 console.log(Math.trunc(12 / 5)); // 2
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

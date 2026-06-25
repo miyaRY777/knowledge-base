@@ -34,3 +34,10 @@ WHERE email = 'sample@example.com';
 ```
 
 <!-- review_log: 2026-05-02 -->
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

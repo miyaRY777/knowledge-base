@@ -31,3 +31,10 @@ quiz_fail_log: []
 double result = 2 * 5.0;
 System.out.println(result); // 10.0
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

@@ -33,5 +33,13 @@ SELECT * FROM users WHERE nickname IS NULL;
 
 この例では、`nickname` に値が入っていないユーザーを探しています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `NULL` と三値論理の関係を整理する

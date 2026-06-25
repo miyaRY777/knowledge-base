@@ -28,3 +28,10 @@ quiz_fail_log: []
 console.log(Number.MIN_VALUE);  // 5e-324（0より大きい最小の正の数）
 console.log(-Number.MAX_VALUE); // 最小の負の数
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

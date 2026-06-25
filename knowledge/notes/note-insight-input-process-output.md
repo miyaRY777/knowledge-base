@@ -31,3 +31,10 @@ public static int add(int a, int b) {
     return a + b;
 }
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

@@ -31,3 +31,10 @@ JavaScriptは暗黙変換が多く、`[] + {}` が `"[object Object]"` になる
 const number = Number("5");
 console.log(number + 2); // 7
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

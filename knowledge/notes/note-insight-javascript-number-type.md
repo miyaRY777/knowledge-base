@@ -29,3 +29,10 @@ const price = 19.99;  // 小数もNumber型
 typeof age;   // "number"
 typeof price; // "number"
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

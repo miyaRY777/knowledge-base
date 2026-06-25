@@ -38,3 +38,10 @@ public static void printResult(int n) {
     System.out.println(n);
 }
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

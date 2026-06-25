@@ -34,3 +34,10 @@ int total = 2;
 double result = (double) total / 5;
 System.out.println(result); // 0.4
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

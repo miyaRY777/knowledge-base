@@ -38,5 +38,13 @@ end
 
 このコードでは、`full_name` が期待した文字列を返すかを Helper 単位で確認しています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] ViewComponent や request spec との使い分けも整理する

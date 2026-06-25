@@ -32,4 +32,12 @@ quiz_fail_log: []
 users = User.all
 ```
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action

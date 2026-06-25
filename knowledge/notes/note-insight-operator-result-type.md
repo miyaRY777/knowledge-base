@@ -30,3 +30,10 @@ const result = 12 / 3;
 console.log(result);        // 4
 console.log(typeof result); // number
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

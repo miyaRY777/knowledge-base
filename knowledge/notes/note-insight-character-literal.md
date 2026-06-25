@@ -30,3 +30,10 @@ quiz_fail_log: []
 console.log("a");
 console.log(typeof "a"); // string（charではない）
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

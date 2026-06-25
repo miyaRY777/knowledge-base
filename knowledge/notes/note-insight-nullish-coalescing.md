@@ -31,3 +31,10 @@ const count = 0;
 console.log(count ?? 10); // 0（||なら10になる）
 console.log(count || 10); // 10
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

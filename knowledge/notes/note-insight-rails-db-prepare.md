@@ -31,5 +31,13 @@ bin/rails db:prepare
 
 このコードでは、DB をまとめて使える状態に整えるために `db:prepare` を使っています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `db:prepare` の内部動作を Rails Guides ベースで確認する

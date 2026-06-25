@@ -35,5 +35,13 @@ export default class extends Controller {
 
 このコードでは、HTML の data 属性に入れた自己紹介文を JavaScript で受け取るために `static values` を使っています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `hasBioValue` のような存在確認アクセサも整理する

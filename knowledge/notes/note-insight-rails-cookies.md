@@ -33,5 +33,13 @@ cookies[:user_id] = current_user.id
 
 このコードでは、ログイン中ユーザーのIDを Cookie としてブラウザに保存し、次回以降の識別に使えるようにしています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] signed cookie と encrypted cookie の違いを確認する

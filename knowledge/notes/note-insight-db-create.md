@@ -31,5 +31,13 @@ bin/rails db:create
 
 このコードでは、空のデータベース自体を作るために `db:create` を使っています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `db:create` と `db:prepare` の違いを表で整理する

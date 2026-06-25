@@ -33,5 +33,13 @@ Set-Cookie: session_id=abc123; Secure
 
 このコードでは、安全な HTTPS 通信のときだけ `session_id` の Cookie を送るようにしています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] HTTPS がない環境での制約も別ノートで確認する

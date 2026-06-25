@@ -35,3 +35,10 @@ console.log(typeof null);      // object（注意：バグではなく仕様）
 console.log(typeof {});        // object
 console.log(typeof function(){}); // function
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

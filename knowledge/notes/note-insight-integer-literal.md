@@ -32,3 +32,10 @@ console.log(10);
 console.log(2048);
 console.log(typeof 10); // number
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

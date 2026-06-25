@@ -31,5 +31,13 @@ this.closeTextTarget.classList.toggle("hidden", isHidden)
 
 このコードでは、1つの要素の表示状態を切り替え、その結果に合わせて開く文言と閉じる文言の見た目も更新しています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `invisible` との違いも比較できるようにする

@@ -29,3 +29,10 @@ quiz_fail_log: []
 ReportJob.perform_now(current_user.id)
 # ここで処理が完了するまでブロックする
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

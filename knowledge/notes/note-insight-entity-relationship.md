@@ -37,5 +37,13 @@ class Post < ApplicationRecord
 end
 ```
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] 1対1、1対多、多対多の違いを整理する

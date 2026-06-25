@@ -30,3 +30,10 @@ user = User.find(1)
 NotifyUserJob.perform_later(user)
 # ↑ enqueue時にuserが自動でシリアライズされる
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

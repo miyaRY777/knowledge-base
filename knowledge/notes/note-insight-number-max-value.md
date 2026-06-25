@@ -28,3 +28,10 @@ quiz_fail_log: []
 console.log(Number.MAX_VALUE);        // 1.7976931348623157e+308
 console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

@@ -28,3 +28,10 @@ ParentTag.find_or_create_by!(name: "ゲーム")
 ```
 
 このコードでは、`name` が `ゲーム` の `ParentTag` を探し、なければ新しく作るために `find_or_create_by!` を使っています。
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

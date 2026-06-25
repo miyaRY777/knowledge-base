@@ -32,3 +32,10 @@ char grade = 'A';  // 内部では 65 として保存される
 char grade = 'A';   // Unicodeの U+0041 = 65
 String name = "Alice";
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

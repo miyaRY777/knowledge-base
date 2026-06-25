@@ -36,6 +36,14 @@ CSRF は、ユーザーがログインしている状態を利用し、別サイ
 
 このコードでは、Rails のフォームヘルパーを使うことで、CSRF トークンを含むフォームを生成できます。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] Rails の `protect_from_forgery` と `authenticity_token` の流れを確認する
 

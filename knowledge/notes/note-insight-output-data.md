@@ -36,3 +36,10 @@ public static void showMessage() {
     System.out.println("完了しました");
 }
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

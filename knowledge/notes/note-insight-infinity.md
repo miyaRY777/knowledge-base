@@ -31,3 +31,10 @@ console.log(1 / 0);           // Infinity
 console.log(typeof Infinity);  // number
 console.log(Infinity > 99999); // true
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

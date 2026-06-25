@@ -29,5 +29,13 @@ users = User.includes(:posts).where(posts: { published: true })
 
 このコードでは、後者は関連先 `posts` に条件を付けたため、関連テーブルを参照できる形で SQL が組み立てられます。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `joins` を使う場合との違いも整理する

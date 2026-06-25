@@ -29,3 +29,10 @@ quiz_fail_log: []
 double result = 2 / 5;    // 0.0（整数除算→代入）
 double fixed = 2.0 / 5;   // 0.4（float除算）
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

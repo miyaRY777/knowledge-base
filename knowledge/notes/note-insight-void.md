@@ -41,3 +41,10 @@ function showMessage(): void {
   console.log("Hello World");
 }
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

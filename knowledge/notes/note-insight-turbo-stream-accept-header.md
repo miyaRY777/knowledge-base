@@ -28,3 +28,10 @@ post room_path(room), headers: { "Accept" => "text/vnd.turbo-stream.html" }
 ```
 
 このコードでは、Turbo Streamとしてレスポンスを受け取り、画面の一部更新を行うために headers を使っています。
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

@@ -34,3 +34,10 @@ if (user === null) {
 // Optional Chaining を使う場合
 console.log(user?.name); // undefined（エラーにならない）
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

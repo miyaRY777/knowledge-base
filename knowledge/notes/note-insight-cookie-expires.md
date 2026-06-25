@@ -30,5 +30,13 @@ Set-Cookie: session_id=abc123; expires=Wed, 21 Oct 2026 07:28:00 GMT
 
 このコードでは、指定された日時まで `session_id` の Cookie を保持します。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `Max-Age` との違いも整理する

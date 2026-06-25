@@ -37,5 +37,13 @@ Set-Cookie: session_id=abc123; path=/; HttpOnly
 
 このコードでは、サーバーが `session_id` をブラウザに保存し、JavaScript からは参照できないようにしています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] path 属性と domain 属性の違いも整理する

@@ -31,3 +31,10 @@ axios.get("https://jsonplaceholder.typicode.com/posts/1")
 ```
 
 このコードでは、練習用APIに通信して動作確認するために `JSONPlaceholder` を使っています。
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

@@ -29,3 +29,10 @@ enqueue は「キューへ入れる」という動作そのものを指します
 NotifyUserJob.perform_later(User.find(1))
 # ↑ この呼び出しが enqueue にあたる
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

@@ -31,3 +31,10 @@ quiz_fail_log: []
   <button type="submit">送信</button>
 </form>
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

@@ -33,5 +33,13 @@ www.example.com  CNAME  example.com
 
 この例では、`www.example.com` を `example.com` の別名として扱います。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] apexドメインでCNAMEを使えない場合の代替を整理する

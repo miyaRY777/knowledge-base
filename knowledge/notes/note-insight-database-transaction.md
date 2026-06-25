@@ -32,3 +32,10 @@ ActiveRecord::Base.transaction do
   order.create!(user: user, item: item)
 end
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

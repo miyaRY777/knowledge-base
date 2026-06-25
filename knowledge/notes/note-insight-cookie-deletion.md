@@ -31,5 +31,13 @@ Set-Cookie: session_id=; Max-Age=0; Path=/
 
 このコードでは、`session_id` の有効期限を切って、ブラウザに削除させています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] `Path` や `Domain` が違う Cookie を削除するときの注意点も確認する

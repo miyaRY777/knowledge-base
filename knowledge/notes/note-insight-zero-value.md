@@ -32,3 +32,10 @@ console.log(score === null);       // false（0は値として存在する）
 console.log(score === 0);          // true
 console.log(notYetScored === null); // true
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

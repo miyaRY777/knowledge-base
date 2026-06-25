@@ -30,3 +30,10 @@ Javaでは `int` と `double` を一緒に計算すると `int` が自動で `do
 double result = 2.0 * 5; // 5がdoubleへ自動変換
 System.out.println(result); // 10.0
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

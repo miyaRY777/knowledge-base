@@ -30,3 +30,10 @@ console.log(typeof 2);   // number
 console.log(typeof 2.0); // number
 console.log(2 === 2.0);  // true
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

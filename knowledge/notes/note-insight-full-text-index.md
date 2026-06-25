@@ -31,3 +31,10 @@ quiz_fail_log: []
 CREATE INDEX index_articles_on_content
 ON articles USING GIN (to_tsvector('simple', content));
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

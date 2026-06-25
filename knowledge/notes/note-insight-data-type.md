@@ -33,3 +33,10 @@ console.log(typeof 100);   // number
 console.log(typeof "100"); // string
 console.log(typeof false); // boolean
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

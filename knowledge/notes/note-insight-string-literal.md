@@ -30,3 +30,10 @@ console.log("Hello World");
 console.log(typeof "123"); // string
 console.log(`1 + 1 = ${1 + 1}`); // テンプレートリテラル
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

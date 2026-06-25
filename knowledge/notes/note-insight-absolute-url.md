@@ -28,3 +28,10 @@ quiz_fail_log: []
 <a href="https://example.com/about.html">このサイトについて</a>
 <img src="https://cdn.example.com/images/logo.png" alt="ロゴ">
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

@@ -29,3 +29,10 @@ quiz_fail_log: []
 const result = 8 + 3; // 8+3を評価した結果11をresultに代入
 console.log(result);  // 11
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

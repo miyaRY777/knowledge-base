@@ -32,3 +32,10 @@ console.log(NaN === NaN);       // false（自分自身と等しくない）
 console.log(typeof NaN);        // number
 console.log(Number.isNaN(0/0)); // true
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

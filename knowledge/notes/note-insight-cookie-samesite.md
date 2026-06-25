@@ -42,6 +42,14 @@ Set-Cookie: session_id=abc123; SameSite=Lax; Secure
 
 このコードでは、利便性をある程度保ちながら、不要なクロスサイト送信を減らす設定をしています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] Rails の SameSite デフォルト設定を実コードで確認する
 

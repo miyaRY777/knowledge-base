@@ -34,3 +34,10 @@ INSERT INTO users (email) VALUES (NULL); -- エラーにならない
 ```
 
 このコードでは、UNIQUE 制約があっても `NULL` は重複扱いされず、複数回 INSERT できることを示しています。
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

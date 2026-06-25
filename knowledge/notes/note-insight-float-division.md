@@ -30,3 +30,10 @@ System.out.println(2 / 5);   // 0（整数除算）
 System.out.println(2.0 / 5); // 0.4（float除算）
 System.out.println(2 / 5.0); // 0.4（float除算）
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

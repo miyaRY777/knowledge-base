@@ -31,3 +31,10 @@ Rails の `User.all` や `User.where(...)` も、裏側では `SELECT` 系の SQ
 SELECT *
 FROM posts;
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

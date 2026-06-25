@@ -33,6 +33,14 @@ Set-Cookie: tracking_id=xyz789; Domain=analytics.example.com; Path=/
 
 このコードでは、閲覧中のサイトとは別の解析サービスが追跡用の Cookie を設定しています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] ブラウザごとのサードパーティCookie制限の違いも確認する
 <!-- review_log: 2026-04-18 -->

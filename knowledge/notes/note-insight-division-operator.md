@@ -30,3 +30,10 @@ console.log(12 / 5);  // 2.4
 console.log(1 / 0);   // Infinity
 console.log(0 / 0);   // NaN
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

@@ -31,3 +31,10 @@ console.log(false);
 console.log(typeof true);    // boolean
 console.log(typeof "true");  // string（論理値ではない）
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

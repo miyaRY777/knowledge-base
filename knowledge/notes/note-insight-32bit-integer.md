@@ -30,3 +30,10 @@ quiz_fail_log: []
 int max = 2147483647;   // Integer.MAX_VALUE
 int min = -2147483648;  // Integer.MIN_VALUE
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

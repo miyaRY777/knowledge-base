@@ -31,5 +31,13 @@ session[:last_seen_at] = Time.current
 
 このコードでは、一定時間アクセスがなければセッションを破棄して、再ログインを必要にしています。
 
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
+
 ## Action
 - [ ] idle timeout と absolute timeout の違いも整理する

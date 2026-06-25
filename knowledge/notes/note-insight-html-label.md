@@ -27,3 +27,10 @@ quiz_fail_log: []
 <label for="email">メールアドレス</label>
 <input id="email" type="email" name="email">
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

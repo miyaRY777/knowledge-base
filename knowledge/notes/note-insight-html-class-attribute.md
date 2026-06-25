@@ -28,3 +28,10 @@ quiz_fail_log: []
 <p class="text-red">重要なお知らせです</p>
 <p class="text-red">もう一つの重要事項</p>
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

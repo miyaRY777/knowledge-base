@@ -31,3 +31,10 @@ int totalQuestions = 5;
 double rate = correctAnswers / totalQuestions; // 0.0（バグ）
 double fixed = (double) correctAnswers / totalQuestions; // 0.4（正しい）
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

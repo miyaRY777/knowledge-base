@@ -40,3 +40,10 @@ console.log(typeof null); // "object" ← 歴史的なバグ
 // 未回答の例
 const answers = [true, false, null, null]; // null = まだ回答していない
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

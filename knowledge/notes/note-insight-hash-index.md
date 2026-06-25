@@ -31,3 +31,10 @@ quiz_fail_log: []
 ```sql
 CREATE INDEX index_users_on_email_hash ON users USING hash (email);
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：

@@ -28,3 +28,10 @@ nullable は特定の言語機能ではなく、「null が入りうる」とい
 let nickname: string | null = null;
 nickname = "Taro"; // OK
 ```
+
+## 言語化
+
+結論：
+理由：
+具体例：
+結論（まとめ）：
