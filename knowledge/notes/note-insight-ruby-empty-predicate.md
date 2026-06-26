@@ -40,6 +40,3 @@ quiz_fail_log: []
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `size.zero?` との使い分けも整理する

@@ -54,6 +54,3 @@ Set-Cookie: _app_session=abc123xyz; Path=/; HttpOnly
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] セッション固定化攻撃との関係を別ノートで整理する

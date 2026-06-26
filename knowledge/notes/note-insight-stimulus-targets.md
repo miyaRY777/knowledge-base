@@ -46,6 +46,3 @@ export default class extends Controller {
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `values` や `classes` と target の役割分担も整理する

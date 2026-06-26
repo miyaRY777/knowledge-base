@@ -44,8 +44,3 @@ end
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `includes`、`preload`、`eager_load` の使い分けを復習する
-
-<!-- review_log: 2026-05-02 -->

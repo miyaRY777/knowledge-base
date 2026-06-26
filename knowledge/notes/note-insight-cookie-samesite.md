@@ -49,8 +49,3 @@ Set-Cookie: session_id=abc123; SameSite=Lax; Secure
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] Rails の SameSite デフォルト設定を実コードで確認する
-
-<!-- review_log: 2026-04-18,2026-05-02 -->

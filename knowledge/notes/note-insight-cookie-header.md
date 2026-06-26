@@ -39,6 +39,3 @@ Cookie: session_id=abc123
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] 複数Cookieが送られるときの書式も確認する

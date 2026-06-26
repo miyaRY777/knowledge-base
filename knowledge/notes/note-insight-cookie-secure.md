@@ -40,6 +40,3 @@ Set-Cookie: session_id=abc123; Secure
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] HTTPS がない環境での制約も別ノートで確認する

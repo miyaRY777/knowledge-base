@@ -42,6 +42,3 @@ false.blank?    # => true
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `blank?` が `false` になる代表例も追加する

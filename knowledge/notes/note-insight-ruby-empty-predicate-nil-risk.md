@@ -42,6 +42,3 @@ value.empty? # NoMethodError
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `NoMethodError` が起きやすい場面の例を足す

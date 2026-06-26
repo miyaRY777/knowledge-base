@@ -40,8 +40,3 @@ Set-Cookie: session_id=abc123; Path=/; HttpOnly
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] セッションとサーバー側セッションストアの関係も整理する
-
-<!-- review_log: 2026-04-25 -->

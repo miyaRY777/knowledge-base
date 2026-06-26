@@ -37,6 +37,3 @@ puts duration.class
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] Duration の内部構造を後で調べる

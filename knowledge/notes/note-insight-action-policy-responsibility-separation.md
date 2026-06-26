@@ -40,7 +40,3 @@ end
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `policy(@post)` がどこで生成されるかを別ノート候補として整理する
-- [ ] ActionPolicy の controller -> policy -> view の流れ図を作る

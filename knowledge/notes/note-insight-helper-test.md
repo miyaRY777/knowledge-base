@@ -45,6 +45,3 @@ end
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] ViewComponent や request spec との使い分けも整理する

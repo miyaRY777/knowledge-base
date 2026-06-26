@@ -40,6 +40,3 @@ SELECT * FROM users WHERE nickname IS NULL;
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `NULL` と三値論理の関係を整理する

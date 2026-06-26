@@ -44,6 +44,3 @@ Set-Cookie: session_id=abc123; path=/; HttpOnly
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] path 属性と domain 属性の違いも整理する

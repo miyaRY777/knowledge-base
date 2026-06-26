@@ -44,8 +44,3 @@ quiz_fail_log: []
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] Kaminari カスタムビューを読むときは、まず `_paginator.html.erb` と個別パーシャルの責務を分けて確認する
-
-<!-- review_log: 2026-04-25 -->

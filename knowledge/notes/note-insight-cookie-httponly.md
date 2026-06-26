@@ -42,8 +42,3 @@ Set-Cookie: session_id=abc123; HttpOnly
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] XSS と Cookie 盗難の関係を別ノートで整理する
-
-<!-- review_log: 2026-05-02 -->

@@ -38,6 +38,3 @@ puts secondary_storage
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] SSD と HDD の違いも別ノート候補として切り出す

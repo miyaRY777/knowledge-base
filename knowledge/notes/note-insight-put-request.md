@@ -44,6 +44,3 @@ title=Updated&body=NewBody
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] Rails のルーティングで `PUT` と `PATCH` がどう扱われるか確認する

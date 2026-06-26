@@ -43,6 +43,3 @@ nil.present?    # => false
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `if value.present?` が読みやすい場面の例を増やす

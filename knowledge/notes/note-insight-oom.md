@@ -37,5 +37,3 @@ User.all.each { |u| heavy_process(u) }
 理由：
 具体例：
 結論（まとめ）：
-
-## Action

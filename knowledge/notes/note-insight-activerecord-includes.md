@@ -36,6 +36,3 @@ users = User.includes(:posts).where(posts: { published: true })
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `joins` を使う場合との違いも整理する

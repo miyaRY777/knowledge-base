@@ -38,6 +38,3 @@ this.closeTextTarget.classList.toggle("hidden", isHidden)
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `invisible` との違いも比較できるようにする

@@ -42,6 +42,3 @@ export default class extends Controller {
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `hasBioValue` のような存在確認アクセサも整理する

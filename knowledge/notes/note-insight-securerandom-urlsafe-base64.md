@@ -35,6 +35,3 @@ token = SecureRandom.urlsafe_base64(16)
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] token カラムに求める性質を整理する

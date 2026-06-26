@@ -41,6 +41,3 @@ end
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `add_index unique: true` との併用例を整理する

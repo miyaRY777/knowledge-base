@@ -40,6 +40,3 @@ www.example.com  CNAME  example.com
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] apexドメインでCNAMEを使えない場合の代替を整理する

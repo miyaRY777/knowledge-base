@@ -37,6 +37,3 @@ token = current_user.profile&.share_link&.token
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `dig` や明示的な nil チェックとの使い分けも整理する

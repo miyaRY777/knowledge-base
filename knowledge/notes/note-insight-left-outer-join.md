@@ -38,6 +38,3 @@ LEFT OUTER JOIN posts
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `INNER JOIN` との結果の違いも比較する

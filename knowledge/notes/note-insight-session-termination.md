@@ -45,6 +45,3 @@ session.delete(:user_id)
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `reset_session` と `session.delete` の使い分けを整理する

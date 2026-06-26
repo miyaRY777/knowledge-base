@@ -40,7 +40,3 @@ Set-Cookie: tracking_id=xyz789; Domain=analytics.example.com; Path=/
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] ブラウザごとのサードパーティCookie制限の違いも確認する
-<!-- review_log: 2026-04-18 -->

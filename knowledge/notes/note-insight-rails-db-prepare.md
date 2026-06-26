@@ -38,6 +38,3 @@ bin/rails db:prepare
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `db:prepare` の内部動作を Rails Guides ベースで確認する

@@ -36,6 +36,3 @@ validates :expires_in, inclusion: { in: %w[1h 24h 3d 7d] }, allow_nil: true
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `allow_nil` と `allow_blank` の違いをコード例つきで整理する

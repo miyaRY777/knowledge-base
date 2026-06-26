@@ -44,6 +44,3 @@ console.log(desc.text)
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `map` や `filter` との使い分けも追記する

@@ -43,6 +43,3 @@ Project.active
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] class method で定義する場合との使い分けも整理する

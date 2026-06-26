@@ -47,6 +47,3 @@ end
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `references` や `foreign_key` 指定との関係を整理する

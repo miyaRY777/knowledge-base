@@ -44,6 +44,3 @@ Content-Type: text/html; charset=UTF-8
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [x] 代表的なステータスコードを別ノートで整理する

@@ -40,8 +40,3 @@ end
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] boolean フラグ方式と `deleted_at` 方式の違いを整理する
-
-<!-- review_log: 2026-05-03 -->

@@ -38,6 +38,3 @@ Set-Cookie: theme=dark; Path=/; Secure
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `Domain` 属性が指定されたときの適用範囲も確認する

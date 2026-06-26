@@ -38,6 +38,3 @@ bin/rails db:migrate
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `db:migrate` と `db:rollback` の使い分けも整理する

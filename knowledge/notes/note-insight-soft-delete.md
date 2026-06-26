@@ -41,8 +41,3 @@ user.update(deleted_at: Time.current)
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `discard` gem を使った場合の基本メソッドを確認する
-
-<!-- review_log: 2026-05-03 -->

@@ -38,6 +38,3 @@ bin/rails db:create
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `db:create` と `db:prepare` の違いを表で整理する

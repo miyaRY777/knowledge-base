@@ -39,6 +39,3 @@ toggle(event) {
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `event.target` との違いも1ノートで説明できるようにする

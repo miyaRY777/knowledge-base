@@ -35,5 +35,3 @@ puts num.round(2)
 理由：
 具体例：
 結論（まとめ）：
-
-## Action

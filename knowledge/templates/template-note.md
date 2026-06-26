@@ -37,4 +37,3 @@ quiz_fail_log: []
 具体例：
 結論（まとめ）：
 
-## Action

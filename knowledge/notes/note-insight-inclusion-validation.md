@@ -45,6 +45,3 @@ validates :role, inclusion: { in: [0, 1, 2] }
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] enum や定数との組み合わせ方も整理する

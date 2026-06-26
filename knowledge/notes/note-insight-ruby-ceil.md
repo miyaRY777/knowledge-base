@@ -35,5 +35,3 @@ puts num.ceil(1)
 理由：
 具体例：
 結論（まとめ）：
-
-## Action

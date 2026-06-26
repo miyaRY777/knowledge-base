@@ -53,8 +53,3 @@ session[:cart_item_ids] ||= []
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] Rails の session が内部で Cookie とどう連携するかを確認する
-
-<!-- review_log: 2026-04-25,2026-04-25 -->

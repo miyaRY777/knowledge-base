@@ -37,6 +37,3 @@ Rails では、存在しないレコードを探したときの `ActiveRecord::R
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] Rails の 404 ページ表示と `RecordNotFound` の関係を整理する

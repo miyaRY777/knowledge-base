@@ -43,6 +43,3 @@ title=NewTitle
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] Rails の `form_with` が更新時にどのメソッドを送るか確認する

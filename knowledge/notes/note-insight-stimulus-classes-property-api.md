@@ -51,8 +51,3 @@ export default class extends Controller {
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `hasHiddenClass` など関連アクセサも整理する
-
-<!-- review_log: 2026-04-09,2026-04-12,2026-04-12 -->

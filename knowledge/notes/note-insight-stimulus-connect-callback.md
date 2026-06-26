@@ -42,6 +42,3 @@ export default class extends Controller {
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `disconnect()` との役割の違いも整理する

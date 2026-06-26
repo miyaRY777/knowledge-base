@@ -55,6 +55,3 @@ Cookie: session_id=abc123
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] Cookie の属性ごとの役割を見比べて整理する

@@ -43,8 +43,3 @@ CSRF は、ユーザーがログインしている状態を利用し、別サイ
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] Rails の `protect_from_forgery` と `authenticity_token` の流れを確認する
-
-<!-- review_log: 2026-05-03 -->

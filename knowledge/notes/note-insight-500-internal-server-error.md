@@ -38,6 +38,3 @@ quiz_fail_log: []
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] Rails の production ログで 500 の原因を追う手順を整理する

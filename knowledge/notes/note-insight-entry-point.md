@@ -46,6 +46,3 @@ public static void main(String[] args) {
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] 複数エントリーポイントを使う場面の具体例を追加する

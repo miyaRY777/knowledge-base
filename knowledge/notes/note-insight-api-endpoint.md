@@ -38,6 +38,3 @@ end
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] REST の resource と endpoint の違いも整理する

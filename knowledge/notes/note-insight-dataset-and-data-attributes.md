@@ -37,6 +37,3 @@ const name = clickedTag.dataset.name
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `dataset` の文字列変換でハマる例を追加する

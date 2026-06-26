@@ -39,6 +39,3 @@ nickname = params[:nickname].presence || "no-name"
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `presence_in` との違いも後で確認する

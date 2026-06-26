@@ -43,6 +43,3 @@ end
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `db/seeds.rb` を idempotent に書く代表例を別ノートにする

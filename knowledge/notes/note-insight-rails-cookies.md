@@ -40,6 +40,3 @@ cookies[:user_id] = current_user.id
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] signed cookie と encrypted cookie の違いを確認する

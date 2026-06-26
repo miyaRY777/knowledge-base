@@ -39,6 +39,3 @@ end
 理由：
 具体例：
 結論（まとめ）：
-
-## Action
-- [ ] `default_url_options` との違いを後で確認する
