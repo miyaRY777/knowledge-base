@@ -1,6 +1,6 @@
 ---
 id: note-insight-os
-title: "OSはハードウェアとアプリの間に入って資源を管理する基本ソフト"
+title: "OSとは？"
 created: 2026-06-25
 updated: 2026-06-26
 source: [[2026-06-25_insight_linux-and-os-basics.md]]
