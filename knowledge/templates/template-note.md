@@ -1,6 +1,6 @@
 ---
 id: 
-title: 
+title: "〇〇とは？ / 〇〇の使い方 など、内容を表す名前"
 created: 
 source: 
 quiz_fail_log: []
