@@ -11,6 +11,7 @@
 | 1 | OS | ハードウェアとアプリの間に入って資源を管理するソフトウェア | [[note-insight-os]] |
 | 2 | Linux | OSの中心部分であるカーネルを指す | [[note-insight-linux-kernel]] |
 | 3 | Linuxディストリビューション | カーネルにツールを組み合わせてすぐ使える形にしたOS | [[note-insight-linux-distribution]] |
+| 4 | lessコマンド | 大きなファイルを1ページずつ閲覧するページャー | [[note-insight-less-command]] |
 
 ---
 
