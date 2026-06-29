@@ -88,6 +88,7 @@ def parse_note(path: Path) -> dict[str, object]:
         "quiz_phase": extract_quiz_phase(text),
         "quiz_streak": extract_quiz_streak(text),
         "quiz_fail_streak": extract_quiz_fail_streak(text),
+        "quiz_fail_log": extract_quiz_fail_log(text),
     }
 
 
@@ -167,9 +168,39 @@ def extract_quiz_fail_streak(text: str) -> int:
     return int(match.group(1)) if match else 0
 
 
+def extract_quiz_fail_log(text: str) -> list[str]:
+    match = re.search(r"^quiz_fail_log:\s*(.*)$", text, flags=re.MULTILINE)
+    if not match:
+        return []
+
+    inline = match.group(1).strip()
+    if inline.startswith("[") and inline.endswith("]"):
+        inner = inline[1:-1].strip()
+        if not inner:
+            return []
+        return [item.strip().strip("\"'") for item in inner.split(",") if item.strip()]
+
+    lines = text[match.end() :].lstrip("\n").splitlines()
+    dates: list[str] = []
+    for line in lines:
+        if not line.startswith((" ", "\t", "-")):
+            break
+        item = line.strip()
+        if item.startswith("-"):
+            value = item[1:].strip().strip("\"'")
+            if value:
+                dates.append(value)
+    return dates
+
+
 def extract_frontmatter_field(text: str, key: str) -> str | None:
     match = re.search(rf"^{re.escape(key)}:\s*(.+)$", text, flags=re.MULTILINE)
     return match.group(1).strip() if match else None
+
+
+def replace_quiz_fail_log(text: str, dates: list[str]) -> str:
+    rendered = "[" + ", ".join(dates) + "]"
+    return replace_frontmatter_field(text, "quiz_fail_log", rendered)
 
 
 def quiz_subject(title: str) -> str:
@@ -270,23 +301,30 @@ def update_review_state(path: Path, status: str, today: dt.date | None = None) -
     return tags, streak, reviewed_on.isoformat()
 
 
-def update_quiz_state(path: Path, phase: int, status: str) -> dict[str, int]:
+def update_quiz_state(path: Path, phase: int, status: str, today: dt.date | None = None) -> dict[str, int]:
     text = read_text(path)
     quiz_streak = extract_quiz_streak(text)
     quiz_fail_streak = extract_quiz_fail_streak(text)
     demoted = False
+    failed_on = today or dt.date.today()
 
     if phase == 1:
         if status == "correct":
             quiz_streak += 1
         else:
             quiz_streak = 0
+            fail_log = extract_quiz_fail_log(text)
+            fail_log.append(failed_on.isoformat())
+            text = replace_quiz_fail_log(text, fail_log)
         text = replace_frontmatter_field(text, "quiz_streak", str(quiz_streak))
     else:
         if status == "correct":
             quiz_fail_streak = 0
         else:
             quiz_fail_streak += 1
+            fail_log = extract_quiz_fail_log(text)
+            fail_log.append(failed_on.isoformat())
+            text = replace_quiz_fail_log(text, fail_log)
             if quiz_fail_streak >= 2:
                 demoted = True
                 text = replace_frontmatter_field(text, "quiz_phase", "1")
@@ -324,6 +362,94 @@ def judge_quiz_answer(answer: str, note: dict[str, object]) -> tuple[str, str]:
     if ratio >= 0.28 or (keyword_hits >= 1 and ratio >= 0.18):
         return "partial", f"一部は合っていますが、要点がまだ足りません（類似度 {ratio:.2f}）。"
     return "incorrect", f"要点との一致が弱いです（類似度 {ratio:.2f}）。"
+
+
+def normalize_count_value(value: str | int | None) -> int | None:
+    if value is None:
+        return None
+    if isinstance(value, int):
+        return value
+    stripped = value.strip()
+    if stripped.startswith(">="):
+        stripped = stripped[2:]
+    if stripped.startswith("="):
+        stripped = stripped[1:]
+    return int(stripped)
+
+
+def parse_quiz_fail_filters(args: argparse.Namespace) -> dict[str, object]:
+    filters: dict[str, object] = {}
+
+    fail_count = normalize_count_value(getattr(args, "fail", None))
+    if fail_count is not None:
+        filters["fail_eq"] = fail_count
+
+    fail_min = getattr(args, "fail_at_least", None)
+    if fail_min is None:
+        fail_min = getattr(args, "fail_min", None)
+    fail_at_least = normalize_count_value(fail_min)
+    if fail_at_least is not None:
+        filters["fail_at_least"] = fail_at_least
+
+    fail_in = getattr(args, "fail_in", None)
+    if fail_in:
+        filters["fail_in"] = fail_in
+
+    fail_in_count = normalize_count_value(getattr(args, "fail_in_count", None))
+    if fail_in_count is not None:
+        filters["fail_in_eq"] = fail_in_count
+
+    fail_in_min = normalize_count_value(getattr(args, "fail_in_at_least", None))
+    if fail_in_min is not None:
+        filters["fail_in_at_least"] = fail_in_min
+
+    for raw_token in getattr(args, "filters", []) or []:
+        token = raw_token.strip()
+        fail_match = re.fullmatch(r"fail(=|>=)(\d+)", token)
+        if fail_match:
+            op, count = fail_match.groups()
+            filters["fail_at_least" if op == ">=" else "fail_eq"] = int(count)
+            continue
+
+        month_match = re.fullmatch(r"fail-in:(\d{4}-\d{2})(?:(=|>=)(\d+))?", token)
+        if month_match:
+            month, op, count = month_match.groups()
+            filters["fail_in"] = month
+            if count is not None:
+                filters["fail_in_at_least" if op == ">=" else "fail_in_eq"] = int(count)
+            continue
+
+        raise ValueError(f"未対応の quiz 絞り込み指定です: {raw_token}")
+
+    return filters
+
+
+def filter_notes_by_quiz_fail_log(
+    notes: list[dict[str, object]],
+    filters: dict[str, object],
+) -> list[dict[str, object]]:
+    if not filters:
+        return notes
+
+    filtered: list[dict[str, object]] = []
+    for note in notes:
+        fail_log = [str(item) for item in note.get("quiz_fail_log", [])]
+        total = len(fail_log)
+        if "fail_eq" in filters and total != int(filters["fail_eq"]):
+            continue
+        if "fail_at_least" in filters and total < int(filters["fail_at_least"]):
+            continue
+        if "fail_in" in filters:
+            month = str(filters["fail_in"])
+            month_total = sum(1 for item in fail_log if item.startswith(f"{month}-"))
+            if month_total == 0 and "fail_in_eq" not in filters and "fail_in_at_least" not in filters:
+                continue
+            if "fail_in_eq" in filters and month_total != int(filters["fail_in_eq"]):
+                continue
+            if "fail_in_at_least" in filters and month_total < int(filters["fail_in_at_least"]):
+                continue
+        filtered.append(note)
+    return filtered
 
 
 def search_files(keyword: str) -> list[dict[str, object]]:
@@ -648,6 +774,11 @@ def cmd_quiz(args: argparse.Namespace) -> int:
     all_notes = [parse_note(path) for path in sorted(NOTES.glob("*.md"))]
     today = dt.date.fromisoformat(args.today) if args.today else dt.date.today()
     notes = list(all_notes)
+    try:
+        fail_filters = parse_quiz_fail_filters(args)
+    except ValueError as error:
+        print(str(error))
+        return 1
     if args.tag:
         notes = [note for note in notes if args.tag.lstrip("#") in note["tags"]]
     if args.today_only:
@@ -655,6 +786,7 @@ def cmd_quiz(args: argparse.Namespace) -> int:
     if args.yesterday:
         target_day = today - dt.timedelta(days=1)
         notes = [note for note in notes if extract_created_date(str(note["text"])) == target_day]
+    notes = filter_notes_by_quiz_fail_log(notes, fail_filters)
     if not notes:
         print("出題対象のノートが見つかりませんでした。")
         return 1
@@ -742,7 +874,7 @@ def cmd_quiz_answer(args: argparse.Namespace) -> int:
 
     # 状態更新
     if args.write:
-        quiz_result = update_quiz_state(path, phase, status)
+        quiz_result = update_quiz_state(path, phase, status, today=today)
 
         # Phase 2 のみ #要復習 を操作する
         tags = note["tags"]
@@ -845,6 +977,7 @@ def build_parser() -> argparse.ArgumentParser:
     moc.set_defaults(func=cmd_moc)
 
     quiz = sub.add_parser("quiz")
+    quiz.add_argument("filters", nargs="*")
     quiz.add_argument("--tag")
     quiz.add_argument("--count", type=int, default=1)
     quiz.add_argument("--seed", type=int, default=7)
@@ -853,6 +986,12 @@ def build_parser() -> argparse.ArgumentParser:
     quiz.add_argument("--today")
     quiz.add_argument("--level", type=int, choices=[1, 2, 3], default=3)
     quiz.add_argument("--show-answer", action="store_true")
+    quiz.add_argument("--fail")
+    quiz.add_argument("--fail-at-least", type=int)
+    quiz.add_argument("--fail-min", type=int)
+    quiz.add_argument("--fail-in")
+    quiz.add_argument("--fail-in-count")
+    quiz.add_argument("--fail-in-at-least", type=int)
     quiz.set_defaults(func=cmd_quiz)
 
     quiz_answer = sub.add_parser("quiz-answer")
