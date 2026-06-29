@@ -13,6 +13,7 @@
 | 7   | eager_load             | 関連データを LEFT OUTER JOIN でまとめて読み込む | [[note-insight-activerecord-eager-load]] |
 | 8   | LEFT OUTER JOIN        | 左側の行を残して右側テーブルを結び付ける             | [[note-insight-left-outer-join]]         |
 | 9   | association size/count | 関連データ件数をDB視点か読み込み状態込みで見る違い       | [[note-insight-association-size-vs-count]] |
+| 10  | pluck / select / find_each | 必要な列・件数だけ取得してメモリ効率を上げる方法 | [[note-insight-rails-memory-efficient-query]] |
 
 ---
 
@@ -69,11 +70,24 @@
 
 ---
 
+## セクション4: メモリ効率よく取得する
+
+[[note-insight-rails-memory-efficient-query]]
+
+**ポイント**:
+- `pluck` は必要なカラムの値だけ返す。ARオブジェクトを生成しないためCPU負荷が低い
+- `select` は必要なカラムだけ取得しつつARオブジェクトを返す。`update` など ARの機能が必要な場合に使う
+- `find_each` はバッチ処理で一度にメモリへ載せる件数を制限できる
+- `ActiveRecord::Relation` は遅延評価のため、Arrayに変換するより効率的なことが多い
+
+---
+
 ## 関連リンク
 
 - [[map-rails-basics]]
 - [[map-rails-admin-and-seed-basics]]
 - [[map-rails-controller-safety-and-turbo]]
+- [[map-ruby-memory-management-basics]]
 - [[note-insight-database]]
 - [[note-insight-active-record-relation]]
 - [[note-insight-where-not]]
@@ -83,3 +97,4 @@
 - [[note-insight-activerecord-eager-load]]
 - [[note-insight-left-outer-join]]
 - [[note-insight-association-size-vs-count]]
+- [[note-insight-rails-memory-efficient-query]]

@@ -17,6 +17,7 @@
 | 7 | GC | 使われなくなったオブジェクトを自動回収する仕組み | [[note-insight-gc]] |
 | 8 | スワップ | メモリ不足時にディスクをメモリ代わりに使う仕組み | [[note-insight-swap]] |
 | 9 | OOM | メモリ不足でプロセスが強制終了される状態 | [[note-insight-oom]] |
+| 10 | Rails メモリ効率クエリ | pluck / select / find_each でメモリ負荷を抑える実装方法 | [[note-insight-rails-memory-efficient-query]] |
 
 ---
 
@@ -57,6 +58,9 @@
 - 物理メモリ枯渇 → スワップ発生 → さらに遅延
 - スワップも枯渇 → OOMでプロセス強制終了
 - `find_each` による分割処理が基本的な対策
+- `pluck` で不要なカラムを取得しないことも有効な対策
+
+[[note-insight-rails-memory-efficient-query]]
 
 ---
 
@@ -64,7 +68,7 @@
 
 | 項目 | 期限 | 担当 | ノート |
 |------|------|------|--------|
-| find_each・in_batches の使い分けを整理する | - | - | - |
+| find_each・in_batches の使い分けを整理する | - | - | [[note-insight-rails-memory-efficient-query]] |
 | RubyのGCアルゴリズム（マーク&スイープ）を深掘りする | - | - | - |
 
 ---
@@ -73,3 +77,5 @@
 
 - [[map-computer-architecture-basics]]
 - [[map-database-fundamentals]]
+- [[map-activerecord-query-basics]]
+- [[note-insight-rails-memory-efficient-query]]
