@@ -1,32 +1,43 @@
-# 最重要ルール
+# knowledge-base Agent Guidance
 
-- 推測で埋めない
-- 根拠となるノートやファイルを示す
-- 書き込み系の操作は保存前に案を確認する
-- 複数ファイルを一括作成する場合は、まとめて作成してから1回確認する
-- ノート本文はコピペせず、自分の言葉で要約する
-- 重複メモは許容するが、重複ノートは `distill` 時に統合を検討する
+このファイルは Codex が最初に読む入口です。詳細な運用仕様は `.codex/skills/knowledge-base/references/workflows.md` を正本とします。
 
 ---
 
-# Codex 入口
+## 最重要ルール
 
-- Claude 用設定は `./.claude/` に残す
-- Codex 用設定は `./.codex/` に置く
-- knowledge-base を扱うときは `./.codex/skills/knowledge-base/SKILL.md` を参照する
+- 推測で埋めない。
+- 根拠となるノートやファイルを示す。
+- 書き込み系の操作は保存前に案を確認する。
+- ノート作成・distill・MOC作成など知識保存に関わる作業では、自律実装モード指定があっても保存前確認を優先する。
+- 複数ファイルを一括作成する場合は、まとめて作成してから1回確認する。
+- ノート本文はコピペせず、自分の言葉で要約する。
+- 重複メモは許容するが、重複ノートは `distill` 時に統合を検討する。
 
 ---
 
-# 運用の基本
+## 読む順番
 
-## CODE サイクル
+1. `.codex/skills/knowledge-base/SKILL.md`
+2. `.codex/skills/knowledge-base/references/workflows.md`
+3. `.codex/skills/knowledge-base/references/paths.md`
+4. `.codex/skills/knowledge-base/references/templates.md`
 
-1. Collect — inbox にメモを取り込む
-2. Distill — inbox からアトミックノートを作る
-3. Connect — notes をまとめる MOC を作る
-4. Use — ask、search、quiz、weekly-review で再利用する
+---
 
-## 再現している操作
+## 役割分担
+
+- `AGENTS.md`: 最重要ルールと読む順番だけを書く。
+- `README.md`: 人間向けの概要を書く。
+- `SKILL.md`: Codex skill の入口を書く。
+- `references/workflows.md`: CODE、PREPノート、日誌、quiz、月次レビューなどの運用ルールの正本。
+- `references/templates.md`: 出力形式の正本。
+- `references/paths.md`: パスと検索優先順の正本。
+- `CLAUDE.md` / `.claude/`: Claude 互換用。運用の正本ではない。
+
+---
+
+## 対応する主な操作
 
 - `capture`
 - `distill`
@@ -34,134 +45,8 @@
 - `ask`
 - `search`
 - `quiz`
-- `weekly-review`
+- `quiz-answer`
 - `knowledge-file-audit`
 - `monthly-learning-review`
-
-## 役割
-
-- `knowledge-qa`
-- `note-distiller`
-- `moc-builder`
-
-## 重複時の判断
-
-- Raycast や inbox では重複を気にしすぎなくてよい
-- `distill` では既存ノートとの重複を確認する
-- 完全に同じ概念なら新規作成より既存ノート更新を優先する
-- 似ているが観点が違う場合は、別ノートにして `Links` でつなぐ
-- 判断に迷う場合は、新規保存の前に統合案を出す
-
----
-
-# パス
-
-| 場所 | 用途 |
-|------|------|
-| `knowledge/inbox/` | 取り込んだ生メモ |
-| `knowledge/inbox/done/` | distill 済みの inbox |
-| `knowledge/notes/` | アトミックノート |
-| `knowledge/maps/` | MOC（索引） |
-| `knowledge/projects/` | プロジェクト資料 |
-
-検索優先順: `notes/` → `maps/` → `projects/` → `inbox/`
-
----
-
-# コンテンツ保存フロー
-
-ユーザーがコンテンツを貼り付けて「保存したい」と言ったとき:
-
-1. **分類する**
-   - 単一概念 → `knowledge/notes/` にアトミックノート
-   - 複数トピック・図・全体フロー → `knowledge/maps/` に MOC
-   - 未整理の生メモ → `knowledge/inbox/` に保存して後で distill
-
-2. **重複確認**
-   - 既存ノート・MOC と照合する
-   - 既存ありの場合は補強か新規かをユーザーに確認する
-
-3. **保存案をユーザーに確認してから作成する**
-
-4. **関連ファイルへのリンクを追加する**
-
----
-
-# PREPプロンプト生成ノートの保存フロー
-
-ユーザーが PREP プロンプトで生成した学習ノートを貼り付けたとき:
-
-1. **重複確認** — 既存ノートと照合する
-2. **Tags を提案** — 内容からタグを提案してユーザーに確認する
-3. **保存案を確認してから作成する**
-4. **保存先:** `knowledge/notes/note-insight-{topic}.md`
-5. **関連ノートへの Links を追加する**
-
-## フロントマター
-
-| フィールド | 値 |
-|---|---|
-| `id` | `note-insight-{topic}` |
-| `title` | `"{トピック}とは？"` |
-| `created` / `updated` | 保存日 |
-| `source` | `"prep-prompt"` |
-| `quiz_fail_log` | `[]` |
-
----
-
-# 日誌の運用
-
-ユーザーが「今日の日誌を作って」と依頼したとき、その日作成・更新したノートを確認して日誌ファイルを作成する。
-
-## ファイル名・保存先
-
-`knowledge/inbox/YYYY-MM-DD_journal.md`
-
-## フォーマット
-
-```markdown
-# YYYY-MM-DD 日誌
-
-## 今日学んだこと
-
-### {その日登録したnoteのタイトル}
-
-~~~md
-#### 結論
-
-#### 理由
-
-#### 具体例
-
-#### まとめ
-~~~
-
-## 気づき・感想
-（一言でもOK）
-
-## 明日やること
-- 
-```
-
-## ルール
-
-- `今日学んだこと` のセクションは、その日作成・更新したノートに合わせて追加する
-- 気づき・感想は一言でもOK
-- 明日やることは1行でもOK
-- 作成はユーザーの依頼時のみ（自動作成しない）
-- ノートを `notes/` に保存したとき、当日の日誌ファイルが存在すれば `今日学んだこと` にそのノートのセクションを自動追記する
-- 当日の日誌ファイルが存在しない場合は、自動的に新規作成してからセクションを追記する
-- `#### 結論` `#### 理由` `#### 具体例` `#### まとめ` の各セクションは必ず空白のままにする
-
----
-
-# ノートカテゴリ
-
-- `decision` — 意思決定
-- `metric` — 指標・KPI
-- `risk` — リスク
-- `data` — データ要件
-- `open` — 未決事項
-- `action` — アクション
-- `stakeholder` — ステークホルダーの意見
-- `insight` — 分析結果・示唆
+- `journal`
+- `prep-note-save`

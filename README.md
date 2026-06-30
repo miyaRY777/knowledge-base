@@ -1,20 +1,23 @@
 # knowledge-base
 
 学習メモを **探せる・信じられる・使える** 状態に育てるためのナレッジベース。
-運用の基本は `Collect → Distill → Connect → Use` の CODE サイクル。
+運用の基本は `Collect -> Distill -> Connect -> Use` の CODE サイクル。
 
 ---
 
-## 入口
+## 読む順番
 
-| 目的 | 場所 |
-|------|------|
-| 生メモを置く | `knowledge/inbox/` |
-| アトミックノートを見る | `knowledge/notes/` |
-| テーマ別マップを見る | `knowledge/maps/` |
-| Codex の運用ルールを見る | `AGENTS.md` |
-| knowledge-base スキルを見る | `.codex/skills/knowledge-base/SKILL.md` |
-| 既存の運用資料を見る | `knowledge/reference/` |
+| 目的 | 参照先 |
+|------|--------|
+| 全体像をつかむ | `README.md` |
+| Codex の最重要ルール | `AGENTS.md` |
+| 運用ルールの正本 | `.codex/skills/knowledge-base/references/workflows.md` |
+| パス・検索対象 | `.codex/skills/knowledge-base/references/paths.md` |
+| 出力テンプレート | `.codex/skills/knowledge-base/references/templates.md` |
+| Codex skill 入口 | `.codex/skills/knowledge-base/SKILL.md` |
+| Claude 互換入口 | `CLAUDE.md` |
+
+詳細な保存フロー、PREPノート、日誌、quiz、月次レビューのルールは `workflows.md` を正本とする。
 
 ---
 
@@ -24,126 +27,49 @@
 knowledge-base/
 ├── README.md
 ├── AGENTS.md
-├── .claude/
-├── docs/
+├── CLAUDE.md
+├── BACKLOG.md
+├── .codex/       # Codex 用エージェント・スキル
+├── .claude/      # Claude 用エージェント・コマンド互換
+├── docs/         # 計画・仕様メモ
+├── test/         # kb_tool 関連テスト
 └── knowledge/
-    ├── inbox/      # Collect: 生メモ
+    ├── inbox/      # Collect: 生メモ・日誌
     ├── notes/      # Distill: 1ノート1アイデア
     ├── maps/       # Connect: MOC / テーマ別索引
-    ├── projects/   # Use: 案件・プロジェクトノート
+    ├── projects/   # Use: 案件・プロジェクトノート（ローカル管理）
     ├── resources/  # 参照用ストック
-    └── reference/  # 運用説明
+    ├── reference/  # 人間向け運用説明
+    ├── templates/  # 学習テンプレート
+    └── .obsidian/  # Obsidian 設定（Git 管理外）
 ```
 
 ---
 
-## CODE サイクル
-
-### 1. Collect
-
-メモを `knowledge/inbox/` に保存する。
-
-ファイル名:
+## 主要ループ
 
 ```text
-YYYY-MM-DD_insight_{short-title}.md
+PREP形式の学習ノート
+-> 重複確認
+-> Tags / Links / 保存案提示
+-> ユーザー確認
+-> note-insight-{topic}.md 保存
+-> 当日の日誌を作成または更新
+-> quiz で復習
+-> quiz_fail_log に間違いを累積
 ```
 
-### 2. Distill
+通常の生メモは `capture -> distill -> moc -> ask/search/quiz` の流れで扱う。
 
-inbox のメモを読み、1ノート1アイデアの atomic note として `knowledge/notes/` に分ける。
+---
 
-ルール:
-- 既存ノートとの重複を確認する
-- 完全に同じ概念なら既存ノート更新を優先する
-- 似ているが観点が違う場合は別ノートにして Links でつなぐ
-- 保存前に案を確認する
-
-### 3. Connect
-
-関連する notes を `knowledge/maps/` の MOC にまとめる。
-
-MOC には、サマリー、セクション、Open Questions、関連リンクを含める。
-MOC も保存前に案を確認する。
-
-### 4. Use
-
-検索、質問、クイズ、週次レビューで再利用する。
+## よく使うコマンド
 
 ```bash
 python3 .codex/skills/knowledge-base/scripts/kb_tool.py search callback
 python3 .codex/skills/knowledge-base/scripts/kb_tool.py ask "Callbacksの注意点は？"
-python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz --yesterday --level 2
-python3 .codex/skills/knowledge-base/scripts/kb_tool.py weekly-review
+python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz --tag rails --count 3
+python3 .codex/skills/knowledge-base/scripts/kb_tool.py quiz-answer note-insight-active-record-callbacks "C" --correct-choice C --write
 ```
 
----
-
-## 主要 MOC
-
-| MOC | テーマ |
-|-----|--------|
-| `knowledge/maps/map-security-basics.md` | Webセキュリティ、HTTPS、TLS、2FA、XSS、CSRF |
-| `knowledge/maps/map-cyber-attack-basics.md` | サイバー攻撃の種類 |
-| `knowledge/maps/map-cookie-basics.md` | Cookie の基本と属性 |
-| `knowledge/maps/map-session-basics.md` | セッション、セッションID、期限、攻撃 |
-| `knowledge/maps/map-http-client-basics.md` | HTTP通信、Fetch、Axios |
-| `knowledge/maps/map-activerecord-query-basics.md` | ActiveRecord、SQL、N+1 |
-| `knowledge/maps/map-ruby-rails-predicate-basics.md` | `nil?`、`empty?`、`blank?`、`presence` |
-| `knowledge/maps/map-rails-basics.md` | Rails 基礎 |
-| `knowledge/maps/map-javascript-basics.md` | JavaScript 基礎 |
-| `knowledge/maps/map-java-basics.md` | Java 型・演算・制御フロー |
-| `knowledge/maps/map-database-fundamentals.md` | DB・SQL 基礎 |
-| `knowledge/maps/map-computer-architecture-basics.md` | コンピュータ構成 |
-
----
-
-## クイズ運用
-
-クイズ対象は基本的に `knowledge/notes/` の atomic note。
-
-対象の選び方:
-- 今日学んだノート → `/quiz today`
-- 昨日学んだノート → `/quiz yesterday`
-- タグ指定 → `/quiz #rails`
-- 間違い回数で絞り込む → `/quiz fail>=2`
-- 特定月の間違い → `/quiz fail-in:2026-06`
-
-フェーズ制:
-
-| フェーズ | 形式 | 昇格・降格 |
-|---------|------|----------|
-| Phase 1 | 4択 | 2連続正解 → Phase 2 へ昇格 |
-| Phase 2 | 説明 | 2連続不正解 → Phase 1 へ降格 |
-
-採点後の扱い:
-- 不正解・スキップ時は `quiz_fail_log` に日付を追記する
-- `quiz_fail_log` はリセットしない（累計記録）
-
----
-
-## 運用ルール
-
-- 推測で埋めない
-- 根拠となるノートやファイルを示す
-- 書き込み系の操作は保存前に案を確認する
-- ノート本文はコピペせず、自分の言葉で要約する
-- 重複メモは許容するが、distill 時に重複ノートの統合を検討する
-- inbox は軽く保ち、整理は distill で行う
-- MOC は新しい概念群が増えたタイミングで更新候補を見る
-
----
-
-## タグ例
-
-| タグ | 用途 |
-|------|------|
-| `#rails` | Rails |
-| `#activerecord` | ActiveRecord |
-| `#database` | DB / SQL |
-| `#http` | HTTP / API |
-| `#web` | Web 基礎 |
-| `#security` | セキュリティ |
-| `#cookie` | Cookie |
-| `#session` | セッション |
-| `#javascript` | JavaScript |
+コマンドの詳細と運用判断は `.codex/skills/knowledge-base/references/workflows.md` を確認する。

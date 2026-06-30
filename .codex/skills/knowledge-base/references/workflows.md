@@ -1,5 +1,8 @@
 # knowledge-base Workflows
 
+このファイルを knowledge-base の運用ルールの正本とする。
+`README.md`、`AGENTS.md`、`SKILL.md`、`CLAUDE.md` には入口と参照先だけを置き、詳細ルールはここへ集約する。
+
 ## CODE
 
 1. Collect
@@ -9,7 +12,7 @@
 3. Connect
    notes をまとめる MOC を作る
 4. Use
-   ask、search、quiz、weekly-review で再利用する
+   ask、search、quiz、monthly-learning-review で再利用する
 
 ## capture
 
@@ -83,6 +86,7 @@
 
 ## weekly-review
 
+- 実装済みだが、現在は未運用。通常は monthly-learning-review を優先する
 - inbox の棚卸し
 - 直近 7 日のノート集計
 - MOC の Open Questions 整理
@@ -130,12 +134,11 @@ PREP プロンプトで生成した学習ノートを保存する場合:
 - 保存案を確認してから作成する
 - 保存先は `knowledge/notes/note-insight-{topic}.md`
 - 関連ノートへの Links を追加する
+- 保存後、当日の日誌 `knowledge/inbox/YYYY-MM-DD_journal.md` を作成または更新し、`今日学んだこと` にノート用セクションを追加する
 
 ## journal
 
-- ユーザーが「今日の日誌を作って」と依頼したときだけ作成する
+- PREPノート保存時は、当日の日誌を作成または更新して `今日学んだこと` にノート用セクションを追加する
+- ユーザーが「今日の日誌を作って」と依頼した場合も、その日作成・更新したノートを確認して日誌を作成または更新する
 - 保存先は `knowledge/inbox/YYYY-MM-DD_journal.md`
-- その日作成・更新したノートを確認し、`今日学んだこと` に追加する
-- ノートを `notes/` に保存したとき、当日の日誌ファイルが存在すれば追記する
-- 当日の日誌ファイルが存在しない場合は、新規作成してから追記する
 - `結論`、`理由`、`具体例`、`まとめ` は必ず空白のままにする
