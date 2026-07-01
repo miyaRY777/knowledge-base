@@ -20,7 +20,7 @@ description: Use when creating or updating a monthly learning map in the local k
 
 ## 使う場面
 
-- `map-YYYY-MM-learning.md` を作りたい
+- `knowledge/maps/monthly/map-YYYY-MM-learning.md` を作りたい
 - 今月学んだ内容をまとめ直したい
 - テーマ別 MOC を月次の入口からたどれるようにしたい
 - 来月の課題や未決事項を整理したい
@@ -40,7 +40,7 @@ description: Use when creating or updating a monthly learning map in the local k
 
 ## 成果物
 
-- `knowledge/maps/map-YYYY-MM-learning.md`
+- `knowledge/maps/monthly/map-YYYY-MM-learning.md`
 - 必要に応じたテーマ別 MOC へのリンク整理
 
 ## 実行例

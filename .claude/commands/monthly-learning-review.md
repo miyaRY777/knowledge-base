@@ -16,7 +16,7 @@ argument-hint: "<YYYY-MM>"
 ### Step 1: 対象期間を確定する
 
 - 月次 MOC 名: `map-YYYY-MM-learning.md`
-- 保存先: `knowledge/maps/`
+- 保存先: `knowledge/maps/monthly/`
 - 既存ファイルがあれば更新を優先する
 
 ### Step 2: 対象資料を収集する
@@ -103,10 +103,11 @@ argument-hint: "<YYYY-MM>"
 
 ## 次回の回し方
 
-1. Raycast のメモを `knowledge/inbox/` に入れる
-2. `distill` でノート化する
-3. 関連テーマの MOC を更新する
-4. 月次 MOC に追記する
+1. PREPノートを `knowledge/notes/` に保存する
+2. 関連テーマの MOC を作成または更新する
+3. 当日の日誌へ追記する
+4. `quiz` で復習する
+5. 生メモがある場合だけ `capture -> distill` を使う
 
 ---
 

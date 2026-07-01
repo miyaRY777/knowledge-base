@@ -4,6 +4,7 @@
 
 - 例: `2026-04`
 - 月次 MOC 名は `map-YYYY-MM-learning.md`
+- 保存先は `knowledge/maps/monthly/`
 
 ## 2. 対象資料を集める
 
@@ -29,10 +30,11 @@
 
 ## 6. 次回の回し方を書く
 
-- Raycast -> inbox
-- distill
-- テーマ別 MOC 更新
-- 月次 MOC 更新
+- PREPノートを保存する
+- 関連 MOC を作成または更新する
+- 当日の日誌へ追記する
+- quiz で復習する
+- 生メモがある場合だけ `capture -> distill` を使う
 
 ## 7. 更新時の判断
 
