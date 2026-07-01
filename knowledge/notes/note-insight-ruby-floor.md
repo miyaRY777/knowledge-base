@@ -3,7 +3,7 @@ id: note-insight-ruby-floor
 title: "Rubyのfloorメソッドは数値を指定桁数で切り捨てる"
 created: 2026-06-23
 source: [[2026-06-23_insight_ruby-rounding-methods.md]]
-quiz_fail_log: []
+quiz_fail_log: [2026-07-01]
 ---
 
 ## Summary

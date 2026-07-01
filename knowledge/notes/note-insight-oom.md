@@ -3,7 +3,7 @@ id: note-insight-oom
 title: "OOMはメモリ不足でプロセスが強制終了される状態"
 created: 2026-06-24
 source: [[2026-06-24_insight_ruby-memory-and-gc-basics.md]]
-quiz_fail_log: []
+quiz_fail_log: [2026-07-01]
 ---
 
 ## Summary

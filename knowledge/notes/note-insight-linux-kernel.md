@@ -4,7 +4,7 @@ title: "Linuxとは？"
 created: 2026-06-25
 updated: 2026-06-27
 source: [[2026-06-25_insight_linux-and-os-basics.md]]
-quiz_fail_log: []
+quiz_fail_log: [2026-07-01]
 ---
 
 ## Tags

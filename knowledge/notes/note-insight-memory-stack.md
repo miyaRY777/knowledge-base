@@ -3,7 +3,7 @@ id: note-insight-memory-stack
 title: "スタックはメソッド呼び出し中の一時情報を管理するメモリ領域"
 created: 2026-06-24
 source: [[2026-06-24_insight_ruby-memory-and-gc-basics.md]]
-quiz_fail_log: []
+quiz_fail_log: [2026-07-01]
 ---
 
 ## Summary

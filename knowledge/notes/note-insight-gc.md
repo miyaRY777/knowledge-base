@@ -3,7 +3,7 @@ id: note-insight-gc
 title: "GCは使われなくなったオブジェクトを自動回収する仕組み"
 created: 2026-06-24
 source: [[2026-06-24_insight_ruby-memory-and-gc-basics.md]]
-quiz_fail_log: []
+quiz_fail_log: [2026-07-01]
 ---
 
 ## Summary
