@@ -49,6 +49,56 @@ def write_note(notes_dir: Path, name: str, fail_log: str) -> None:
     )
 
 
+class NoteExtractionTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.kb_tool = load_kb_tool()
+
+    def test_extract_summary_lines_from_prep_sections(self) -> None:
+        text = "\n".join(
+            [
+                "## 背景",
+                "背景の説明です。",
+                "",
+                "## 結論",
+                "**これは結論です。**",
+                "",
+                "## 理由",
+                "理由の説明です。",
+                "",
+                "## 具体例",
+                "具体例です。",
+                "",
+                "## まとめ",
+                "まとめの説明です。",
+            ]
+        )
+
+        self.assertEqual(
+            self.kb_tool.extract_summary_lines(text),
+            ["これは結論です。", "まとめの説明です。", "背景の説明です。"],
+        )
+
+    def test_extract_explanation_from_prep_sections_without_body(self) -> None:
+        text = "\n".join(
+            [
+                "## 背景",
+                "背景の説明です。",
+                "",
+                "## 結論",
+                "結論です。",
+                "",
+                "## 言語化",
+                "- 何のためにある？：確認用",
+            ]
+        )
+
+        explanation = self.kb_tool.extract_explanation(text)
+
+        self.assertIn("## 背景\n背景の説明です。", explanation)
+        self.assertIn("## 結論\n結論です。", explanation)
+        self.assertIn("## 言語化\n- 何のためにある？：確認用", explanation)
+
+
 class QuizFailLogFilterTest(unittest.TestCase):
     def run_quiz(self, argv: list[str]) -> str:
         kb_tool = load_kb_tool()

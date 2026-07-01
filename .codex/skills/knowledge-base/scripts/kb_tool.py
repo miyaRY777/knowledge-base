@@ -68,12 +68,48 @@ def extract_tags(text: str) -> list[str]:
     return re.findall(r"#([^\s#]+)", section)
 
 
+def clean_summary_line(line: str) -> str:
+    value = line.strip()
+    if not value or value.startswith(("```", "|", "#")):
+        return ""
+    if re.fullmatch(r"[-:| ]+", value):
+        return ""
+    value = re.sub(r"^[-*>]+\s*", "", value)
+    value = value.strip("*` ")
+    return re.sub(r"\s+", " ", value).strip()
+
+
 def extract_summary_lines(text: str) -> list[str]:
     section = extract_section(text, "Summary")
     if not section:
         section = extract_section(text, "Summary（3行）")
     lines = [line.strip()[2:].strip() for line in section.splitlines() if line.strip().startswith("- ")]
-    return lines
+    if lines:
+        return lines
+
+    fallback: list[str] = []
+    for section_name in ("結論", "まとめ", "背景", "理由"):
+        section = extract_section(text, section_name)
+        for line in section.splitlines():
+            cleaned = clean_summary_line(line)
+            if cleaned:
+                fallback.append(cleaned)
+                break
+    return fallback[:3]
+
+
+def extract_explanation(text: str) -> str:
+    body = extract_section(text, "Body")
+    if body:
+        return body
+
+    sections = []
+    for section_name in ("背景", "結論", "理由", "具体例", "まとめ", "よくある勘違い", "言語化"):
+        section = extract_section(text, section_name)
+        if section:
+            sections.append(f"## {section_name}\n{section.strip()}")
+    return "\n\n".join(sections)
+
 
 
 def parse_note(path: Path) -> dict[str, object]:
@@ -461,7 +497,7 @@ def search_files(keyword: str) -> list[dict[str, object]]:
         if score == 0:
             continue
         title = extract_title(text, path.stem)
-        match_section = "Body"
+        match_section = "本文"
         if needle in title.lower():
             match_section = "Title"
         elif needle in " ".join(extract_tags(text)).lower():
@@ -863,10 +899,10 @@ def cmd_quiz_answer(args: argparse.Namespace) -> int:
     answer_text = " / ".join(note["summary_lines"][:2]) if note["summary_lines"] else str(note["title"])
     print("## 正解\n")
     print(answer_text)
-    body = str(note["text"]).split("## Body", 1)
-    if len(body) > 1:
+    explanation = extract_explanation(str(note["text"]))
+    if explanation:
         print("\n## 解説\n")
-        print(body[1].strip())
+        print(explanation)
     if status == "skip":
         print(f"\n## 復習ポイント\nこのノートをもう一度読んでおきましょう → [[{note['name']}]]")
     else:
