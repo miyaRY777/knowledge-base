@@ -16,14 +16,15 @@
 
 | ドキュメント | 用途 |
 |------|------|
-| [[knowledge-base-daily-workflow]] | `capture -> distill -> done` の日次運用を見る |
+| [[knowledge-base-daily-workflow]] | PREPノート保存を起点にした日次運用を見る |
 | [[knowledge-base-quiz-rules]] | 朝夜のクイズと `quiz_fail_log` の扱いを見る |
 | [[knowledge-base-random-review]] | 全ノート対象のランダム総復習ルールを見る |
 
 ## 使い分け
 
 - 全体の入口を見たいときはこのノートを開く
-- `capture -> distill -> done` の流れを見たいときは [[knowledge-base-daily-workflow]] を開く
+- PREPノート保存から MOC、日誌、quiz までの流れを見たいときは [[knowledge-base-daily-workflow]] を開く
+- 生メモの `capture -> distill -> done` の流れも [[knowledge-base-daily-workflow]] で確認する
 - 朝と夜のクイズ、`quiz_fail_log` の扱いを見たいときは [[knowledge-base-quiz-rules]] を開く
 - 全ノートからランダムで総復習したいときは [[knowledge-base-random-review]] を開く
 

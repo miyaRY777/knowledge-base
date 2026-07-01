@@ -3,7 +3,23 @@
 このファイルを knowledge-base の運用ルールの正本とする。
 `README.md`、`AGENTS.md`、`SKILL.md`、`CLAUDE.md` には入口と参照先だけを置き、詳細ルールはここへ集約する。
 
+## Main Workflow
+
+通常運用のメインは PREPノート保存ループとする。
+
+```text
+PREPノート
+-> 重複確認
+-> Tags / Links / 保存案
+-> notes保存
+-> MOC作成・更新
+-> 日誌追記
+-> quiz
+```
+
 ## CODE
+
+現在の主導線は PREPノート保存ループとする。CODE は通常の生メモを扱うための補助ループとして使う。
 
 1. Collect
    inbox にメモを取り込む
@@ -22,6 +38,8 @@
 
 ## distill
 
+- PREPノートは原則として distill しない
+- 1つのPREPノートに複数の独立した概念が混ざっている場合だけ分解する
 - inbox を読む
 - アイデアをカテゴリ分けする
 - 重複チェックをする
@@ -54,7 +72,7 @@
 - その日学んだノートを当日に復習する
 - 翌日は前日に学んだノートを復習する
 - `#要復習` が付いたノートだけをまとめて復習する
-- 出題文は `title` だけで作らず、`Summary`、`Body`、`Example` を見て自然な問題文にする
+- 出題文は `title` だけで作らず、`背景`、`結論`、`理由`、`具体例`、`言語化` など本文全体を見て自然な問題文にする
 - フェーズ制を採用する（フロントマターの `quiz_phase` で管理）
   - Phase 1（4択）: A〜Dから選ぶ。`quiz_streak` が2で次回セッションから Phase 2 へ昇格
   - Phase 2（説明）: 概念・重要な場面・実務での扱いまで自由記述。`quiz_fail_streak` が2で Phase 1 に降格
@@ -105,7 +123,7 @@
 
 - 対象月の `knowledge/inbox/`、`knowledge/notes/`、`knowledge/maps/` を確認する
 - 月次 MOC 名は `map-YYYY-MM-learning.md`
-- 保存先は `knowledge/maps/`
+- 保存先は `knowledge/maps/monthly/`
 - 既存ファイルがあれば更新を優先する
 - 今月のテーマは 3〜6 個にまとめる
 - 重要概念は 5〜8 件程度に絞る
@@ -129,11 +147,18 @@
 
 PREP プロンプトで生成した学習ノートを保存する場合:
 
+- 生成依頼には `knowledge/templates/template-prep-prompt.md` を使う
+- 手動作成や完成形確認には `knowledge/templates/template-note.md` を使う
 - 重複確認をする
 - 内容から Tags を提案して確認する
 - 保存案を確認してから作成する
 - 保存先は `knowledge/notes/note-insight-{topic}.md`
+- `## 言語化` は8項目の理解チェックとして空欄のまま残し、復習時に埋める
 - 関連ノートへの Links を追加する
+- 保存後、関連 MOC を確認する
+- 既存 MOC があれば、保存したノートへのリンクを追加する
+- 該当 MOC がなく、関連ノートが複数ある場合は、新規 MOC 作成を提案する
+- 関連ノートが少ない場合は MOC 候補として扱い、無理に新規 MOC を作らない
 - 保存後、当日の日誌 `knowledge/inbox/YYYY-MM-DD_journal.md` を作成または更新し、`今日学んだこと` にノート用セクションを追加する
 
 ## journal

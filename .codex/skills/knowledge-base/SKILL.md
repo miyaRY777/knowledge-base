@@ -23,6 +23,8 @@ description: Use when working inside the local knowledge-base repository to answ
 - 参照元を必ず示す。
 - 書き込み系の操作は保存前に案を見せる。
 - `distill`、`moc`、PREPノート保存、日誌作成・更新は `references/workflows.md` に従う。
+- PREPノート保存を主導線とし、保存後に関連 MOC の作成・更新、日誌追記、quiz へつなげる。
+- PREPノートは原則 distill せず、複数の独立した概念が混ざっている場合だけ分解する。
 - 既存ノートとの重複を確認する。
 - ノート本文は自分の言葉で要約する。
 
